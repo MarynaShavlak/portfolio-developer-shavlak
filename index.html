@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -36,12 +41,7 @@
             <a class="nav__link" href="#">About me</a>
             <a class="nav__link" href="#">Blog</a>
             <a class="nav__link" href="#">Contact</a>
-            <button
-              type="button"
-              class="nav__btn"
-              href="#"
-              data-modal="#hire-modal"
-            >
+            <button type="button" class="nav__btn" data-modal="#hire-modal">
               HIRE ME
             </button>
           </nav>
@@ -114,8 +114,6 @@
           </div>
         </div>
       </section>
-
-      <!-- portfolio -->
       <section class="portfolio">
         <div class="container">
           <ul class="portfolio__filter">
@@ -124,243 +122,218 @@
             <li class="filter-btn" data-filter="website">Websites</li>
             <li class="filter-btn" data-filter="interaction">Interaction</li>
           </ul>
-
           <ul class="portfolio-list" id="portfolio">
-            <li class="portfolio__col" data-cat="app">
+            <li class="portfolio__item" data-cat="app">
               <div class="work" data-modal="#modal_project_1">
-                <img
-                  class="work__image"
-                  src="https://placehold.it/370x300"
-                  alt=""
-                />
-                <div class="work__content">
-                  <div class="work__cat">category: app</div>
+                <div class="work__image"></div>
+                <div class="work__info">
+                  <div class="work__category">category: app</div>
                   <div class="work__title">
                     Project title
-                    <time class="work__date" datetime="2024-11-22 19:00"
-                      >2024</time
-                    >
+                    <span class="work__date">2024</span>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li class="portfolio__col" data-cat="website">
+            <li class="portfolio__item" data-cat="website">
               <div class="work">
-                <img
-                  class="work__image"
-                  src="https://placehold.it/370x300"
-                  alt=""
-                />
-                <div class="work__content">
-                  <div class="work__cat">category: website</div>
+                <div class="work__image"></div>
+                <div class="work__info">
+                  <div class="work__category">category: website</div>
                   <div class="work__title">
                     Project title
-                    <time class="work__date" datetime="2024-11-22 19:00"
-                      >2024</time
-                    >
+                    <span class="work__date">2024</span>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li class="portfolio__col" data-cat="interaction">
+            <li class="portfolio__item" data-cat="interaction">
               <div class="work">
-                <img
-                  class="work__image"
-                  src="https://placehold.it/370x300"
-                  alt=""
-                />
-                <div class="work__content">
-                  <div class="work__cat">category: interaction</div>
+                <div class="work__image"></div>
+                <div class="work__info">
+                  <div class="work__category">category: interaction</div>
                   <div class="work__title">
                     Project title
-                    <time class="work__date" datetime="2024-11-22 19:00"
-                      >2024</time
-                    >
+                    <span class="work__date">2024</span>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li class="portfolio__col" data-cat="website">
+            <li class="portfolio__item" data-cat="website">
               <div class="work">
-                <img
-                  class="work__image"
-                  src="https://placehold.it/370x300"
-                  alt=""
-                />
-                <div class="work__content">
-                  <div class="work__cat">category: website</div>
+                <div class="work__image"></div>
+                <div class="work__info">
+                  <div class="work__category">category: website</div>
                   <div class="work__title">
                     Project title
-                    <time class="work__date" datetime="2024-11-22 19:00"
-                      >2024</time
-                    >
+                    <span class="work__date">2024</span>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li class="portfolio__col" data-cat="interaction">
+            <li class="portfolio__item" data-cat="interaction">
               <div class="work">
-                <img
-                  class="work__image"
-                  src="https://placehold.it/370x300"
-                  alt=""
-                />
-                <div class="work__content">
-                  <div class="work__cat">category: interaction</div>
+                <div class="work__image"></div>
+                <div class="work__info">
+                  <div class="work__category">category: interaction</div>
                   <div class="work__title">
                     Project title
-                    <time class="work__date" datetime="2024-11-22 19:00"
-                      >2024</time
-                    >
+                    <span class="work__date">2024</span>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li class="portfolio__col" data-cat="app">
+            <li class="portfolio__item" data-cat="app">
               <div class="work">
-                <img
-                  class="work__image"
-                  src="https://placehold.it/370x300"
-                  alt=""
-                />
-                <div class="work__content">
-                  <div class="work__cat">category: app</div>
+                <div class="work__image"></div>
+                <div class="work__info">
+                  <div class="work__category">category: app</div>
                   <div class="work__title">
                     Project title
-                    <time class="work__date" datetime="2024-11-22 19:00"
-                      >2024</time
-                    >
+                    <span class="work__date">2024</span>
                   </div>
                 </div>
               </div>
             </li>
           </ul>
-
-          <div class="text-center">
-            <a class="button button--small" href="#">LOAD MORE WORK</a>
-          </div>
+          <button type="button" class="load-more-btn">LOAD MORE WORK</button>
         </div>
         <!-- /.container -->
       </section>
-      <!-- /.portfolio -->
-
-      <!-- About -->
       <section class="about">
         <div class="container">
-          <div class="about__inner">
+          <div class="about__container">
             <div class="about__photo">
-              <img class="img" src="images/designer_photo.png" alt="" />
+              <img src="images/designer_photo.png" alt="Photo of user" />
             </div>
-
             <div class="about__content">
               <h3 class="about__title">about me</h3>
-              <h2 class="about__bigtitle">WHO AM I</h2>
-              <div class="about__text">
+              <h2 class="about__title--big">WHO AM I</h2>
+              <div class="about__descr">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-                  a dolores consectetur provident ratione quo reiciendis,
-                  eligendi aliquid error ab ducimus fugit, quia perferendis id
-                  laboriosam animi eos excepturi sint.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                  facilisis et elementum vitae, aliquam sit amet ante. Sed
+                  iaculis eros sem, elementum consequat est consequat eu.
+                  Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus
+                  leo.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-                  a dolores consectetur provident ratione quo reiciendis,
-                  eligendi aliquid error ab ducimus fugit, quia perferendis id
-                  laboriosam animi eos excepturi sint.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                  facilisis et elementum vitae, aliquam sit amet ante. Sed
+                  iaculis eros sem, elementum consequat est consequat eu.
+                  Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus
+                  leo.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-                  a dolores consectetur provident ratione quo reiciendis,
-                  eligendi aliquid error ab ducimus fugit, quia perferendis id
-                  laboriosam animi eos excepturi sint.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                  facilisis et elementum vitae, aliquam sit amet ante. Sed
+                  iaculis eros sem, elementum consequat est consequat eu.
+                  Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus
+                  leo.
                 </p>
               </div>
-              <a class="button" href="#">HIRE ME</a>
-              <button class="button" type="button">SEE MY RESUME</button>
+              <ul class="btn__list">
+                <li class="btn__item">
+                  <button class="button" data-modal="#hire-modal">
+                    Hire me
+                  </button>
+                </li>
+                <li class="btn__item">
+                  <button
+                    class="button"
+                    type="button"
+                    data-modal="#modal_resume"
+                  >
+                    See my resume
+                  </button>
+                </li>
+              </ul>
             </div>
             <!-- /.about__content -->
           </div>
-          <!-- /.about__inner -->
+          <!-- /.about__container -->
         </div>
-        <!-- /.container -->
       </section>
-
-      <!-- Reviews -->
-      <div class="reviews">
+      <section class="reviews">
         <div class="container">
-          <div class="reviews__item">
-            <div class="reviews__text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Explicabo, neque perferendis nobis illum deserunt nisi fuga
-                pariatur sunt porro amet qui asperiores ut, beatae placeat quo
-                dolorem! Velit, harum, quaerat.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Explicabo, neque perferendis nobis illum deserunt nisi fuga
-                pariatur sunt porro amet qui asperiores ut, beatae placeat quo
-                dolorem! Velit, harum, quaerat.
-              </p>
-            </div>
+          <div class="reviews-slider">
+            <div class="reviews__item">
+              <div class="reviews__descr">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                  facilisis et elementum vitae, aliquam sit amet ante. Sed
+                  iaculis eros sem, elementum consequat est consequat eu.
+                  Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus
+                  leo. Praesent dui sapien, bibendum quis tempus dictum.
+                </p>
+              </div>
 
-            <div class="reviews__author">
-              <img
-                class="reviews__photo"
-                src="https://placehold.it/103/333"
-                alt=""
-              />
-              <div class="reviews__name">Edward M. Brooks</div>
-              <div class="reviews__company">Marketing House</div>
-              <div class="reviews__rating">
-                <img
-                  class="reviews__star"
-                  src="images/star.svg"
-                  width="13"
-                  height="13"
-                  alt=""
-                />
-                <img
-                  class="reviews__star"
-                  src="images/star.svg"
-                  width="13"
-                  height="13"
-                  alt=""
-                />
-                <img
-                  class="reviews__star"
-                  src="images/star.svg"
-                  width="13"
-                  height="13"
-                  alt=""
-                />
-                <img
-                  class="reviews__star"
-                  src="images/star.svg"
-                  width="13"
-                  height="13"
-                  alt=""
-                />
-                <img
-                  class="reviews__star reviews__star--unactive"
-                  src="images/star.svg"
-                  width="13"
-                  height="13"
-                  alt=""
-                />
+              <div class="reviews__author">
+                <div class="reviews__photo"></div>
+                <div class="reviews__name">Edward M. Brooks</div>
+                <div class="reviews__text">Marketing House</div>
+                <ul class="reviews__rating">
+                  <li class="rating__item">
+                    <img
+                      class="reviews__star"
+                      src="images/star.svg"
+                      width="15"
+                      height="15"
+                      alt="rating star"
+                    />
+                  </li>
+                  <li class="rating__item">
+                    <img
+                      class="reviews__star"
+                      src="images/star.svg"
+                      width="15"
+                      height="15"
+                      alt="rating star"
+                    />
+                  </li>
+                  <li class="rating__item">
+                    <img
+                      class="reviews__star"
+                      src="images/star.svg"
+                      width="15"
+                      height="15"
+                      alt="rating star"
+                    />
+                  </li>
+                  <li class="rating__item">
+                    <img
+                      class="reviews__star"
+                      src="images/star.svg"
+                      width="15"
+                      height="15"
+                      alt="rating star"
+                    />
+                  </li>
+
+                  <li class="rating__item">
+                    <img
+                      class="reviews__star reviews__star--unactive"
+                      src="images/star.svg"
+                      width="15"
+                      height="15"
+                      alt="rating star"
+                    />
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <!-- /.reviews__item -->
         </div>
-        <!-- /.container -->
-      </div>
-      <!-- /.reviews -->
+      </section>
 
       <!-- News -->
       <section class="news">
@@ -533,7 +506,7 @@
               alt=""
             />
           </div>
-          <div class="modal-work__content">
+          <div class="modal-work__info">
             <div class="modal-work__header">
               <h3 class="modal-work__title">Project title</h3>
               <div class="modal-work__info">
@@ -572,7 +545,7 @@
               </button>
             </div>
           </div>
-          <!-- /.modal-work__content -->
+          <!-- /.modal-work__info -->
         </div>
         <!--/.modal-work -->
       </div>
