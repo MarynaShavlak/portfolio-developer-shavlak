@@ -276,11 +276,10 @@
                   leo. Praesent dui sapien, bibendum quis tempus dictum.
                 </p>
               </div>
-
               <div class="reviews__author">
                 <div class="reviews__photo"></div>
-                <div class="reviews__name">Edward M. Brooks</div>
-                <div class="reviews__text">Marketing House</div>
+                <p class="reviews__name">Edward M. Brooks</p>
+                <p class="reviews__text">Marketing House</p>
                 <ul class="reviews__rating">
                   <li class="rating__item">
                     <img
@@ -335,109 +334,77 @@
         </div>
       </section>
 
-      <!-- News -->
-      <section class="news">
+      <!-- blog -->
+      <section class="blog">
         <div class="container">
-          <div class="news__header">
-            <h3 class="news__title">read me</h3>
-            <div class="news__text">Sometimes i write something smart</div>
+          <div class="blog__wrap">
+            <h2 class="blog__title">read me</h2>
+            <p class="blog__text">Sometimes i write something smart</p>
           </div>
 
-          <div class="articles">
-            <div class="articles__col">
-              <div class="articles__item">
-                <div class="articles__header">
-                  <time class="articles__date"> 10<br />june </time>
-                  <a href="#">
-                    <img
-                      class="articles__photo"
-                      src="https://placehold.it/370x257"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="articles__content">
-                  <h4 class="articles__title">
-                    <a href="#">TEN THE BEST APP IN 2017</a>
-                  </h4>
-                  <div class="articles__cat">CATEGORY</div>
-                  <div class="articles__text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Maecenas pellentesque eu enim eget luctus. Sed augue
-                      felis, facilisis et elementum vitae, aliquam sit amet
-                      ante. Sed iaculis eros sem, elementum consequat.
-                    </p>
-                  </div>
-                </div>
-                <a class="button button--small" href="#">READ MORE</a>
+          <ul class="articles-list">
+            <li class="articles__item">
+              <div class="article__img-wrap">
+                <time class="article__date" datetime="2023-06-10 19:00">
+                  10<br />june
+                </time>
+                <div class="articles__photo"></div>
               </div>
-            </div>
-
-            <div class="articles__col">
-              <div class="articles__item">
-                <div class="articles__header">
-                  <time class="articles__date"> 10<br />june </time>
-                  <a href="#">
-                    <img
-                      class="articles__photo"
-                      src="https://placehold.it/370x257"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="articles__content">
-                  <h4 class="articles__title">
-                    <a href="#">TEN THE BEST APP IN 2017</a>
-                  </h4>
-                  <div class="articles__cat">CATEGORY</div>
-                  <div class="articles__text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Maecenas pellentesque eu enim eget luctus. Sed augue
-                      felis, facilisis et elementum vitae, aliquam sit amet
-                      ante. Sed iaculis eros sem, elementum consequat.
-                    </p>
-                  </div>
-                </div>
-                <a class="button button--small" href="#">READ MORE</a>
+              <div class="article__meta">
+                <a class="article__title" href="#">TEN THE BEST APP IN 2017</a>
+                <p class="article__category">CATEGORY</p>
+                <p class="article__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                  facilisis et elementum vitae, aliquam sit amet ante. Sed
+                  iaculis eros sem, elementum consequat.
+                </p>
               </div>
-            </div>
-
-            <div class="articles__col">
-              <div class="articles__item">
-                <div class="articles__header">
-                  <time class="articles__date"> 10<br />june </time>
-                  <a href="#">
-                    <img
-                      class="articles__photo"
-                      src="https://placehold.it/370x257"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="articles__content">
-                  <h4 class="articles__title">
-                    <a href="#">TEN THE BEST APP IN 2017</a>
-                  </h4>
-                  <div class="articles__cat">CATEGORY</div>
-                  <div class="articles__text">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Maecenas pellentesque eu enim eget luctus. Sed augue
-                      felis, facilisis et elementum vitae, aliquam sit amet
-                      ante. Sed iaculis eros sem, elementum consequat.
-                    </p>
-                  </div>
-                </div>
-                <a class="button button--small" href="#">READ MORE</a>
+              <button type="button" class="read-more-btn">READ MORE</button>
+            </li>
+            <li class="articles__item">
+              <div class="article__img-wrap">
+                <time class="article__date" datetime="2023-06-15 19:00">
+                  15<br />june
+                </time>
+                <div class="articles__photo"></div>
               </div>
-            </div>
-          </div>
+              <div class="article__meta">
+                <a class="article__title" href="#">WEBSITE INSPIRATION</a>
+                <p class="article__category">CATEGORY</p>
+                <p class="article__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                  facilisis et elementum vitae, aliquam sit amet ante. Sed
+                  iaculis eros sem, elementum consequat.
+                </p>
+              </div>
+              <button type="button" class="read-more-btn">READ MORE</button>
+            </li>
+            <li class="articles__item">
+              <div class="article__img-wrap">
+                <time class="article__date" datetime="2023-06-20 19:00">
+                  20<br />june
+                </time>
+                <div class="articles__photo"></div>
+              </div>
+              <div class="article__meta">
+                <a class="article__title" href="#">CHANGES IN SOCIAL MEDIA</a>
+                <p class="article__category">CATEGORY</p>
+                <p class="article__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas pellentesque eu enim eget luctus. Sed augue felis,
+                  facilisis et elementum vitae, aliquam sit amet ante. Sed
+                  iaculis eros sem, elementum consequat.
+                </p>
+              </div>
+              <button type="button" class="read-more-btn">READ MORE</button>
+            </li>
+          </ul>
           <!-- /.articles -->
 
-          <div class="news__footer">
-            <a class="news__link" href="#">See more posts</a>
+          <div class="blog__footer">
+            <a class="blog__link" href="#">See more posts</a>
           </div>
         </div>
         <!-- /.container -->
