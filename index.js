@@ -1,42 +1,18 @@
 $(document).ready(function () {
-  $('.portfolio-list').isotope({
-    itemSelector: '.portfolio__item',
-    layoutMode: 'fitRows',
-  });
-  // setPortfolioFilter();
-
-  // function updateFilterButtons(filters, chosenFilterBtn) {
-  //   filters.removeClass('filter-btn--active');
-  //   $(chosenFilterBtn).addClass('filter-btn--active');
-  // }
-
-  // function showFullPortfolio() {
-  //   $('[data-category]').slideDown();
-  // }
-
-  // function showChosenCategoryWorks(chosenfilterCategory) {
-  //   $('[data-category]').each(function () {
-  //     const itemCategory = $(this).data('category');
-  //     if (chosenfilterCategory !== itemCategory) {
-  //       $(this).slideUp(300);
-  //     } else {
-  //       $(this).slideDown();
-  //     }
-  //   });
-  // }
-
+  setPortfolioFilter();
   function setPortfolioFilter() {
-    let chosenfilterCategory = 'all';
-    const filters = $('[data-filter]');
-    filters.on('click', function () {
-      updateFilterButtons(filters, this);
+    let $portfolio = $('.portfolio-list').isotope({
+      itemSelector: '.portfolio__item',
+      percentPosition: true,
+      masonry: {
+        columnWidth: 370,
+        gutter: 30,
+      },
+    });
 
-      chosenfilterCategory = $(this).data('filter');
-      if (chosenfilterCategory === 'all') {
-        showFullPortfolio();
-      } else {
-        showChosenCategoryWorks(chosenfilterCategory);
-      }
+    $('.filter-btn').on('click', function () {
+      const filterValue = $(this).attr('data-filter');
+      $portfolio.isotope({ filter: filterValue });
     });
   }
 });

@@ -366,7 +366,7 @@ p {
 
 .work__image {
   background-color: #6a696b;
-  width: 100%;
+  width: 370px;
   height: 300px;
 }
 
@@ -392,16 +392,11 @@ p {
   font-weight: 700;
 }
 
-/* .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+.portfolio-list {
+  max-width: 1170px;
 }
-*/
-
 .portfolio__item {
-  width: 30%;
+  margin-bottom: 20px;
 }
 
 .about {
