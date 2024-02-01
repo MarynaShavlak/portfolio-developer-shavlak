@@ -765,6 +765,8 @@ p {
   border-radius: 20px;
   border: 1px solid #8d8d8e;
   line-height: 1.1;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .footer__btn:hover {
