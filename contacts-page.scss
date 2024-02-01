@@ -119,7 +119,7 @@
 		}
 	}
 	
-	.card--github, .card--facebook, .card--linkedin, .card--twitter{
+	.card--behance, .card--facebook, .card--linkedin, .card--twitter{
 		.card-content{
 			color: $main-white;
 			
@@ -155,7 +155,7 @@
 
 		}
 	}
-	.card--github{ 
+	.card--behance{ 
 		.card-content{ 
 			background-color: $github-color;
 			-webkit-clip-path: circle(0% at 76px 88%);

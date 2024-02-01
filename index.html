@@ -399,14 +399,17 @@
     </footer>
     <div class="modal-backdrop" id="hire-modal">
       <div class="modal cards">
-        <button class="contact-btn" type="button">Contact Me</button>
+        <button class="close-modal-btn" type="button" data-close>
+          <i class="fa-solid fa-xmark close-icon"></i>
+        </button>
+        <button class="contact-btn" type="button">Hire Me</button>
         <div class="contact-form">
           <a href="#" class="close">
             <svg class="card-toggle__icon" width="30" height="30">
               <use href="images/icons.svg#icon-close"></use>
             </svg>
           </a>
-          <form>
+          <form class="hire-form">
             <div class="control">
               <input type="text" id="name" /><label for="name">Your Name</label>
             </div>
@@ -423,7 +426,9 @@
               ><label for="message">Message</label>
             </div>
             <div class="control submit">
-              <button type="submit" class="form__submit-btn">Submit</button>
+              <button type="submit" class="form__submit-btn">
+                Send message
+              </button>
             </div>
           </form>
         </div>
@@ -452,49 +457,87 @@
           </div>
         </div>
 
-        <div class="card card--github">
+        <div class="card card--behance">
           <a class="card-toggle">
-            <svg class="card-toggle__icon" width="30" height="30">
-              <use href="images/icons.svg#icon-github"></use>
-            </svg>
+            <i class="fa-brands fa-behance card-toggle__icon"></i>
           </a>
           <div class="card-content">
             <div class="content__wrapper">
               <div class="block--left block">
                 <h2 class="card-content__title">
                   <a
-                    href="https://github.com/"
+                    href="https://www.behance.net/"
                     class="card-content__link"
                     target="_blank"
                   >
-                    <svg class="card-content__icon" width="30" height="30">
-                      <use href="images/icons.svg#icon-github"></use>
-                    </svg>
-                    My Github
+                    <i class="fa-brands fa-behance card-content__icon"></i>
+
+                    My Behance
                   </a>
                 </h2>
                 <p class="block__text">
-                  Explore my coding playground on GitHub, where you can delve
-                  into my open-source projects, contributions, and the code that
-                  powers my digital world.
+                  Step into my creative world on Behance, where every stroke
+                  tells a story and every project is a journey. Immerse yourself
+                  in a showcase of my passion, innovation, and artistic
+                  endeavors.
                 </p>
                 <p class="block__text">
-                  Discover the magic of collaboration and innovation in every
-                  repository
+                  Join me on this visual odyssey by visiting my Behance profile.
+                  Your presence is not just welcomed; it's an invitation to
+                  witness the magic of creativity
                 </p>
               </div>
               <div class="block--right block">
-                <img src="images/project_preview.jpg" alt="project preview" />
+                <img
+                  src="https://st3.depositphotos.com/1767687/17621/v/450/depositphotos_176214124-stock-illustration-pictures-photo-icon.jpg"
+                  alt="project preview"
+                />
               </div>
             </div>
           </div>
         </div>
+        <div class="card card--dribbble">
+          <a class="card-toggle">
+            <i class="fa-brands fa-dribbble card-toggle__icon"></i>
+          </a>
+          <div class="card-content">
+            <div class="content__wrapper">
+              <div class="block--left block">
+                <h2 class="card-content__title">
+                  <a
+                    href="https://dribbble.com/"
+                    class="card-content__link"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-dribbble card-content__icon"></i>
 
+                    My Dribble
+                  </a>
+                </h2>
+                <p class="block__text">
+                  Embark on a visual adventure with me on Dribbble, where pixels
+                  dance and creativity takes flight. Experience the artistry
+                  that fuels my passion for design. Each shot is a glimpse into
+                  a world of innovation and inspiration.
+                </p>
+                <p class="block__text">
+                  Join the design journey by visiting my Dribbble profile. Your
+                  visit is not just an invitation; it's a front-row seat to the
+                  dynamic world of design.
+                </p>
+              </div>
+              <div class="block--right block">
+                <img
+                  src="https://st3.depositphotos.com/1767687/17621/v/450/depositphotos_176214124-stock-illustration-pictures-photo-icon.jpg"
+                  alt="project preview"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="card card--facebook">
           <a class="card-toggle">
-            <svg class="card-toggle__icon" width="30" height="30">
-              <use href="images/icons.svg#icon-facebook"></use>
-            </svg>
+            <i class="fa-brands fa-facebook-f card-toggle__icon"></i>
           </a>
           <div class="card-content">
             <div class="content__wrapper">
@@ -505,9 +548,8 @@
                     class="card-content__link"
                     target="_blank"
                   >
-                    <svg class="card-content__icon" width="30" height="30">
-                      <use href="images/icons.svg#icon-facebook"></use>
-                    </svg>
+                    <i class="fa-brands fa-facebook-f card-content__icon"></i>
+
                     My Facebook
                   </a>
                 </h2>
@@ -522,16 +564,53 @@
                 <p class="block__text">Let's build a virtual connection!</p>
               </div>
               <div class="block--right block">
-                <img src="images/project_preview.jpg" alt="project preview" />
+                <img
+                  src="https://st3.depositphotos.com/1767687/17621/v/450/depositphotos_176214124-stock-illustration-pictures-photo-icon.jpg"
+                  alt="project preview"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card--instagram">
+          <a class="card-toggle">
+            <i class="fa-brands fa-instagram card-toggle__icon"></i>
+          </a>
+          <div class="card-content">
+            <div class="content__wrapper">
+              <div class="block--left block">
+                <h2 class="card-content__title">
+                  <a
+                    href="https://facebook.com/"
+                    class="card-content__link"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-instagram card-content__icon"></i>
+
+                    My Instagram
+                  </a>
+                </h2>
+                <p class="block__text">
+                  Explore a world of creativity and inspiration on my Instagram!
+                  Join me on a visual journey filled with moments, art, and the
+                  beauty of everyday life.
+                </p>
+                <p class="block__text">
+                  Let's connect and share the magic together!
+                </p>
+              </div>
+              <div class="block--right block">
+                <img
+                  src="https://st3.depositphotos.com/1767687/17621/v/450/depositphotos_176214124-stock-illustration-pictures-photo-icon.jpg"
+                  alt="project preview"
+                />
               </div>
             </div>
           </div>
         </div>
         <div class="card card--linkedin">
           <a class="card-toggle">
-            <svg class="card-toggle__icon" width="30" height="30">
-              <use href="images/icons.svg#icon-linkedin"></use>
-            </svg>
+            <i class="fa-brands fa-linkedin-in card-toggle__icon"></i>
           </a>
           <div class="card-content">
             <div class="content__wrapper">
@@ -542,9 +621,7 @@
                     class="card-content__link"
                     target="_blank"
                   >
-                    <svg class="card-content__icon" width="30" height="30">
-                      <use href="images/icons.svg#icon-linkedin"></use>
-                    </svg>
+                    <i class="fa-brands fa-linkedin-in card-content__icon"></i>
                     My Linkedin
                   </a>
                 </h2>
@@ -561,16 +638,17 @@
                 </p>
               </div>
               <div class="block--right block">
-                <img src="images/project_preview.jpg" alt="project preview" />
+                <img
+                  src="https://st3.depositphotos.com/1767687/17621/v/450/depositphotos_176214124-stock-illustration-pictures-photo-icon.jpg"
+                  alt="project preview"
+                />
               </div>
             </div>
           </div>
         </div>
         <div class="card card--twitter">
           <a class="card-toggle">
-            <svg class="card-toggle__icon" width="30" height="30">
-              <use href="images/icons.svg#icon-twitter"></use>
-            </svg>
+            <i class="fa-brands fa-twitter card-toggle__icon"></i>
           </a>
           <div class="card-content">
             <div class="content__wrapper">
@@ -581,9 +659,8 @@
                     class="card-content__link"
                     target="_blank"
                   >
-                    <svg class="card-content__icon" width="30" height="30">
-                      <use href="images/icons.svg#icon-twitter"></use>
-                    </svg>
+                    <i class="fa-brands fa-twitter card-content__icon"></i>
+
                     My Twitter
                   </a>
                 </h2>
@@ -597,7 +674,10 @@
                 </p>
               </div>
               <div class="block--right block">
-                <img src="images/project_preview.jpg" alt="project preview" />
+                <img
+                  src="https://st3.depositphotos.com/1767687/17621/v/450/depositphotos_176214124-stock-illustration-pictures-photo-icon.jpg"
+                  alt="project preview"
+                />
               </div>
             </div>
           </div>
