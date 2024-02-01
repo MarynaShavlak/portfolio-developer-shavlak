@@ -277,6 +277,7 @@ $(document).ready(function () {
     $('#phone').val('');
     $('#message').text('');
     $('#message').val('');
+    $('.error-message').text('');
   }
 
   function showHireModal() {
@@ -308,9 +309,10 @@ $(document).ready(function () {
       $('.contact-wrap').toggleClass('active');
     });
 
-    $('.contact-wrap .close').on('click', function (e) {
-      e.preventDefault();
+    $('.contact-wrap .close').on('click', function () {
+      console.log();
       $('.contact-wrap').toggleClass('active');
+      resetSendFormData();
     });
 
     const allCardToggleLinks = $('.card-toggle');
