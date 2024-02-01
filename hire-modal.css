@@ -2,7 +2,7 @@
   padding-top: 120px;
 } */
 
-.contact-btn {
+.hire-btn {
   position: absolute;
   top: 30px;
   left: 50px;
@@ -23,8 +23,8 @@
     background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-btn:hover,
-.contact-btn:focus {
+.hire-btn:hover,
+.hire-btn:focus {
   color: #fff;
   background-color: #2b2a2c;
 }
