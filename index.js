@@ -64,7 +64,7 @@ const reviewsData = [
 $(document).ready(function () {
   setPortfolioFilter();
   generateReviewsMarkup(reviewsData);
-  setReviewsSlider();
+  // setReviewsSlider();
 
   function generateReviewItem(index, review) {
     const $reviewItem = $('<li>').addClass('reviews__item');

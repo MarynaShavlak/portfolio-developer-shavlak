@@ -1,0 +1,259 @@
+body .wrapper .contacts-section {
+  padding: 20px 40px;
+  background-color: transparent;
+  padding-bottom: 80px;
+  height:1400px;
+  z-index: 1;
+}
+
+.section__wrap {
+  padding-left: 80px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.wrap--first {
+  width: 300px;
+  height:900px;
+  margin-top: 50px;
+  box-shadow: $main-white 0px 22px 70px 4px;
+}
+
+.img__wrap {
+  position: absolute;
+  top:0;
+  left:90px;
+
+  margin-top: 50px;
+  width: 600px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
+  border: 1px solid $body-bg-color;
+  background-color: $main-gray;
+  border-radius: 300px;
+  z-index:1;
+
+}
+.img__wrap::before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  filter: blur(50px);
+  background: radial-gradient(circle,$main-white,rgba(0,0,0,0));
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.contacts__image {
+  z-index:1;
+  width: 600px;
+}
+
+
+
+
+
+.contacts__block {
+  position: absolute;
+  top:270px;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.contacts__block::before {
+position: absolute;
+top:-50px;
+left:-15px;
+content:'';
+height: calc(100% + 100px);
+width:80px;
+background-color: $main-white;
+border-radius: 50px;
+z-index: 1;
+}
+
+
+
+.contacts__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: JetBrains Mono;
+  font-size:22px;
+  font-style: normal;
+  font-weight: 700;
+  color: $main-white;
+  z-index: 2;
+  transition: color $cubic;
+  &:hover {
+     color: $main-color;
+     svg {
+      fill: $main-color;
+      animation: tiltShake 0.5s infinite;
+
+    }
+  }
+  .contacts__icon {
+    position: relative;
+    fill: $main-black;
+    transition: fill $cubic;
+  }
+  
+}
+
+
+.contacts__icon {
+  margin-right: 80px;
+}
+
+
+
+.wrap--second {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  height: 1000px;
+  justify-content: space-between;
+}
+
+.contacts-section__title {
+  color: #fff;
+  font-family: JetBrains Mono;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 600px;   
+}
+
+
+
+.networks {
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  margin-top: 160px;
+}
+
+.netbox {
+  position: relative;
+  width:540px;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $main-white;
+  color: $main-white;
+  
+  .netbox__item{
+    padding: 30px;
+    color: $main-white;
+    transition: color 140ms ease;
+    cursor: pointer;
+    
+    &:after {
+      position: absolute;
+      right: 0;
+      bottom: calc(100% + 50px);
+      display: block;
+      width: 100%;
+      z-index: 2;
+      content: attr(data-tip);
+     color: $body-bg-color;
+      background-color: $main-color;
+      padding: 1rem;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(1rem);
+      transition: all 300ms ease 200ms;
+    font-family: JetBrains Mono;
+    font-size:22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+    
+    &:hover {
+      color: $main-color;
+      .netbox__icon{
+        fill: $main-color;
+      }
+      
+      &:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+  }
+  
+
+.netbox__icon{
+  fill: $main-white;
+}
+
+  &:before {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $main-white;
+  }
+  
+  &:after {
+    content: 'Find me on my networks!';
+    position: absolute;
+    font-family: JetBrains Mono;
+    right: 0;
+    top: -40px;
+    height: 30px;
+    padding-left: 10px;
+    background-color: $body-bg-color;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+}
+
+
+@keyframes tiltShake {
+
+  0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(5deg);
+    }
+  
+    50% {
+      transform: rotate(0eg);
+    }
+  
+    75% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
