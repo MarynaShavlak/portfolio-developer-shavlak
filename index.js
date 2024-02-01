@@ -68,61 +68,64 @@ $(document).ready(function () {
   setHireModalInfo();
   setHireModal();
 
-  function generateReviewItem(index, review) {
-    const $reviewItem = $('<li>').addClass('reviews__item');
-    if (index === 0) {
-      $reviewItem.addClass('reviews__item--active');
-    }
-    const $reviewsDescr = generateReviewDescription(review.text);
-    const $reviewsAuthor = generateReviewAuthor(review.author, review.company);
-    const $reviewsRating = $('<ul>').addClass('reviews__rating');
-    generateRatingStarList($reviewsRating, review.rating);
-    $reviewItem.append($reviewsDescr, $reviewsAuthor.append($reviewsRating));
-    return $reviewItem;
-  }
-  function generateReviewDescription(text) {
-    const $reviewsDescr = $('<div>').addClass('reviews__descr');
-    const $p = $('<p>').text(text);
-    $reviewsDescr.append($p);
-    return $reviewsDescr;
-  }
-
-  function generateReviewAuthor(author, company) {
-    const $reviewsAuthor = $('<div>').addClass('reviews__author');
-    const $reviewsPhoto = $('<div>').addClass('reviews__photo');
-    $reviewsAuthor.append($reviewsPhoto);
-    const $reviewsName = $('<p>').addClass('reviews__name').text(author);
-    const $reviewsText = $('<p>').addClass('reviews__text').text(company);
-    $reviewsAuthor.append($reviewsName, $reviewsText);
-    return $reviewsAuthor;
-  }
-
   function generateReviewsMarkup(data) {
     const $reviewsSlider = $('.reviews-slider');
     $.each(data, function (index, review) {
       const $reviewItem = generateReviewItem(index, review);
       $reviewsSlider.append($reviewItem);
     });
-  }
 
-  function generateRatingStarList($reviewsRating, rating) {
-    for (let i = 1; i <= 5; i++) {
-      const $ratingItem = $('<li>').addClass('rating__item');
-      const $star = $('<img>')
-        .addClass('reviews__star')
-        .attr('src', 'images/star.svg')
-        .attr('width', '15')
-        .attr('height', '15')
-        .attr('alt', 'rating star');
-
-      if (i > rating) {
-        $star.addClass('reviews__star--unactive');
+    function generateReviewItem(index, review) {
+      const $reviewItem = $('<li>').addClass('reviews__item');
+      if (index === 0) {
+        $reviewItem.addClass('reviews__item--active');
       }
+      const $reviewsDescr = generateReviewDescription(review.text);
+      const $reviewsAuthor = generateReviewAuthor(
+        review.author,
+        review.company,
+      );
+      const $reviewsRating = $('<ul>').addClass('reviews__rating');
+      generateRatingStarList($reviewsRating, review.rating);
+      $reviewItem.append($reviewsDescr, $reviewsAuthor.append($reviewsRating));
+      return $reviewItem;
+    }
+    function generateReviewDescription(text) {
+      const $reviewsDescr = $('<div>').addClass('reviews__descr');
+      const $p = $('<p>').text(text);
+      $reviewsDescr.append($p);
+      return $reviewsDescr;
+    }
 
-      $ratingItem.append($star);
-      $reviewsRating.append($ratingItem);
+    function generateReviewAuthor(author, company) {
+      const $reviewsAuthor = $('<div>').addClass('reviews__author');
+      const $reviewsPhoto = $('<div>').addClass('reviews__photo');
+      $reviewsAuthor.append($reviewsPhoto);
+      const $reviewsName = $('<p>').addClass('reviews__name').text(author);
+      const $reviewsText = $('<p>').addClass('reviews__text').text(company);
+      $reviewsAuthor.append($reviewsName, $reviewsText);
+      return $reviewsAuthor;
+    }
+    function generateRatingStarList($reviewsRating, rating) {
+      for (let i = 1; i <= 5; i++) {
+        const $ratingItem = $('<li>').addClass('rating__item');
+        const $star = $('<img>')
+          .addClass('reviews__star')
+          .attr('src', 'images/star.svg')
+          .attr('width', '15')
+          .attr('height', '15')
+          .attr('alt', 'rating star');
+
+        if (i > rating) {
+          $star.addClass('reviews__star--unactive');
+        }
+
+        $ratingItem.append($star);
+        $reviewsRating.append($ratingItem);
+      }
     }
   }
+
   function setReviewsSlider() {
     let intervalId;
     function nextSlide() {
@@ -162,12 +165,6 @@ $(document).ready(function () {
     startSlider();
   }
 
-  function updateFilterButtons(chosenFilterBtn) {
-    const filters = $('[data-filter]');
-    filters.removeClass('filter-btn--active');
-    $(chosenFilterBtn).addClass('filter-btn--active');
-  }
-
   function setPortfolioFilter() {
     let $portfolio = $('.portfolio-list').isotope({
       itemSelector: '.portfolio__item',
@@ -183,54 +180,115 @@ $(document).ready(function () {
       const filterValue = $(this).attr('data-filter');
       $portfolio.isotope({ filter: filterValue });
     });
+    function updateFilterButtons(chosenFilterBtn) {
+      const filters = $('[data-filter]');
+      filters.removeClass('filter-btn--active');
+      $(chosenFilterBtn).addClass('filter-btn--active');
+    }
   }
 
   function setHireModal() {
-    $('[data-modal="hire-modal"]').on('click', handleSendMessageFormSubmit);
-    $('.close-modal-btn').on('click', handleModalCloseButtonClick);
-    $('.form__submit-btn').on('submit', sendMessage);
+    $('[data-modal="hire-modal"]').on('click', showHireModal);
+    $('.close-modal-btn').on('click', hideHireModal);
+    $('.hire-form').on('submit', sendMessage);
   }
 
-  function handleModalCloseButtonClick() {
-    hideModalBackdrop();
-  }
-  function sendMessage() {
-    // const email = $('.modal-text').text();
-    console.log(' send message');
-    handleModalCloseButtonClick();
-    resetSubscriptionData();
+  function sendMessage(e) {
+    e.preventDefault();
+    const isValid = isFormValid();
+    if (isValid) {
+      const formData = {
+        name: $('#name').val(),
+        email: $('#email').val(),
+        phone: $('#phone').val(),
+        message: $('#message').val(),
+      };
+      console.log('data', formData);
+      handleModalCloseButtonClick();
+      resetSendFormData();
+      $('.contact-wrap').toggleClass('active');
+    }
   }
 
-  function resetSubscriptionData() {
+  function isFormValid() {
+    $('.error-message').text('');
+    let hasError = false;
+    hasError =
+      validateField(
+        '#name',
+        'Name is required',
+        'Name should have at least 2 characters',
+      ) || hasError;
+    hasError =
+      validateField(
+        '#email',
+        'Email is required',
+        'Invalid email address',
+        isValidEmail,
+      ) || hasError;
+    hasError =
+      validateField(
+        '#phone',
+        'Phone number is required',
+        'Invalid phone number',
+        isValidPhone,
+      ) || hasError;
+    hasError = validateField('#message', 'Message is required') || hasError;
+    return !hasError;
+
+    function validateField(
+      selector,
+      requiredError,
+      formatError,
+      validationFunction = null,
+    ) {
+      let fieldValue = $(selector).val().trim();
+
+      if (fieldValue === '') {
+        $(`${selector}-error`).text(requiredError);
+        return true;
+      }
+
+      if (validationFunction && !validationFunction(fieldValue)) {
+        $(`${selector}-error`).text(formatError);
+        return true; // Indicates an error
+      }
+
+      return false;
+    }
+
+    function isValidEmail(email) {
+      let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+
+    function isValidPhone(phone) {
+      let phoneRegex = /^\d{10,}$/;
+      return phoneRegex.test(phone);
+    }
+  }
+
+  function resetSendFormData() {
     $('#name').text('');
-    $('#name').value('');
+    $('#name').val('');
     $('#email').text('');
-    $('#email').value('');
-    $('#url').text('');
-    $('#url').value('');
+    $('#email').val('');
+    $('#phone').text('');
+    $('#phone').val('');
     $('#message').text('');
-    $('#message').value('');
+    $('#message').val('');
   }
 
-  function showModalBackdrop() {
+  function showHireModal() {
     $('.modal-backdrop').fadeIn('slow', function () {
       $('body').addClass('modal-open');
     });
   }
 
-  function hideModalBackdrop() {
+  function hideHireModal() {
     $('.modal-backdrop').fadeOut('slow', function () {
       $('body').removeClass('modal-open');
     });
-  }
-
-  function handleSendMessageFormSubmit(e) {
-    e.preventDefault();
-    // const isValid = isFormValid();
-    // if (isValid) {
-    //   updateModalInterface();
-    showModalBackdrop();
-    // }
   }
 
   function setHireModalInfo() {
@@ -247,16 +305,13 @@ $(document).ready(function () {
     });
 
     $('.hire-btn').on('click', function () {
-      $('.contact-form').toggleClass('active');
+      $('.contact-wrap').toggleClass('active');
     });
 
-    $('.contact-form button[type=submit], .contact-form .close').on(
-      'click',
-      function (e) {
-        e.preventDefault();
-        $('.contact-form').toggleClass('active');
-      },
-    );
+    $('.contact-wrap .close').on('click', function (e) {
+      e.preventDefault();
+      $('.contact-wrap').toggleClass('active');
+    });
 
     const allCardToggleLinks = $('.card-toggle');
     allCardToggleLinks.on('mouseover', handleOverViewMouseOver);
