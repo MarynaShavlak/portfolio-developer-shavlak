@@ -473,12 +473,57 @@ p {
 .reviews {
   padding: 4.6rem 0;
   position: relative;
+  height: 230px;
   background: #332f30 url('../images/reviews-bg.png') center no-repeat;
 }
 
+.reviews__container {
+  position: relative;
+}
+
+.control-slider-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider-btn i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.reviews-slider {
+  position: relative;
+  max-width: 830px;
+
+  margin: 0 auto;
+}
+
 .reviews__item {
+  display: none;
+  position: absolute;
   max-width: 830px;
   margin: 0 auto;
+  height: 95px;
+}
+
+.reviews__item--active {
+  display: block;
 }
 
 .reviews__descr {
