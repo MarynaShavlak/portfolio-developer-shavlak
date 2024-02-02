@@ -144,6 +144,21 @@ $(document).ready(function () {
     $('.blog__btn').on('click', function () {
       showMoreArticles($articles, total, visibleArticles);
     });
+    $('.read-more-btn').on('click', function () {
+      const $articleText = $(this).parent().find('.article__text');
+      const isShowContent = $(this).parent().hasClass('showContent');
+
+      $articleText.animate(
+        {
+          'max-height': isShowContent ? '96px' : '1000px',
+        },
+        300,
+      );
+
+      $(this).parent().toggleClass('showContent');
+      const text = !isShowContent ? 'Read Less' : 'Read more';
+      $(this).text(text);
+    });
   }
 
   function hideExtraArticles($articles, visibleArticles) {
