@@ -139,16 +139,151 @@ const projectsData = [
   },
 ];
 
+const articlesData = [
+  {
+    category: 'category',
+    title: 'TEN THE BEST APP IN 2017',
+    date: '10/06/2023',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+  {
+    category: 'category',
+    title: 'WEBSITE INSPIRATION',
+    date: '15/08/2023',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+  {
+    category: 'category',
+    title: 'CHANGES IN SOCIAL MEDIA',
+    date: '20/10/2023',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+  {
+    category: 'category',
+    title: 'Title 1',
+    date: '12/12/2023',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+  {
+    category: 'category',
+    title: 'Title 2',
+    date: '01/01/2024',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+  {
+    category: 'category',
+    title: 'Title 3',
+    date: '08/11/2022',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+  {
+    category: 'category',
+    title: 'Title 4',
+    date: '07/08/2023',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+  {
+    category: 'category',
+    title: 'Title 5',
+    date: '11/04/2023',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+  {
+    category: 'category',
+    title: 'Title 6',
+    date: '01/09/2023',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+  {
+    category: 'category',
+    title: 'Title 7',
+    date: '08/02/2021',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
+  },
+];
+
 $(document).ready(function () {
   initPortfolio();
   initReviewsSlider();
+  initBlog();
   initHireModal();
+
+  function initBlog() {
+    generateBlogMarkup(articlesData);
+    const visibleArticles = 3;
+    const $articles = $('.articles__item');
+    const total = $articles.length;
+    hideExtraArticles($articles, visibleArticles);
+    $('.blog__btn').on('click', function () {
+      showMoreArticles($articles, total, visibleArticles);
+    });
+  }
+
+  function hideExtraArticles($articles, visibleArticles) {
+    $articles.slice(visibleArticles).hide();
+  }
+
+  function showMoreArticles($articles, total, visibleArticles) {
+    $articles.filter(':hidden').slice(0, visibleArticles).slideDown('slow');
+    const shownItemsQuantity = $articles.filter(':not(:hidden)').length;
+    const remainingItems = total - shownItemsQuantity;
+    if (remainingItems === 0) {
+      $('.blog__btn').hide();
+    }
+  }
+
+  function formatDate(dateString) {
+    const [day, month, year] = dateString.split('/');
+    const shortMonths = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
+    return `${day}<br />${shortMonths[parseInt(month, 10) - 1]}`;
+  }
+
+  function getDatetimeValue(dateString) {
+    const [day, month, year] = dateString.split('/');
+    return `${year}-${month}-${day}`;
+  }
+
+  function generateBlogMarkup(data) {
+    const articlesHTML = data.map(
+      ({ title, category, text, date }) => `
+      <li class="articles__item">
+        <div class="article__img-wrap">
+          <time class="article__date" datetime="${getDatetimeValue(
+            date,
+          )}">${formatDate(date)}</time>
+          <div class="articles__photo"></div>
+        </div>
+        <div class="article__meta">
+          <a class="article__title" href="#">${title}</a>
+          <p class="article__category">${category}</p>
+          <p class="article__text">${text}</p>
+        </div>
+        <button type="button" class="read-more-btn">READ MORE</button>
+      </li>
+    `,
+    );
+
+    $('.articles-list').html(articlesHTML.join(''));
+  }
 
   function initPortfolio() {
     const itemsPerPage = 6;
     let currentIndex = 0;
     let currentCategory = '*';
-    let $portfolio = null;
+
     renderAndFilterPortfolio();
 
     $('.load-more-btn').on('click', () => handleButtonClick('loadMore'));
