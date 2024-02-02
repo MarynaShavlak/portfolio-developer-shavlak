@@ -208,6 +208,34 @@ $(document).ready(function () {
   initBlog();
   initHireModal();
 
+  var currentIndex = 0;
+  var slideCount = $('.project-slider img').length;
+
+  $('.project-next-btn').on('click', function () {
+    console.log('click');
+    if (currentIndex < slideCount - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateSlider();
+  });
+
+  $('.project-prev-btn').on('click', function () {
+    console.log('click');
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = slideCount - 1;
+    }
+    updateSlider();
+  });
+
+  function updateSlider() {
+    var translateValue = -currentIndex * 100 + '%';
+    $('.project-slider').css('transform', 'translateX(' + translateValue + ')');
+  }
+
   function initBlog() {
     generateBlogMarkup(articlesData);
     const visibleArticles = 3;
