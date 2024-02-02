@@ -147,8 +147,8 @@ $(document).ready(function () {
   function initPortfolio() {
     const itemsPerPage = 6;
     let currentIndex = 0;
-    let $portfolio = null;
     let currentCategory = '*';
+    let $portfolio = null;
     renderAndFilterPortfolio();
 
     $('.load-more-btn').on('click', () => handleButtonClick('loadMore'));
@@ -161,7 +161,6 @@ $(document).ready(function () {
         currentIndex -= itemsPerPage;
       }
       updateIsotope(action);
-      // renderAndFilterPortfolio();
       updateButtonsVisibility();
     }
 
@@ -248,10 +247,7 @@ $(document).ready(function () {
     }
 
     function setPortfolioFilter() {
-      if ($portfolio) {
-        $portfolio.isotope('destroy');
-      }
-      $portfolio = $('.portfolio-list').isotope({
+      const $portfolio = $('.portfolio-list').isotope({
         itemSelector: '.portfolio__item',
         percentPosition: true,
         masonry: {
@@ -261,25 +257,23 @@ $(document).ready(function () {
       });
 
       const filterValue = $('.filter-btn--active').attr('data-filter');
+
       $portfolio.isotope({ filter: filterValue });
-
-      $('.filter-btn').on('click', function () {
-        updateFilterButtons(this);
-        const filterValue = $(this).attr('data-filter');
-        currentCategory =
-          filterValue !== '*' ? filterValue.slice(1) : filterValue;
-        currentIndex = 0;
-
-        renderAndFilterPortfolio();
-        updateButtonsVisibility();
-      });
-
-      function updateFilterButtons(chosenFilterBtn) {
-        const filters = $('[data-filter]');
-        filters.removeClass('filter-btn--active');
-        $(chosenFilterBtn).addClass('filter-btn--active');
-      }
     }
+    function updateFilterButtons(chosenFilterBtn) {
+      const filters = $('[data-filter]');
+      filters.removeClass('filter-btn--active');
+      $(chosenFilterBtn).addClass('filter-btn--active');
+    }
+    $('.filter-btn').on('click', function () {
+      updateFilterButtons(this);
+      const filterValue = $(this).attr('data-filter');
+      currentCategory =
+        filterValue !== '*' ? filterValue.slice(1) : filterValue;
+      currentIndex = 0;
+      setPortfolioFilter();
+      updateButtonsVisibility();
+    });
   }
 
   function generatePortfolioMarkUp(data) {
