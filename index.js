@@ -1,239 +1,138 @@
-const reviewsData = [
-  {
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum.',
-    author: 'Edward M. Brooks',
-    company: 'Marketing House',
-    rating: 4,
-  },
-  {
-    text: 'Vestibulum auctor mi sit amet mauris ultrices, vel tincidunt purus vulputate. Duis vitae leo a justo condimentum imperdiet vel in sapien. In hac habitasse platea dictumst. Nulla facilisi. Aliquam erat volutpat.',
-    author: 'Alice R. Johnson',
-    company: 'Tech Innovations',
-    rating: 3,
-  },
-  {
-    text: 'Suspendisse potenti. Cras eget nisi vel elit scelerisque posuere. Curabitur sit amet augue non nunc viverra scelerisque. Integer ullamcorper cursus lacus vel consequat. Sed eu orci auctor, malesuada odio ut, malesuada libero.',
-    author: 'David K. Anderson',
-    company: 'Data Systems Inc.',
-    rating: 5,
-  },
-  {
-    text: 'Phasellus vel quam vel est accumsan cursus. In hac habitasse platea dictumst. Suspendisse ut justo a urna facilisis scelerisque nec non neque. Nulla facilisi. Sed tincidunt risus nec purus euismod, at volutpat odio vulputate.',
-    author: 'Emily L. Rodriguez',
-    company: 'Digital Dynamics',
-    rating: 3,
-  },
-  {
-    text: 'Quisque at velit ut justo imperdiet varius in eu orci. Nulla facilisi. Sed fringilla nunc eu arcu facilisis, vitae placerat nisl efficitur. Sed vel sapien quis justo ullamcorper vehicula. Morbi euismod dapibus justo, nec fermentum justo mattis ut.',
-    author: 'George W. Thompson',
-    company: 'Innovate Tech',
-    rating: 4,
-  },
-  {
-    text: 'Integer vel urna eu ex feugiat euismod. Fusce vestibulum risus vel metus laoreet, vel eleifend purus suscipit. Maecenas aliquam metus eu metus luctus, in interdum justo auctor. Sed vel leo nec arcu vestibulum luctus nec eu ante.',
-    author: 'Olivia P. Lewis',
-    company: 'Tech Trends',
-    rating: 5,
-  },
-  {
-    text: 'Cras in tortor vel quam dictum pharetra. Ut sit amet purus non mauris cursus dapibus. Sed a orci vitae enim fermentum fermentum. Vestibulum vel sapien vel arcu elementum tincidunt. Vivamus tincidunt est eget odio ultricies, eu convallis felis dictum.',
-    author: 'Michael E. Turner',
-    company: 'Digital Solutions Co.',
-    rating: 3,
-  },
-  {
-    text: 'Duis id enim id elit malesuada suscipit eu eu lacus. Aenean at nisl vel mi dictum efficitur. Vestibulum a ligula vel sapien consectetur facilisis. Nam lacinia justo sit amet venenatis sodales. Etiam sed elit quis dolor tristique sodales.',
-    author: 'Sophia J. White',
-    company: 'InnoTech Innovations',
-    rating: 3,
-  },
-  {
-    text: 'Aliquam vel metus vel tellus scelerisque euismod a ac arcu. Duis tincidunt velit non nibh fermentum, vel bibendum nulla tristique. Integer cursus, odio a commodo tempus, quam dui bibendum purus, sit amet lacinia elit ex eu elit.',
-    author: 'William M. Taylor',
-    company: 'Data Innovations',
-    rating: 4,
-  },
-  {
-    text: 'Maecenas sit amet augue id urna feugiat iaculis vitae at erat. Sed luctus leo at congue pharetra. Proin nec felis tincidunt, placerat velit vel, auctor nisl. Nam nec est vitae justo accumsan hendrerit sit amet in lacus.',
-    author: 'Emma R. Harris',
-    company: 'Tech Solutions Plus',
-    rating: 5,
-  },
-];
-
-const projectsData = [
-  {
-    category: 'app',
-    title: 'Project title 1',
-    date: 2018,
-  },
-  {
-    category: 'website',
-    title: 'Project title 2',
-    date: 2019,
-  },
-  {
-    category: 'website',
-    title: 'Project title 3',
-    date: 2021,
-  },
-  {
-    category: 'website',
-    title: 'Project title 4 ',
-    date: 2020,
-  },
-  {
-    category: 'interaction',
-    title: 'Project title 5',
-    date: 2023,
-  },
-  {
-    category: 'app',
-    title: 'Project title 6',
-    date: 2024,
-  },
-  {
-    category: 'website',
-    title: 'Project title 7',
-    date: 2023,
-  },
-  {
-    category: 'app',
-    title: 'Project title 8',
-    date: 2024,
-  },
-  {
-    category: 'interaction',
-    title: 'Project title 9',
-    date: 2024,
-  },
-  {
-    category: 'app',
-    title: 'Project title 10',
-    date: 2024,
-  },
-  {
-    category: 'website',
-    title: 'Project title 11',
-    date: 2024,
-  },
-  {
-    category: 'website',
-    title: 'Project title 12',
-    date: 2024,
-  },
-  {
-    category: 'interaction',
-    title: 'Project title 13',
-    date: 2023,
-  },
-  {
-    category: 'website',
-    title: 'Project title 14',
-    date: 2020,
-  },
-  {
-    category: 'interaction',
-    title: 'Project title 15',
-    date: 2021,
-  },
-];
-
-const articlesData = [
-  {
-    category: 'category',
-    title: 'TEN THE BEST APP IN 2017',
-    date: '10/06/2023',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-  {
-    category: 'category',
-    title: 'WEBSITE INSPIRATION',
-    date: '15/08/2023',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-  {
-    category: 'category',
-    title: 'CHANGES IN SOCIAL MEDIA',
-    date: '20/10/2023',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-  {
-    category: 'category',
-    title: 'Title 1',
-    date: '12/12/2023',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-  {
-    category: 'category',
-    title: 'Title 2',
-    date: '01/01/2024',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-  {
-    category: 'category',
-    title: 'Title 3',
-    date: '08/11/2022',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-  {
-    category: 'category',
-    title: 'Title 4',
-    date: '07/08/2023',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-  {
-    category: 'category',
-    title: 'Title 5',
-    date: '11/04/2023',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-  {
-    category: 'category',
-    title: 'Title 6',
-    date: '01/09/2023',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-  {
-    category: 'category',
-    title: 'Title 7',
-    date: '08/02/2021',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.',
-  },
-];
+import { reviewsData, projectsData, articlesData } from './data.js';
 
 $(document).ready(function () {
   initPortfolio();
   initReviewsSlider();
   initBlog();
   initHireModal();
+  initProjectModal();
 
-  var currentIndex = 0;
-  var slideCount = $('.project-slider img').length;
+  function initProjectModal() {
+    $('.portfolio__item').on('click', handleProjectModal);
+    $('.close-modal-btn').on('click', hideProjectModal);
 
-  $('.project-next-btn').on('click', function () {
-    console.log('click');
-    if (currentIndex < slideCount - 1) {
-      currentIndex++;
-    } else {
-      currentIndex = 0;
+    function initProjectModalSlider() {
+      let currentIndex = 0;
+      const slideCount = $('.project-slider img').length;
+
+      $('.project-next-btn').on('click', handleNextButtonClick);
+      $('.project-prev-btn').on('click', handlePrevButtonClick);
+
+      function handleNextButtonClick() {
+        currentIndex = currentIndex < slideCount - 1 ? currentIndex + 1 : 0;
+        updateSlider();
+      }
+
+      function handlePrevButtonClick() {
+        currentIndex = currentIndex > 0 ? currentIndex - 1 : slideCount - 1;
+        updateSlider();
+      }
+
+      function updateSlider() {
+        const translateValue = -currentIndex * 100 + '%';
+        $('.project-slider').css(
+          'transform',
+          'translateX(' + translateValue + ')',
+        );
+      }
     }
-    updateSlider();
-  });
-
-  $('.project-prev-btn').on('click', function () {
-    console.log('click');
-    if (currentIndex > 0) {
-      currentIndex--;
-    } else {
-      currentIndex = slideCount - 1;
+    function handleProjectModal(e) {
+      const clickedElement = $(e.currentTarget);
+      const data = getProjectData(clickedElement);
+      generateProjectModalMarkup(data);
+      initProjectModalSlider();
+      showProjectModal();
     }
-    updateSlider();
-  });
+    function getProjectData(el) {
+      return projectsData.filter(data => data.id === el.attr('data-id'))[0];
+    }
 
-  function updateSlider() {
-    var translateValue = -currentIndex * 100 + '%';
-    $('.project-slider').css('transform', 'translateX(' + translateValue + ')');
+    function showProjectModal() {
+      $('.modal-backdrop-project').fadeIn('slow', function () {
+        $('body').addClass('modal-open');
+      });
+    }
+    function hideProjectModal() {
+      $('.modal-backdrop-project').fadeOut('slow', function () {
+        $('body').removeClass('modal-open');
+      });
+    }
+  }
+
+  function generateProjectModalMarkup(projectData) {
+    const { images, title, descr } = projectData;
+    const modalContainer = $('<div class="modal__project"></div>');
+    const projectImgWrap = $('<div class="project-img-wrap"></div>');
+    const projectMeta = $('<div class="project-meta"></div>');
+    const projectDescr = $('<div class="project-descr"></div>');
+    createProjectImgWrap(title, images);
+    createProjectMeta(projectData);
+    createProjectDescription(descr);
+    modalContainer.append(projectImgWrap, projectMeta, projectDescr);
+
+    function createProjectImgWrap(title, images) {
+      const projectSlider = $('<div class="project-slider"></div>');
+      $.each(images, function (index, image) {
+        const imgElement = $(
+          '<img class="project-picture project-slide' +
+            (index + 1) +
+            '" src="images/' +
+            image +
+            '" alt="project photo"/>',
+        );
+        projectSlider.append(imgElement);
+      });
+
+      const sliderButtons = $(
+        '<ul class="project-slider-buttons"><li><button type="button" class="project-slider-btn project-prev-btn"><i class="fa-solid fa-angle-left"></i>PREVIOUS</button></li><li><button type="button" class="project-slider-btn project-next-btn">NEXT<i class="fa-solid fa-angle-right"></i></button></li></ul>',
+      );
+
+      const projectTitle = $('<h3 class="project-title">' + title + '</h3>');
+
+      projectImgWrap.append(projectSlider, sliderButtons, projectTitle);
+    }
+    function createProjectMeta(projectData) {
+      const { category, date, website } = projectData;
+      const firstLineMeta = $(
+        '<div class="project-meta__first-line"><span class="project-category">' +
+          category +
+          '</span><span class="project-year">' +
+          date +
+          '</span></div>',
+      );
+      const projectInfoList = $('<ul class="project-info"></ul>');
+      $.each(projectData, function (key, value) {
+        if (key === 'industry' || key === 'client' || key === 'timeline') {
+          const listItem = $(
+            '<li class="project-info__item"><p class="meta-title">' +
+              key.charAt(0).toUpperCase() +
+              key.slice(1) +
+              '</p><p class="meta-value ' +
+              key +
+              '-value">' +
+              value +
+              '</p></li>',
+          );
+          projectInfoList.append(listItem);
+        }
+      });
+      const websiteLink = $(
+        '<li class="project-info__item"><p class="meta-title">Website</p><a class="meta-value website-value" href="' +
+          website.link +
+          '" target="_blank">' +
+          website.name +
+          '</a></li>',
+      );
+      projectInfoList.append(websiteLink);
+      projectMeta.append(firstLineMeta, projectInfoList);
+    }
+    function createProjectDescription(descr) {
+      $.each(descr, function (index, paragraph) {
+        const pElement = $('<p>' + paragraph + '</p>');
+        projectDescr.append(pElement);
+      });
+    }
+    $('.project-modal').append(modalContainer);
   }
 
   function initBlog() {
@@ -389,7 +288,7 @@ $(document).ready(function () {
       }
 
       function generatePortfolioItemMarkup(project, index) {
-        let itemMarkup = `<li class="portfolio__item ${project.category}" data-category="${project.category}">`;
+        let itemMarkup = `<li class="portfolio__item ${project.category}" data-category="${project.category}" data-id="${project.id}">`;
         itemMarkup += `<div class="work" data-modal="#modal_project_${
           index + 1
         }">`;
@@ -449,7 +348,8 @@ $(document).ready(function () {
     function generatePortfolioItem(project, index) {
       const $portfolioItem = $('<li>')
         .addClass(`portfolio__item ${project.category}`)
-        .attr('data-category', project.category);
+        .attr('data-category', project.category)
+        .attr('data-id', project.id);
       const $work = $('<div>')
         .addClass('work')
         .attr('data-modal', `#modal_project_${index + 1}`);
@@ -665,13 +565,13 @@ $(document).ready(function () {
   }
 
   function showHireModal() {
-    $('.modal-backdrop').fadeIn('slow', function () {
+    $('.modal-backdrop-hire').fadeIn('slow', function () {
       $('body').addClass('modal-open');
     });
   }
 
   function hideHireModal() {
-    $('.modal-backdrop').fadeOut('slow', function () {
+    $('.modal-backdrop-hire').fadeOut('slow', function () {
       $('body').removeClass('modal-open');
     });
   }
@@ -719,21 +619,20 @@ $(document).ready(function () {
 
       $('.card-toggle').on('mouseover', handleOverViewMouseOver);
       $('.card-toggle').on('mouseout', handleMouseOut);
-    }
+      function deactivateAllCards() {
+        $('.card').find('.card-content').css('z-index', 0);
+        $('.card').removeClass('active');
+      }
 
-    function deactivateAllCards() {
-      $('.card').find('.card-content').css('z-index', 0);
-      $('.card').removeClass('active');
-    }
-
-    function activateClickedCard(clickedToggle) {
-      clickedToggle
-        .parent()
-        .toggleClass('active')
-        .find('.card-content')
-        .on('transitionend', function () {
-          isAnimating = false;
-        });
+      function activateClickedCard(clickedToggle) {
+        clickedToggle
+          .parent()
+          .toggleClass('active')
+          .find('.card-content')
+          .on('transitionend', function () {
+            isAnimating = false;
+          });
+      }
     }
 
     function updateCardToggleStyles(isOverViewActive) {

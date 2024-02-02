@@ -23,7 +23,7 @@
   top: -30px;
   left: -30px;
 
-  width: 100%;
+  width: 800px;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -33,6 +33,9 @@
 }
 
 .project-title {
+  position: absolute;
+  top: 30px;
+  left: 30px;
   font-size: 40px;
   color: #fff;
   font-weight: 700;
@@ -47,8 +50,6 @@
   width: 100%;
   top: 550px;
   left: 0;
-  /* padding-left: 40px;
-  padding-right: 40px; */
 }
 
 .project-slider-btn {

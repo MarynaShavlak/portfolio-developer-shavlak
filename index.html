@@ -266,7 +266,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="modal-backdrop" id="hire-modal">
+    <div class="modal-backdrop modal-backdrop-hire" id="hire-modal">
       <div class="modal cards">
         <button class="close-modal-btn" type="button" data-close>
           <i class="fa-solid fa-xmark close-icon"></i>
@@ -636,112 +636,12 @@
           </div>
         </div>
       </div>
-    </div> -->
-    <div class="modal-backdrop" id="modal-project-1">
+    </div>
+    <div class="modal-backdrop modal-backdrop-project" id="modal-project-1">
       <div class="modal project-modal">
         <button class="close-modal-btn" type="button" data-close>
           <i class="fa-solid fa-xmark close-icon"></i>
         </button>
-        <div class="modal__project">
-          <div class="project-img-wrap">
-            <div class="project-slider">
-              <img
-                class="project-picture project-slide1"
-                src="images/project-img-1.jpg"
-                alt="project photo"
-              />
-              <img
-                class="project-picture project-slide2"
-                src="images/project-img-2.jpg"
-                alt="project photo"
-              />
-              <img
-                class="project-picture project-slide3"
-                src="images/project-img-3.jpg"
-                alt="project photo"
-              />
-              <img
-                class="project-picture project-slide4"
-                src="images/project-img-4.jpg"
-                alt="project photo"
-              />
-            </div>
-            <ul class="project-slider-buttons">
-              <li>
-                <button
-                  type="button"
-                  class="project-slider-btn project-prev-btn"
-                >
-                  <i class="fa-solid fa-angle-left"></i>
-                  PREVIOUS
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="project-slider-btn project-next-btn"
-                >
-                  NEXT
-                  <i class="fa-solid fa-angle-right"></i>
-                </button>
-              </li>
-            </ul>
-            <h3 class="project-title">Project title 1</h3>
-          </div>
-
-          <div class="project-meta">
-            <div class="project-meta__first-line">
-              <span class="project-category">Category</span>
-              <span class="project-year">2018</span>
-            </div>
-            <ul class="project-info">
-              <li class="project-info__item project-industry">
-                <p class="meta-title">Industry</p>
-                <p class="meta-value industry-value">Finance</p>
-              </li>
-              <li class="project-info__item project-client">
-                <p class="meta-title">Client</p>
-                <p class="meta-value client-value">Creative Agency</p>
-              </li>
-              <li class="project-info__item project-timelime">
-                <p class="meta-title">Timeline</p>
-                <p class="meta-value timeline-value">6 monthes</p>
-              </li>
-              <li class="project-info__item project-website">
-                <p class="meta-title">Website</p>
-                <a
-                  class="meta-value website-value"
-                  href="https://example1.com/"
-                  target="_blank"
-                  >example1.com</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="project-descr">
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-
-          <!-- <div class="modal__project__footer">
-            <button class="modal__project__btn prev-btn" type="button">
-              Previous
-            </button>
-            <button class="modal__project__btn next-btn" type="button">
-              Next
-            </button>
-          </div> -->
-        </div>
       </div>
     </div>
     <script
@@ -750,7 +650,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="isotope.min.js"></script>
-    <script src="index.js"></script>
+    <script src="isotope.min.js" type="module"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
