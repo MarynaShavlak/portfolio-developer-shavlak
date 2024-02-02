@@ -142,13 +142,15 @@ p {
 
 .nav__btn:hover,
 .load-more-btn:hover,
-.read-more-btn:hover {
+.read-more-btn:hover,
+.show-less-btn:hover {
   background-color: #2b2a2c;
   color: #fff;
 }
 
 .load-more-btn,
-.read-more-btn {
+.read-more-btn,
+.show-less-btn {
   display: block;
   color: #2b2a2c;
   text-transform: uppercase;
@@ -163,7 +165,21 @@ p {
   font-weight: 700;
   border: 2px solid #2b2a2c;
   border-radius: 20px;
+  cursor: pointer;
   transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.btn__list--load {
+  justify-content: center;
+}
+
+.load-more-btn,
+.show-less-btn {
+  min-width: 175px;
+}
+
+.show-less-btn {
+  display: none;
 }
 
 .read-more-btn {
@@ -396,6 +412,7 @@ p {
   max-width: 1170px;
 }
 .portfolio__item {
+  cursor: pointer;
   margin-bottom: 20px;
 }
 

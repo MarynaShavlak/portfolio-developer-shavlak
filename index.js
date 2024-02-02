@@ -61,13 +61,298 @@ const reviewsData = [
   },
 ];
 
-$(document).ready(function () {
-  setPortfolioFilter();
-  generateReviewsMarkup(reviewsData);
-  // setReviewsSlider();
-  setHireModalInfo();
-  setHireModal();
+const projectsData = [
+  {
+    category: 'app',
+    title: 'Project title 1',
+    date: 2018,
+  },
+  {
+    category: 'website',
+    title: 'Project title 2',
+    date: 2019,
+  },
+  {
+    category: 'website',
+    title: 'Project title 3',
+    date: 2021,
+  },
+  {
+    category: 'website',
+    title: 'Project title 4 ',
+    date: 2020,
+  },
+  {
+    category: 'interaction',
+    title: 'Project title 5',
+    date: 2023,
+  },
+  {
+    category: 'app',
+    title: 'Project title 6',
+    date: 2024,
+  },
+  {
+    category: 'website',
+    title: 'Project title 7',
+    date: 2023,
+  },
+  {
+    category: 'app',
+    title: 'Project title 8',
+    date: 2024,
+  },
+  {
+    category: 'interaction',
+    title: 'Project title 9',
+    date: 2024,
+  },
+  {
+    category: 'app',
+    title: 'Project title 10',
+    date: 2024,
+  },
+  {
+    category: 'website',
+    title: 'Project title 11',
+    date: 2024,
+  },
+  {
+    category: 'website',
+    title: 'Project title 12',
+    date: 2024,
+  },
+  {
+    category: 'interaction',
+    title: 'Project title 13',
+    date: 2023,
+  },
+  {
+    category: 'website',
+    title: 'Project title 14',
+    date: 2020,
+  },
+  {
+    category: 'interaction',
+    title: 'Project title 15',
+    date: 2021,
+  },
+];
 
+$(document).ready(function () {
+  initPortfolio();
+  initReviewsSlider();
+  initHireModal();
+
+  function initPortfolio() {
+    const itemsPerPage = 6;
+    let currentIndex = 0;
+    let $portfolio = null;
+    let currentCategory = '*';
+    renderAndFilterPortfolio();
+
+    $('.load-more-btn').on('click', () => handleButtonClick('loadMore'));
+    $('.show-less-btn').on('click', () => handleButtonClick('showLess'));
+
+    function handleButtonClick(action) {
+      if (action === 'loadMore') {
+        currentIndex += itemsPerPage;
+      } else if (action === 'showLess') {
+        currentIndex -= itemsPerPage;
+      }
+      updateIsotope(action);
+      // renderAndFilterPortfolio();
+      updateButtonsVisibility();
+    }
+
+    function updateButtonsVisibility() {
+      const filteredData = filterDataByCategory();
+
+      const isLoadMoreVisible =
+        currentIndex < filteredData.length - itemsPerPage;
+      const isShowLessVisible = currentIndex >= itemsPerPage;
+
+      $('.load-more-btn').toggle(isLoadMoreVisible);
+      $('.show-less-btn').toggle(isShowLessVisible);
+    }
+
+    function renderPortfolio() {
+      const $portfolioList = $('#portfolio');
+      $portfolioList.empty();
+      const slicedData = filterDataByCategory().slice(
+        0,
+        currentIndex + itemsPerPage,
+      );
+
+      generatePortfolioMarkUp(slicedData);
+    }
+
+    function renderAndFilterPortfolio() {
+      renderPortfolio();
+      setPortfolioFilter();
+    }
+
+    function updateIsotope(action) {
+      const $portfolioList = $('.portfolio-list');
+      const totalItems = $portfolioList.children().length;
+
+      const updateIsotopeLayout = () => $portfolioList.isotope('layout');
+
+      if (action === 'loadMore') {
+        const data = filterDataByCategory().slice(
+          currentIndex,
+          currentIndex + itemsPerPage,
+        );
+        const generatedMarkup = generatePortfolioMarkUp(data);
+        const $items = $(generatedMarkup);
+
+        $portfolioList.append($items).isotope('appended', $items);
+      } else if (action === 'showLess') {
+        const $itemsToRemove = $portfolioList
+          .isotope('getItemElements')
+          .slice(currentIndex + itemsPerPage, totalItems);
+
+        $portfolioList.isotope('remove', $itemsToRemove);
+        updateIsotopeLayout();
+      }
+
+      function generatePortfolioMarkUp(data) {
+        let markup = '';
+
+        data.forEach((project, index) => {
+          markup += generatePortfolioItemMarkup(project, index);
+        });
+
+        return markup;
+      }
+
+      function generatePortfolioItemMarkup(project, index) {
+        let itemMarkup = `<li class="portfolio__item ${project.category}" data-category="${project.category}">`;
+        itemMarkup += `<div class="work" data-modal="#modal_project_${
+          index + 1
+        }">`;
+        itemMarkup += '<div class="work__image"></div>';
+        itemMarkup += '<div class="work__info">';
+        itemMarkup += `<div class="work__category">category: ${project.category}</div>`;
+        itemMarkup += `<div class="work__title">${project.title}<span class="work__date">${project.date}</span></div>`;
+        itemMarkup += '</div></div></li>';
+
+        return itemMarkup;
+      }
+    }
+
+    function filterDataByCategory() {
+      return currentCategory !== '*'
+        ? projectsData.filter(project => project.category === currentCategory)
+        : projectsData;
+    }
+
+    function setPortfolioFilter() {
+      if ($portfolio) {
+        $portfolio.isotope('destroy');
+      }
+      $portfolio = $('.portfolio-list').isotope({
+        itemSelector: '.portfolio__item',
+        percentPosition: true,
+        masonry: {
+          columnWidth: 370,
+          gutter: 30,
+        },
+      });
+
+      const filterValue = $('.filter-btn--active').attr('data-filter');
+      $portfolio.isotope({ filter: filterValue });
+
+      $('.filter-btn').on('click', function () {
+        updateFilterButtons(this);
+        const filterValue = $(this).attr('data-filter');
+        currentCategory =
+          filterValue !== '*' ? filterValue.slice(1) : filterValue;
+        currentIndex = 0;
+
+        renderAndFilterPortfolio();
+        updateButtonsVisibility();
+      });
+
+      function updateFilterButtons(chosenFilterBtn) {
+        const filters = $('[data-filter]');
+        filters.removeClass('filter-btn--active');
+        $(chosenFilterBtn).addClass('filter-btn--active');
+      }
+    }
+  }
+
+  function generatePortfolioMarkUp(data) {
+    const $portfolioList = $('.portfolio-list');
+    data.forEach((project, index) => {
+      const item = generatePortfolioItem(project, index);
+      $portfolioList.append(item);
+    });
+
+    function generatePortfolioItem(project, index) {
+      const $portfolioItem = $('<li>')
+        .addClass(`portfolio__item ${project.category}`)
+        .attr('data-category', project.category);
+      const $work = $('<div>')
+        .addClass('work')
+        .attr('data-modal', `#modal_project_${index + 1}`);
+      const $workImage = $('<div>').addClass('work__image');
+      const $workInfo = $('<div>').addClass('work__info');
+      const $workCategory = $('<div>')
+        .addClass('work__category')
+        .text(`category: ${project.category}`);
+      const $workTitle = $('<div>').addClass('work__title').text(project.title);
+      const $workDate = $('<span>').addClass('work__date').text(project.date);
+
+      $workTitle.append($workDate);
+      $workInfo.append($workCategory, $workTitle);
+      $work.append($workImage, $workInfo);
+      $portfolioItem.append($work);
+      return $portfolioItem;
+    }
+  }
+  function initReviewsSlider() {
+    generateReviewsMarkup(reviewsData);
+    setReviewsSlider();
+  }
+  function setReviewsSlider() {
+    let intervalId;
+    function nextSlide() {
+      const activeSlide = $('.reviews__item--active');
+      const activeSlideIndex = activeSlide.index();
+      const totalSlides = $('.reviews__item').length;
+      const nextSlideIndex = (activeSlideIndex + 1) % totalSlides;
+      const nextSlide = $('.reviews__item').eq(nextSlideIndex);
+      activeSlide.fadeOut(500);
+      activeSlide.removeClass('reviews__item--active');
+      nextSlide.fadeIn(500);
+      nextSlide.addClass('reviews__item--active');
+    }
+
+    function startSlider() {
+      intervalId = setInterval(nextSlide, 2000);
+    }
+
+    function stopSlider() {
+      clearInterval(intervalId);
+    }
+
+    $('.next-btn, .prev-btn').on('click', function () {
+      stopSlider();
+      nextSlide();
+      startSlider();
+    });
+
+    $('.reviews__item').hover(
+      function () {
+        stopSlider();
+      },
+      function () {
+        startSlider();
+      },
+    );
+    startSlider();
+  }
   function generateReviewsMarkup(data) {
     const $reviewsSlider = $('.reviews-slider');
     $.each(data, function (index, review) {
@@ -126,67 +411,10 @@ $(document).ready(function () {
     }
   }
 
-  function setReviewsSlider() {
-    let intervalId;
-    function nextSlide() {
-      const activeSlide = $('.reviews__item--active');
-      const activeSlideIndex = activeSlide.index();
-      const totalSlides = $('.reviews__item').length;
-      const nextSlideIndex = (activeSlideIndex + 1) % totalSlides;
-      const nextSlide = $('.reviews__item').eq(nextSlideIndex);
-      activeSlide.fadeOut(500);
-      activeSlide.removeClass('reviews__item--active');
-      nextSlide.fadeIn(500);
-      nextSlide.addClass('reviews__item--active');
-    }
-
-    function startSlider() {
-      intervalId = setInterval(nextSlide, 2000);
-    }
-
-    function stopSlider() {
-      clearInterval(intervalId);
-    }
-
-    $('.next-btn, .prev-btn').on('click', function () {
-      stopSlider();
-      nextSlide();
-      startSlider();
-    });
-
-    $('.reviews__item').hover(
-      function () {
-        stopSlider();
-      },
-      function () {
-        startSlider();
-      },
-    );
-    startSlider();
+  function initHireModal() {
+    setHireModalInfo();
+    setHireModal();
   }
-
-  function setPortfolioFilter() {
-    let $portfolio = $('.portfolio-list').isotope({
-      itemSelector: '.portfolio__item',
-      percentPosition: true,
-      masonry: {
-        columnWidth: 370,
-        gutter: 30,
-      },
-    });
-
-    $('.filter-btn').on('click', function () {
-      updateFilterButtons(this);
-      const filterValue = $(this).attr('data-filter');
-      $portfolio.isotope({ filter: filterValue });
-    });
-    function updateFilterButtons(chosenFilterBtn) {
-      const filters = $('[data-filter]');
-      filters.removeClass('filter-btn--active');
-      $(chosenFilterBtn).addClass('filter-btn--active');
-    }
-  }
-
   function setHireModal() {
     $('[data-modal="hire-modal"]').on('click', showHireModal);
     $('.close-modal-btn').on('click', hideHireModal);
@@ -203,7 +431,6 @@ $(document).ready(function () {
         phone: $('#phone').val(),
         message: $('#message').val(),
       };
-      console.log('data', formData);
       handleModalCloseButtonClick();
       resetSendFormData();
       $('.contact-wrap').toggleClass('active');
@@ -310,7 +537,6 @@ $(document).ready(function () {
     });
 
     $('.contact-wrap .close').on('click', function () {
-      console.log();
       $('.contact-wrap').toggleClass('active');
       resetSendFormData();
     });
