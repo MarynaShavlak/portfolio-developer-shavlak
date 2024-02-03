@@ -1,8 +1,5 @@
 .cv-modal {
-  /* background-image: url(images/cv.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; */
+  position: relative;
   width: 1100px;
   height: 1000px;
   padding: 0;
@@ -13,6 +10,64 @@
 
 .canvas {
   width: 1100px;
-  height: 800px;
-  /* background-color: aquamarine; */
+  height: 1000px;
+}
+.canvas-block {
+  position: absolute;
+  padding-top: 5px;
+}
+
+.block--about .block-modal-title {
+  text-align: center;
+}
+
+.block--experience .block-modal-title {
+  text-align: end;
+}
+
+.block--experience .canvas-item {
+  align-items: end;
+}
+
+.block--experience .block--education {
+  padding-left: 10px;
+}
+.block--experience {
+  padding-right: 10px;
+}
+
+.block-modal-title {
+  display: block;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.block-modal-text {
+  font-size: 13px;
+}
+
+.canvas-list {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 13px;
+  gap: 10px;
+}
+.canvas-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+.canvas-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+.canvas-italic {
+  font-weight: 700;
+  font-style: italic;
 }
