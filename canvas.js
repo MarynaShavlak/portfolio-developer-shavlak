@@ -9,13 +9,13 @@ function toRadians(degrees) {
 }
 function drawCircleDot(x, y, size, color) {
   ctx.beginPath();
-  ctx.strokeStyle = '#2b2a2c';
+  ctx.strokeStyle = '#2b2a2cd6';
   ctx.arc(x, y, size, 0, 2 * Math.PI);
   ctx.fillStyle = color;
   ctx.fill();
   ctx.stroke();
 }
-function drawEmptyCircleDot(x, y, size, color = '#2b2a2c') {
+function drawEmptyCircleDot(x, y, size, color = '#2b2a2cd6') {
   ctx.beginPath();
   ctx.lineWidth = '2';
   ctx.strokeStyle = color;
@@ -97,7 +97,7 @@ function drawComplexSolidLine() {
   drawSolidLine(complexLine1CoordsFinal2, '#2b2a2cd6', 3);
 }
 function drawLineFigure() {
-  drawCircleDot(363, 365, 3, '#2b2a2c');
+  drawCircleDot(363, 365, 3, '#2b2a2cd6');
   drawSolidLine({ x1: 363, y1: 365, x2: 310, y2: 365 }, '#2b2a2cd6', 3);
   drawLineWithDash(
     { x1: 300, y1: 365, x2: 260, y2: 365 },
@@ -139,6 +139,7 @@ function calculateHexagonCornersCoords() {
 
 function drawElements() {
   const coordArr = calculateHexagonCornersCoords();
+  console.log('coordArr: ', coordArr);
   const coords1 = {
     x1: coordArr[0].x,
     y1: coordArr[0].y,
@@ -225,9 +226,9 @@ function drawElements() {
   };
   drawLineWithDash(coords1, [2, 2], '#6a696b', 2);
   drawLineWithDash(coords2, [2, 2], '#2b2a2cd6', 3);
-  drawSolidLine(coords8, '#2b2a2c', 5);
+  drawSolidLine(coords8, '#2b2a2cd6', 5);
   drawLineWithDash(coords3, [3, 2], '#6a696b', 3);
-  drawCircleDot(coords3.x2, coords3.y2, 4, '#2b2a2c');
+  drawCircleDot(coords3.x2, coords3.y2, 4, '#2b2a2cd6');
   drawSolidLine(coords9, '#2b2a2cd6', 3);
   drawSolidLine(coords10, '#2b2a2cd6', 3);
   drawEmptyCircleDot(coords10.x2 + 35, coords10.y2 - 20, 4);
@@ -248,10 +249,10 @@ function drawElements() {
   drawDottedComplexLine();
   drawDottedComplexLine(5);
   drawLineFigure();
-
+  drawSectionLabels(coordArr);
+  drawPerpendicularLineAtCorner(centerX + radius, centerY, '#2b2a2cd6');
+  drawPerpendicularLineAtCorner(centerX - radius, centerY, '#2b2a2cd6');
   coordArr.forEach(({ x, y }) => drawCircleDot(x, y, 8, '#2b2a2c'));
-  drawPerpendicularLineAtCorner(centerX + radius, centerY, '#2b2a2c');
-  drawPerpendicularLineAtCorner(centerX - radius, centerY, '#2b2a2c');
 }
 
 function drawQuarterCircle(
@@ -289,6 +290,79 @@ function drawInnerCircle() {
   ctx.lineWidth = '15';
   ctx.strokeStyle = '#2b2a2cd6';
   ctx.arc(centerX, centerY, 140, 0, 2 * pi, false);
+  ctx.stroke();
+}
+
+function drawSectionLabels(coordArr) {
+  ctx.beginPath();
+  ctx.strokeStyle = '#2b2a2cd6';
+  ctx.lineWidth = '3';
+  ctx.moveTo(50, 50);
+  ctx.lineTo(coordArr[5].x - 50, 50);
+  ctx.lineTo(coordArr[5].x - 50, 100);
+  ctx.lineTo(50, 100);
+  ctx.lineTo(70, 75);
+  ctx.closePath();
+  ctx.fillStyle = '#2b2a2cd6';
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.moveTo(1050, 50);
+  ctx.lineTo(coordArr[2].x + 50, 50);
+  ctx.lineTo(coordArr[2].x + 50, 100);
+  ctx.lineTo(1050, 100);
+  ctx.lineTo(1030, 75);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.moveTo(50, 560);
+  ctx.lineTo(coordArr[5].x - 50, 560);
+  ctx.lineTo(coordArr[5].x - 50, 610);
+  ctx.lineTo(50, 610);
+  ctx.lineTo(70, 585);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.moveTo(1050, 560);
+  ctx.lineTo(coordArr[2].x + 50, 560);
+  ctx.lineTo(coordArr[2].x + 50, 610);
+  ctx.lineTo(1050, 610);
+  ctx.lineTo(1030, 585);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.strokeStyle = '#2b2a2cd6';
+  ctx.lineWidth = '3';
+  ctx.moveTo(coordArr[5].x + 30, 0);
+  ctx.lineTo(coordArr[2].x - 30, 0);
+  ctx.lineTo(coordArr[2].x - 50, 25);
+  ctx.lineTo(coordArr[2].x - 30, 50);
+  ctx.lineTo(coordArr[5].x + 30, 50);
+  ctx.lineTo(coordArr[5].x + 50, 25);
+  ctx.closePath();
+  ctx.fillStyle = '#2b2a2cd6';
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.strokeStyle = '#2b2a2cd6';
+  ctx.lineWidth = '3';
+  ctx.moveTo(coordArr[5].x + 30, 670);
+  ctx.lineTo(coordArr[2].x - 30, 670);
+  ctx.lineTo(coordArr[2].x - 50, 695);
+  ctx.lineTo(coordArr[2].x - 30, 720);
+  ctx.lineTo(coordArr[5].x + 30, 720);
+  ctx.lineTo(coordArr[5].x + 50, 695);
+  ctx.closePath();
+  ctx.fillStyle = '#2b2a2cd6';
+  ctx.fill();
   ctx.stroke();
 }
 function drawFigure() {
