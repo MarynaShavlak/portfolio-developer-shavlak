@@ -15,10 +15,10 @@ function drawCircleDot(x, y, size, color) {
   ctx.fill();
   ctx.stroke();
 }
-function drawEmptyCircleDot(x, y, size) {
+function drawEmptyCircleDot(x, y, size, color = '#2b2a2c') {
   ctx.beginPath();
   ctx.lineWidth = '2';
-  ctx.strokeStyle = '#2b2a2c';
+  ctx.strokeStyle = color;
   ctx.arc(x, y, size, 0, 2 * Math.PI);
   ctx.fillStyle = '#fff';
   ctx.fill();
@@ -54,6 +54,76 @@ function drawSolidLine(coords, color, width) {
   ctx.moveTo(x1, y1);
   ctx.lineTo(x2, y2);
   ctx.stroke();
+}
+function drawDottedComplexLine(modifier = 0) {
+  const complexLine1Coords = {
+    x1: centerX + radius + 50,
+    y1: centerY - 80 - 2 * modifier,
+    x2: centerX + radius + 120,
+    y2: centerY - 110 - 2 * modifier,
+  };
+  const complexLine1CoordsFinal = {
+    x1: complexLine1Coords.x2,
+    y1: complexLine1Coords.y2,
+    x2: complexLine1Coords.x2 + 700,
+    y2: complexLine1Coords.y2,
+  };
+
+  drawLineWithDash(complexLine1Coords, [1, 3 + modifier], '#2b2a2cd6', 3);
+  drawLineWithDash(complexLine1CoordsFinal, [1, 3 + modifier], '#2b2a2cd6', 3);
+}
+
+function drawComplexSolidLine() {
+  const complexLine1Coords = {
+    x1: centerX + radius + 30,
+    y1: centerY + 30,
+    x2: centerX + radius + 100,
+    y2: centerY + 30,
+  };
+  const complexLine1CoordsFinal = {
+    x1: complexLine1Coords.x2,
+    y1: complexLine1Coords.y2,
+    x2: complexLine1Coords.x2 + 30,
+    y2: complexLine1Coords.y2 + 20,
+  };
+  const complexLine1CoordsFinal2 = {
+    x1: complexLine1CoordsFinal.x2,
+    y1: complexLine1CoordsFinal.y2,
+    x2: complexLine1CoordsFinal.x2 + 700,
+    y2: complexLine1CoordsFinal.y2,
+  };
+  drawSolidLine(complexLine1Coords, '#2b2a2cd6', 3);
+  drawSolidLine(complexLine1CoordsFinal, '#2b2a2cd6', 3);
+  drawSolidLine(complexLine1CoordsFinal2, '#2b2a2cd6', 3);
+}
+function drawLineFigure() {
+  drawCircleDot(363, 365, 3, '#2b2a2c');
+  drawSolidLine({ x1: 363, y1: 365, x2: 310, y2: 365 }, '#2b2a2cd6', 3);
+  drawLineWithDash(
+    { x1: 300, y1: 365, x2: 260, y2: 365 },
+    [3, 4],
+    '#2b2a2cd6',
+    3,
+  );
+  drawLineWithDash(
+    { x1: 255, y1: 365, x2: 210, y2: 395 },
+    [3, 4],
+    '#2b2a2cd6',
+    3,
+  );
+  drawLineWithDash(
+    { x1: 205, y1: 395, x2: 120, y2: 395 },
+    [3, 4],
+    '#2b2a2cd6',
+    3,
+  );
+  drawLineWithDash(
+    { x1: 115, y1: 395, x2: 110, y2: 395 },
+    [2, 2],
+    '#2b2a2cd6',
+    15,
+  );
+  drawSolidLine({ x1: 108, y1: 395, x2: 0, y2: 395 }, '#2b2a2cd6', 3);
 }
 
 function calculateHexagonCornersCoords() {
@@ -171,10 +241,15 @@ function drawElements() {
   drawLineWithDash(coords6, [1, 3], '#2b2a2cd6', 3);
   drawEmptyCircleDot(coords6.x2, coords6.y2, 4);
   drawLineWithDash(coords7, [1, 3], '#6a696b', 4);
+  drawEmptyCircleDot(670, 550, 5, '#2b2a2cd6');
+  drawEmptyCircleDot(630, 575, 5, '#2b2a2cd6');
+  drawEmptyCircleDot(centerX + radius + 20, centerY + 30, 5, '#2b2a2cd6');
+  drawComplexSolidLine();
+  drawDottedComplexLine();
+  drawDottedComplexLine(5);
+  drawLineFigure();
 
   coordArr.forEach(({ x, y }) => drawCircleDot(x, y, 8, '#2b2a2c'));
-  drawCircleDot(centerX, centerY - radius, 8, '#2b2a2c');
-  drawCircleDot(centerX, centerY + radius, 8, '#2b2a2c');
   drawPerpendicularLineAtCorner(centerX + radius, centerY, '#2b2a2c');
   drawPerpendicularLineAtCorner(centerX - radius, centerY, '#2b2a2c');
 }
@@ -208,8 +283,17 @@ function drawQuarterCircle(
   ctx.setLineDash([]);
 }
 
+function drawInnerCircle() {
+  const pi = Math.PI;
+  ctx.beginPath();
+  ctx.lineWidth = '15';
+  ctx.strokeStyle = '#2b2a2cd6';
+  ctx.arc(centerX, centerY, 140, 0, 2 * pi, false);
+  ctx.stroke();
+}
 function drawFigure() {
-  drawQuarterCircle(0, 90, 5, [3, 5], 20);
+  drawInnerCircle();
+  drawQuarterCircle(0, 90, 5, [1, 7], 20);
   drawQuarterCircle(240, 270, 5, [5, 5], 0);
   drawQuarterCircle(90, 180, 5, [], 0);
   drawQuarterCircle(200, 238, 3, [], 0);
