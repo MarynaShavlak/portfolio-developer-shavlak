@@ -7,6 +7,167 @@ $(document).ready(function () {
   initHireModal();
   initProjectModal();
 
+  const canvas = document.querySelector('.canvas');
+  const ctx = canvas.getContext('2d');
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  const radius = 190;
+
+  function toRadians(degrees) {
+    return degrees * (Math.PI / 180);
+  }
+  function drawCorner(x, y, color) {
+    ctx.beginPath();
+    ctx.strokeStyle = '#2b2a2c';
+    ctx.arc(x, y, 8, 0, 2 * Math.PI);
+    ctx.fillStyle = color;
+    ctx.fill();
+    ctx.stroke();
+  }
+  function drawPerpendicularLineAtCorner(x, y, color) {
+    ctx.beginPath();
+    ctx.strokeStyle = color;
+    ctx.lineWidth = '2';
+    const width = 15;
+    ctx.moveTo(x - width / 2, y);
+    ctx.lineTo(x + width / 2, y);
+    ctx.stroke();
+  }
+
+  function drawHexagon() {
+    let coordArr = [];
+    for (let i = 0; i < 6; i++) {
+      const angle = toRadians(60 * i - 90);
+      const x = centerX + radius * Math.cos(angle);
+      const y = centerY + radius * Math.sin(angle);
+      coordArr.push({ x: x, y: y });
+    }
+
+    ctx.setLineDash([2, 2]);
+    ctx.beginPath();
+    ctx.strokeStyle = '#6a696b';
+    ctx.lineWidth = '2';
+    ctx.moveTo(coordArr[0].x, coordArr[0].y);
+    ctx.lineTo(coordArr[1].x, coordArr[1].y);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#2b2a2c';
+    ctx.lineWidth = '5';
+    ctx.moveTo(coordArr[0].x, coordArr[0].y);
+    ctx.lineTo(coordArr[5].x, coordArr[5].y);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#2b2a2cd6';
+    ctx.lineWidth = '3';
+    ctx.moveTo(coordArr[5].x, coordArr[5].y);
+    ctx.lineTo(coordArr[4].x, coordArr[4].y);
+    ctx.stroke();
+
+    ctx.setLineDash([3, 2]);
+    ctx.beginPath();
+    ctx.strokeStyle = '#6a696b';
+    ctx.lineWidth = '2';
+    ctx.moveTo(coordArr[4].x, coordArr[4].y);
+    ctx.lineTo(coordArr[3].x, coordArr[3].y);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#2b2a2cd6';
+    ctx.lineWidth = '3';
+    ctx.moveTo(coordArr[3].x, coordArr[3].y);
+    ctx.lineTo(coordArr[2].x, coordArr[2].y);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#2b2a2cd6';
+    ctx.lineWidth = '3';
+    ctx.moveTo(coordArr[1].x, coordArr[1].y);
+    ctx.lineTo(coordArr[2].x, centerY);
+    ctx.stroke();
+
+    ctx.setLineDash([1, 3]);
+    ctx.beginPath();
+    ctx.strokeStyle = '#6a696b';
+    ctx.lineWidth = '4';
+    ctx.moveTo(coordArr[2].x, coordArr[2].y);
+    ctx.lineTo(coordArr[2].x, centerY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    coordArr.forEach(({ x, y }) => drawCorner(x, y, '#2b2a2c'));
+
+    // ctx.closePath();
+    // ctx.stroke();
+  }
+
+  // Call the function to draw
+
+  // Draw one quarter of a circle
+  function drawQuarterCircle() {
+    // 4
+    ctx.setLineDash([3, 5]);
+    ctx.lineDashOffset = 20;
+    ctx.beginPath();
+    ctx.lineWidth = '4';
+    ctx.strokeStyle = 'grey';
+    ctx.arc(centerX, centerY, radius, toRadians(0), toRadians(90), false);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Third quarter
+    ctx.setLineDash([5, 5]);
+    ctx.beginPath();
+    ctx.lineWidth = '5';
+    ctx.strokeStyle = 'grey';
+    ctx.arc(centerX, centerY, radius, toRadians(240), toRadians(270), false);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    //
+
+    ctx.beginPath();
+    ctx.lineWidth = '3';
+    ctx.strokeStyle = '#2b2a2cd6';
+    ctx.arc(centerX, centerY, radius, toRadians(200), toRadians(238), false);
+    ctx.stroke();
+
+    //
+    ctx.setLineDash([3, 2]);
+    ctx.lineDashOffset = 20;
+    ctx.beginPath();
+    ctx.lineWidth = '2';
+    ctx.strokeStyle = '#bbbbcc';
+    ctx.arc(centerX, centerY, radius, toRadians(181), toRadians(199), false);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // 1
+    ctx.beginPath();
+    ctx.lineWidth = '5';
+    ctx.strokeStyle = '#2b2a2c';
+    ctx.arc(centerX, centerY, radius, toRadians(270), toRadians(360), false);
+    ctx.stroke();
+    drawCorner(centerX, centerY - radius, '#2b2a2c');
+    drawPerpendicularLineAtCorner(centerX + radius, centerY, '#2b2a2c');
+
+    // 2
+    ctx.beginPath();
+    ctx.lineWidth = '5';
+    ctx.strokeStyle = '#2b2a2c';
+    ctx.arc(centerX, centerY, radius, toRadians(90), toRadians(180), false);
+    ctx.stroke();
+    drawCorner(centerX, centerY + radius, '#2b2a2c');
+    drawPerpendicularLineAtCorner(centerX - radius, centerY, '#2b2a2c');
+    drawHexagon();
+  }
+
+  // Call the function to draw
+  drawQuarterCircle();
+
   function initProjectModal() {
     $('.portfolio__item').on('click', handleProjectModal);
     $('.close-modal-btn').on('click', hideProjectModal);
@@ -550,7 +711,7 @@ $(document).ready(function () {
 
       if (validationFunction && !validationFunction(fieldValue)) {
         $(`${selector}-error`).text(formatError);
-        return true; // Indicates an error
+        return true;
       }
 
       return false;

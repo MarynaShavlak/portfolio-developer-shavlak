@@ -1,0 +1,18 @@
+.cv-modal {
+  /* background-image: url(images/cv.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+  width: 1100px;
+  height: 800px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  width: 800px;
+  height: 800px;
+  /* background-color: aquamarine; */
+}
