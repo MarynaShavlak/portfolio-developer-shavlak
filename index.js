@@ -98,6 +98,9 @@ $(document).ready(function () {
 
   function generateProjectModalMarkup(projectData) {
     const { images, title, descr } = projectData;
+    if ($('.modal__project').length > 0) {
+      $('.modal__project').remove();
+    }
     const modalContainer = $('<div class="modal__project"></div>');
     const projectImgWrap = $('<div class="project-img-wrap"></div>');
     const projectMeta = $('<div class="project-meta"></div>');
