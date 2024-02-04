@@ -143,10 +143,34 @@
   position: absolute;
   left: 0;
   bottom: 20px;
-  width: 300px;
+  width: 280px;
   height: 80px;
   background-color: #fff;
   transform: rotate(-10deg);
-  z-index: 2;
   opacity: 0.6;
+}
+
+.download-cv-btn {
+  position: absolute;
+  top: 450px;
+  right: 70px;
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #1869ff;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #2b2a2c;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.download-cv-btn:hover {
+  color: #2b2a2c;
+  background-color: #fff;
 }

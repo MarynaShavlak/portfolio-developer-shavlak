@@ -1,4 +1,5 @@
 import { reviewsData, projectsData, articlesData } from './data.js';
+import { drawFigure } from './canvas.js';
 
 $(document).ready(function () {
   initPortfolio();
@@ -6,6 +7,42 @@ $(document).ready(function () {
   initBlog();
   initHireModal();
   initProjectModal();
+  initCVModal();
+
+  function downloadCV() {
+    $('.download-cv-btn').on('click', function () {
+      const pdfPath = './Lewis_Nathaniel__CV.pdf';
+      downloadPDF(pdfPath);
+    });
+
+    function downloadPDF(pdfPath) {
+      const link = document.createElement('a');
+      link.href = pdfPath;
+      link.download = 'Lewis_Nathaniel__CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  }
+
+  function initCVModal() {
+    $('[data-modal="cv-modal"]').on('click', showCVModal);
+    $('.close-modal-btn').on('click', hideCVModal);
+    drawFigure();
+    downloadCV();
+  }
+
+  function showCVModal() {
+    $('.modal-backdrop-cv').fadeIn('slow', function () {
+      $('body').addClass('modal-open');
+    });
+  }
+
+  function hideCVModal() {
+    $('.modal-backdrop-cv').fadeOut('slow', function () {
+      $('body').removeClass('modal-open');
+    });
+  }
 
   function initProjectModal() {
     $('.portfolio__item').on('click', handleProjectModal);
