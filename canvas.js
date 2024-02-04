@@ -256,6 +256,7 @@ $(document).ready(function () {
     drawDottedComplexLine(5);
     drawLineFigure();
     drawSectionLabels(coordArr);
+    drawSectionBlocks(coordArr);
     drawPerpendicularLineAtCorner(centerX + radius, centerY, '#2b2a2cd6');
     drawPerpendicularLineAtCorner(centerX - radius, centerY, '#2b2a2cd6');
     coordArr.forEach(({ x, y }) => drawCircleDot(x, y, 8, '#2b2a2c'));
@@ -299,6 +300,35 @@ $(document).ready(function () {
     ctx.stroke();
   }
 
+  function drawSectionBlocks(coordArr) {
+    setElementParams(
+      $('.block--education'),
+      80,
+      coordArr[2].x + 50,
+      1050 - (coordArr[2].x + 50),
+    );
+    setElementParams($('.block--experience'), 670, 50, coordArr[5].x - 50 - 50);
+    setElementParams($('.block--software'), 80, 50, coordArr[5].x - 50 - 50);
+    setElementParams(
+      $('.block--expertise'),
+      670,
+      coordArr[2].x + 50,
+      1050 - (coordArr[2].x + 50),
+    );
+    setElementParams(
+      $('.block--about'),
+      30,
+      coordArr[5].x + 30,
+      coordArr[2].x - 30 - (coordArr[5].x + 30),
+    );
+    setElementParams(
+      $('.block--languages'),
+      770,
+      coordArr[5].x + 30,
+      coordArr[2].x - 30 - (coordArr[5].x + 30),
+    );
+  }
+
   function drawSectionLabels(coordArr) {
     ctx.beginPath();
     ctx.strokeStyle = '#2b2a2cd6';
@@ -322,13 +352,6 @@ $(document).ready(function () {
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
-    setElementParams(
-      $('.block--education'),
-      80,
-      coordArr[2].x + 50,
-      1050 - (coordArr[2].x + 50),
-    );
-
     ctx.beginPath();
     ctx.moveTo(50, 670);
     ctx.lineTo(coordArr[5].x - 50, 670);
@@ -338,7 +361,6 @@ $(document).ready(function () {
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
-    setElementParams($('.block--experience'), 670, 50, coordArr[5].x - 50 - 50);
 
     ctx.beginPath();
     ctx.moveTo(1050, 670);
@@ -363,12 +385,6 @@ $(document).ready(function () {
     ctx.fillStyle = '#2b2a2cd6';
     ctx.fill();
     ctx.stroke();
-    setElementParams(
-      $('.block--about'),
-      30,
-      coordArr[5].x + 30,
-      coordArr[2].x - 30 - (coordArr[5].x + 30),
-    );
 
     ctx.beginPath();
     ctx.strokeStyle = '#2b2a2cd6';
