@@ -540,7 +540,9 @@ $(document).ready(function () {
         phone: $('#phone').val(),
         message: $('#message').val(),
       };
-      handleModalCloseButtonClick();
+      console.log('It should be formData sending here with obj : ', formData);
+
+      hideHireModal();
       resetSendFormData();
       $('.contact-wrap').toggleClass('active');
     }
