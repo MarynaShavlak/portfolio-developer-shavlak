@@ -566,7 +566,7 @@ $(document).ready(function () {
       validateField(
         '#phone',
         'Phone number is required',
-        'Invalid phone number',
+        'Phone number should have 10 digits',
         isValidPhone,
       ) || hasError;
     hasError = validateField('#message', 'Message is required') || hasError;
