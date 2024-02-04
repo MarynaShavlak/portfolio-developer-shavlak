@@ -6,7 +6,7 @@ $(document).ready(function () {
   initReviewsSlider();
   initBlog();
   initHireModal();
-  initProjectModal();
+  // initProjectModal();
   initCVModal();
 
   function downloadCV() {
@@ -44,57 +44,57 @@ $(document).ready(function () {
     });
   }
 
-  function initProjectModal() {
-    $('.portfolio__item').on('click', handleProjectModal);
-    $('.close-modal-btn').on('click', hideProjectModal);
+  // function initProjectModal() {
+  //   $('.portfolio__item').on('click', handleProjectModal);
+  //   $('.close-modal-btn').on('click', hideProjectModal);
 
-    function initProjectModalSlider() {
-      let currentIndex = 0;
-      const slideCount = $('.project-slider img').length;
+  //   function initProjectModalSlider() {
+  //     let currentIndex = 0;
+  //     const slideCount = $('.project-slider img').length;
 
-      $('.project-next-btn').on('click', handleNextButtonClick);
-      $('.project-prev-btn').on('click', handlePrevButtonClick);
+  //     $('.project-next-btn').on('click', handleNextButtonClick);
+  //     $('.project-prev-btn').on('click', handlePrevButtonClick);
 
-      function handleNextButtonClick() {
-        currentIndex = currentIndex < slideCount - 1 ? currentIndex + 1 : 0;
-        updateSlider();
-      }
+  //     function handleNextButtonClick() {
+  //       currentIndex = currentIndex < slideCount - 1 ? currentIndex + 1 : 0;
+  //       updateSlider();
+  //     }
 
-      function handlePrevButtonClick() {
-        currentIndex = currentIndex > 0 ? currentIndex - 1 : slideCount - 1;
-        updateSlider();
-      }
+  //     function handlePrevButtonClick() {
+  //       currentIndex = currentIndex > 0 ? currentIndex - 1 : slideCount - 1;
+  //       updateSlider();
+  //     }
 
-      function updateSlider() {
-        const translateValue = -currentIndex * 100 + '%';
-        $('.project-slider').css(
-          'transform',
-          'translateX(' + translateValue + ')',
-        );
-      }
-    }
-    function handleProjectModal(e) {
-      const clickedElement = $(e.currentTarget);
-      const data = getProjectData(clickedElement);
-      generateProjectModalMarkup(data);
-      initProjectModalSlider();
-      showProjectModal();
-    }
-    function getProjectData(el) {
-      return projectsData.filter(data => data.id === el.attr('data-id'))[0];
-    }
+  //     function updateSlider() {
+  //       const translateValue = -currentIndex * 100 + '%';
+  //       $('.project-slider').css(
+  //         'transform',
+  //         'translateX(' + translateValue + ')',
+  //       );
+  //     }
+  //   }
+  //   function handleProjectModal(e) {
+  //     const clickedElement = $(e.currentTarget);
+  //     const data = getProjectData(clickedElement);
+  //     generateProjectModalMarkup(data);
+  //     initProjectModalSlider();
+  //     showProjectModal();
+  //   }
+  //   function getProjectData(el) {
+  //     return projectsData.filter(data => data.id === el.attr('data-id'))[0];
+  //   }
 
-    function showProjectModal() {
-      $('.modal-backdrop-project').fadeIn('slow', function () {
-        $('body').addClass('modal-open');
-      });
-    }
-    function hideProjectModal() {
-      $('.modal-backdrop-project').fadeOut('slow', function () {
-        $('body').removeClass('modal-open');
-      });
-    }
-  }
+  //   function showProjectModal() {
+  //     $('.modal-backdrop-project').fadeIn('slow', function () {
+  //       $('body').addClass('modal-open');
+  //     });
+  //   }
+  //   function hideProjectModal() {
+  //     $('.modal-backdrop-project').fadeOut('slow', function () {
+  //       $('body').removeClass('modal-open');
+  //     });
+  //   }
+  // }
 
   function generateProjectModalMarkup(projectData) {
     const { images, title, descr } = projectData;
@@ -270,7 +270,7 @@ $(document).ready(function () {
 
     $('.load-more-btn').on('click', () => handleButtonClick('loadMore'));
     $('.show-less-btn').on('click', () => handleButtonClick('showLess'));
-
+    initProjectModal();
     function handleButtonClick(action) {
       if (action === 'loadMore') {
         currentIndex += itemsPerPage;
@@ -278,6 +278,8 @@ $(document).ready(function () {
         currentIndex -= itemsPerPage;
       }
       updateIsotope(action);
+      $('.portfolio__item').off('click', handleProjectModal);
+      $('.portfolio__item').on('click', handleProjectModal);
       updateButtonsVisibility();
     }
 
@@ -391,6 +393,57 @@ $(document).ready(function () {
       setPortfolioFilter();
       updateButtonsVisibility();
     });
+
+    function initProjectModal() {
+      $('.portfolio__item').on('click', handleProjectModal);
+      $('.close-modal-btn').on('click', hideProjectModal);
+    }
+    function initProjectModalSlider() {
+      let currentIndex = 0;
+      const slideCount = $('.project-slider img').length;
+
+      $('.project-next-btn').on('click', handleNextButtonClick);
+      $('.project-prev-btn').on('click', handlePrevButtonClick);
+
+      function handleNextButtonClick() {
+        currentIndex = currentIndex < slideCount - 1 ? currentIndex + 1 : 0;
+        updateSlider();
+      }
+
+      function handlePrevButtonClick() {
+        currentIndex = currentIndex > 0 ? currentIndex - 1 : slideCount - 1;
+        updateSlider();
+      }
+
+      function updateSlider() {
+        const translateValue = -currentIndex * 100 + '%';
+        $('.project-slider').css(
+          'transform',
+          'translateX(' + translateValue + ')',
+        );
+      }
+    }
+    function handleProjectModal(e) {
+      const clickedElement = $(e.currentTarget);
+      const data = getProjectData(clickedElement);
+      generateProjectModalMarkup(data);
+      initProjectModalSlider();
+      showProjectModal();
+    }
+    function getProjectData(el) {
+      return projectsData.filter(data => data.id === el.attr('data-id'))[0];
+    }
+
+    function showProjectModal() {
+      $('.modal-backdrop-project').fadeIn('slow', function () {
+        $('body').addClass('modal-open');
+      });
+    }
+    function hideProjectModal() {
+      $('.modal-backdrop-project').fadeOut('slow', function () {
+        $('body').removeClass('modal-open');
+      });
+    }
   }
 
   function generatePortfolioMarkUp(data) {
