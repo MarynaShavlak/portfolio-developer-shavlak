@@ -139,7 +139,6 @@ function calculateHexagonCornersCoords() {
 
 function drawElements() {
   const coordArr = calculateHexagonCornersCoords();
-  console.log('coordArr: ', coordArr);
   const coords1 = {
     x1: coordArr[0].x,
     y1: coordArr[0].y,
