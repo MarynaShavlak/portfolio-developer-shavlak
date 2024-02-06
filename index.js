@@ -642,6 +642,10 @@ $(document).ready(function () {
         $(`${selector}-error`).text(requiredError);
         return true;
       }
+      if (selector === '#name' && fieldValue.length < 2) {
+        $(`${selector}-error`).text(formatError);
+        return true;
+      }
 
       if (validationFunction && !validationFunction(fieldValue)) {
         $(`${selector}-error`).text(formatError);
@@ -672,6 +676,7 @@ $(document).ready(function () {
     $('#message').text('');
     $('#message').val('');
     $('.error-message').text('');
+    $('.hire-form .control').removeClass('filled');
   }
 
   function showHireModal() {
