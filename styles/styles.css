@@ -158,7 +158,7 @@ p {
   text-align: center;
 
   transition: background-color 0.2s linear, color 0.2s linear,
-    box-shadow 0.2s linear, border-color 0.2s linear;
+  box-shadow 0.2s linear, border-color 0.2s linear;
 }
 
 .button:focus {
@@ -728,3 +728,5 @@ body.modal-open {
 .close-modal-btn:hover {
   color: red;
 }
+
+
