@@ -52,23 +52,14 @@
     transition: transform 0.2s linear;
 }
 
-.socials__item:nth-child(1) {
-    background-color: #1869ff;
+.socials__item--telegram {
+    background-color: #0088cc;
 }
-.socials__item:nth-child(2) {
-    background-color: #e51a69;
+.socials__item--linkedin {
+    background-color: #0077b5;
 }
-.socials__item:nth-child(3) {
-    background-color: #007bb6;
-}
-.socials__item:nth-child(4) {
-    background-color: #3a5898;
-}
-.socials__item:nth-child(5) {
-    background-color: #135689;
-}
-.socials__item:nth-child(6) {
-    background-color: #57acef;
+.socials__item--github {
+    background-color: #181717;
 }
 
 .socials__link {
