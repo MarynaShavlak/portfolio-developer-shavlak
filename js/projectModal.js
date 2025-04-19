@@ -1,4 +1,4 @@
-import {projectsData} from '../data.js';
+import {projectsData} from "../data/projectsData.js";
 
 export function initProjectModal() {
     $('.portfolio__item').on('click', handleProjectModal);
@@ -125,7 +125,6 @@ function hideProjectModal() {
 function getProjectData(el) {
     return projectsData.filter(data => data.id === el.attr('data-id'))[0];
 }
-
 
 function handleProjectModal(e) {
     const clickedElement = $(e.currentTarget);

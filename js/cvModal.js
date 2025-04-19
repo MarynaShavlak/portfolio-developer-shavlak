@@ -1,4 +1,4 @@
-import {drawFigure} from "../canvas.js";
+import {drawFigure} from "./canvas/canvas.js";
 
 export function initCVModal() {
     $('[data-modal="cv-modal"]').on('click', showCVModal);
