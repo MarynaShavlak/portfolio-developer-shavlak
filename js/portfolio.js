@@ -1,4 +1,4 @@
-import {initProjectModal} from "./projectModal.js";
+import {handleProjectModal, initProjectModal} from "./projectModal.js";
 import {projectsData} from "../data/projectsData.js";
 
 export function initPortfolio() {

@@ -25,7 +25,7 @@ function generateProjectModalMarkup(projectData) {
             const imgElement = $(
                 '<img class="project-picture project-slide' +
                 (index + 1) +
-                '" src="images/' +
+                '" src="assets/images/' +
                 image +
                 '" alt="project photo"/>',
             );
@@ -126,7 +126,7 @@ function getProjectData(el) {
     return projectsData.filter(data => data.id === el.attr('data-id'))[0];
 }
 
-function handleProjectModal(e) {
+export function handleProjectModal(e) {
     const clickedElement = $(e.currentTarget);
     const data = getProjectData(clickedElement);
     generateProjectModalMarkup(data);
