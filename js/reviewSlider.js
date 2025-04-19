@@ -86,7 +86,7 @@ function generateReviewsMarkup(data) {
             const $ratingItem = $('<li>').addClass('rating__item');
             const $star = $('<img>')
                 .addClass('reviews__star')
-                .attr('src', 'images/star.svg')
+                .attr('src', 'assets/images/star.svg')
                 .attr('width', '15')
                 .attr('height', '15')
                 .attr('alt', 'rating star');
