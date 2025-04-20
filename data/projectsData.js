@@ -86,6 +86,48 @@ export const projectsData = [
                 ],
             },
         ],
+        additionalInfo: [
+            {
+                title: 'Optimized Rendering & State Management & Offline Support',
+                items: [
+                    'Async reducers/components',
+                    'Data normalization',
+                    'Throttle/debounce',
+                    'Lazy loading',
+                    'Async injections',
+                    'List virtualization',
+                    'Service Worker with asset/API caching',
+                ],
+            },
+            {
+                title: 'Feature Flags',
+                items: [
+                    'Toggle between old/new UI',
+                    'Control article rating and feedback',
+                ],
+            },
+            {
+                title: 'Code Generation: AST-Based',
+                items: [
+                    'Generate FSD slices',
+                    'Update imports',
+                    'Create public API',
+                    'Remove feature toggles',
+                    'Generate Loki reports',
+                    'Clear cache',
+                ],
+            },
+            {
+                title: 'Custom Plugins for Code Quality',
+                items: [
+                    'Feature flag management',
+                    'Architecture enforcement',
+                    'Layer import validation',
+                    'Relative path enforcement',
+                    'Restrict absolute imports to public APIs',
+                ],
+            },
+        ],
         images: [
             'project-img-1.jpg',
             'project-img-2.jpg',

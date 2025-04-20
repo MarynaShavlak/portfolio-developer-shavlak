@@ -6,7 +6,7 @@ export function initProjectModal() {
 }
 
 function generateProjectModalMarkup(projectData) {
-    const { images, title, descr, techStack, skills, features } = projectData;
+    const { images, title, descr, techStack, skills, features, additionalInfo } = projectData;
     if ($('.modal__project').length > 0) {
         $('.modal__project').remove();
     }
@@ -19,13 +19,15 @@ function generateProjectModalMarkup(projectData) {
     const projectTechStack= $('<div class="project-techStack"></div>');
     const skillsWrapper = $('<div class="project-skills"></div>');
     const featuresWrapper = $('<div class="project-features"></div>');
+    const additionalInfoWrapper = $('<div class="project-additional-info"></div>');
     createProjectImgWrap(title, images);
     createProjectMeta(projectData);
     createProjectDescription(descr);
     createProjectTechStack(projectTechStack);
     createProjectSkills(skillsWrapper);
     createProjectFeatures(featuresWrapper);
-    infoContainer.append(projectDescr, projectTechStack, skillsWrapper, featuresWrapper);
+    createProjectAdditionalInfo(additionalInfoWrapper );
+    infoContainer.append(projectDescr, projectTechStack, skillsWrapper, featuresWrapper, additionalInfoWrapper );
     projectHeader.append(projectImgWrap, projectMeta,);
     modalContainer.append(projectHeader, infoContainer );
 
@@ -176,6 +178,32 @@ container.append(wrapperList)
         });
 
         container.append(featuresList);
+    }
+    function createProjectAdditionalInfo(container) {
+        if (!Array.isArray(additionalInfo) || additionalInfo.length === 0) return;
+
+        const title = $('<p class="info-title">Additional Info</p>');
+        container.append(title);
+
+        const infoList = $('<ul class="additional-info-list"></ul>');
+
+        additionalInfo.forEach((infoSection, index) => {
+            const { title, items } = infoSection;
+
+            const sectionItem = $('<li class="additional-info-item"></li>').attr('data-index', index + 1);
+            const sectionTitle = $('<p class="additional-info-category"></p>').text(`${title}:`);
+
+            const itemsList = $('<ul class="additional-items-list"></ul>');
+            items.forEach(item => {
+                const itemElement = $('<li class="additional-item"></li>').text(item);
+                itemsList.append(itemElement);
+            });
+
+            sectionItem.append(sectionTitle, itemsList);
+            infoList.append(sectionItem);
+        });
+
+        container.append(infoList);
     }
     $('.project-modal').append(modalContainer);
 }
