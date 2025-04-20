@@ -233,7 +233,7 @@
 
 .feature-category, .additional-info-category {
   font-weight: 700;
-  min-width: 300px;
+  width: 200px;
 
 }
 
@@ -256,7 +256,7 @@
   width: 100%;
   display: grid;
   gap: 4px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .project-additional-info {
