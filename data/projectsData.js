@@ -12,10 +12,20 @@ export const projectsData = [
         },
         repository: 'https://github.com/MarynaShavlak/dev-interview-hub',
         descr: [
-            'Dev Interview Hub is a web app for reading, creating, and editing frontend interview answers.',
-            'Built with React, TypeScript, and Firebase, it follows Feature-Sliced Design and supports Webpack/Vite.',
-            'It uses Redux Toolkit, i18next, and comprehensive testing (Jest, Loki, Cypress) with feature flags and automation for streamlined development'
+            '<b>Dev Interview Hub</b> is a web app that helps developers manage answers to common frontend interview questions, offering features for reading, searching, filtering, and organizing responses.',
+
+
         ],
+        techStack: {
+            architecture: 'Feature-Sliced Design',
+            frontend: ['React', 'Redux Toolkit', 'React Router'],
+            backend: ['Firebase (Firestore, Auth, Cloud Functions, Storage)'],
+            tools: ['TypeScript', 'Webpack', 'Vite', 'Babel', 'ESLint', 'Prettier'],
+            ciCd: ['Husky', 'Lint-Staged'],
+            ui: ['SASS/SCSS', 'Headless UI', 'React Spring', 'Use Gesture', 'TanStack Table'],
+            testing: ['Jest', 'React Testing Library', 'Cypress', 'Storybook', 'Loki'],
+            other: ['Algolia', 'Monaco Editor', 'React Draft WYSIWYG', 'ApexCharts', 'Zod', 'React Device Detect'],
+        },
         images: [
             'project-img-1.jpg',
             'project-img-2.jpg',

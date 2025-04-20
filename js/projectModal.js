@@ -6,18 +6,24 @@ export function initProjectModal() {
 }
 
 function generateProjectModalMarkup(projectData) {
-    const { images, title, descr } = projectData;
+    const { images, title, descr, techStack } = projectData;
     if ($('.modal__project').length > 0) {
         $('.modal__project').remove();
     }
     const modalContainer = $('<div class="modal__project"></div>');
     const projectImgWrap = $('<div class="project-img-wrap"></div>');
+    const projectHeader= $('<div class="project-header"></div>');
+    const infoContainer = $('<div class="project-infoContainer"></div>');
     const projectMeta = $('<div class="project-meta"></div>');
     const projectDescr = $('<div class="project-descr"></div>');
+    const projectTechStack= $('<div class="project-techStack"></div>');
     createProjectImgWrap(title, images);
     createProjectMeta(projectData);
     createProjectDescription(descr);
-    modalContainer.append(projectImgWrap, projectMeta, projectDescr);
+    createProjectTechStack(projectTechStack);
+    infoContainer.append(projectDescr, projectTechStack);
+    projectHeader.append(projectImgWrap, projectMeta,);
+    modalContainer.append(projectHeader, infoContainer );
 
     function createProjectImgWrap(title, images) {
         const projectSlider = $('<div class="project-slider"></div>');
@@ -88,6 +94,43 @@ function generateProjectModalMarkup(projectData) {
             const pElement = $('<p>' + paragraph + '</p>');
             projectDescr.append(pElement);
         });
+    }
+    function createProjectTechStack(container) {
+        if (!techStack || typeof techStack !== 'object') return;
+
+        const title = $('<p class="info-title">Tech Stack</p>');
+        container.append(title);
+
+        const categoriesMap = {
+            architecture: 'Architecture',
+            frontend: 'Frontend',
+            backend: 'Backend',
+            tools: 'Build & Dev Tools',
+            ciCd: 'CI/CD',
+            ui: 'UI & Animation',
+            testing: 'Testing',
+            other: 'Other',
+        };
+        const wrapperList = $('<ul class="tech-stack-wrapperlist"></ul>');
+
+        $.each(techStack, function (categoryKey, technologies) {
+            const wrapperListItem = $('<li class="tech-stack-wrapperlist-item"></li>');
+            const categoryTitle = $('<p class="tech-stack-category">' + (categoriesMap[categoryKey] || categoryKey) + '</p>');
+            const techList = $('<ul class="tech-stack-list"></ul>');
+
+            // Handle string (like 'architecture') or array
+            const items = Array.isArray(technologies) ? technologies : [technologies];
+
+            items.forEach(tech => {
+                const item = $('<li class="tech-stack-item"></li>').text(tech);
+                techList.append(item);
+            });
+
+            wrapperListItem.append(categoryTitle, techList);
+            wrapperList.append(wrapperListItem);
+        });
+container.append(wrapperList)
+        projectTechStack.append(container);
     }
     $('.project-modal').append(modalContainer);
 }
