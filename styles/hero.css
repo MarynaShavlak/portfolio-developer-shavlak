@@ -28,9 +28,14 @@
 
 .hero__text {
     margin-bottom: 25px;
-
     font-size: 1.2rem;
     color: rgba(43, 42, 44, 0.7);
+}
+
+.hero__subtext {
+    font-size: 1rem;
+    color: rgba(43, 42, 44, 0.7);
+    margin-bottom: 20px;
 }
 
 .hero__photo {

@@ -1,19 +1,20 @@
 export const projectsData = [
     {
         id: 'prj1',
-        category: 'app',
-        title: 'Project title 1',
-        date: 2018,
-        industry: 'Finance',
-        client: 'Creative Agency',
-        timeline: '6 months',
+        category: 'React',
+        title: 'Dev Interview Hub',
+        date: 2025,
+        industry: 'Education',
+        timeline: '8 months',
         website: {
-            name: 'example1.com',
-            link: 'https://example1.com/',
+            name: 'Dev Interview Hub: Master the Interview, Land the Job !',
+            link: 'https://dev-interview-hub.web.app/',
         },
+        repository: 'https://github.com/MarynaShavlak/dev-interview-hub',
         descr: [
-            'Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            'Dev Interview Hub is a web app for reading, creating, and editing frontend interview answers.',
+            'Built with React, TypeScript, and Firebase, it follows Feature-Sliced Design and supports Webpack/Vite.',
+            'It uses Redux Toolkit, i18next, and comprehensive testing (Jest, Loki, Cypress) with feature flags and automation for streamlined development'
         ],
         images: [
             'project-img-1.jpg',

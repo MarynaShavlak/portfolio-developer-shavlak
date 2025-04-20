@@ -41,7 +41,7 @@ function generateProjectModalMarkup(projectData) {
         projectImgWrap.append(projectSlider, sliderButtons, projectTitle);
     }
     function createProjectMeta(projectData) {
-        const { category, date, website } = projectData;
+        const { category, date, website, repository } = projectData;
         const firstLineMeta = $(
             '<div class="project-meta__first-line"><span class="project-category">' +
             category +
@@ -51,7 +51,7 @@ function generateProjectModalMarkup(projectData) {
         );
         const projectInfoList = $('<ul class="project-info"></ul>');
         $.each(projectData, function (key, value) {
-            if (key === 'industry' || key === 'client' || key === 'timeline') {
+            if (key === 'industry' || key === 'timeline') {
                 const listItem = $(
                     '<li class="project-info__item"><p class="meta-title">' +
                     key.charAt(0).toUpperCase() +
@@ -72,7 +72,15 @@ function generateProjectModalMarkup(projectData) {
             website.name +
             '</a></li>',
         );
+        const repositoryLink = $(
+            '<li class="project-info__item"><p class="meta-title">Repository</p><a class="meta-value repository-value" href="' +
+            repository +
+            '" target="_blank">' +
+            title +
+            '</a></li>',
+        );
         projectInfoList.append(websiteLink);
+        projectInfoList.append(repositoryLink);
         projectMeta.append(firstLineMeta, projectInfoList);
     }
     function createProjectDescription(descr) {
