@@ -6,7 +6,7 @@ export function initProjectModal() {
 }
 
 function generateProjectModalMarkup(projectData) {
-    const { images, title, descr, techStack, skills } = projectData;
+    const { images, title, descr, techStack, skills, features } = projectData;
     if ($('.modal__project').length > 0) {
         $('.modal__project').remove();
     }
@@ -18,12 +18,14 @@ function generateProjectModalMarkup(projectData) {
     const projectDescr = $('<div class="project-descr"></div>');
     const projectTechStack= $('<div class="project-techStack"></div>');
     const skillsWrapper = $('<div class="project-skills"></div>');
+    const featuresWrapper = $('<div class="project-features"></div>');
     createProjectImgWrap(title, images);
     createProjectMeta(projectData);
     createProjectDescription(descr);
     createProjectTechStack(projectTechStack);
     createProjectSkills(skillsWrapper);
-    infoContainer.append(projectDescr, projectTechStack, skillsWrapper);
+    createProjectFeatures(featuresWrapper);
+    infoContainer.append(projectDescr, projectTechStack, skillsWrapper, featuresWrapper);
     projectHeader.append(projectImgWrap, projectMeta,);
     modalContainer.append(projectHeader, infoContainer );
 
@@ -148,6 +150,32 @@ container.append(wrapperList)
 
         container.append(title, skillsList);
 
+    }
+    function createProjectFeatures(container) {
+        if (!Array.isArray(features) || features.length === 0) return;
+
+        const title = $('<p class="info-title">Features</p>');
+        container.append(title);
+
+        const featuresList = $('<ul class="features-list"></ul>');
+
+        features.forEach((feature, index) => {
+            const { title, items } = feature;
+
+            const featureItem = $('<li class="features-list-item"></li>').attr('data-index', index + 1);;
+            const featureTitle = $('<p class="feature-category"></p>').text(title  + ':');
+            // const itemsList = $('<p class="feature-items"></p>').text(items.join(', '));
+            const itemsList = $('<ul class="feature-items-list"></ul>');
+
+            items.forEach(item => {
+                const itemElement = $('<li class="feature-item"></li>').text(item);
+                itemsList.append(itemElement);
+            });
+            featureItem.append(featureTitle, itemsList);
+            featuresList.append(featureItem);
+        });
+
+        container.append(featuresList);
     }
     $('.project-modal').append(modalContainer);
 }

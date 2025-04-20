@@ -32,6 +32,60 @@ export const projectsData = [
             'Data Normalization', 'Cypress', 'Jest', 'Storybook',
             'E2E', 'Lazy Loading', 'Regression Testing'
         ],
+        features: [
+            {
+                title: 'Authentication & Profile',
+                items: ['Email/Google sign-in', 'Profile editing'],
+            },
+            {
+                title: 'Article Management',
+                items: [
+                    'Create articles',
+                    'Edit articles',
+                    'Delete articles',
+                    'Search articles',
+                    'Filter by category',
+                    'Sort by date, views, title',
+                ],
+            },
+            {
+                title: 'User Interaction',
+                items: [
+                    'Comments',
+                    'Ratings',
+                    'Feedback',
+                    'Article stats in "My Articles" page',
+                ],
+            },
+            {
+                title: 'Admin Dashboard',
+                items: ['Analytics', 'Interactive charts', 'User management'],
+            },
+            {
+                title: 'Real-Time Notifications',
+                items: [
+                    'Articles',
+                    'Comments',
+                    'Ratings',
+                    'Feedback',
+                    'Auto-expiration',
+                ],
+            },
+            {
+                title: 'Internationalization',
+                items: ['English & Ukrainian (i18next)'],
+            },
+            {
+                title: 'Performance & UX Enhancements',
+                items: [
+                    'UI version switch',
+                    'Smooth scrolling',
+                    'Error notifications',
+                    'Skeleton loaders',
+                    'Dynamic theming',
+                ],
+            },
+        ],
         images: [
             'project-img-1.jpg',
             'project-img-2.jpg',
