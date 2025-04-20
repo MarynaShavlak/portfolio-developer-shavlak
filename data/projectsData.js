@@ -138,6 +138,7 @@ export const projectsData = [
             'adminInfo3.jpg',
             'adminTable.jpg',
             'article1.jpg',
+
             'article3.jpg',
             'article5.jpg',
             'create1.jpg',
@@ -145,6 +146,8 @@ export const projectsData = [
             'edit1.jpg',
             'edit2.jpg',
             'gridArticlesRedesigned.jpg',
+            'articlesDeprecated.jpg',
+            'articlesDeprecated2.jpg',
                         'myArticles.jpg',
             'profile.jpg',
             'profileEdit.jpg',
