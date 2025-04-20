@@ -6,7 +6,7 @@ export function initProjectModal() {
 }
 
 function generateProjectModalMarkup(projectData) {
-    const { images, title, descr, techStack } = projectData;
+    const { images, title, descr, techStack, skills } = projectData;
     if ($('.modal__project').length > 0) {
         $('.modal__project').remove();
     }
@@ -17,11 +17,13 @@ function generateProjectModalMarkup(projectData) {
     const projectMeta = $('<div class="project-meta"></div>');
     const projectDescr = $('<div class="project-descr"></div>');
     const projectTechStack= $('<div class="project-techStack"></div>');
+    const skillsWrapper = $('<div class="project-skills"></div>');
     createProjectImgWrap(title, images);
     createProjectMeta(projectData);
     createProjectDescription(descr);
     createProjectTechStack(projectTechStack);
-    infoContainer.append(projectDescr, projectTechStack);
+    createProjectSkills(skillsWrapper);
+    infoContainer.append(projectDescr, projectTechStack, skillsWrapper);
     projectHeader.append(projectImgWrap, projectMeta,);
     modalContainer.append(projectHeader, infoContainer );
 
@@ -131,6 +133,21 @@ function generateProjectModalMarkup(projectData) {
         });
 container.append(wrapperList)
         projectTechStack.append(container);
+    }
+    function createProjectSkills(container) {
+        if (!Array.isArray(skills) || skills.length === 0) return;
+
+        const title = $('<p class="info-title">Skills</p>');
+        const skillsList = $('<ul class="skills-list"></ul>');
+
+        skills.forEach(skill => {
+            const listItem = $('<li class="skills-item"></li>').text(skill);
+            skillsList.append(listItem);
+        });
+
+
+        container.append(title, skillsList);
+
     }
     $('.project-modal').append(modalContainer);
 }

@@ -26,6 +26,12 @@ export const projectsData = [
             testing: ['Jest', 'React Testing Library', 'Cypress', 'Storybook', 'Loki'],
             other: ['Algolia', 'Monaco Editor', 'React Draft WYSIWYG', 'ApexCharts', 'Zod', 'React Device Detect'],
         },
+        skills: [
+            'TypeScript', 'React.js', 'Webpack', 'Vite',
+            'CI/CD', 'Firebase', 'Feature-Sliced Design',
+            'Data Normalization', 'Cypress', 'Jest', 'Storybook',
+            'E2E', 'Lazy Loading', 'Regression Testing'
+        ],
         images: [
             'project-img-1.jpg',
             'project-img-2.jpg',
