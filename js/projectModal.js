@@ -1,261 +1,217 @@
-import {projectsData} from "../data/projectsData.js";
+import { projectsData } from '../data/projectsData.js';
 
 export function initProjectModal() {
     $('.portfolio__item').on('click', handleProjectModal);
     $('.close-modal-btn').on('click', hideProjectModal);
 }
 
+export function handleProjectModal(e) {
+    const $clickedItem = $(e.currentTarget);
+    const projectData = getProjectData($clickedItem);
+
+    generateProjectModalMarkup(projectData);
+    initProjectModalSlider();
+    showProjectModal();
+}
+
+function getProjectData($el) {
+    return projectsData.find(project => project.id === $el.attr('data-id'));
+}
+
 function generateProjectModalMarkup(projectData) {
-    const { images, title, descr, techStack, skills, features, additionalInfo } = projectData;
-    if ($('.modal__project').length > 0) {
-        $('.modal__project').remove();
+    const {
+        title, images, descr, techStack,
+        skills, features, additionalInfo
+    } = projectData;
+
+    $('.modal__project').remove(); // Clean up any existing modal
+    const $modal = $('<div class="modal__project"></div>');
+
+    const $header = $('<div class="project-header"></div>').append(
+        createProjectImageSection(title, images),
+        createProjectMetaSection(projectData)
+    );
+
+    const $info = $('<div class="project-infoContainer"></div>').append(
+        createParagraphSection(descr, 'project-descr'),
+        createTechStackSection(techStack),
+        createListSection(skills, 'Skills', 'project-skills', 'skills-list', 'skills-item'),
+        createFeaturesSection(features),
+        createAdditionalInfoSection(additionalInfo)
+    );
+
+    $modal.append($header, $info);
+    $('.project-modal').append($modal);
+}
+
+function createProjectImageSection(title, images) {
+    const $container = $('<div class="project-img-wrap"></div>');
+    const $slider = $('<div class="project-slider"></div>');
+
+    images.forEach((img, index) => {
+        $slider.append(`<img class="project-picture project-slide${index + 1}" src="assets/images/${img}" alt="project photo" />`);
+    });
+
+    const $buttons = $(`
+        <ul class="project-slider-buttons">
+            <li><button type="button" class="project-slider-btn project-prev-btn"><i class="fa-solid fa-angle-left"></i>PREVIOUS</button></li>
+            <li><button type="button" class="project-slider-btn project-next-btn">NEXT<i class="fa-solid fa-angle-right"></i></button></li>
+        </ul>
+    `);
+
+    return $container.append($slider, $buttons, `<h3 class="project-title">${title}</h3>`);
+}
+
+function createProjectMetaSection({ category, date, website, repository, title, industry, timeline }) {
+    const $meta = $('<div class="project-meta"></div>');
+
+    const $firstLine = $(`<div class="project-meta__first-line">
+        <span class="project-category">${category}</span>
+        <span class="project-year">${date}</span>
+    </div>`);
+
+    const $infoList = $('<ul class="project-info"></ul>');
+
+    [['Industry', industry], ['Timeline', timeline]].forEach(([label, value]) => {
+        if (value) {
+            $infoList.append(`<li class="project-info__item">
+                <p class="meta-title">${label}</p>
+                <p class="meta-value ${label.toLowerCase()}-value">${value}</p>
+            </li>`);
+        }
+    });
+
+    if (website) {
+        $infoList.append(`<li class="project-info__item">
+            <p class="meta-title">Website</p>
+            <a class="meta-value website-value" href="${website.link}" target="_blank">${website.name}</a>
+        </li>`);
     }
-    const modalContainer = $('<div class="modal__project"></div>');
-    const projectImgWrap = $('<div class="project-img-wrap"></div>');
-    const projectHeader= $('<div class="project-header"></div>');
-    const infoContainer = $('<div class="project-infoContainer"></div>');
-    const projectMeta = $('<div class="project-meta"></div>');
-    const projectDescr = $('<div class="project-descr"></div>');
-    const projectTechStack= $('<div class="project-techStack"></div>');
-    const skillsWrapper = $('<div class="project-skills"></div>');
-    const featuresWrapper = $('<div class="project-features"></div>');
-    const additionalInfoWrapper = $('<div class="project-additional-info"></div>');
-    createProjectImgWrap(title, images);
-    createProjectMeta(projectData);
-    createProjectDescription(descr);
-    createProjectTechStack(projectTechStack);
-    createProjectSkills(skillsWrapper);
-    createProjectFeatures(featuresWrapper);
-    createProjectAdditionalInfo(additionalInfoWrapper );
-    infoContainer.append(projectDescr, projectTechStack, skillsWrapper, featuresWrapper, additionalInfoWrapper );
-    projectHeader.append(projectImgWrap, projectMeta,);
-    modalContainer.append(projectHeader, infoContainer );
 
-    function createProjectImgWrap(title, images) {
-        const projectSlider = $('<div class="project-slider"></div>');
-        $.each(images, function (index, image) {
-            const imgElement = $(
-                '<img class="project-picture project-slide' +
-                (index + 1) +
-                '" src="assets/images/' +
-                image +
-                '" alt="project photo"/>',
-            );
-            projectSlider.append(imgElement);
-        });
+    if (repository) {
+        $infoList.append(`<li class="project-info__item">
+            <p class="meta-title">Repository</p>
+            <a class="meta-value repository-value" href="${repository}" target="_blank">${title}</a>
+        </li>`);
+    }
 
-        const sliderButtons = $(
-            '<ul class="project-slider-buttons"><li><button type="button" class="project-slider-btn project-prev-btn"><i class="fa-solid fa-angle-left"></i>PREVIOUS</button></li><li><button type="button" class="project-slider-btn project-next-btn">NEXT<i class="fa-solid fa-angle-right"></i></button></li></ul>',
+    return $meta.append($firstLine, $infoList);
+}
+
+function createParagraphSection(paragraphs, className) {
+    const $section = $(`<div class="${className}"></div>`);
+    paragraphs.forEach(p => $section.append(`<p>${p}</p>`));
+    return $section;
+}
+
+function createTechStackSection(stack) {
+    if (!stack || typeof stack !== 'object') return $();
+
+    const $container = $('<div class="project-techStack"></div>');
+    $container.append('<p class="info-title">Tech Stack</p>');
+
+    const categoriesMap = {
+        architecture: 'Architecture',
+        frontend: 'Frontend',
+        backend: 'Backend',
+        tools: 'Build & Dev Tools',
+        ciCd: 'CI/CD',
+        ui: 'UI & Animation',
+        testing: 'Testing',
+        other: 'Other',
+    };
+
+    const $list = $('<ul class="tech-stack-wrapperlist"></ul>');
+
+    Object.entries(stack).forEach(([key, items]) => {
+        const label = categoriesMap[key] || key;
+        const $cat = $(`<p class="tech-stack-category">${label}</p>`);
+        const $itemList = $('<ul class="tech-stack-list"></ul>');
+
+        (Array.isArray(items) ? items : [items]).forEach(tech =>
+            $itemList.append(`<li class="tech-stack-item">${tech}</li>`)
         );
 
-        const projectTitle = $('<h3 class="project-title">' + title + '</h3>');
+        const $entry = $('<li class="tech-stack-wrapperlist-item"></li>').append($cat, $itemList);
+        $list.append($entry);
+    });
 
-        projectImgWrap.append(projectSlider, sliderButtons, projectTitle);
-    }
-    function createProjectMeta(projectData) {
-        const { category, date, website, repository } = projectData;
-        const firstLineMeta = $(
-            '<div class="project-meta__first-line"><span class="project-category">' +
-            category +
-            '</span><span class="project-year">' +
-            date +
-            '</span></div>',
-        );
-        const projectInfoList = $('<ul class="project-info"></ul>');
-        $.each(projectData, function (key, value) {
-            if (key === 'industry' || key === 'timeline') {
-                const listItem = $(
-                    '<li class="project-info__item"><p class="meta-title">' +
-                    key.charAt(0).toUpperCase() +
-                    key.slice(1) +
-                    '</p><p class="meta-value ' +
-                    key +
-                    '-value">' +
-                    value +
-                    '</p></li>',
-                );
-                projectInfoList.append(listItem);
-            }
-        });
-        const websiteLink = $(
-            '<li class="project-info__item"><p class="meta-title">Website</p><a class="meta-value website-value" href="' +
-            website.link +
-            '" target="_blank">' +
-            website.name +
-            '</a></li>',
-        );
-        const repositoryLink = $(
-            '<li class="project-info__item"><p class="meta-title">Repository</p><a class="meta-value repository-value" href="' +
-            repository +
-            '" target="_blank">' +
-            title +
-            '</a></li>',
-        );
-        projectInfoList.append(websiteLink);
-        projectInfoList.append(repositoryLink);
-        projectMeta.append(firstLineMeta, projectInfoList);
-    }
-    function createProjectDescription(descr) {
-        $.each(descr, function (index, paragraph) {
-            const pElement = $('<p>' + paragraph + '</p>');
-            projectDescr.append(pElement);
-        });
-    }
-    function createProjectTechStack(container) {
-        if (!techStack || typeof techStack !== 'object') return;
+    return $container.append($list);
+}
 
-        const title = $('<p class="info-title">Tech Stack</p>');
-        container.append(title);
+function createListSection(data, title, wrapperClass, listClass, itemClass) {
+    if (!Array.isArray(data) || !data.length) return $();
+    const $wrapper = $(`<div class="${wrapperClass}"></div>`);
+    const $list = $(`<ul class="${listClass}"></ul>`);
+    data.forEach(item => $list.append(`<li class="${itemClass}">${item}</li>`));
+    return $wrapper.append(`<p class="info-title">${title}</p>`, $list);
+}
 
-        const categoriesMap = {
-            architecture: 'Architecture',
-            frontend: 'Frontend',
-            backend: 'Backend',
-            tools: 'Build & Dev Tools',
-            ciCd: 'CI/CD',
-            ui: 'UI & Animation',
-            testing: 'Testing',
-            other: 'Other',
-        };
-        const wrapperList = $('<ul class="tech-stack-wrapperlist"></ul>');
+function createFeaturesSection(features) {
+    if (!Array.isArray(features) || !features.length) return $();
 
-        $.each(techStack, function (categoryKey, technologies) {
-            const wrapperListItem = $('<li class="tech-stack-wrapperlist-item"></li>');
-            const categoryTitle = $('<p class="tech-stack-category">' + (categoriesMap[categoryKey] || categoryKey) + '</p>');
-            const techList = $('<ul class="tech-stack-list"></ul>');
+    const $wrapper = $('<div class="project-features"></div>').append('<p class="info-title">Features</p>');
+    const $list = $('<ul class="features-list"></ul>');
 
-            // Handle string (like 'architecture') or array
-            const items = Array.isArray(technologies) ? technologies : [technologies];
+    features.forEach(({ title, items }, i) => {
+        const $featureItem = $(`<li class="features-list-item" data-index="${i + 1}"></li>`);
+        const $featureTitle = $(`<p class="feature-category">${title}:</p>`);
+        const $itemsList = $('<ul class="feature-items-list"></ul>');
 
-            items.forEach(tech => {
-                const item = $('<li class="tech-stack-item"></li>').text(tech);
-                techList.append(item);
-            });
+        items.forEach(itm => $itemsList.append(`<li class="feature-item">${itm}</li>`));
+        $list.append($featureItem.append($featureTitle, $itemsList));
+    });
 
-            wrapperListItem.append(categoryTitle, techList);
-            wrapperList.append(wrapperListItem);
-        });
-container.append(wrapperList)
-        projectTechStack.append(container);
-    }
-    function createProjectSkills(container) {
-        if (!Array.isArray(skills) || skills.length === 0) return;
+    return $wrapper.append($list);
+}
 
-        const title = $('<p class="info-title">Skills</p>');
-        const skillsList = $('<ul class="skills-list"></ul>');
+function createAdditionalInfoSection(info) {
+    if (!Array.isArray(info) || !info.length) return $();
 
-        skills.forEach(skill => {
-            const listItem = $('<li class="skills-item"></li>').text(skill);
-            skillsList.append(listItem);
-        });
+    const $wrapper = $('<div class="project-additional-info"></div>').append('<p class="info-title">Additional Info</p>');
+    const $list = $('<ul class="additional-info-list"></ul>');
 
+    info.forEach(({ title, items }, i) => {
+        const $section = $(`<li class="additional-info-item" data-index="${i + 1}"></li>`);
+        const $sectionTitle = $(`<p class="additional-info-category">${title}:</p>`);
+        const $itemsList = $('<ul class="additional-items-list"></ul>');
 
-        container.append(title, skillsList);
+        items.forEach(itm => $itemsList.append(`<li class="additional-item">${itm}</li>`));
+        $list.append($section.append($sectionTitle, $itemsList));
+    });
 
-    }
-    function createProjectFeatures(container) {
-        if (!Array.isArray(features) || features.length === 0) return;
-
-        const title = $('<p class="info-title">Features</p>');
-        container.append(title);
-
-        const featuresList = $('<ul class="features-list"></ul>');
-
-        features.forEach((feature, index) => {
-            const { title, items } = feature;
-
-            const featureItem = $('<li class="features-list-item"></li>').attr('data-index', index + 1);;
-            const featureTitle = $('<p class="feature-category"></p>').text(title  + ':');
-            // const itemsList = $('<p class="feature-items"></p>').text(items.join(', '));
-            const itemsList = $('<ul class="feature-items-list"></ul>');
-
-            items.forEach(item => {
-                const itemElement = $('<li class="feature-item"></li>').text(item);
-                itemsList.append(itemElement);
-            });
-            featureItem.append(featureTitle, itemsList);
-            featuresList.append(featureItem);
-        });
-
-        container.append(featuresList);
-    }
-    function createProjectAdditionalInfo(container) {
-        if (!Array.isArray(additionalInfo) || additionalInfo.length === 0) return;
-
-        const title = $('<p class="info-title">Additional Info</p>');
-        container.append(title);
-
-        const infoList = $('<ul class="additional-info-list"></ul>');
-
-        additionalInfo.forEach((infoSection, index) => {
-            const { title, items } = infoSection;
-
-            const sectionItem = $('<li class="additional-info-item"></li>').attr('data-index', index + 1);
-            const sectionTitle = $('<p class="additional-info-category"></p>').text(`${title}:`);
-
-            const itemsList = $('<ul class="additional-items-list"></ul>');
-            items.forEach(item => {
-                const itemElement = $('<li class="additional-item"></li>').text(item);
-                itemsList.append(itemElement);
-            });
-
-            sectionItem.append(sectionTitle, itemsList);
-            infoList.append(sectionItem);
-        });
-
-        container.append(infoList);
-    }
-    $('.project-modal').append(modalContainer);
+    return $wrapper.append($list);
 }
 
 function initProjectModalSlider() {
+    const $slider = $('.project-slider');
+    const slideCount = $slider.find('img').length;
     let currentIndex = 0;
-    const slideCount = $('.project-slider img').length;
 
-    $('.project-next-btn').on('click', handleNextButtonClick);
-    $('.project-prev-btn').on('click', handlePrevButtonClick);
+    const updateSlider = () => {
+        const offset = -currentIndex * 100 + '%';
+        $slider.css('transform', `translateX(${offset})`);
+    };
 
-    function handleNextButtonClick() {
-        currentIndex = currentIndex < slideCount - 1 ? currentIndex + 1 : 0;
+    $('.project-next-btn').on('click', () => {
+        currentIndex = (currentIndex + 1) % slideCount;
         updateSlider();
-    }
+    });
 
-    function handlePrevButtonClick() {
-        currentIndex = currentIndex > 0 ? currentIndex - 1 : slideCount - 1;
+    $('.project-prev-btn').on('click', () => {
+        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
         updateSlider();
-    }
-
-    function updateSlider() {
-        const translateValue = -currentIndex * 100 + '%';
-        $('.project-slider').css(
-            'transform',
-            'translateX(' + translateValue + ')',
-        );
-    }
+    });
 }
 
 function showProjectModal() {
-    $('.modal-backdrop-project').fadeIn('slow', function () {
+    $('.modal-backdrop-project').fadeIn('slow', () => {
         $('body').addClass('modal-open');
     });
 }
 
 function hideProjectModal() {
-    $('.modal-backdrop-project').fadeOut('slow', function () {
+    $('.modal-backdrop-project').fadeOut('slow', () => {
         $('body').removeClass('modal-open');
     });
 }
-
-function getProjectData(el) {
-    return projectsData.filter(data => data.id === el.attr('data-id'))[0];
-}
-
-export function handleProjectModal(e) {
-    const clickedElement = $(e.currentTarget);
-    const data = getProjectData(clickedElement);
-    generateProjectModalMarkup(data);
-    initProjectModalSlider();
-    showProjectModal();
-}
-
-
