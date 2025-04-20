@@ -6,6 +6,7 @@ export const projectsData = [
         date: 2025,
         industry: 'Education',
         timeline: '8 months',
+        poster: 'poster.jpg',
         website: {
             name: 'Dev Interview Hub: Master the Interview, Land the Job !',
             link: 'https://dev-interview-hub.web.app/',

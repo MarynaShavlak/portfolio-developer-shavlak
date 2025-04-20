@@ -88,10 +88,13 @@ export function initPortfolio() {
 
         function generatePortfolioItemMarkup(project, index) {
             let itemMarkup = `<li class="portfolio__item ${project.category}" data-category="${project.category}" data-id="${project.id}">`;
-            itemMarkup += `<div class="work" data-modal="#modal_project_${
-                index + 1
-            }">`;
-            itemMarkup += '<div class="work__image"></div>';
+            itemMarkup += `<div class="work" data-modal="#modal_project_${index + 1}">`;
+
+            // Fixed: use template literal properly
+            itemMarkup += `<div class="work__image">
+        <img src="assets/images/${project.id}/${project.poster}" alt="${project.title}" width="370" height="300"/>
+    </div>`;
+
             itemMarkup += '<div class="work__info">';
             itemMarkup += `<div class="work__category">category: ${project.category}</div>`;
             itemMarkup += `<div class="work__title">${project.title}<span class="work__date">${project.date}</span></div>`;
@@ -154,7 +157,13 @@ function generatePortfolioMarkUp(data) {
         const $work = $('<div>')
             .addClass('work')
             .attr('data-modal', `#modal_project_${index + 1}`);
+        const $img = $('<img>')
+            .attr('src', `assets/images/${project.id}/${project.poster}`)
+            .attr('alt', project.title)
+            .attr('width', 370)
+            .attr('height', 300);
         const $workImage = $('<div>').addClass('work__image');
+        $workImage.append($img);
         const $workInfo = $('<div>').addClass('work__info');
         const $workCategory = $('<div>')
             .addClass('work__category')

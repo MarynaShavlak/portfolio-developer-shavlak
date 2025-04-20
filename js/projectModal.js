@@ -3,6 +3,15 @@ import { projectsData } from '../data/projectsData.js';
 export function initProjectModal() {
     $('.portfolio__item').on('click', handleProjectModal);
     $('.close-modal-btn').on('click', hideProjectModal);
+
+    $(document).on('click', '.project-modal', function (e) {
+        e.stopPropagation();
+    });
+
+
+    $(document).on('click', '.modal-backdrop-project', function () {
+        hideProjectModal();
+    });
 }
 
 export function handleProjectModal(e) {
