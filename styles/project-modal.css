@@ -33,20 +33,20 @@
 }
 
 .project-picture {
-  width: 800px;
-  height: 600px;
+  object-fit: contain;
 
 }
 
 .project-title {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  font-size: 40px;
-  color: #fff;
+  /*position: absolute;*/
+  /*top: 30px;*/
+  /*left: 30px;*/
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #1869ff;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: start;
+  text-align: center;
 }
 
 .project-slider-buttons {
@@ -90,7 +90,7 @@
 
 .project-meta {
   width: 300px;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-left: 30px;
   padding-right: 20px;
   font-size: 20px;

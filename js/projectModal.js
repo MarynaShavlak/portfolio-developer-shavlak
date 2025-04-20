@@ -21,14 +21,15 @@ function getProjectData($el) {
 function generateProjectModalMarkup(projectData) {
     const {
         title, images, descr, techStack,
-        skills, features, additionalInfo
+        skills, features, additionalInfo,
+        id
     } = projectData;
 
     $('.modal__project').remove(); // Clean up any existing modal
     const $modal = $('<div class="modal__project"></div>');
 
     const $header = $('<div class="project-header"></div>').append(
-        createProjectImageSection(title, images),
+        createProjectImageSection(title, id, images),
         createProjectMetaSection(projectData)
     );
 
@@ -44,12 +45,14 @@ function generateProjectModalMarkup(projectData) {
     $('.project-modal').append($modal);
 }
 
-function createProjectImageSection(title, images) {
+
+function createProjectImageSection(title,id, images) {
     const $container = $('<div class="project-img-wrap"></div>');
     const $slider = $('<div class="project-slider"></div>');
 
     images.forEach((img, index) => {
-        $slider.append(`<img class="project-picture project-slide${index + 1}" src="assets/images/${img}" alt="project photo" />`);
+        $slider.append(`<img class="project-picture project-slide${index + 1}" src="assets/images/${id}/${img}" alt="project photo" width="800px" 
+                 />`);
     });
 
     const $buttons = $(`
@@ -59,12 +62,12 @@ function createProjectImageSection(title, images) {
         </ul>
     `);
 
-    return $container.append($slider, $buttons, `<h3 class="project-title">${title}</h3>`);
+    return $container.append($slider, $buttons);
 }
 
 function createProjectMetaSection({ category, date, website, repository, title, industry, timeline }) {
     const $meta = $('<div class="project-meta"></div>');
-
+    const $title = `<h3 class="project-title">${title}</h3>`
     const $firstLine = $(`<div class="project-meta__first-line">
         <span class="project-category">${category}</span>
         <span class="project-year">${date}</span>
@@ -95,7 +98,7 @@ function createProjectMetaSection({ category, date, website, repository, title, 
         </li>`);
     }
 
-    return $meta.append($firstLine, $infoList);
+    return $meta.append($title, $firstLine, $infoList);
 }
 
 function createParagraphSection(paragraphs, className) {
