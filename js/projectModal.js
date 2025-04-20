@@ -38,7 +38,7 @@ function generateProjectModalMarkup(projectData) {
     const $modal = $('<div class="modal__project"></div>');
 
     const $header = $('<div class="project-header"></div>').append(
-        createProjectImageSection(title, id, images),
+        createProjectMediaSection(title, id, images),
         createProjectMetaSection(projectData)
     );
 
@@ -55,13 +55,26 @@ function generateProjectModalMarkup(projectData) {
 }
 
 
-function createProjectImageSection(title,id, images) {
+function createProjectMediaSection(title,id, mediaFiles) {
     const $container = $('<div class="project-img-wrap"></div>');
     const $slider = $('<div class="project-slider"></div>');
 
-    images.forEach((img, index) => {
-        $slider.append(`<img class="project-picture project-slide${index + 1}" src="assets/images/${id}/${img}" alt="project photo" width="800px" 
-                 />`);
+    mediaFiles.forEach((file, index) => {
+        const filePath = `assets/images/${id}/${file}`;
+        const isVideo = file.toLowerCase().endsWith('.mp4');
+
+        const $media = isVideo
+            ? $(
+                `<video class="project-video project-slide${index + 1}"  controls>
+                    <source src="${filePath}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>`
+            )
+            : $(
+                `<img class="project-picture project-slide${index + 1}" src="${filePath}" alt="project media" width="800px" />`
+            );
+
+        $slider.append($media);
     });
 
     const $buttons = $(`
@@ -72,6 +85,22 @@ function createProjectImageSection(title,id, images) {
     `);
 
     return $container.append($slider, $buttons);
+    // const $container = $('<div class="project-img-wrap"></div>');
+    // const $slider = $('<div class="project-slider"></div>');
+    //
+    // images.forEach((img, index) => {
+    //     $slider.append(`<img class="project-picture project-slide${index + 1}" src="assets/images/${id}/${img}" alt="project photo" width="800px"
+    //              />`);
+    // });
+    //
+    // const $buttons = $(`
+    //     <ul class="project-slider-buttons">
+    //         <li><button type="button" class="project-slider-btn project-prev-btn"><i class="fa-solid fa-angle-left"></i>PREVIOUS</button></li>
+    //         <li><button type="button" class="project-slider-btn project-next-btn">NEXT<i class="fa-solid fa-angle-right"></i></button></li>
+    //     </ul>
+    // `);
+    //
+    // return $container.append($slider, $buttons);
 }
 
 function createProjectMetaSection({ category, date, website, repository, title, industry, timeline }) {

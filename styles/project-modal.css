@@ -27,7 +27,6 @@
   position: relative;
   top: -30px;
   left: -30px;
-
   width: 800px;
   transition: transform 0.5s ease-in-out;
 }

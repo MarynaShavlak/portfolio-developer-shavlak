@@ -234,12 +234,9 @@ export const projectsData = [
             optimization: ['CSS Minification (gulp-csso)', 'Group CSS Media Queries'],
             other: ['Body Scroll Lock', 'Modern Normalize'],
         },
-
+        additionalInfo: [],
         images: [
-            'project-img-1.jpg',
-            'project-img-2.jpg',
-            'project-img-3.jpg',
-            'project-img-4.jpg',
+           'demo-comfort-group.mp4',
         ],
     },
     {
