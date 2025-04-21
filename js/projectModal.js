@@ -229,7 +229,7 @@ function createAdditionalInfoSection(info) {
 
 function initProjectModalSlider() {
     const $slider = $('.project-slider');
-    const slideCount = $slider.find('img').length;
+    const $slides = $slider.children('img, video'); // Include both images and videos
     let currentIndex = 0;
 
     const updateSlider = () => {
@@ -237,15 +237,17 @@ function initProjectModalSlider() {
         $slider.css('transform', `translateX(${offset})`);
     };
 
-    $('.project-next-btn').on('click', () => {
-        currentIndex = (currentIndex + 1) % slideCount;
+    $('.project-next-btn').off('click').on('click', () => {
+        currentIndex = (currentIndex + 1) % $slides.length;
         updateSlider();
     });
 
-    $('.project-prev-btn').on('click', () => {
-        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+    $('.project-prev-btn').off('click').on('click', () => {
+        currentIndex = (currentIndex - 1 + $slides.length) % $slides.length;
         updateSlider();
     });
+
+
 }
 
 function showProjectModal() {

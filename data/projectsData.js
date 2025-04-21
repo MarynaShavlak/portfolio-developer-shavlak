@@ -237,6 +237,8 @@ export const projectsData = [
         additionalInfo: [],
         images: [
            'demo-comfort-group.mp4',
+            'img1.jpg',
+            'img2.jpg',
         ],
     },
     {
