@@ -103,11 +103,11 @@ function createProjectMediaSection(title,id, mediaFiles) {
     // return $container.append($slider, $buttons);
 }
 
-function createProjectMetaSection({ category, date, website, repository, title, industry, timeline }) {
+function createProjectMetaSection({ categories, date, website, repository, title, industry, timeline }) {
     const $meta = $('<div class="project-meta"></div>');
     const $title = `<h3 class="project-title">${title}</h3>`
     const $firstLine = $(`<div class="project-meta__first-line">
-        <span class="project-category">${category}</span>
+        <span class="project-category">${categories.join(', ')}</span>
         <span class="project-year">${date}</span>
     </div>`);
 
