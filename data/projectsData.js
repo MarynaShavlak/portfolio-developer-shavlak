@@ -160,7 +160,8 @@ export const projectsData = [
     },
     {
         id: 'cleaningComfortGroup',
-        categories: ['jquery', 'htmlcss', ],
+        industry: 'Services',
+        categories: ['jquery', 'html', 'css', 'gulp' ],
         title: 'Comfort Group Cleaning',
         date: 2023,
         poster: 'poster.jpg',
@@ -255,8 +256,10 @@ export const projectsData = [
     },
     {
         id: 'sudokuForKids',
+        industry: 'Web Games',
         categories: ['javascript', 'html', 'css', ],
         title: 'Sudoku for Kids',
+        presentation: 'https://www.canva.com/design/DAFo_yYBwKY/2VVBeMIKfRF6uEI7AnxDvQ/edit',
         date: 2023,
         poster: 'poster.jpg',
         timeline: '2 months',
@@ -269,12 +272,25 @@ export const projectsData = [
             'Sudoku for Kids is an engaging web game introducing children to Sudoku puzzles.' ,
             'It offers a child-friendly interface, multiple difficulty levels, helpful hints, and immersive features like responsive design, sound orientation, and theme customization.',
             'It includes gameplay elements such as life and hint systems, random board generation, visual cues, and level statistics tracking, with potential future enhancements like multiplayer mode and achievements.'
+
         ],
         skills: [
+           "HTML5",
+            "CSS3",
             "JavaScript",
             "Time Management",
-            "Cascading Style Sheets (CSS)",
-            "HTML5"
+            "DOM Manipulation",
+            "Event Handling",
+            "Modal Management",
+            "Game State Initialization",
+            "Responsive Design Handling",
+            "Custom UI Transitions",
+            "Theming and Dynamic Styling",
+            "Audio & Visual Feedback",
+            'Images Optimization',
+            "Function Decomposition",
+            "State Management (vanilla JS)",
+            "Game UX Logic"
         ],
         features: [
             {
@@ -324,8 +340,7 @@ export const projectsData = [
             media: ['Audio integration', 'GIF animations'],
             storage: ['LocalStorage for game statistics'],
         },
-        additionalInfo: [],
-        images: [
+           images: [
             'demo-sudoku.mp4',
             'preview.gif',
             'img1.jpg',
@@ -339,6 +354,8 @@ export const projectsData = [
             'img9.jpg',
             'img10.jpg',
             'img11.jpg',
+            'img12.jpg',
+            'img13.jpg',
 
 
         ],

@@ -87,7 +87,7 @@ function createProjectMediaSection(title,id, mediaFiles) {
     return $container.append($slider, $buttons);
 }
 
-function createProjectMetaSection({ categories, date, website, repository, title, industry, timeline }) {
+function createProjectMetaSection({ categories, date, website, repository, title, industry, presentation,  timeline }) {
     const $meta = $('<div class="project-meta"></div>');
     const $title = `<h3 class="project-title">${title}</h3>`
     const $firstLine = $(`<div class="project-meta__first-line">
@@ -117,6 +117,12 @@ function createProjectMetaSection({ categories, date, website, repository, title
         $infoList.append(`<li class="project-info__item">
             <p class="meta-title">Repository</p>
             <a class="meta-value repository-value" href="${repository}" target="_blank">${title}</a>
+        </li>`);
+    }
+    if (presentation) {
+        $infoList.append(`<li class="project-info__item">
+            <p class="meta-title">Presentation Link</p>
+            <a class="meta-value presentation-value" href="${presentation}" target="_blank">${title} Presentation</a>
         </li>`);
     }
 
