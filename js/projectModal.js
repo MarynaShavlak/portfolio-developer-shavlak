@@ -85,22 +85,6 @@ function createProjectMediaSection(title,id, mediaFiles) {
     `);
 
     return $container.append($slider, $buttons);
-    // const $container = $('<div class="project-img-wrap"></div>');
-    // const $slider = $('<div class="project-slider"></div>');
-    //
-    // images.forEach((img, index) => {
-    //     $slider.append(`<img class="project-picture project-slide${index + 1}" src="assets/images/${id}/${img}" alt="project photo" width="800px"
-    //              />`);
-    // });
-    //
-    // const $buttons = $(`
-    //     <ul class="project-slider-buttons">
-    //         <li><button type="button" class="project-slider-btn project-prev-btn"><i class="fa-solid fa-angle-left"></i>PREVIOUS</button></li>
-    //         <li><button type="button" class="project-slider-btn project-next-btn">NEXT<i class="fa-solid fa-angle-right"></i></button></li>
-    //     </ul>
-    // `);
-    //
-    // return $container.append($slider, $buttons);
 }
 
 function createProjectMetaSection({ categories, date, website, repository, title, industry, timeline }) {
@@ -162,6 +146,8 @@ function createTechStackSection(stack) {
         effects: 'Animation & Effects',
         optimization: 'Performance Optimization',
         testing: 'Testing',
+        media: 'Media Resources',
+        storage: 'Data Storage',
         other: 'Other',
     };
 
