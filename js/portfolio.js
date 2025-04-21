@@ -27,6 +27,7 @@ export function initPortfolio() {
 
     function updateButtonsVisibility() {
         const filteredData = filterDataByCategory();
+        console.log('filteredData', filteredData)
 
         const isLoadMoreVisible =
             currentIndex < filteredData.length - itemsPerPage;
@@ -63,6 +64,7 @@ export function initPortfolio() {
                 currentIndex,
                 currentIndex + itemsPerPage,
             );
+            console.log(data);
             const generatedMarkup = generatePortfolioMarkUp(data);
             const $items = $(generatedMarkup);
 
@@ -85,28 +87,43 @@ export function initPortfolio() {
 
             return markup;
         }
-
         function generatePortfolioItemMarkup(project, index) {
-            let itemMarkup = `<li class="portfolio__item ${project.category}" data-category="${project.category}" data-id="${project.id}">`;
+            const categories = project.categories.join(' ');
+            let itemMarkup = `<li class="portfolio__item ${categories}" data-category="${categories}" data-id="${project.id}">`;
             itemMarkup += `<div class="work" data-modal="#modal_project_${index + 1}">`;
-
-            // Fixed: use template literal properly
             itemMarkup += `<div class="work__image">
         <img src="assets/images/${project.id}/${project.poster}" alt="${project.title}" width="370" height="300"/>
     </div>`;
-
             itemMarkup += '<div class="work__info">';
-            itemMarkup += `<div class="work__category">category: ${project.category}</div>`;
+            itemMarkup += `<div class="work__category">category: ${project.categories.join(', ')}</div>`;
             itemMarkup += `<div class="work__title">${project.title}<span class="work__date">${project.date}</span></div>`;
             itemMarkup += '</div></div></li>';
-
             return itemMarkup;
         }
+    //     function generatePortfolioItemMarkup(project, index) {
+    //         console.log('pr', project)
+    //         let itemMarkup = `<li class="portfolio__item ${project.categories.join(', ')}" data-category="${project.categories.join(', ')}" data-id="${project.id}">`;
+    //         itemMarkup += `<div class="work" data-modal="#modal_project_${index + 1}">`;
+    //
+    //         // Fixed: use template literal properly
+    //         itemMarkup += `<div class="work__image">
+    //     <img src="assets/images/${project.id}/${project.poster}" alt="${project.title}" width="370" height="300"/>
+    // </div>`;
+    //
+    //         itemMarkup += '<div class="work__info">';
+    //         itemMarkup += `<div class="work__category">category: ${project.categories.join(', ')}</div>`;
+    //         itemMarkup += `<div class="work__title">${project.title}<span class="work__date">${project.date}</span></div>`;
+    //         itemMarkup += '</div></div></li>';
+    //
+    //         return itemMarkup;
+    //     }
     }
 
+
     function filterDataByCategory() {
+     console.log('currentCategory', currentCategory);
         return currentCategory !== '*'
-            ? projectsData.filter(project => project.category === currentCategory)
+            ? projectsData.filter(project => project.categories.includes(currentCategory))
             : projectsData;
     }
 
@@ -151,8 +168,8 @@ function generatePortfolioMarkUp(data) {
 
     function generatePortfolioItem(project, index) {
         const $portfolioItem = $('<li>')
-            .addClass(`portfolio__item ${project.category}`)
-            .attr('data-category', project.category)
+            .addClass(`portfolio__item ${project.categories.join(' ')}`)
+            .attr('data-category', project.categories.join(', '))
             .attr('data-id', project.id);
         const $work = $('<div>')
             .addClass('work')
@@ -167,7 +184,7 @@ function generatePortfolioMarkUp(data) {
         const $workInfo = $('<div>').addClass('work__info');
         const $workCategory = $('<div>')
             .addClass('work__category')
-            .text(`category: ${project.category}`);
+            .text(`category: ${project.categories.join(', ')}`);
         const $workTitle = $('<div>').addClass('work__title').text(project.title);
         const $workDate = $('<span>').addClass('work__date').text(project.date);
 
@@ -178,3 +195,4 @@ function generatePortfolioMarkUp(data) {
         return $portfolioItem;
     }
 }
+

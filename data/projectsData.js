@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 'devInterviewHub',
-        category: 'React',
+        categories: ['react'],
         title: 'Dev Interview Hub',
         date: 2025,
         industry: 'Education',
@@ -160,9 +160,10 @@ export const projectsData = [
     },
     {
         id: 'cleaningComfortGroup',
-        category: 'jQuery',
+        categories: ['jquery', 'htmlcss', ],
         title: 'Comfort Group Cleaning',
         date: 2023,
+        poster: 'poster.jpg',
         timeline: '3 months',
         website: {
             name: 'Comfort Group: Your Convenient Cleaning Solution!',
@@ -225,11 +226,11 @@ export const projectsData = [
             },
         ],
         techStack: {
-            architecture: 'Component-based architecture',
+            architecture: 'Multi-page website',
             frontend: ['HTML/CSS/JS', 'SASS/SCSS', 'jQuery'],
             build: ['Gulp', 'Webpack', 'Babel'],
             tools: ['PostCSS', 'Autoprefixer'],
-            ui: [ 'Masonry Layout', 'Swiper JS'],
+            ui: [ 'Masonry Layout', 'Swiper JS', 'Font Awesome'],
             effects: ['Vanilla Tilt', 'GSAP'],
             optimization: ['CSS Minification (gulp-csso)', 'Group CSS Media Queries'],
             other: ['Body Scroll Lock', 'Modern Normalize'],
@@ -239,11 +240,22 @@ export const projectsData = [
            'demo-comfort-group.mp4',
             'img1.jpg',
             'img2.jpg',
+            'img3.jpg',
+            'img4.jpg',
+            'img5.jpg',
+            'img6.jpg',
+            'img7.jpg',
+            'img8.jpg',
+            'img9.jpg',
+            'img10.jpg',
+            'img11.jpg',
+
+
         ],
     },
     {
         id: 'prj3',
-        category: 'website',
+        categories: [''],
         title: 'Project title 3',
         date: 2021,
         industry: 'Travel',
@@ -266,7 +278,7 @@ export const projectsData = [
     },
     {
         id: 'prj4',
-        category: 'website',
+        categories: [''],
         title: 'Project title 4',
         date: 2020,
         industry: 'Live Media',
@@ -289,7 +301,7 @@ export const projectsData = [
     },
     {
         id: 'prj5',
-        category: 'interaction',
+        categories: [''],
         title: 'Project title 5',
         date: 2023,
         industry: 'Automotive',
@@ -312,7 +324,7 @@ export const projectsData = [
     },
     {
         id: 'prj6',
-        category: 'app',
+        categories: [''],
         title: 'Project title 6',
         date: 2024,
         industry: 'Live Media',
@@ -335,7 +347,7 @@ export const projectsData = [
     },
     {
         id: 'prj7',
-        category: 'website',
+        categories: [''],
         title: 'Project title 7',
         date: 2023,
         industry: 'Tourism',
@@ -358,7 +370,7 @@ export const projectsData = [
     },
     {
         id: 'prj8',
-        category: 'app',
+        categories: [''],
         title: 'Project title 8',
         date: 2024,
         industry: 'Ecommerce',
@@ -381,7 +393,7 @@ export const projectsData = [
     },
     {
         id: 'prj9',
-        category: 'interaction',
+        categories: [''],
         title: 'Project title 9',
         date: 2024,
         industry: 'Healthcare',
@@ -404,7 +416,7 @@ export const projectsData = [
     },
     {
         id: 'prj10',
-        category: 'app',
+        categories: [''],
         title: 'Project title 10',
         date: 2024,
         industry: 'Security System',
@@ -425,119 +437,5 @@ export const projectsData = [
             'project-img-4.jpg',
         ],
     },
-    {
-        id: 'prj11',
-        category: 'website',
-        title: 'Project title 11',
-        date: 2024,
-        industry: 'Healthcare',
-        client: 'Healthcare Solutions',
-        timeline: '8 months',
-        website: {
-            name: 'example11.com',
-            link: 'https://example11.com/',
-        },
-        descr: [
-            'Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
-        images: [
-            'project-img-1.jpg',
-            'project-img-2.jpg',
-            'project-img-3.jpg',
-            'project-img-4.jpg',
-        ],
-    },
-    {
-        id: 'prj12',
-        category: 'website',
-        title: 'Project title 12',
-        date: 2024,
-        industry: 'Ecommerce',
-        client: 'Online Retail',
-        timeline: '6 months',
-        website: {
-            name: 'example12.com',
-            link: 'https://example12.com/',
-        },
-        descr: [
-            'Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
-        images: [
-            'project-img-1.jpg',
-            'project-img-2.jpg',
-            'project-img-3.jpg',
-            'project-img-4.jpg',
-        ],
-    },
-    {
-        id: 'prj13',
-        category: 'interaction',
-        title: 'Project title 13',
-        date: 2023,
-        industry: 'Ecommerce',
-        client: 'Ecommerce Solutions',
-        timeline: '7 months',
-        website: {
-            name: 'example13.com',
-            link: 'https://example13.com/',
-        },
-        descr: [
-            'Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
-        images: [
-            'project-img-1.jpg',
-            'project-img-2.jpg',
-            'project-img-3.jpg',
-            'project-img-4.jpg',
-        ],
-    },
-    {
-        id: 'prj14',
-        category: 'website',
-        title: 'Project title 14',
-        date: 2020,
-        industry: 'Live Media',
-        client: 'Media Streaming',
-        timeline: '4 months',
-        website: {
-            name: 'example14.com',
-            link: 'https://example14.com/',
-        },
-        descr: [
-            'Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
-        images: [
-            'project-img-1.jpg',
-            'project-img-2.jpg',
-            'project-img-3.jpg',
-            'project-img-4.jpg',
-        ],
-    },
-    {
-        id: 'prj15',
-        category: 'interaction',
-        title: 'Project title 15',
-        date: 2021,
-        industry: 'Tourism',
-        client: 'Tourism App',
-        timeline: '5 months',
-        website: {
-            name: 'example15.com',
-            link: 'https://example15.com',
-        },
-        descr: [
-            'Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
-        images: [
-            'project-img-1.jpg',
-            'project-img-2.jpg',
-            'project-img-3.jpg',
-            'project-img-4.jpg',
-        ],
-    },
+
 ];
