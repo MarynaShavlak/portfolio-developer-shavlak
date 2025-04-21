@@ -87,9 +87,10 @@ function createProjectMediaSection(title,id, mediaFiles) {
     return $container.append($slider, $buttons);
 }
 
-function createProjectMetaSection({ categories, date, website, repository, title, industry, presentation,  timeline }) {
+function createProjectMetaSection({ categories, date, website, repository, title, slogan, industry, presentation,  timeline }) {
     const $meta = $('<div class="project-meta"></div>');
     const $title = `<h3 class="project-title">${title}</h3>`
+    const $slogan = `<p class="project-slogan">${slogan}</p>`
     const $firstLine = $(`<div class="project-meta__first-line">
         <span class="project-category">${categories.join(', ')}</span>
         <span class="project-year">${date}</span>
@@ -126,7 +127,7 @@ function createProjectMetaSection({ categories, date, website, repository, title
         </li>`);
     }
 
-    return $meta.append($title, $firstLine, $infoList);
+    return $meta.append($title, $slogan, $firstLine, $infoList);
 }
 
 function createParagraphSection(paragraphs, className) {
@@ -154,7 +155,14 @@ function createTechStackSection(stack) {
         testing: 'Testing',
         media: 'Media Resources',
         storage: 'Data Storage',
+        api: 'API Integration',
+        utilities: 'Utilities',
+        interactivity: 'Interactivity',
         other: 'Other',
+        forms: 'Form Handling',
+        styling: 'Styling Features',
+        stateManagement: 'State Management',
+
     };
 
     const $list = $('<ul class="tech-stack-wrapperlist"></ul>');
