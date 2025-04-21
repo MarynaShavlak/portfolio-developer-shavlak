@@ -162,6 +162,7 @@ function createTechStackSection(stack) {
         forms: 'Form Handling',
         styling: 'Styling Features',
         stateManagement: 'State Management',
+        dateTime: 'Date and Time Handling',
 
     };
 

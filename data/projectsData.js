@@ -2,6 +2,7 @@ export const projectsData = [
     {
         id: 'devInterviewHub',
         categories: ['react'],
+        type: 'Individual',
         title: 'Dev Interview Hub',
         slogan: 'Master the Interview, Land the Job !',
         date: 2025,
@@ -162,6 +163,7 @@ export const projectsData = [
     {
         id: 'cleaningComfortGroup',
         industry: 'Services',
+        type: 'Individual',
         categories: ['jquery', 'html', 'css', 'gulp' ],
         title: 'Comfort Group Cleaning',
         slogan: 'Your Convenient Cleaning Solution!',
@@ -259,6 +261,7 @@ export const projectsData = [
     {
         id: 'sudokuForKids',
         industry: 'Web Games',
+        type: 'Individual',
         categories: ['javascript', 'html', 'css', ],
         title: 'Sudoku for Kids',
         slogan: 'Fun and Educational Web Game!',
@@ -366,6 +369,7 @@ export const projectsData = [
     {
         id: 'phonebook',
         industry: 'Web Application',
+        type: 'Individual',
         categories: ['react', 'webpack' ],
         title: 'Phonebook',
         slogan: 'Let PHONE GENIE grant your every connection wish!',
@@ -504,7 +508,147 @@ export const projectsData = [
             utilities: ['Slugify', 'Nanoid', 'Randomcolor'],
             interactivity: ['Downshift', 'react-beautiful-dnd(Drag and Drop)'],
             tools: ['ESLint', 'Prettier', 'Babel', 'Webpack (via CRA)'],
-            storage: ['LocalStorage for favorites'],
+            storage: ['LocalStorage'],
+        },
+        images: [
+            '1.gif',
+            '2.gif',
+            'edit-delete-group.gif',
+            'favorites.gif',
+            'merge-groups.gif',
+            'drag-contacts.gif',
+            'add-few-contacts-in-groups.png',
+            'create-group.png',
+            'delete-modal.png',
+            'edit-contact.png',
+            'mobile.png',
+            'recycle-bin.png',
+            'restore-contacts.png',
+            'search-contacts.png',
+            'select-and-drop-down.png',
+            'select-contacts.jpg',
+            'tablet.png',
+        ],
+    },
+    {
+        id: 'gooseTrack',
+        industry: 'Web Application',
+        categories: ['react', 'webpack' ],
+        title: 'GooseTrack',
+        type: 'Collaborative',
+        slogan: 'Your Ultimate Task Manager and Calendar Companion!',
+        presentation: '',
+        date: 2023,
+        poster: 'poster.png',
+        timeline: '2 weeks',
+        website: {
+            name: 'GooseTrack WebApplication',
+            link: 'https://svitlanahonchar.github.io/Goose-Track_Work-Smart/',
+        },
+        repository: 'https://github.com/SvitlanaHonchar/Goose-Track_Work-Smart',
+        descr: [
+           'GooseTrack is a collaborative React project, that streamlines task, event, and deadline management with a user-friendly interface.',
+            'It centralizes these activities, allowing easy customization of account settings and calendar preferences.',
+            'Users can prioritize tasks effortlessly, visualize upcoming events, and maintain a cohesive schedule for improved productivity.'
+        ],
+        skills: [
+            'React.js',
+            'React Router DOM',
+            'Redux Toolkit',
+            'Redux Thunk',
+            'Async Data Fetching (AJAX)',
+            'State Persistence',
+            'Form Management',
+            'Component Styling',
+            'UI Enhancements & Notifications',
+            'Drag-and-Drop Interfaces',
+            'Custom Dropdowns & Highlight Components',
+            'Slug Generation & REST API Integration',
+            'Reusable & Modular Components',
+            'Responsive Design',
+            'Linting & Code Quality (ESLint, Prettier)',
+            'Browser Compatibility',
+            'Custom React Hooks & Constants'
+        ],
+        features: [
+            {
+                title: 'Authentication',
+                items: [
+                    'Quick user registration',
+                    'Persistent login sessions',
+                    'Secure logout',
+                ],
+            },
+            {
+                title: 'User Experience',
+                items: [
+                    'Intuitive and user-friendly interface design',
+                    'Responsive layout for optimal interaction across devices',
+                    'Smooth navigation for consistent flow between pages',
+                ],
+            },
+            {
+                title: 'Personalization',
+                items: [
+                    'Customizable user profiles with editable preferences',
+                    'Adjustable calendar filters to suit user schedules',
+                    'Persistent local storage of sorting and filter settings',
+                ],
+            },
+            {
+                title: 'Task Management',
+                items: [
+                    'Add new tasks',
+                    'Update task information in real-time',
+                    'Delete individual tasks with instant feedback',
+
+                ],
+            },
+            {
+                title: 'Task Details',
+                items: [
+                    'Assign start and end time for accurate planning',
+                    'Set task priority: low, medium, or high',
+                    'Display priority levels with color-coded indicators',
+                ],
+            },
+            {
+                title: 'Planning & Scheduling',
+                items: [
+                    'Clear visual layout for upcoming events and deadlines',
+                    'Date-based organization to help track progress',
+                    'Seamless transition between planned and completed tasks',
+                ],
+            },
+        ],
+        techStack: {
+            architecture: 'Modular React application using Redux Toolkit and feature-based structure',
+            frontend: ['React', 'React Router DOM'],
+            stateManagement: ['Redux Toolkit', 'React Redux', 'Redux Persist',  'Redux Async Thunk'],
+            api: ['Axios'],
+            backend: ['RESTful API built with Swagger (OpenAPI standard)'],
+            forms: ['Formik', 'Yup'],
+            styling: [
+                'SCSS with BEM methodology',
+                'Emotion Styled (@emotion/styled)',
+                'Styled Components',
+            ],
+            ui: [
+                'Material UI',
+                'Material UI Icons',
+                'MUI X Date Pickers',
+                'React Icons',
+                'React Modal',
+                'React Hot Toast'
+            ],
+            tools: ['ESLint', 'Prettier', 'Babel', 'Webpack (via CRA)'],
+            storage: ['Redux Persist', 'LocalStorage'],
+            dateTime: [
+                'Calendar Dates',
+                'Date-fns',
+                'Dayjs',
+                'React Datepicker',
+            ],
         },
         images: [
             '1.gif',
