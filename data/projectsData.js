@@ -389,6 +389,10 @@ export const projectsData = [
         date: 2023,
         poster: 'poster.png',
         timeline: '4 months',
+        apiDocumentation: {
+            name: 'Connections API Docs',
+            link: 'https://connections-api.goit.global/docs/'
+        },
         website: {
             name: 'Phonebook WebApplication',
             link: 'https://marynashavlak.github.io/phonebook/',
@@ -556,6 +560,10 @@ export const projectsData = [
         date: 2023,
         poster: 'poster.jpg',
         timeline: '2 weeks',
+        apiDocumentation: {
+            name: 'Goose Tracker API Docs',
+            link: 'https://goose-tracker-backend.p.goit.global/api-docs/#/'
+        },
         website: {
             name: 'GooseTrack WebApplication',
             link: 'https://svitlanahonchar.github.io/Goose-Track_Work-Smart/',

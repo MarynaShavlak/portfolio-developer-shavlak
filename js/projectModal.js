@@ -87,7 +87,8 @@ function createProjectMediaSection(title,id, mediaFiles) {
     return $container.append($slider, $buttons);
 }
 
-function createProjectMetaSection({ categories, date, website, repository, title, slogan, industry, presentation,  timeline }) {
+function createProjectMetaSection( project ) {
+     const {  date, website, repository, title, slogan, industry, presentation,  timeline, apiDocumentation, categories} = project
     const $meta = $('<div class="project-meta"></div>');
     const $title = `<h3 class="project-title">${title}</h3>`
     const $slogan = `<p class="project-slogan">${slogan}</p>`
@@ -118,6 +119,12 @@ function createProjectMetaSection({ categories, date, website, repository, title
         $infoList.append(`<li class="project-info__item">
             <span class="meta-title">Source Code</span>
             <a class="meta-value repository-value" href="${repository.link}" target="_blank">${repository.name}</a>
+        </li>`);
+    }
+    if (apiDocumentation) {
+        $infoList.append(`<li class="project-info__item">
+            <span class="meta-title">API Docs</span>
+            <a class="meta-value api-doc-value" href="${apiDocumentation.link}" target="_blank">${apiDocumentation.name}</a>
         </li>`);
     }
     if (presentation) {
