@@ -48,8 +48,8 @@
 }
 .project-slogan {
   font-style: italic;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .project-slider-buttons {
@@ -93,8 +93,8 @@
 
 .project-meta {
   width: 300px;
-  padding-top: 50px;
-  padding-left: 30px;
+  padding-top: 40px;
+  padding-left: 20px;
   padding-right: 20px;
   font-size: 20px;
   color: #6a696b;
@@ -103,7 +103,7 @@
 .project-info {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 .project-info__item {
   display: flex;
@@ -111,27 +111,31 @@
 }
 
 .meta-title {
-  width: 90px;
+width: 80px;
+  flex-grow: 1;
   text-align: left;
   font-size: 14px;
 }
 .meta-value {
-  width: 160px;
-  font-size: 18px;
+  width:180px;
+  font-size: 14px;
   color: #1869ff;
   font-weight: 700;
   text-align: start;
+  flex-grow: 1;
 }
 
 .project-meta__first-line {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 16px;
   padding-bottom: 30px;
   border-bottom: 1px solid #6a696b;
 }
+
 .project-infoContainer {
   padding: 30px 40px;
   display:flex;

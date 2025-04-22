@@ -13,7 +13,10 @@ export const projectsData = [
             name: 'Dev Interview Hub WebApp',
             link: 'https://dev-interview-hub.web.app/',
         },
-        repository: 'https://github.com/MarynaShavlak/dev-interview-hub',
+        repository: {
+            name: 'dev-interview-hub (GitHub)',
+            link: 'https://github.com/MarynaShavlak/dev-interview-hub'
+        },
         descr: [
             '<b>Dev Interview Hub</b> is a web app that helps developers manage answers to common frontend interview questions, offering features for reading, searching, filtering, and organizing responses.',
 
@@ -174,7 +177,10 @@ export const projectsData = [
             name: 'Comfort Group WebSite',
             link: 'https://marynashavlak.github.io/comfort-group-cleaning/',
         },
-        repository: 'https://github.com/MarynaShavlak/comfort-group-cleaning',
+        repository: {
+            name: 'comfort-group-cleaning (GitHub)',
+            link: 'https://github.com/MarynaShavlak/comfort-group-cleaning'
+        },
         descr: [
             'Comfort Group an innovative cleaning service platform designed to streamline your cleaning needs. ' ,
             'With a user-friendly website, this JavaScript project simplifies the process of estimating costs, booking services, and managing your cleaning appointments. ' ,
@@ -265,7 +271,10 @@ export const projectsData = [
         categories: ['javascript', 'html', 'css', ],
         title: 'Sudoku for Kids',
         slogan: 'Fun and Educational Web Game!',
-        presentation: 'https://www.canva.com/design/DAFo_yYBwKY/2VVBeMIKfRF6uEI7AnxDvQ/edit',
+        presentation: {
+            name: 'Sudoku for Kids – Project Presentation',
+            link: 'https://www.canva.com/design/DAFo_yYBwKY/2VVBeMIKfRF6uEI7AnxDvQ/edit'
+        },
         date: 2023,
         poster: 'poster.jpg',
         timeline: '2 months',
@@ -273,7 +282,10 @@ export const projectsData = [
             name: 'Sudoku for Kids WebGame',
             link: 'https://marynashavlak.github.io/game-sudoku-for-kids/',
         },
-        repository: 'https://github.com/MarynaShavlak/game-sudoku-for-kids',
+        repository: {
+            name: 'game-sudoku-for-kids (GitHub)',
+            link: 'https://github.com/MarynaShavlak/game-sudoku-for-kids'
+        },
         descr: [
             'Sudoku for Kids is an engaging web game introducing children to Sudoku puzzles.' ,
             'It offers a child-friendly interface, multiple difficulty levels, helpful hints, and immersive features like responsive design, sound orientation, and theme customization.',
@@ -381,7 +393,10 @@ export const projectsData = [
             name: 'Phonebook WebApplication',
             link: 'https://marynashavlak.github.io/phonebook/',
         },
-        repository: 'https://github.com/MarynaShavlak/phonebook',
+        repository: {
+            name: 'phonebook (GitHub)',
+            link: 'https://github.com/MarynaShavlak/phonebook'
+        },
         descr: [
            '"Phone Genie" is a comprehensive phonebook application meticulously crafted to redefine user interaction with contact management.' ,
            'This individual project is driven by a robust Swagger backend API for a seamless user experience.',
@@ -545,7 +560,10 @@ export const projectsData = [
             name: 'GooseTrack WebApplication',
             link: 'https://svitlanahonchar.github.io/Goose-Track_Work-Smart/',
         },
-        repository: 'https://github.com/SvitlanaHonchar/Goose-Track_Work-Smart',
+        repository: {
+            name:'goose-track (GitHub)',
+            link: 'https://github.com/SvitlanaHonchar/Goose-Track_Work-Smart'
+        },
         descr: [
            'GooseTrack is a collaborative React project, that streamlines task, event, and deadline management with a user-friendly interface.',
             'It centralizes these activities, allowing easy customization of account settings and calendar preferences.',

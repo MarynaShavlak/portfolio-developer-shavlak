@@ -101,29 +101,29 @@ function createProjectMetaSection({ categories, date, website, repository, title
     [['Industry', industry], ['Timeline', timeline]].forEach(([label, value]) => {
         if (value) {
             $infoList.append(`<li class="project-info__item">
-                <p class="meta-title">${label}</p>
-                <p class="meta-value ${label.toLowerCase()}-value">${value}</p>
+                <span class="meta-title">${label}</span>
+                <span class="meta-value ${label.toLowerCase()}-value">${value}</span>
             </li>`);
         }
     });
 
     if (website) {
         $infoList.append(`<li class="project-info__item">
-            <p class="meta-title">Website</p>
+            <span class="meta-title">Website</span>
             <a class="meta-value website-value" href="${website.link}" target="_blank">${website.name}</a>
         </li>`);
     }
 
     if (repository) {
         $infoList.append(`<li class="project-info__item">
-            <p class="meta-title">Repository</p>
-            <a class="meta-value repository-value" href="${repository}" target="_blank">${title}</a>
+            <span class="meta-title">Source Code</span>
+            <a class="meta-value repository-value" href="${repository.link}" target="_blank">${repository.name}</a>
         </li>`);
     }
     if (presentation) {
         $infoList.append(`<li class="project-info__item">
-            <p class="meta-title">Presentation Link</p>
-            <a class="meta-value presentation-value" href="${presentation}" target="_blank">${title} Presentation</a>
+            <p class="meta-title">Slide Deck</p>
+            <a class="meta-value presentation-value" href="${presentation.link}" target="_blank">${presentation.name}</a>
         </li>`);
     }
 
