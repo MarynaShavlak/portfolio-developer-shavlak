@@ -242,13 +242,17 @@ p {
   padding: 1rem 0.8rem;
 }
 
-.work__category {
-  margin-bottom: 0.5rem;
-
+.work__category,.work__type {
+  margin-top: 0.5rem;
   font-size: 0.8rem;
+
   color: #2b2a2c;
   text-transform: uppercase;
 }
+.work__subtext {
+  font-weight: 600;
+}
+
 
 .work__title {
   display: flex;

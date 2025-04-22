@@ -166,32 +166,54 @@ function generatePortfolioMarkUp(data) {
         $portfolioList.append(item);
     });
 
-    function generatePortfolioItem(project, index) {
-        const $portfolioItem = $('<li>')
-            .addClass(`portfolio__item ${project.categories.join(' ')}`)
-            .attr('data-category', project.categories.join(', '))
-            .attr('data-id', project.id);
-        const $work = $('<div>')
-            .addClass('work')
-            .attr('data-modal', `#modal_project_${index + 1}`);
-        const $img = $('<img>')
-            .attr('src', `assets/images/${project.id}/${project.poster}`)
-            .attr('alt', project.title)
-            .attr('width', 370)
-            .attr('height', 300);
-        const $workImage = $('<div>').addClass('work__image');
-        $workImage.append($img);
-        const $workInfo = $('<div>').addClass('work__info');
-        const $workCategory = $('<div>')
-            .addClass('work__category')
-            .text(`category: ${project.categories.join(', ')}`);
-        const $workTitle = $('<div>').addClass('work__title').text(project.title);
-        const $workDate = $('<span>').addClass('work__date').text(project.date);
+    function createElement(tag, className, attributes = {}, text = '') {
+        const $el = $(`<${tag}>`);
+        if (className) $el.addClass(className);
+        if (text) $el.text(text);
+        Object.entries(attributes).forEach(([key, value]) => {
+            $el.attr(key, value);
+        });
+        return $el;
+    };
 
-        $workTitle.append($workDate);
-        $workInfo.append($workCategory, $workTitle);
-        $work.append($workImage, $workInfo);
-        $portfolioItem.append($work);
+    function generatePortfolioItem(project, index) {
+        const $img = createElement('img', '', {
+            src: `assets/images/${project.id}/${project.poster}`,
+            alt: project.title,
+            width: 370,
+            height: 300
+        });
+
+        const $workImage = createElement('div', 'work__image').append($img);
+
+        const $workCategory = createElement('p', 'work__category');
+        $workCategory.append(
+            createElement('span', 'work__subtext', {}, 'category: '),
+            createElement('span', '', {}, project.categories.join(', '))
+        );
+
+        const $workType = createElement('p', 'work__type');
+        $workType.append(
+            createElement('span', 'work__subtext', {}, 'type: '),
+            createElement('span', '', {}, project.type)
+        );
+
+        const $workDate = createElement('span', 'work__date', {}, project.date);
+
+        const $workTitle = createElement('div', 'work__title', {}, project.title).append($workDate);
+
+        const $workInfo = createElement('div', 'work__info')
+            .append($workTitle, $workCategory, $workType );
+
+        const $work = createElement('div', 'work', {
+            'data-modal': `#modal_project_${index + 1}`
+        }).append($workImage, $workInfo);
+
+        const $portfolioItem = createElement('li', `portfolio__item ${project.categories.join(' ')}`, {
+            'data-category': project.categories.join(', '),
+            'data-id': project.id
+        }).append($work);
+
         return $portfolioItem;
     }
 }
