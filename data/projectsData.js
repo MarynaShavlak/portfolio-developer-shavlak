@@ -556,7 +556,7 @@ export const projectsData = [
         title: 'GooseTrack',
         type: 'Collaborative',
         slogan: 'Your Ultimate Task Manager and Calendar Companion!',
-        presentation: '',
+
         date: 2023,
         poster: 'poster.jpg',
         timeline: '2 weeks',
@@ -677,6 +677,132 @@ export const projectsData = [
                 'React Datepicker',
             ],
         },
+        images: [
+            'img1.jpg',
+            'img2.jpg',
+            'img3.jpg',
+            'img4.jpg',
+            'img5.jpg',
+            'img6.jpg',
+            'img7.jpg',
+        ],
+    },
+    {
+        id: 'filmoteka',
+        industry: 'Web Application',
+        categories: ['js', 'html', 'saas', 'parcel'  ],
+        title: 'Filmoteka',
+        type: 'Collaborative',
+        slogan: 'Discover, Organize, and Enjoy Movies Your Way!',
+
+        date: 2023,
+        poster: 'poster.jpg',
+        timeline: '2 weeks',
+        presentation: {
+            name: 'Filmoteka – Project Presentation',
+            link: 'https://www.canva.com/design/DAFaRx-25Hc/T7veuXW-nSjhchXr3s8Ubg/view#1'
+        },
+        website: {
+            name: 'Filmoteka WebApplication',
+            link: 'https://svitlanahonchar.github.io/Goose-Track_Work-Smart/',
+        },
+        repository: {
+            name:'filmoteka (GitHub)',
+            link: 'https://github.com/Anzhelika-Light/Work-smart-not-hard---JS-Project'
+        },
+        descr: [
+          'Filmoteka is a responsive online movie platform with a vast collection of films.',
+            'The platform boasts a responsive design and an extensive collection of films, which users can browse through with ease by using various search and filter criteria. ',
+            'The platform\'s home page showcases trending and popular movies, thereby facilitating convenient access to the most sought-after content. ',
+            'Additionally, users can personalize their movie experience by marking their favorite films as watched and adding them to their queue.'
+        ],
+        skills: [
+            'AJAX',
+            'REST API integration',
+            'Axios for HTTP requests',
+            'Firebase Authentication and Database Management',
+            'Modern JavaScript with ES6+ classes and private fields',
+            'Dynamic DOM manipulation and event handling',
+            'Responsive image loading with <picture> and srcset attributes',
+            'Lazy loading implementation for images',
+            'Custom templating and HTML construction',
+            'Third-party library integration',
+            'Regular expression implementation',
+            'Modular code architecture',
+            'LocalStorage data management',
+            'Data fetching optimization',
+            'Responsive image techniques',
+            'Responsive design implementation',
+            'Pagination for content delivery'
+          ],
+        features: [
+            {
+                title: 'Authentication',
+                items: [
+                    'User registration via Firebase',
+                    'Secure login with persistent sessions',
+                    'Firebase-powered logout functionality',
+                ],
+            },
+            {
+                title: 'Movie Management',
+                items: [
+                    'Add movies to personal "Watched" list',
+                    'Add movies to personal "Queue" list',
+                    'Remove movies from personal lists',
+                ],
+            },
+            {
+                title: 'Search & Discovery',
+                items: [
+                    'Advanced movie search functionality',
+                    'Sort movies by genre and year',
+                    'Display trending movies on homepage',
+                ],
+            },
+            {
+                title: 'Media & Content',
+                items: [
+                    'Showcase movie trailers directly within the app',
+                    'Option to visit the film’s official homepage',
+                ],
+            },
+            {
+                title: 'UI Feedback & Navigation',
+                items: [
+                    'Spinner for loading states',
+                    'Pagination optimized for mobile devices',
+                    'Notifications for instant user feedback',
+                ],
+            },
+            {
+                title: 'Design & Experience',
+                items: [
+                    'Dark theme for low-light environments',
+                    'Responsive raster images across devices',
+                    'Smooth scroll for seamless browsing',
+                    'CSS transitions for hover animations',
+                ],
+            },
+        ],
+        techStack: {
+            architecture: 'Multi-page Vanilla JS app with Parcel',
+            frontend: ['Vanilla JavaScript', 'HTML5', 'SCSS'],
+            stateManagement: ['LocalStorage (for persistence)'],
+            api: ['Axios', 'The Movie Database (TMDb) API'],
+            backend: ['Firebase (Authentication & Realtime Database)'],
+            styling: [
+                'SCSS with BEM methodology',
+                'Modern Normalize CSS reset',
+            ],
+            ui: [
+                'BasicLightbox',
+                'Notiflix',
+                'Darkmode-js',
+            ],
+            tools: ['Parcel', 'PostHTML Include', 'Prettier'],
+            storage: ['LocalStorage', 'Firebase'],
+                    },
         images: [
             'img1.jpg',
             'img2.jpg',
