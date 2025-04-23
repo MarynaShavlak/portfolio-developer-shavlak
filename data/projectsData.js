@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 'devInterviewHub',
-        categories: ['react'],
+        categories: ['react', 'saas'],
         type: 'Individual',
         title: 'Dev Interview Hub',
         slogan: 'Master the Interview, Land the Job !',
@@ -1138,6 +1138,171 @@ export const projectsData = [
             'img4.jpg',
             'img5.jpg',
 
+        ],
+    },
+    {
+        id: 'mortgageLoanCalculator',
+        industry: 'Web Application',
+        categories: ['html', 'css', 'javascript', ],
+        title: 'Mortgage Loan Calculator',
+        type: 'Individual',
+        slogan: 'Plan Smart. Borrow Smarter.!',
+        date: 2023,
+        poster: 'poster.jpg',
+        timeline: '1 week',
+
+        website: {
+            name: 'Mortgage Loan Calculator App',
+            link: 'https://marynashavlak.github.io/mortgage-loan-calculator/',
+        },
+        repository: {
+            name:'mortgage-loan-calculator (GitHub)',
+            link: 'https://github.com/MarynaShavlak/mortgage-loan-calculator'
+        },
+        descr: [
+            'The Mortgage Loan Calculator is a powerful and user-friendly web application that helps users accurately estimate their mortgage payments based on key variables like property cost, down payment percentage, loan term, and repayment method (annuity or classic).',
+             'Designed to streamline the mortgage planning process, it also includes an integrated application form, enabling users to submit loan requests directly from the platform.'
+        ],
+        skills: [
+            'Mathematical Calculations & Validation',
+            'Input Handling & Data Validation',
+            'Semantic HTML',
+            'Flexbox Layouts',
+             "DOM manipulation",
+            "Event Handling Delegation",
+            "Accessibility",
+            'Form Handling',
+            'Dynamic UI Rendering'
+
+        ],
+        features: [
+            {
+                title: 'Loan Calculation Core Functions',
+                items: [
+                    'Calculates loan amount, monthly and total payments',
+                    'Supports annuity and classic repayment types',
+                    'Includes real interest rate and total cost computation',
+                    'Updates UI in real time with every change',
+                ],
+            },
+            {
+                title: 'Additional Fees & Options',
+                items: [
+                    'Dynamically renders and tracks fee checkboxes',
+                    'Updates loan metrics on fee selection',
+                    'Toggles fee and options sections in the UI',
+                ],
+            },
+            {
+                title: 'Modal & Form Validation',
+                items: [
+                    'Interactive modal with form submission handling',
+                    'Validates inputs and shows inline errors',
+                    'Logs form data and resets on successful submit',
+                ],
+            }
+        ],
+
+        techStack: {
+            architecture: 'Single-page responsive site with Vanilla JS ',
+            frontend: ['HTML5', 'SCSS', 'Vanilla JavaScript', 'Font Awesome' ],
+            ui: ['Font Awesome icons'],
+            styling: [
+                'CSS with BEM methodology',
+                    ],
+            tools: ['Prettier'],
+
+        },
+        images: [
+            'demo-video.mp4',
+            'img1.jpg',
+            'img2.jpg',
+
+        ],
+    },
+    {
+        id: 'imageFinder',
+        industry: 'Web Application',
+        type: 'Individual',
+        categories: ['react', 'webpack' ],
+        title: 'Image Finder',
+        slogan: '',
+        date: 2023,
+        poster: 'poster.jpg',
+        timeline: '1 week',
+        apiDocumentation: {
+            name: 'Pixabay API Docs',
+            link: 'https://pixabay.com/api/docs/'
+        },
+        website: {
+            name: 'Image Finder WebApplication',
+            link: 'https://marynashavlak.github.io/react-image-finder/',
+        },
+        repository: {
+            name: 'image-finder(GitHub)',
+            link: 'https://github.com/MarynaShavlak/react-image-finder'
+        },
+        descr: [
+            'A responsive React app that lets users search for images, view thumbnails, and open larger images in a modal.',
+            'Images are loaded progressively with a "Load More" button, and users receive notifications about search results.'
+        ],
+        skills: [
+            'React.js',
+            'Async Data Fetching (AJAX)',
+            'State Persistence',
+            'Component Styling',
+            'UI Enhancements & Notifications',
+            'Reusable & Modular Components',
+            'Responsive Design',
+            'Linting & Code Quality (ESLint, Prettier)',
+            'Browser Compatibility',
+            'Custom React Hooks & Constants',
+            'React Portal Integration'
+        ],
+        features: [
+            {
+                title: 'Image Search & Display',
+                items: [
+                    'Search for images by keyword using Pixabay API',
+                    'View image thumbnails in a gallery',
+                    'Click thumbnails to view larger images in a modal',
+                    'Load more images with the "Load More" button',
+                ],
+            },
+            {
+                title: 'User Notifications',
+                items: [
+                    'Receive notifications about search results',
+                    'Notify users if no results are found',
+                    'Display success/failure notifications for search',
+                ],
+            },
+            {
+                title: 'Responsive Design',
+                items: [
+                    'Fully responsive layout for various screen sizes',
+                    'Optimized user experience across devices',
+                ],
+            },
+        ],
+        techStack: {
+            architecture: 'Modular React  Single Page Application',
+            frontend: ['React'],
+            api: ['Axios'],
+            backend: ['Third-party RESTful  Pixabay API '],
+            styling: ['Styled Components', 'CSS Modules', 'Modern Normalize'],
+            ui: [
+                'React Icons', 'React Loader Spinner', 'React Toastify'
+            ],
+            utilities: ['Nanoid', 'Prop-types'],
+            tools: ['ESLint', 'Prettier',  'Webpack (via CRA)'],
+                  },
+        images: [
+                'demo-video.mp4',
+            'img1.jpg',
+            'img2.jpg',
+            'img3.jpg',
+            'img4.jpg',
         ],
     },
 ];
