@@ -834,9 +834,8 @@ export const projectsData = [
         title: 'Ice Cream Landing Page',
         type: 'Collaborative',
         slogan: 'One Lick and You’re Hooked!',
-
         date: 2022,
-        poster: 'demo.gif',
+        poster: 'poster.jpg',
         timeline: '2 weeks',
 
         website: {
@@ -856,6 +855,7 @@ export const projectsData = [
         skills: [
             'Semantic HTML',
             "SVG sprite usage",
+            'Flexbox Layout',
             "Mobile-first design",
             'SASS Variables',
             'Reusable Mixins',
@@ -909,12 +909,12 @@ export const projectsData = [
                 'Modern Normalize CSS reset',
             ],
             ui: [
-                'Slick Carousel (for feedback slider)',
+                'Slick Carousel',
                 'Custom modal windows with JavaScript',
                 'Custom cursor implementation',
             ],
             tools: ['Parcel', 'PostHTML Include', 'Prettier'],
-            storage: ['LocalStorage', 'Firebase'],
+
         },
         images: [
             'demo.gif',
@@ -927,12 +927,6 @@ export const projectsData = [
             'img7.jpg',
             'img8.jpg',
             'img9.jpg',
-            'img10.jpg',
-            'img11.jpg',
-            'img12.jpg',
-            'img13.jpg',
-            'img14.jpg',
-            'img15.jpg',
         ],
     },
 ];
