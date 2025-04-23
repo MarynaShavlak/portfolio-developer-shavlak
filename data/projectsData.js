@@ -690,7 +690,7 @@ export const projectsData = [
     {
         id: 'filmoteka',
         industry: 'Web Application',
-        categories: ['js', 'html', 'saas', 'parcel'  ],
+        categories: ['js', 'html', 'saas', 'parcel', 'canvas' ],
         title: 'Filmoteka',
         type: 'Collaborative',
         slogan: 'Discover, Organize, and Enjoy Movies Your Way!',
@@ -704,11 +704,11 @@ export const projectsData = [
         },
         website: {
             name: 'Filmoteka WebApplication',
-            link: 'https://svitlanahonchar.github.io/Goose-Track_Work-Smart/',
+            link: 'https://marynashavlak.github.io/filmoteka/',
         },
         repository: {
             name:'filmoteka (GitHub)',
-            link: 'https://github.com/Anzhelika-Light/Work-smart-not-hard---JS-Project'
+            link: 'https://github.com/MarynaShavlak/filmoteka'
         },
         descr: [
           'Filmoteka is a responsive online movie platform with a vast collection of films.',
@@ -733,7 +733,10 @@ export const projectsData = [
             'Data fetching optimization',
             'Responsive image techniques',
             'Responsive design implementation',
-            'Pagination for content delivery'
+            'Efficient pagination',
+            'Responsive canvas animation using Canvas API and OOP',
+            'Dynamic effects based on screen size',
+
           ],
         features: [
             {
@@ -782,6 +785,7 @@ export const projectsData = [
                     'Responsive raster images across devices',
                     'Smooth scroll for seamless browsing',
                     'CSS transitions for hover animations',
+                    'Canvas-based header with device-specific variations',
                 ],
             },
         ],
@@ -799,11 +803,13 @@ export const projectsData = [
                 'BasicLightbox',
                 'Notiflix',
                 'Darkmode-js',
+                'Ultimate Pagination',
             ],
             tools: ['Parcel', 'PostHTML Include', 'Prettier'],
             storage: ['LocalStorage', 'Firebase'],
                     },
         images: [
+            'demo.gif',
             'img1.jpg',
             'img2.jpg',
             'img3.jpg',
@@ -811,6 +817,14 @@ export const projectsData = [
             'img5.jpg',
             'img6.jpg',
             'img7.jpg',
+            'img8.jpg',
+            'img9.jpg',
+            'img10.jpg',
+            'img11.jpg',
+            'img12.jpg',
+            'img13.jpg',
+            'img14.jpg',
+            'img15.jpg',
         ],
     },
 ];
