@@ -830,7 +830,7 @@ export const projectsData = [
     {
         id: 'iceCream',
         industry: 'Web Application',
-        categories: ['html', 'saas', 'js', 'parcel', 'jQuery'],
+        categories: ['html', 'saas', 'js', 'parcel', 'jquery'],
         title: 'Ice Cream Landing Page',
         type: 'Collaborative',
         slogan: 'One Lick and You’re Hooked!',
