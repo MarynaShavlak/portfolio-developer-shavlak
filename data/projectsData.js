@@ -696,7 +696,7 @@ export const projectsData = [
         slogan: 'Discover, Organize, and Enjoy Movies Your Way!',
 
         date: 2023,
-        poster: 'poster.jpg',
+        poster: 'demo.gif',
         timeline: '2 weeks',
         presentation: {
             name: 'Filmoteka – Project Presentation',
