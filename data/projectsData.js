@@ -690,7 +690,7 @@ export const projectsData = [
     {
         id: 'filmoteka',
         industry: 'Web Application',
-        categories: ['js', 'html', 'saas', 'parcel', 'canvas' ],
+        categories: ['javascript', 'html', 'saas', 'parcel', 'canvas' ],
         title: 'Filmoteka',
         type: 'Collaborative',
         slogan: 'Discover, Organize, and Enjoy Movies Your Way!',
@@ -830,7 +830,7 @@ export const projectsData = [
     {
         id: 'iceCream',
         industry: 'Web Application',
-        categories: ['html', 'saas', 'js', 'parcel', 'jquery'],
+        categories: ['html', 'saas', 'javascript', 'parcel', 'jquery'],
         title: 'Ice Cream Landing Page',
         type: 'Collaborative',
         slogan: 'One Lick and You’re Hooked!',
@@ -933,7 +933,7 @@ export const projectsData = [
     {
         id: 'calculator',
         industry: 'Web Application',
-        categories: ['html', 'css', 'js', ],
+        categories: ['html', 'css', 'javascript', ],
         title: 'Calculator UA',
         type: 'Individual',
         slogan: 'Power Your Math with the Spirit of Ukraine!',
