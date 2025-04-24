@@ -1314,7 +1314,7 @@ export const projectsData = [
         industry: 'Web Application',
         type: 'Individual',
         categories: ['react', 'webpack' ],
-        title: 'Image Finder',
+        title: 'Movie Finder',
         slogan: '',
         date: 2023,
         poster: 'poster.jpg',
@@ -1325,11 +1325,11 @@ export const projectsData = [
         },
         website: {
             name: 'Movie Finder WebApplication',
-            link: 'https://marynashavlak.github.io/react-movie-finder-hub/?page=1',
+            link: 'https://marynashavlak.github.io/movie-finder/',
         },
         repository: {
             name: 'movie-finder(GitHub)',
-            link: 'https://github.com/MarynaShavlak/react-movie-finder-hub'
+            link: 'https://github.com/MarynaShavlak/movie-finder'
         },
         descr: [
             'MovieFinder is a React-based application for discovering and exploring movies.',
