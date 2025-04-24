@@ -11,7 +11,9 @@ export const libs = [
     'Lottie (https://www.npmjs.com/package/@lottiefiles/lottie-player)',
     'React Modal',
     'React Select',
-    'Ant Design (https://ant.design/)'
+    'Ant Design (https://ant.design/)',
+    'React Transition Group',
+    'React Toastify',
 
 ]
 
