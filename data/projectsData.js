@@ -382,7 +382,7 @@ export const projectsData = [
         id: 'phonebook',
         industry: 'Web Application',
         type: 'Individual',
-        categories: ['react', 'webpack' ],
+        categories: ['react',  ],
         title: 'Phonebook',
         slogan: 'Let PHONE GENIE grant your every connection wish!',
         presentation: '',
@@ -552,7 +552,7 @@ export const projectsData = [
     {
         id: 'gooseTrack',
         industry: 'Web Application',
-        categories: ['react', 'webpack' ],
+        categories: ['react',  ],
         title: 'GooseTrack',
         type: 'Collaborative',
         slogan: 'Your Ultimate Task Manager and Calendar Companion!',
@@ -1228,7 +1228,7 @@ export const projectsData = [
         id: 'imageFinder',
         industry: 'Web Application',
         type: 'Individual',
-        categories: ['react', 'webpack' ],
+        categories: ['react', ],
         title: 'Image Finder',
         slogan: '',
         date: 2023,
@@ -1313,7 +1313,7 @@ export const projectsData = [
         id: 'movieFinder',
         industry: 'Web Application',
         type: 'Individual',
-        categories: ['react', 'webpack' ],
+        categories: ['react',  ],
         title: 'Movie Finder',
         slogan: '',
         date: 2023,
@@ -1748,6 +1748,112 @@ export const projectsData = [
             'img4.jpg',
             'img5.jpg',
             'img6.jpg',
+        ],
+    },
+    {
+        id: 'countriesHub',
+        industry: 'Web Application',
+        type: 'Individual',
+        categories: ['react', 'typescript', 'tailwind' ],
+        title: 'Countries Hub',
+        slogan: '',
+        date: 2024,
+        poster: 'poster.jpg',
+        timeline: '1 week',
+        apiDocumentation: {
+            name: 'REST Countries API Docs',
+            link: 'https://restcountries.com/v3.1/'
+        },
+        website: {
+            name: 'Countries Hub WebApplication',
+            link: 'https://marynashavlak.github.io/countries-hub/',
+        },
+        repository: {
+            name: 'countries-hub (GitHub)',
+            link: 'https://github.com/MarynaShavlak/countries-hub'
+        },
+        descr: [
+            'Countries Hub is a responsive web application that uses the REST Countries API to provide detailed information about countries around the world.',
+            'Users can explore a searchable and filterable grid of country cards on the homepage and view comprehensive data on each country in a dedicated detail view.',
+            'The app includes a light/dark theme toggle, a custom loading spinner, and interactive features like a modal for viewing enlarged flags and Google Maps integration.'
+        ],
+        skills: [
+            'React.js (Functional Components)',
+            'Component Reusability & Modularity',
+            'State Management with useState & useReducer',
+            'Effect Management with useEffect',
+            'Conditional Rendering',
+            'Routing with React Router DOM',
+            'Custom React Hooks',
+
+            'Async Data Fetching with Axios',
+            'Error Handling & Loading States',
+            'State Persistence using useLocalStorage',
+            'Type-Safe Programming with TypeScript',
+            'Object & Array Destructuring',
+            'Dynamic Theme Switching (Light/Dark)',
+            'Responsive Design with Tailwind CSS',
+            'Tailwind JIT Mode Configuration',
+            'Linting',
+            'Code Formatting ',
+            'Modular Architecture & Folder Structure',
+
+        ],
+        features: [
+            {
+                title: 'Homepage',
+                items: [
+                    'Grid of country cards with flag, name, population, region, and capital',
+                    'Search by country name with “not found” message',
+                    'Filter by 6 regions: Africa, America, Asia, Europe, Oceania, All'
+                ]
+            },
+            {
+                title: 'Country Details Page',
+                items: [
+                    'Flag with modal for full-size view',
+                    'Displays coat of arms, native name, region, subregion, top-level domain, languages',
+                    'Lists bordering countries with quick navigation',
+                    'Widgets for capital, population, area, and currencies',
+                    '“Show on Map” button opens Google Maps in a new tab'
+                ]
+            },
+            {
+                title: 'UI/UX',
+                items: [
+                    'Dark and light theme support with toggle',
+                    'Custom loading spinner for API data fetch',
+                    'Responsive and user-friendly design'
+                ]
+            }
+
+        ],
+        techStack: {
+            architecture: 'Modular React Single Page Application',
+            frontend: ['React', 'React Router DOM'],
+            api: ['Axios'],
+            backend: ['REST Countries API'],
+            styling: ['Tailwind CSS', ],
+            ui: [
+                'React Icons',
+                'React Loader Spinner',
+                'React Modal',
+                'React Select'
+
+
+                        ],
+            utilities: ['Lodash','Clsx',  'UUID',  'usehooks-ts'],
+            tools: ['TypeScript', 'ESLint', 'Prettier',  'Webpack (via CRA)'],
+        },
+        images: [
+            'demo-video.mp4',
+            'img1.jpg',
+            'img2.jpg',
+            'img3.jpg',
+            'img4.jpg',
+            'img5.jpg',
+            'img6.jpg',
+            'img7.jpg',
         ],
     },
 ];

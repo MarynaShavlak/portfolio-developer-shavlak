@@ -7,5 +7,13 @@ export const libs = [
     'React Paginate',
     'Styled Components',
     'Modern Normalize',
-    'Date-fns', 'Prop-types', 'Randomcolor'
+    'Date-fns', 'Prop-types', 'Randomcolor',
+    'Lottie (https://www.npmjs.com/package/@lottiefiles/lottie-player)',
+    'React Modal',
+    'React Select'
+
 ]
+
+
+// API
+// 'https://restcountries.com/v3.1/'
