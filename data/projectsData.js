@@ -1966,7 +1966,7 @@ export const projectsData = [
         ],
     },
     {
-        id: 'shopping-list',
+        id: 'shoppingList',
         industry: 'Web Application',
         type: 'Individual',
         categories: ['react', 'typescript', 'canvas',  ],
@@ -2071,7 +2071,7 @@ export const projectsData = [
         title: 'Code Meter: JavaScript Test',
         slogan: 'Tick the Right Code Boxes!',
 
-        date: 2023,
+        date: 2024,
         poster: 'demo.gif',
         timeline: '3 hours',
         website: {
@@ -2083,80 +2083,61 @@ export const projectsData = [
             link: 'https://github.com/MarynaShavlak/code-meter'
         },
         descr: [
-            'Sudoku for Kids is an engaging web game introducing children to Sudoku puzzles.' ,
-            'It offers a child-friendly interface, multiple difficulty levels, helpful hints, and immersive features like responsive design, sound orientation, and theme customization.',
-            'It includes gameplay elements such as life and hint systems, random board generation, visual cues, and level statistics tracking, with potential future enhancements like multiplayer mode and achievements.'
-
+       'Code Meter is an interactive JavaScript quiz application that evaluates the user\'s knowledge of core JS concepts.',
+            'It features animated progress tracking, real-time scoring, modal prompts, and celebratory canvas fireworks for completion.'
         ],
         skills: [
             "HTML5",
             "CSS3",
             "JavaScript",
-            "Time Management",
             "DOM Manipulation",
             "Event Handling",
-            "Modal Management",
-            "Game State Initialization",
-            "Responsive Design Handling",
-            "Custom UI Transitions",
-            "Theming and Dynamic Styling",
-            "Audio & Visual Feedback",
-            'Images Optimization',
-            "Function Decomposition",
-            "State Management (vanilla JS)",
-            "Game UX Logic"
+            'Canvas API for particle effects',
+            'Font Awesome for UI Icons',
+            'Modular File Structure',
+            'Code Splitting'
+
         ],
         features: [
             {
-                title: 'User Experience & Accessibility',
+                title: 'Quiz Functionality',
                 items: [
-                    'Child-friendly interface',
-                    'Responsive design for all devices',
-                    'Sound orientation for navigation and feedback',
-                ],
+                    'Dynamic quiz generation from predefined question set',
+                    'Real-time score tracking and feedback per question',
+                    'Restart functionality with reset state and UI',
+                    'Edge-case handling for empty test scenario'
+                ]
             },
             {
-                title: 'Gameplay Mechanics',
+                title: 'User Interface & UX',
                 items: [
-                    'Multiple difficulty levels',
-                    'Life system to increase challenge',
-                    'Random board generation for endless puzzles',
-                    'Pause and resume game functionality',
-                    'Timer options: play with or without a countdown',
-                ],
+                    'Animated progress bar for visual test advancement',
+                    'Modal system for user guidance and warnings',
+                    'Responsive layout with semantic HTML & custom CSS'
+                ]
             },
             {
-                title: 'Customization & Personalization',
+                title: 'Celebratory & Visuals',
                 items: [
-                    'Theme customization with 8 cartoon styles',
-                ],
-            },
-            {
-                title: 'Hint & Assistance System',
-                items: [
-                    'Helpful hints when stuck',
-                    'Hint system to guide players and improve memory',
-                ],
-            },
-            {
-                title: 'Progress Tracking',
-                items: [
-                    'Level statistics tracking to monitor performance',
-                ],
-            },
+                    'Firework animation on test completion via canvas API'
+                ]
+            }
+
         ],
         techStack: {
             architecture: 'Vanilla JavaScript single-page application',
             frontend: ['HTML5', 'CSS3', 'JavaScript (ES6+)'],
-            build: ['Gulp', 'Webpack', 'Babel'],
-            tools: ['PostCSS', 'Autoprefixer'],
-            ui: ['Custom components', 'SVG icons', 'Google Fonts'],
-            media: ['Audio integration', 'GIF animations'],
-            storage: ['LocalStorage for game statistics'],
+            tools: ['Prettier'],
+            ui: ['SVG icons', 'Google Fonts'],
+            styling: [
+                'CSS with BEM methodology',
+                'Modern Normalize CSS reset',
+            ],
+
+
         },
         images: [
             'demo-video.mp4',
-
             'img1.jpg',
             'img2.jpg',
             'img3.jpg',
