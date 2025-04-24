@@ -65,7 +65,7 @@ function createProjectMediaSection(title,id, mediaFiles) {
 
         const $media = isVideo
             ? $(
-                `<video class="project-video project-slide${index + 1}"  controls>
+                `<video class="project-video project-slide${index + 1} controls">
                     <source src="${filePath}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>`

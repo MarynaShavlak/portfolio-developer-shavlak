@@ -268,7 +268,7 @@ export const projectsData = [
         id: 'sudokuForKids',
         industry: 'Web Games',
         type: 'Individual',
-        categories: ['javascript', 'html', 'css', ],
+        categories: ['javascript', 'html', 'css', 'webGames'  ],
         title: 'Sudoku for Kids',
         slogan: 'Fun and Educational Web Game!',
         presentation: {
@@ -1435,7 +1435,7 @@ export const projectsData = [
         id: 'matchingGame',
         industry: 'Web Games',
         type: 'Individual',
-        categories: ['javascript', 'html', 'css', ],
+        categories: ['javascript', 'html', 'css', 'webGames' ],
         title: 'Matching Game',
         slogan: 'Unlock Star Wars Memories!',
 
