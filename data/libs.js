@@ -10,7 +10,8 @@ export const libs = [
     'Date-fns', 'Prop-types', 'Randomcolor',
     'Lottie (https://www.npmjs.com/package/@lottiefiles/lottie-player)',
     'React Modal',
-    'React Select'
+    'React Select',
+    'Ant Design (https://ant.design/)'
 
 ]
 
