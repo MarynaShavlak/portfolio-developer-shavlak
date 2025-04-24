@@ -11,7 +11,7 @@ export const projectsData = [
         poster: 'poster.jpg',
         website: {
             name: 'Dev Interview Hub WebApp',
-            link: 'https://dev-interview-hub.web.app/',F
+            link: 'https://dev-interview-hub.web.app/',
         },
         repository: {
             name: 'dev-interview-hub (GitHub)',
@@ -1975,10 +1975,6 @@ export const projectsData = [
         date: 2024,
         poster: 'demo.gif',
         timeline: '6 hours',
-        // apiDocumentation: {
-        //     name: 'REST Countries API Docs',
-        //     link: 'https://restcountries.com/v3.1/'
-        // },
         website: {
             name: 'Shopping List',
             link: 'https://marynashavlak.github.io/shopping-list-ts/',
@@ -1992,25 +1988,19 @@ export const projectsData = [
             'A visually dynamic background features pulsating, blurred circles created with a canvas, enhancing the app\'s aesthetic appeal.'
         ],
         skills: [
-            // 'React.js (Functional Components)',
-            // 'Component Reusability & Modularity',
-            // 'State Management with useState & useReducer',
-            // 'Effect Management with useEffect',
-            // 'Conditional Rendering',
-            // 'Routing with React Router DOM',
-            // 'Custom React Hooks',
-            //
-            // 'Async Data Fetching with Axios',
-            // 'Error Handling & Loading States',
-            // 'State Persistence using useLocalStorage',
-            // 'Type-Safe Programming with TypeScript',
-            // 'Object & Array Destructuring',
-            // 'Dynamic Theme Switching (Light/Dark)',
-            // 'Responsive Design with Tailwind CSS',
-            // 'Tailwind JIT Mode Configuration',
-            // 'Linting',
-            // 'Code Formatting ',
-            // 'Modular Architecture & Folder Structure',
+            'React.js (Functional Components)',
+            'Component Reusability & Modularity',
+            'State Management with useState',
+            'Effect Management with useEffect',
+            'Conditional Rendering',
+            'Custom React Hooks',
+            'Error Handling & Loading States',
+            'Type-Safe Programming with TypeScript',
+            'Object & Array Destructuring',
+            'Linting',
+            'Code Formatting ',
+            'Modular Architecture & Folder Structure',
+            'Controlled & Uncontrolled Components'
 
         ],
         features: [
@@ -2065,14 +2055,112 @@ export const projectsData = [
             storage: ['LocalStorage'],
         },
         images: [
-            'demo-video.mp4',
+
             'img1.jpg',
             'img2.jpg',
             'img3.jpg',
             'img4.jpg',
-            'img5.jpg',
-            'img6.jpg',
-            'img7.jpg',
+
         ],
+    },
+    {
+        id: 'codeMeter',
+        industry: 'Education',
+        type: 'Individual',
+        categories: ['javascript', 'html', 'css', 'canvas' ],
+        title: 'Code Meter: JavaScript Test',
+        slogan: 'Tick the Right Code Boxes!',
+
+        date: 2023,
+        poster: 'demo.gif',
+        timeline: '3 hours',
+        website: {
+            name: 'Code Meter',
+            link: 'https://marynashavlak.github.io/code-meter/',
+        },
+        repository: {
+            name: 'code-meter (GitHub)',
+            link: 'https://github.com/MarynaShavlak/code-meter'
+        },
+        descr: [
+            'Sudoku for Kids is an engaging web game introducing children to Sudoku puzzles.' ,
+            'It offers a child-friendly interface, multiple difficulty levels, helpful hints, and immersive features like responsive design, sound orientation, and theme customization.',
+            'It includes gameplay elements such as life and hint systems, random board generation, visual cues, and level statistics tracking, with potential future enhancements like multiplayer mode and achievements.'
+
+        ],
+        skills: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Time Management",
+            "DOM Manipulation",
+            "Event Handling",
+            "Modal Management",
+            "Game State Initialization",
+            "Responsive Design Handling",
+            "Custom UI Transitions",
+            "Theming and Dynamic Styling",
+            "Audio & Visual Feedback",
+            'Images Optimization',
+            "Function Decomposition",
+            "State Management (vanilla JS)",
+            "Game UX Logic"
+        ],
+        features: [
+            {
+                title: 'User Experience & Accessibility',
+                items: [
+                    'Child-friendly interface',
+                    'Responsive design for all devices',
+                    'Sound orientation for navigation and feedback',
+                ],
+            },
+            {
+                title: 'Gameplay Mechanics',
+                items: [
+                    'Multiple difficulty levels',
+                    'Life system to increase challenge',
+                    'Random board generation for endless puzzles',
+                    'Pause and resume game functionality',
+                    'Timer options: play with or without a countdown',
+                ],
+            },
+            {
+                title: 'Customization & Personalization',
+                items: [
+                    'Theme customization with 8 cartoon styles',
+                ],
+            },
+            {
+                title: 'Hint & Assistance System',
+                items: [
+                    'Helpful hints when stuck',
+                    'Hint system to guide players and improve memory',
+                ],
+            },
+            {
+                title: 'Progress Tracking',
+                items: [
+                    'Level statistics tracking to monitor performance',
+                ],
+            },
+        ],
+        techStack: {
+            architecture: 'Vanilla JavaScript single-page application',
+            frontend: ['HTML5', 'CSS3', 'JavaScript (ES6+)'],
+            build: ['Gulp', 'Webpack', 'Babel'],
+            tools: ['PostCSS', 'Autoprefixer'],
+            ui: ['Custom components', 'SVG icons', 'Google Fonts'],
+            media: ['Audio integration', 'GIF animations'],
+            storage: ['LocalStorage for game statistics'],
+        },
+        images: [
+            'demo-video.mp4',
+
+            'img1.jpg',
+            'img2.jpg',
+            'img3.jpg',
+            'img4.jpg',
+                    ],
     },
 ];
