@@ -1595,4 +1595,89 @@ export const projectsData = [
 
         ],
     },
+    {
+        id: 'invaders',
+        industry: 'Web Games',
+        type: 'Individual',
+        categories: ['javascript', 'html', 'css', 'webGames' ],
+        title: 'Invaders Web Game',
+        slogan: '',
+
+        date: 2023,
+        poster: 'demo.gif',
+        timeline: '1 week',
+        website: {
+            name: 'Invaders Web Game',
+            link: 'https://marynashavlak.github.io/game-invaders/',
+        },
+        repository: {
+            name: 'game-invaders (GitHub)',
+            link: 'https://github.com/MarynaShavlak/game-invaders'
+        },
+        descr: [
+             'A fast-paced, browser-based space shooter where players control a spaceship, destroy incoming enemies and asteroids, collect power-ups, and avoid deadly bombs that reduce lives.',
+            'The game features ship customization, progressive difficulty, and win/lose states based on performance.'
+        ],
+        skills: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "DOM Manipulation",
+            "Event Handling",
+            'Asynchronous Timing',
+            'Randomization technics',
+            'Algorithm Implementation',
+            'CSS Manipulation',
+            "Function Decomposition",
+            "Game UX Logic",
+            "Coordinate System Handling",
+            "Element Sizing and Positioning",
+            "Collision Detection and Resolution",
+            "DOM Element Resizing",
+            "Pixel-based Animation"
+
+        ],
+        features: [
+            {
+                title: 'Gameplay',
+                items: [
+                    'Choose spaceship skin',
+                    'Shoot enemies and asteroids',
+                    'Randomized spawns',
+                    'Collision detection',
+                    'Progressive difficulty',
+                    'Win by score, lose on zero lives',
+                    'End game and restart',
+                    'Random power-ups (lives, bombs)',
+                    'Moving planets in the background',
+                    'Boom GIF visual effect on enemy, asteroid, or bomb destruction'
+                ]
+            },
+            {
+                title: 'Sound Features',
+                items: [
+                    'Background music plays in a loop, adjustable with volume controls',
+                    'Different blaster sounds for each bullet type, providing feedback to the player',
+                    'Explosion sound triggered when enemies or asteroids are destroyed',
+                    'Sound toggle feature to turn game sounds on or off',
+                    'Visual indicators to show if sound is on or off, with sound icons in the menu',
+                    'Mute functionality to silence all sounds during gameplay'
+                ]
+            }
+
+        ],
+        techStack: {
+            architecture: 'Vanilla JavaScript single-page application',
+            frontend: ['HTML5', 'CSS3', 'JavaScript (ES6+)'],
+            ui: ['Custom components',  'CSS-based animations'],
+            media: ['Custom event-triggered audio (e.g., explosions, background music)']
+
+        },
+        images: [
+            'demo-video.mp4',
+            'img1.jpg',
+            'img2.jpg',
+            'img3.jpg',
+        ],
+    },
 ];
