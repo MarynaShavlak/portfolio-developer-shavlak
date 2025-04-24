@@ -698,6 +698,10 @@ export const projectsData = [
         date: 2023,
         poster: 'demo.gif',
         timeline: '2 weeks',
+        apiDocumentation: {
+            name: 'TMDB API Docs',
+            link: 'https://api.themoviedb.org'
+        },
         presentation: {
             name: 'Filmoteka – Project Presentation',
             link: 'https://www.canva.com/design/DAFaRx-25Hc/T7veuXW-nSjhchXr3s8Ubg/view#1'
@@ -1303,6 +1307,128 @@ export const projectsData = [
             'img2.jpg',
             'img3.jpg',
             'img4.jpg',
+        ],
+    },
+    {
+        id: 'movieFinder',
+        industry: 'Web Application',
+        type: 'Individual',
+        categories: ['react', 'webpack' ],
+        title: 'Image Finder',
+        slogan: '',
+        date: 2023,
+        poster: 'poster.jpg',
+        timeline: '1 week',
+        apiDocumentation: {
+            name: 'TMDB API Docs',
+            link: 'https://api.themoviedb.org'
+        },
+        website: {
+            name: 'Movie Finder WebApplication',
+            link: 'https://marynashavlak.github.io/react-movie-finder-hub/?page=1',
+        },
+        repository: {
+            name: 'movie-finder(GitHub)',
+            link: 'https://github.com/MarynaShavlak/react-movie-finder-hub'
+        },
+        descr: [
+            'MovieFinder is a React-based application for discovering and exploring movies.',
+            'It features a homepage showcasing today’s trending films, a search functionality for finding movies by keyword, and detailed movie pages with comprehensive information, including cast and user reviews.',
+           'Movies are loaded progressively with a pagination interface, and users receive notifications about search results.'
+        ],
+        skills: [
+            'React.js',
+            'Async Data Fetching (AJAX)',
+            'State Persistence',
+            'Component Styling',
+            'UI Enhancements & Notifications',
+            'Reusable & Modular Components',
+            'Linting & Code Quality (ESLint, Prettier)',
+            'Browser Compatibility',
+            'Custom React Hooks & Constants',
+            'React.lazy() & Suspense',
+            'Routing with React Router DOM',
+            'CSS-in-JS',
+            'Date Manipulation',
+            'Dynamic Pagination'
+
+        ],
+        features: [
+            {
+                title: 'Movie Search & Display',
+                items: [
+                    'Browse today’s trending movies on a dedicated page',
+                    'Search for movies by keyword on the Movies page',
+                    'Pagination implemented on both trending and search pages for smooth navigation',
+                ],
+            },
+            {
+                title: 'Movie Search & Display',
+                items: [
+                    'Search for images by keyword',
+                    'Click thumbnails to view larger images in a modal',
+                    'Load more images with the "Load More" button',
+                    "Custom image placeholder for unavailable posters"
+                ],
+            },
+            {
+                title: 'Movie Details Page',
+                items: [
+                    'Displays movie poster, title, short overview, movie duration and genre information',
+                    'Shows likes/dislikes and average rating as highlighted stars (supports float values)',
+                    'Interface to view additional details like cast and user reviews',
+                ],
+            },
+            {
+                title: 'Cast Section',
+                items: [
+                    'Shows actors with photos, real names, and roles',
+                    'Displays message if no cast info is available',
+                ],
+            },
+            {
+                title: 'Reviews Section',
+                items: [
+                    'Displays user avatar, name, review date, and time since last update',
+                    'Shows user rating and full review text with Show More/Show Less toggle',
+                    'Displays a message if no reviews are available',
+                ],
+            },
+                        {
+                title: 'User Notifications',
+                items: [
+                    'Informs users when no movies match the search query',
+                ],
+            },
+
+        ],
+        techStack: {
+            architecture: 'Modular React Single Page Application',
+            frontend: ['React', 'React Router DOM'],
+            api: ['Axios'],
+            backend: ['The Movie Database (TMDb) API'],
+            styling: ['Styled Components', 'CSS Modules', 'Modern Normalize'],
+            ui: [
+                'React Icons', 'React Loader Spinner', 'React Toastify',
+
+                'React Show More Text',
+                'React Avatar',
+                'React Star Ratings',
+                'React Circular Progress Bar',
+                'React Paginate',
+            ],
+            utilities: ['Date-fns', 'Prop-types', 'Randomcolor'],
+            tools: ['ESLint', 'Prettier',  'Webpack (via CRA)'],
+        },
+        images: [
+            'demo-video.mp4',
+            'img1.jpg',
+            'img2.jpg',
+            'img3.jpg',
+            'img4.jpg',
+            'img5.jpg',
+            'img6.jpg',
+            'img7.jpg',
         ],
     },
 ];
