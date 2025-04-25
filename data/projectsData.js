@@ -2242,7 +2242,6 @@ export const projectsData = [
             ],
         },
         images: [
-            'demo-video.mp4',
             'img1.jpg',
             'img2.jpg',
             'img3.jpg',
