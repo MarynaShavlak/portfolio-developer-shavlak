@@ -14,6 +14,8 @@ export const libs = [
     'Ant Design (https://ant.design/)',
     'React Transition Group',
     'React Toastify',
+'    just-validate (https://www.npmjs.com/package/just-validate)',
+    'Inputmask (https://www.npmjs.com/package/inputmask/v/5.0.8-beta.15)'
 
 ]
 
