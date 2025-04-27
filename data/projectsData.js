@@ -2554,7 +2554,7 @@ export const projectsData = [
         title: 'Bhagaskara  Landing Page',
         date: 2024,
         poster: 'bhagaskara-landing.gif',
-        timeline: '4 hours',
+        timeline: '10 hours',
         website: {
             name: 'Bhagaskara Landing Page',
             link: 'https://marynashavlak.github.io/bhagaskara-landing/',
@@ -2605,11 +2605,9 @@ export const projectsData = [
             {
                 title: "Interactive Reviews Slider",
                 items: [
-                    "Dynamically generates review items from data.",
-                    "Autoplay slider with smooth transitions and manual thumbnail navigation.",
-                    "Thumbnails highlight the active review with animated shading effects.",
-                    "Autoplay pauses on hover for better user control.",
-                    "Slider initializes only when the section enters the viewport for better performance."
+                    "Dynamically generated review items with autoplay and thumbnail navigation.",
+                    "Active review highlighted with animated thumbnails, autoplay pauses on hover.",
+                    "Slider initializes when the section enters the viewport for improved performance."
                 ]
             },
             {
@@ -2618,8 +2616,7 @@ export const projectsData = [
                     "Numbers smoothly count up when scrolled into view.",
                     "Triggered with Waypoints for optimized scroll detection.",
                     "One-time animation for clean and efficient user experience.",
-                    "Powered by CounterUp for fast and lightweight performance."
-                ]
+                 ]
             },
             {
                 title: "Team Section Carousel",
@@ -2627,7 +2624,7 @@ export const projectsData = [
                     "Interactive team slider with smooth looping animation.",
                     "Custom hexagon-shaped navigation buttons with icons.",
                     "Responsive layout adjusting items and margins for all devices.",
-                    "Built with Owl Carousel for reliable, touch-friendly navigation."
+
                 ]
             },
             {
@@ -2686,7 +2683,7 @@ export const projectsData = [
             ],
         },
         images: [
-
+            'bhagaskara-video.mp4',
     'img1.gif',
     'img2.gif',
     'img3.gif',
