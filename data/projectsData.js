@@ -2545,4 +2545,145 @@ export const projectsData = [
 
         ],
     },
+    {
+        id: 'bhagaskaraLanding',
+        slogan: '',
+        industry: 'Website',
+        type: 'Individual',
+        categories: [ 'html', 'css', 'jquery' ],
+        title: 'Bhagaskara  Landing Page',
+        date: 2024,
+        poster: 'bhagaskara-landing.gif',
+        timeline: '4 hours',
+        website: {
+            name: 'Bhagaskara Landing Page',
+            link: 'https://marynashavlak.github.io/bhagaskara-landing/',
+        },
+        repository: {
+            name: 'bhagaskara-landing (GitHub)',
+            link: 'https://github.com/MarynaShavlak/bhagaskara-landing'
+        },
+        descr: [
+            'Car Landing is a dynamic, interactive landing page designed to showcase and compare different car models' ,
+            'The website offers a smooth user experience with dynamic model selection, real-time updates of characteristics, color choices, detailed specifications, price calculation, FAQ section, and model reviews — all without requiring a page reload.'
+        ],
+        skills: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Event Handling",
+            'State Management',
+            'Conditional Logic & Validation',
+            'Array & Object Handling',
+            "Data-Driven Rendering",
+            'Code Splitting',
+            'HTML Generation via JavaScript',
+            'Data Binding & UI Updates',
+            'CSS Animations'
+        ],
+        features: [
+            // {
+            //     title: 'Model Selection',
+            //     items: [
+            //         'Instant switching between Toyota Corolla and Toyota Camry models'
+            //     ]
+            // },
+            // {
+            //     title: 'Dynamic Car Details',
+            //     items: [
+            //         'Display selected car’s image, specifications, and starting price',
+            //         'Interactive form for selecting engine, transmission, and package options',
+            //         'Automatic updates to price and specifications summary based on selections'
+            //     ]
+            // },
+            // {
+            //     title: 'Color Picker',
+            //     items: [
+            //         'Choose car colors to dynamically update the displayed model image'
+            //     ]
+            // },
+            // {
+            //     title: 'Comparison Table',
+            //     items: [
+            //         'Accordion-style tables for comparing different car packages'
+            //     ]
+            // },
+            // {
+            //     title: 'FAQ Section',
+            //     items: [
+            //         'Accordion component featuring common customer questions'
+            //     ]
+            // },
+            // {
+            //     title: 'Model Reviews',
+            //     items: [
+            //         'Interactive car review block with multiple review positions',
+            //         'Display corresponding text and images for each review'
+            //     ]
+            // },
+            // {
+            //     title: 'Smooth Accordion Animation',
+            //     items: [
+            //         'Smooth animations for FAQ and Variant Comparison sections'
+            //     ]
+            // },
+            // {
+            //     title: 'Animated Input Selection',
+            //     items: [
+            //         'Custom animation effect for radio input selections',
+            //         'Visual enhancement to improve user interaction and feedback',
+            //         'Smooth animated transitions for a more engaging experience'
+            //     ]
+            // }
+            {
+                title: "Floating Circles Canvas Animation",
+                items: [
+                    "Animated circles with soft opacity transitions.",
+                    "Responsive to screen size and window resizing.",
+                    "Light color palette for a clean, modern feel.",
+                    "Smooth, endless motion with randomized dynamics."
+                ]
+            },
+            {
+                title: "Interactive Particle Network Animation",
+                items: [
+                    "Particles move smoothly with randomized paths and controlled lifespans.",
+                    "Dynamic lines connect nearby particles with responsive opacity.",
+                    "Fully responsive to window resizing and banner dimensions.",
+                    "Particles avoid overlapping the central icon area for a clean look."
+                ]
+            }
+
+        ],
+
+        techStack: {
+            architecture: 'Single-page jQuery application',
+            frontend: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'jQuery'],
+            tools: ['Prettier'],
+            ui: [ 'Google Fonts', 'Font Awesome', 'CSS-based animations'],
+            styling: [
+                'CSS with BEM methodology',
+            ],
+        },
+        images: [
+
+    'img1.gif',
+    'img2.gif',
+    'img3.gif',
+    'img4.gif',
+    'img5.gif',
+    'img6.jpg',
+    'img7.gif',
+    'img8.gif',
+    'img9.jpg',
+    'img10.jpg',
+    'img11.gif',
+    'img12.jpg',
+    'img13.jpg',
+
+        ],
+    },
 ];
+
+
+
