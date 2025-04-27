@@ -2550,7 +2550,7 @@ export const projectsData = [
         slogan: '',
         industry: 'Website',
         type: 'Individual',
-        categories: [ 'html', 'css', 'jquery' ],
+        categories: [ 'html', 'css', 'jquery', 'canvas' ],
         title: 'Bhagaskara  Landing Page',
         date: 2024,
         poster: 'bhagaskara-landing.gif',
@@ -2564,77 +2564,81 @@ export const projectsData = [
             link: 'https://github.com/MarynaShavlak/bhagaskara-landing'
         },
         descr: [
-            'Car Landing is a dynamic, interactive landing page designed to showcase and compare different car models' ,
-            'The website offers a smooth user experience with dynamic model selection, real-time updates of characteristics, color choices, detailed specifications, price calculation, FAQ section, and model reviews — all without requiring a page reload.'
-        ],
+            'The Bhagaskara Landing Page features a dynamic portfolio section with a responsive masonry grid and detailed project modals with image sliders.',
+            'It includes interactive elements such as a review slider, animated achievement counters, and smooth progress bars, all optimized for performance.',
+            'The page also has a responsive mobile menu, floating canvas animations, and an email form with validation and notifications for a smooth user experience.'
+            ],
         skills: [
             "HTML5",
             "CSS3",
-            "JavaScript",
             "Event Handling",
             'State Management',
+            'Canvas animations',
             'Conditional Logic & Validation',
             'Array & Object Handling',
             "Data-Driven Rendering",
             'Code Splitting',
-            'HTML Generation via JavaScript',
-            'Data Binding & UI Updates',
-            'CSS Animations'
+            'Smooth Scroll',
+            "Responsive Design",
+            "Async Programming (Promises, async/await)",
+            "Form Validation with Regular Expressions"
+
         ],
         features: [
-            // {
-            //     title: 'Model Selection',
-            //     items: [
-            //         'Instant switching between Toyota Corolla and Toyota Camry models'
-            //     ]
-            // },
-            // {
-            //     title: 'Dynamic Car Details',
-            //     items: [
-            //         'Display selected car’s image, specifications, and starting price',
-            //         'Interactive form for selecting engine, transmission, and package options',
-            //         'Automatic updates to price and specifications summary based on selections'
-            //     ]
-            // },
-            // {
-            //     title: 'Color Picker',
-            //     items: [
-            //         'Choose car colors to dynamically update the displayed model image'
-            //     ]
-            // },
-            // {
-            //     title: 'Comparison Table',
-            //     items: [
-            //         'Accordion-style tables for comparing different car packages'
-            //     ]
-            // },
-            // {
-            //     title: 'FAQ Section',
-            //     items: [
-            //         'Accordion component featuring common customer questions'
-            //     ]
-            // },
-            // {
-            //     title: 'Model Reviews',
-            //     items: [
-            //         'Interactive car review block with multiple review positions',
-            //         'Display corresponding text and images for each review'
-            //     ]
-            // },
-            // {
-            //     title: 'Smooth Accordion Animation',
-            //     items: [
-            //         'Smooth animations for FAQ and Variant Comparison sections'
-            //     ]
-            // },
-            // {
-            //     title: 'Animated Input Selection',
-            //     items: [
-            //         'Custom animation effect for radio input selections',
-            //         'Visual enhancement to improve user interaction and feedback',
-            //         'Smooth animated transitions for a more engaging experience'
-            //     ]
-            // }
+            {
+                title: "Portfolio Section",
+                items: [
+                    "Dynamic project rendering with category filters.",
+                    "Load More and Show Less functionality.",
+                    "Responsive masonry grid with Isotope.",
+                    "Clickable projects open detailed modals with image sliders."
+                ]
+            },
+            {
+                title: "Project Modal Generator",
+                items: [
+                    "Generates a project modal with images and metadata.",
+                    "Includes an image slider and project details like categories, year, and website.",
+                    "Smooth fade-in and fade-out transitions for the modal."
+                ]
+            },
+            {
+                title: "Interactive Reviews Slider",
+                items: [
+                    "Dynamically generates review items from data.",
+                    "Autoplay slider with smooth transitions and manual thumbnail navigation.",
+                    "Thumbnails highlight the active review with animated shading effects.",
+                    "Autoplay pauses on hover for better user control.",
+                    "Slider initializes only when the section enters the viewport for better performance."
+                ]
+            },
+            {
+                title: "Animated Achievement Counters",
+                items: [
+                    "Numbers smoothly count up when scrolled into view.",
+                    "Triggered with Waypoints for optimized scroll detection.",
+                    "One-time animation for clean and efficient user experience.",
+                    "Powered by CounterUp for fast and lightweight performance."
+                ]
+            },
+            {
+                title: "Team Section Carousel",
+                items: [
+                    "Interactive team slider with smooth looping animation.",
+                    "Custom hexagon-shaped navigation buttons with icons.",
+                    "Responsive layout adjusting items and margins for all devices.",
+                    "Built with Owl Carousel for reliable, touch-friendly navigation."
+                ]
+            },
+            {
+                title: "Animated Skills Progress Bars",
+                items: [
+                    "Progress bars animate smoothly on scroll into view.",
+                    "Dynamic percentage counter increases with animation.",
+                    "Responsive trigger using Waypoints for optimal performance.",
+                    "One-time activation for clean and efficient animations."
+                ]
+            },
             {
                 title: "Floating Circles Canvas Animation",
                 items: [
@@ -2645,12 +2649,28 @@ export const projectsData = [
                 ]
             },
             {
-                title: "Interactive Particle Network Animation",
+                title: "Particle Network Animation",
                 items: [
-                    "Particles move smoothly with randomized paths and controlled lifespans.",
-                    "Dynamic lines connect nearby particles with responsive opacity.",
-                    "Fully responsive to window resizing and banner dimensions.",
-                    "Particles avoid overlapping the central icon area for a clean look."
+                    "Smoothly moving particles with randomized paths.",
+                    "Dynamic lines connect nearby particles.",
+                    "Responsive to window resizing and banner size.",
+                    "Particles avoid overlapping central icon."
+                ]
+            }
+            , {
+                title: "Email Form Submission",
+                items: [
+                    "Validates and submits contact form.",
+                    "Shows success notification and error messages.",
+                    "Resets form after successful submission."
+                ]
+            },
+            {
+                title: "Mobile Menu",
+                items: [
+                    "Opens mobile menu with slide-in animation.",
+                    "Closes mobile menu with slide-out animation.",
+                    "Disables body scroll when the menu is open."
                 ]
             }
 
@@ -2660,7 +2680,7 @@ export const projectsData = [
             architecture: 'Single-page jQuery application',
             frontend: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'jQuery'],
             tools: ['Prettier'],
-            ui: [ 'Google Fonts', 'Font Awesome', 'CSS-based animations'],
+            ui: [ 'Notiflix', 'Isotope', 'Owl Carousel',  'Counter-Up', 'Waypoints', 'Google Fonts', 'Font Awesome', ],
             styling: [
                 'CSS with BEM methodology',
             ],
