@@ -15,8 +15,12 @@ export const libs = [
     'React Transition Group',
     'React Toastify',
 '    just-validate (https://www.npmjs.com/package/just-validate)',
-    'Inputmask (https://www.npmjs.com/package/inputmask/v/5.0.8-beta.15)'
-
+    'Inputmask (https://www.npmjs.com/package/inputmask/v/5.0.8-beta.15)',
+    'Waypoints (https://www.npmjs.com/package/waypoints)',
+    'Counter-Up (https://www.npmjs.com/package/counterup)',
+'Notiflix (https://www.npmjs.com/package/notiflix)',
+    'Owl Carousel 2 (https://www.npmjs.com/package/owl.carousel)',
+    'Isotope  (https://www.npmjs.com/package/isotope)'
 ]
 
 
