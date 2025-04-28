@@ -905,6 +905,12 @@ export const projectsData = [
                     "Incorrect cell selections are marked with an error cell for visual feedback."
                 ]
             },
+            {
+                title: "Area Boundaries Restriction",
+                items: [
+                    "It is not allowed to draw outside the available area set in the configuration."
+                ]
+            }
 
         ],
         techStack: {
