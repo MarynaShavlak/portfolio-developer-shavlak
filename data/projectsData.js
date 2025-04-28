@@ -840,7 +840,7 @@ export const projectsData = [
         slogan: '',
 
         date: 2025,
-        poster: 'demo.gif',
+        poster: 'nanogram-demo.gif',
         timeline: '8 hours',
         website: {
             name: 'NanogramXpert',
@@ -925,11 +925,11 @@ export const projectsData = [
 
         },
         images: [
-            'demo-video.mp4',
+            'nanogram-demo-video.mp4',
             'img1.jpg',
-            'img2.jpg',
             'img3.jpg',
-            'img4.jpg',
+            'img2.jpg',
+
         ],
     },
     {
