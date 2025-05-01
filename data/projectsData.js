@@ -182,22 +182,27 @@ export const projectsData = [
             link: 'https://github.com/MarynaShavlak/tetromino'
         },
         descr: [
-
+            'Tetromino is an engaging web-based puzzle game with smooth, layered animations, powered by multiple canvas elements for seamless visual effects.',
+            'It offers interactive menus, dynamic animations, and a clear game flow, including an animated start screen, real-time tetromino manipulation, and progressive difficulty levels.',
+            'The game features intuitive pause/resume functionality, a game over flow, and robust state management, including a confirmation system for restarting or exiting the game.',
+            'Players can enjoy polished UI transitions and a challenging progression system as they play through predefined levels.'
         ],
         skills: [
-            // "HTML5",
-            // "CSS3",
-            // "JavaScript",
-            // "DOM Manipulation",
-            // "Event Handling",
-            // 'Canvas API for particle effects',
-            // 'Modular File Structure',
-            // 'Code Splitting',
-            // 'Grid Drawing',
-            // 'Algorithmic Thinking',
-
-
-        ],
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            'Canvas Animation & Visual Effects',
+            "DOM Manipulation",
+            "Event Handling",
+            'Modular File Structure',
+            'Code Splitting',
+            'Algorithmic Thinking',
+            'Mathematics for Geometry',
+            'Mathematical Computations',
+            'Conditional Logic',
+            'Synchronous and Asynchronous Programming',
+            'Object-Oriented Concepts',
+                  ],
         features: [
             {
                 title: "Canvas-Based Visual Effects",
@@ -322,7 +327,7 @@ export const projectsData = [
             architecture: 'Vanilla JavaScript multi-page application with Canvas',
             frontend: ['HTML5', 'CSS3', 'JavaScript (ES6+)'],
             tools: ['Prettier'],
-            ui: [ 'Google Fonts'],
+            ui: [ 'Google Fonts', 'Font Awesome'],
             styling: [
                 'CSS with BEM methodology',
             ],
