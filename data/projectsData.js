@@ -207,7 +207,7 @@ export const projectsData = [
             {
                 title: "Canvas-Based Visual Effects",
                 items: [
-                    "Multiple layered <canvas> elements dedicated to animated visuals.",
+                    "Multiple layered canvas elements dedicated to animated visuals.",
                     "Effects are segregated from core DOM-based Tetris logic for clarity and performance."
                 ]
             },
