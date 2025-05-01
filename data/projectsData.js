@@ -242,6 +242,78 @@ export const projectsData = [
                     "START triggers animated transition to game UI with progressive canvas effects.",
                     "UI sections (level, player info, etc.) appear in timed sequence for polished entry."
                 ]
+            },
+            {
+                title: "Level Progression",
+                items: [
+                    "5 predefined levels with increasing difficulty",
+                    "Each level has custom speed, score per line, and point goal",
+                    "Level 5 is the final stage with max challenge"
+                ]
+            },
+            {
+                title: "Tetromino Definitions",
+                items: [
+                    "7 standard tetrominoes: O, I, S, Z, L, J, T",
+                    "Each defined by a 4x4 matrix layout",
+                    "Shapes used for rendering and collision detection"
+                ]
+            },
+            {
+                title: "Game State Management",
+                items: [
+                    "Stores playfield as 20x10 grid",
+                    "Tracks current level, score, lines, and next goal",
+
+                ]
+            },
+            {
+                title: "Real-Time Tetromino Manipulation",
+                items: [
+                    "Rotate tetromino, soft drop it, Move tetromino horizontally",
+                    "Instantly hard drop tetromino to the bottom",
+             ]
+            },
+            {
+                title: "Start Game Session",
+                items: [
+                    "First-time start initializes game state and UI",
+                    "Runs game loop, shows next tetromino, enables controls",
+                    "If game was started before, shows confirmation and pauses game"
+                ]
+            },
+            {
+                title: "New Game Confirmation",
+                items: [
+                    "Modal warns about losing previous progress when starting a new game",
+                    "Includes 'Yes' to proceed and 'No' to cancel",
+
+                ]
+            },
+
+            {
+                title: "Pause & Resume Game",
+                items: [
+                    "Pause button toggles game state during active session",
+                    "Pauses game by stopping timer and freezing logic",
+                    "Resumes game and updates button state accordingly"
+                ]
+            },
+            {
+                title: "Exit Game Flow",
+                items: [
+                    "Confirmation modal warns about progress loss",
+                    "Pauses game and disables controls if already started",
+                    "‘No’ resumes game, ‘Yes’ resets state and back to menu"
+                ]
+            },
+
+            {
+                title: "Game Over Flow",
+                items: [
+                    "Game over window appears when collisions occur after tetromino drop",
+                    "Displays 'Game Over' message and a 'Start New Game' button",
+                                    ]
             }
 
 
