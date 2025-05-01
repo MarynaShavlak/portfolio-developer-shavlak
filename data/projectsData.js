@@ -164,6 +164,86 @@ export const projectsData = [
                    ],
     },
     {
+        id: 'tetromino',
+        industry: 'Web Games',
+        type: 'Individual',
+        categories: ['javascript', 'html', 'css', 'canvas' ],
+        title: 'Tetromino',
+        slogan: '',
+        date: 2025,
+        poster: 'nanogram-demo.gif',
+        timeline: '8 hours',
+        website: {
+            name: 'Tetromino Web Game',
+            link: 'https://marynashavlak.github.io/tetromino/',
+        },
+        repository: {
+            name: 'tetromino (GitHub)',
+            link: 'https://github.com/MarynaShavlak/tetromino'
+        },
+        descr: [
+
+        ],
+        skills: [
+            // "HTML5",
+            // "CSS3",
+            // "JavaScript",
+            // "DOM Manipulation",
+            // "Event Handling",
+            // 'Canvas API for particle effects',
+            // 'Modular File Structure',
+            // 'Code Splitting',
+            // 'Grid Drawing',
+            // 'Algorithmic Thinking',
+
+
+        ],
+        features: [
+            {
+                title: "Canvas-Based Visual Effects",
+                items: [
+                    "Multiple layered <canvas> elements dedicated to animated visuals.",
+                    "Effects are segregated from core DOM-based Tetris logic for clarity and performance."
+                ]
+            },
+            {
+                title: "Dynamic Animation Techniques",
+                items: [
+                    "Includes progressive arc animations and concentric circle effects.",
+                    "Arcs expand and contract smoothly using requestAnimationFrame.",
+                    "Concentric circles expand from the center, featuring inner and outer rings for depth."
+                ]
+            },
+            {
+                title: "Seamless Animation Flow",
+                items: [
+                    "Smooth transitions between stages driven by state changes.",
+                    "Independent canvas layers manage specific visual elements.",
+                    "Enables composite effects and updates without flicker or redraw conflicts."
+                ]
+            }
+
+        ],
+        techStack: {
+            architecture: 'Vanilla JavaScript multi-page application with Canvas',
+            frontend: ['HTML5', 'CSS3', 'JavaScript (ES6+)'],
+            tools: ['Prettier'],
+            ui: [ 'Google Fonts'],
+            styling: [
+                'CSS with BEM methodology',
+            ],
+
+
+        },
+        images: [
+            'nanogram-demo-video.mp4',
+            'img1.jpg',
+            'img3.jpg',
+            'img2.jpg',
+
+        ],
+    },
+    {
         id: 'cleaningComfortGroup',
         industry: 'Services',
         type: 'Individual',
