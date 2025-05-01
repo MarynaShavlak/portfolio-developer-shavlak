@@ -169,10 +169,10 @@ export const projectsData = [
         type: 'Individual',
         categories: ['javascript', 'html', 'css', 'canvas' ],
         title: 'Tetromino',
-        slogan: '',
+        slogan: 'Move with purpose, play with calm.',
         date: 2025,
-        poster: 'nanogram-demo.gif',
-        timeline: '8 hours',
+        poster: 'tetromino-demo.gif',
+        timeline: '14 hours',
         website: {
             name: 'Tetromino Web Game',
             link: 'https://marynashavlak.github.io/tetromino/',
@@ -335,7 +335,8 @@ export const projectsData = [
 
         },
         images: [
-            'nanogram-demo-video.mp4',
+            'tetromino-demo-video.mp4',
+            'img4.jpg',
             'img1.jpg',
             'img3.jpg',
             'img2.jpg',
