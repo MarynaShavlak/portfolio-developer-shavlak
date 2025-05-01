@@ -221,7 +221,29 @@ export const projectsData = [
                     "Independent canvas layers manage specific visual elements.",
                     "Enables composite effects and updates without flicker or redraw conflicts."
                 ]
+            },
+            {
+                title: "Interactive Start Menu",
+                items: [
+                    "Animated main menu with options: Set Username, How to Play, and START.",
+                    "Each option triggers modular UI transitions with smooth visual feedback."
+                ]
+            },
+            {
+                title: "Username & Rules Flow",
+                items: [
+                    "Username input form replaces menu on click, submits with greeting and returns.",
+                    "Rules view includes keyboard instructions and back navigation logic."
+                ]
+            },
+            {
+                title: "Seamless Game Launch",
+                items: [
+                    "START triggers animated transition to game UI with progressive canvas effects.",
+                    "UI sections (level, player info, etc.) appear in timed sequence for polished entry."
+                ]
             }
+
 
         ],
         techStack: {
