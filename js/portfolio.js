@@ -1,134 +1,196 @@
+
+// import { handleProjectModal, initProjectModal } from "./projectModal.js";
+// import { projectsData } from "../data/projectsData.js";
+
 import { handleProjectModal, initProjectModal } from "./projectModal.js";
 import { projectsData } from "../data/projectsData.js";
-
 
 export function initPortfolio() {
     const itemsPerPage = 6;
     let currentIndex = 0;
     let currentCategory = '*';
 
-    renderAndFilterPortfolio();
+    const $portfolioList = $('#portfolio');
 
-    $('.load-more-btn').on('click', () => handleButtonClick('loadMore'));
-    $('.show-less-btn').on('click', () => handleButtonClick('showLess'));
     initProjectModal();
+    initIsotope();
 
-    function handleButtonClick(action) {
-        if (action === 'loadMore') {
-            currentIndex += itemsPerPage;
-        } else if (action === 'showLess') {
-            currentIndex -= itemsPerPage;
-        }
-        updateIsotope(action);
-        $('.portfolio__item').off('click', handleProjectModal);
-        $('.portfolio__item').on('click', handleProjectModal);
-        updateButtonsVisibility();
-    }
+    renderFilteredItems();
 
-    function updateButtonsVisibility() {
-        const filteredData = filterDataByCategory();
-        const isLoadMoreVisible = currentIndex < filteredData.length - itemsPerPage;
-        const isShowLessVisible = currentIndex >= itemsPerPage;
+    $('.filter-btn').on('click', function () {
+        updateFilterButtons(this);
+        currentCategory = $(this).attr('data-filter').replace('.', '') || '*';
+        currentIndex = 0;
+        renderFilteredItems();
+    });
 
-        $('.load-more-btn').toggle(isLoadMoreVisible);
-        $('.show-less-btn').toggle(isShowLessVisible);
-    }
+    $('.load-more-btn').on('click', function () {
+        currentIndex += itemsPerPage;
+        renderFilteredItems();
+    });
 
-    function renderPortfolio() {
-        const $portfolioList = $('#portfolio');
-        const filteredData = filterDataByCategory();
-        const slicedData = filteredData.slice(0, currentIndex + itemsPerPage);
-        const markup = generatePortfolioMarkUp(slicedData);
-        $portfolioList.html(markup);
-    }
+    $('.show-less-btn').on('click', function () {
+        currentIndex = Math.max(currentIndex - itemsPerPage, 0);
+        renderFilteredItems();
+    });
 
-    function renderAndFilterPortfolio() {
-        renderPortfolio();
-        setPortfolioFilter();
-    }
-
-    function updateIsotope(action) {
-        const $portfolioList = $('.portfolio-list');
-        const totalItems = $portfolioList.children().length;
-
-        if (action === 'loadMore') {
-            const newData = filterDataByCategory().slice(currentIndex, currentIndex + itemsPerPage);
-            const newMarkup = generatePortfolioMarkUp(newData);
-            const $items = $(newMarkup);
-            $portfolioList.append($items).isotope('appended', $items);
-        } else if (action === 'showLess') {
-            const $itemsToRemove = $portfolioList
-                .isotope('getItemElements')
-                .slice(currentIndex + itemsPerPage, totalItems);
-            $portfolioList.isotope('remove', $itemsToRemove).isotope('layout');
-        }
-    }
-
-    function filterDataByCategory() {
-        return currentCategory !== '*'
-            ? projectsData.filter(project => project.categories.includes(currentCategory))
-            : projectsData;
-    }
-
-    function setPortfolioFilter() {
-        const $portfolio = $('.portfolio-list').isotope({
+    function initIsotope() {
+        $portfolioList.isotope({
             itemSelector: '.portfolio__item',
+            layoutMode: 'masonry',
             percentPosition: true,
             masonry: {
                 columnWidth: 370,
-                gutter: 30,
-            },
+                gutter: 30
+            }
         });
-
-        const filterValue = $('.filter-btn--active').attr('data-filter');
-        $portfolio.isotope({ filter: filterValue });
     }
 
-    function updateFilterButtons(chosenFilterBtn) {
-        const filters = $('[data-filter]');
-        filters.removeClass('filter-btn--active');
-        $(chosenFilterBtn).addClass('filter-btn--active');
-    }
+    function renderFilteredItems() {
+        const filtered = currentCategory === '*'
+            ? projectsData
+            : projectsData.filter(p => p.categories.includes(currentCategory));
 
-    // $('.filter-btn').on('click', function () {
-    //     updateFilterButtons(this);
-    //     const filterValue = $(this).attr('data-filter');
-    //     currentCategory = filterValue !== '*' ? filterValue.slice(1) : '*';
-    //     currentIndex = 0;
-    //
-    //     // Full rerender
-    //     const filteredData = filterDataByCategory().slice(0, itemsPerPage);
-    //     const markup = generatePortfolioMarkUp(filteredData);
-    //     const $portfolioList = $('.portfolio-list');
-    //     $portfolioList.isotope('remove', $portfolioList.children());
-    //     const $newItems = $(markup);
-    //     $portfolioList.append($newItems).isotope('appended', $newItems);
-    //     setPortfolioFilter();
-    //     updateButtonsVisibility();
-    //
-    //     $('.portfolio__item').off('click', handleProjectModal);
-    //     $('.portfolio__item').on('click', handleProjectModal);
-    // });
-    $('.filter-btn').on('click', function () {
-        updateFilterButtons(this);
-        const filterValue = $(this).attr('data-filter');
-        currentCategory = filterValue !== '*' ? filterValue.slice(1) : '*';
-        currentIndex = 0;
+        const paginated = filtered.slice(0, currentIndex + itemsPerPage);
+        const markup = generatePortfolioMarkUp(paginated);
 
-        // Filter Isotope items smoothly
-        const $portfolioList = $('.portfolio-list');
-        $portfolioList.isotope({ filter: filterValue });
+        // Clear and re-render
+        $portfolioList.isotope('remove', $portfolioList.children()).isotope('layout');
 
-        // Wait for images to load before triggering layout
+        const $newItems = $(markup);
+        $portfolioList.append($newItems).isotope('appended', $newItems);
+
         imagesLoaded($portfolioList, () => {
             $portfolioList.isotope('layout');
         });
 
-        updateButtonsVisibility();
-        $('.portfolio__item').off('click', handleProjectModal);
-        $('.portfolio__item').on('click', handleProjectModal);
-    });
+        // Modal re-bind
+        $('.portfolio__item').off('click', handleProjectModal).on('click', handleProjectModal);
+
+        // Toggle buttons
+        $('.load-more-btn').toggle(currentIndex + itemsPerPage < filtered.length);
+        $('.show-less-btn').toggle(currentIndex > 0);
+    }
+
+    function updateFilterButtons(chosen) {
+        $('.filter-btn').removeClass('filter-btn--active');
+        $(chosen).addClass('filter-btn--active');
+    }
 }
+
+
+// export function initPortfolio() {
+//     const itemsPerPage = 6;
+//     let currentIndex = 0;
+//     let currentCategory = '*';
+//
+//     renderAndFilterPortfolio();
+//
+//     $('.load-more-btn').on('click', () => handleButtonClick('loadMore'));
+//     $('.show-less-btn').on('click', () => handleButtonClick('showLess'));
+//     initProjectModal();
+//
+//     function handleButtonClick(action) {
+//         if (action === 'loadMore') {
+//             currentIndex += itemsPerPage;
+//         } else if (action === 'showLess') {
+//             currentIndex -= itemsPerPage;
+//         }
+//         updateIsotope(action);
+//         $('.portfolio__item').off('click', handleProjectModal);
+//         $('.portfolio__item').on('click', handleProjectModal);
+//         updateButtonsVisibility();
+//     }
+//
+//     function updateButtonsVisibility() {
+//         const filteredData = filterDataByCategory();
+//         const isLoadMoreVisible = currentIndex < filteredData.length - itemsPerPage;
+//         const isShowLessVisible = currentIndex >= itemsPerPage;
+//
+//         $('.load-more-btn').toggle(isLoadMoreVisible);
+//         $('.show-less-btn').toggle(isShowLessVisible);
+//     }
+//
+//     function renderPortfolio() {
+//         const $portfolioList = $('#portfolio');
+//         const filteredData = filterDataByCategory();
+//         console.log('filteredData', filteredData);
+//         const slicedData = filteredData.slice(0, currentIndex + itemsPerPage);
+//         console.log('slicedData', slicedData);
+//         const markup = generatePortfolioMarkUp(slicedData);
+//         $portfolioList.html(markup);
+//     }
+//
+//     function renderAndFilterPortfolio() {
+//         renderPortfolio();
+//         setPortfolioFilter();
+//     }
+//
+//     function updateIsotope(action) {
+//         const $portfolioList = $('.portfolio-list');
+//         const totalItems = $portfolioList.children().length;
+//
+//         if (action === 'loadMore') {
+//             console.log('x', filterDataByCategory())
+//             const newData = filterDataByCategory().slice(currentIndex, currentIndex + itemsPerPage);
+//             const newMarkup = generatePortfolioMarkUp(newData);
+//             const $items = $(newMarkup);
+//             $portfolioList.append($items).isotope('appended', $items);
+//         } else if (action === 'showLess') {
+//             const $itemsToRemove = $portfolioList
+//                 .isotope('getItemElements')
+//                 .slice(currentIndex + itemsPerPage, totalItems);
+//             $portfolioList.isotope('remove', $itemsToRemove).isotope('layout');
+//         }
+//     }
+//
+//     function filterDataByCategory() {
+//         return currentCategory !== '*'
+//             ? projectsData.filter(project => project.categories.includes(currentCategory))
+//             : projectsData;
+//     }
+//
+//     function setPortfolioFilter() {
+//         const $portfolio = $('.portfolio-list').isotope({
+//             itemSelector: '.portfolio__item',
+//             percentPosition: true,
+//             masonry: {
+//                 columnWidth: 370,
+//                 gutter: 30,
+//             },
+//         });
+//
+//         const filterValue = $('.filter-btn--active').attr('data-filter');
+//         $portfolio.isotope({ filter: filterValue });
+//     }
+//
+//     function updateFilterButtons(chosenFilterBtn) {
+//         const filters = $('[data-filter]');
+//         filters.removeClass('filter-btn--active');
+//         $(chosenFilterBtn).addClass('filter-btn--active');
+//     }
+//
+//
+//     $('.filter-btn').on('click', function () {
+//         updateFilterButtons(this);
+//         const filterValue = $(this).attr('data-filter');
+//         currentCategory = filterValue !== '*' ? filterValue.slice(1) : '*';
+//         currentIndex = 0;
+//
+//         // Filter Isotope items smoothly
+//         const $portfolioList = $('.portfolio-list');
+//         $portfolioList.isotope({ filter: filterValue });
+//
+//         // Wait for images to load before triggering layout
+//         imagesLoaded($portfolioList, () => {
+//             $portfolioList.isotope('layout');
+//         });
+//
+//         updateButtonsVisibility();
+//         $('.portfolio__item').off('click', handleProjectModal);
+//         $('.portfolio__item').on('click', handleProjectModal);
+//     });
+// }
 
 // Shared function to return markup string for given data
 function generatePortfolioMarkUp(data) {

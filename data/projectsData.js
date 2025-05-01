@@ -167,7 +167,7 @@ export const projectsData = [
         id: 'tetromino',
         industry: 'Web Games',
         type: 'Individual',
-        categories: ['javascript', 'html', 'css', 'canvas' ],
+        categories: ['javascript', 'html', 'css', 'canvas', 'webGames' ],
         title: 'Tetromino',
         slogan: 'Move with purpose, play with calm.',
         date: 2025,
@@ -1015,7 +1015,7 @@ export const projectsData = [
         id: 'nanogramExpert',
         industry: 'Web Games',
         type: 'Individual',
-        categories: ['javascript', 'html', 'css', 'canvas' ],
+        categories: ['javascript', 'html', 'css', 'canvas', 'webGames'],
         title: 'NanogramXpert',
         slogan: '',
 
