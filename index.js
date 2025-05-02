@@ -1,11 +1,15 @@
 import { initHireModal } from "./js/hireModal.js";
-import { initCVModal } from "./js/cvModal.js";
+
 import {initBlog} from "./js/blog.js";
 import {initReviewsSlider} from "./js/reviewSlider.js";
 import {initPortfolio} from "./js/portfolio.js";
 import {insertPartial} from "./js/partials-loader.js";
+import {initCVModal} from "./js/cvModal.js";
+
+
 
 $(document).ready(async function () {
+
   try {
 
     await insertPartial('#header', '../partials/header.html');
@@ -19,7 +23,9 @@ $(document).ready(async function () {
     initReviewsSlider();
     initBlog();
     initHireModal();
-    initCVModal();
+initCVModal();
+
+
   } catch (err) {
     console.error('Error loading one or more partials:', err);
   }

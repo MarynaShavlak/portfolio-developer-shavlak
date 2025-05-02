@@ -79,6 +79,27 @@ export function initPortfolio() {
 }
 
 
+// Shared function to return markup string for given data
+function generatePortfolioMarkUp(data) {
+    return data.map((project, index) => {
+        const categories = project.categories.join(' ');
+        return `
+        <li class="portfolio__item ${categories}" data-category="${categories}" data-id="${project.id}">
+            <div class="work" data-modal="#modal_project_${index + 1}">
+                <div class="work__image">
+                    <img src="assets/images/${project.id}/${project.poster}" alt="${project.title}" width="370" height="300"/>
+                </div>
+                <div class="work__info">
+                    <p class="work__title">${project.title}<span class="work__date">${project.date}</span></p>
+                    <p class="work__category"><span class="work__subtext">category: </span> ${project.categories.join(', ')}</p>
+                    <p class="work__type"><span class="work__subtext">type: </span>${project.type}</p>
+                </div>
+            </div>
+        </li>`;
+    }).join('');
+}
+
+
 // export function initPortfolio() {
 //     const itemsPerPage = 6;
 //     let currentIndex = 0;
@@ -191,23 +212,3 @@ export function initPortfolio() {
 //         $('.portfolio__item').on('click', handleProjectModal);
 //     });
 // }
-
-// Shared function to return markup string for given data
-function generatePortfolioMarkUp(data) {
-    return data.map((project, index) => {
-        const categories = project.categories.join(' ');
-        return `
-        <li class="portfolio__item ${categories}" data-category="${categories}" data-id="${project.id}">
-            <div class="work" data-modal="#modal_project_${index + 1}">
-                <div class="work__image">
-                    <img src="assets/images/${project.id}/${project.poster}" alt="${project.title}" width="370" height="300"/>
-                </div>
-                <div class="work__info">
-                    <p class="work__title">${project.title}<span class="work__date">${project.date}</span></p>
-                    <p class="work__category"><span class="work__subtext">category: </span> ${project.categories.join(', ')}</p>
-                    <p class="work__type"><span class="work__subtext">type: </span>${project.type}</p>
-                </div>
-            </div>
-        </li>`;
-    }).join('');
-}
