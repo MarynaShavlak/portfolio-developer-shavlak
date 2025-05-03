@@ -72,6 +72,11 @@
     letter-spacing: 1.5px;
 }
 
+ .resp-item__prize {
+    color: #3273AB;
+}
+
+
 .timeline__event__content {
     padding: 20px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
@@ -80,6 +85,9 @@
     background: #fff;
     width: calc(40vw - 84px);
     border-radius: 0 6px 6px 0;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 
 .timeline__event__date {
@@ -145,7 +153,10 @@
 }
 
 .timeline__event__description {
+    display: flex;
     flex-basis: 100%;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .timeline__event--type2:after {
@@ -176,6 +187,19 @@
     color: #3273AB;
 }
 
+
+.timeline__event__results {
+    span {
+        font-weight: 600;
+    }
+}
+
+.timeline__event--type2 .resp-item__prize {
+    color: #3273AB;
+}
+
+
+
 .timeline__event--type3:after {
     background: #FF5BA7;
 }
@@ -201,6 +225,10 @@
 }
 
 .timeline__event--type3 .timeline__event__title {
+    color: #FF5BA7;
+}
+
+.timeline__event--type3 .resp-item__prize {
     color: #FF5BA7;
 }
 
@@ -268,3 +296,38 @@
         left: 100%;
     }
 }
+
+
+.timeline__event__text {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.timeline__event__responsibilities {
+ display: flex;
+    flex-direction: column;
+    gap:10px
+}
+
+.timeline__event__resp-item {
+    display: flex;
+    gap:5px;
+    align-items: baseline;
+}
+
+.resp-item__icon {
+    transform-origin: center;
+    animation: rotate 5s linear infinite;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
