@@ -1,15 +1,6 @@
-
-/*#FFD5EB*/
-/*#3174AB*/
-/*#CAE6FE*/
-/*#FF5BA7*/
-/*#FEFEFE*/
-
-
 .timeline {
     display: flex;
     flex-direction: column;
-    margin: 20px auto;
     position: relative;
 }
 
@@ -20,7 +11,7 @@
     margin: 20px 0;
     border-radius: 6px;
     align-self: center;
-    width: 50vw;
+    /*width: 50vw;*/
 }
 
 .timeline__event:nth-child(2n + 1) {
@@ -83,7 +74,8 @@
     0 18px 36px -18px rgba(0, 0, 0, 0.3),
     0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     background: #fff;
-    width: calc(40vw - 84px);
+    /*width: calc(40vw - 84px);*/
+    width:600px;
     border-radius: 0 6px 6px 0;
     display: flex;
     flex-direction: column;

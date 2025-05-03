@@ -16,6 +16,7 @@ $(document).ready(async function () {
     await insertPartial('#main', '../partials/hero.html');
     await insertPartial('#main', '../partials/portfolio.html');
     await insertPartial('#main', '../partials/about.html');
+    await insertPartial('#main', '../partials/workExperience.html');
     await insertPartial('#main', '../partials/reviews.html');
     await insertPartial('#main', '../partials/blog.html');
     await insertPartial('#footer', '../partials/footer.html');
