@@ -741,19 +741,23 @@ body.modal-open {
 /*// portfolio */
 .portfolio__filter {
   display: flex;
+  flex-wrap: wrap;
+  row-gap:15px;
   justify-content: center;
-  background-color: #222;
+  background-color: #ffffff;
   padding-top: 4rem;
+  margin-bottom: 20px;
 }
 
 .portfolio__filter li {
-  --default-bg: lightgrey;
-  --active-bg: #fff;
+  --default-bg: #FFD5EB;
+  --active-bg: #FF5BA7;
   position: relative;
   padding: 1rem 2rem;
   background-color: var(--default-bg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  cursor: pointer
 }
 
 .portfolio__filter  li:first-child::after {

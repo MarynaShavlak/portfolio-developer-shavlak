@@ -142,8 +142,6 @@
     font-size: 16px;
     max-width: 500px;
     text-wrap:pretty;
-    /*text-wrap: balance;*/
-
 }
 
 .education-item:nth-child(1) .education__organization {
