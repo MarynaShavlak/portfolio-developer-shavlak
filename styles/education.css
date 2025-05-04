@@ -1,0 +1,10 @@
+.education__canvas__container {
+    position: relative;
+    width: 1170px;
+    height:585px;
+     canvas {
+         position: absolute;
+         top: 0;
+         left: 0;
+     }
+}

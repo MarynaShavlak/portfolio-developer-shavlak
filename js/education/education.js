@@ -3,6 +3,11 @@ import {computePathPoints} from "./canvas/computePathPoints.js";
 import {drawAnimationFrame} from "./canvas/drawAnimationFrame.js";
 import {computeSpeed} from "./canvas/computeSpeed.js";
 import {drawFinalFrame} from "./canvas/drawFinalFrame.js";
+import {createOffscreenCanvas} from "./canvas/createOffscreenCanvas.js";
+import {drawNumberedPoints} from "./canvas/drawNumberedPoints.js";
+
+
+
 
 export function initEducationSection() {
     const canvas = document.getElementById('roadCanvas');
@@ -57,6 +62,6 @@ export function initEducationSection() {
     }
 
     startAnimation();
-
+    drawNumberedPoints(pathPoints, SCALE);
     return startAnimation;
 }

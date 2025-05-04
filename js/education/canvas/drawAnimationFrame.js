@@ -1,3 +1,4 @@
+
 export function drawAnimationFrame(ctx, pathPoints, index, canvas, scale) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -44,4 +45,5 @@ export function drawAnimationFrame(ctx, pathPoints, index, canvas, scale) {
             ctx.setLineDash([]);
         }
     }
+;
 }

@@ -1,3 +1,5 @@
+
+
 export function drawFinalFrame(ctx, pathPoints, scale, canvas) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -33,4 +35,5 @@ export function drawFinalFrame(ctx, pathPoints, scale, canvas) {
     }
     ctx.stroke();
     ctx.setLineDash([]);
+
 }
