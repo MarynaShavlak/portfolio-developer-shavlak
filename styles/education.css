@@ -31,6 +31,59 @@
 }
 
 
+.education-item:nth-child(1) {
+    position: absolute;
+    top: 180px;
+    left:15px;
+}
+
+.education-item:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Places it directly below the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #FFD5EB;
+}
+
+
+.education-item:nth-child(2) {
+    position: absolute;
+    top: 480px;
+    left:195px;
+}
+
+.education-item:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #FFD5EB;
+}
+
+.education-item:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left:430px;
+}
+
+.education-item:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Places it directly below the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #FFD5EB;
+}
+
+
 .education-item:nth-child(4) {
     position: absolute;
     top: 370px;
@@ -57,8 +110,8 @@
 .education-item:last-child::before {
     content: '';
     position: absolute;
-    top: -19px;
-    left: 20px
+    top: -17px;
+    left: 25px;
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
@@ -87,7 +140,8 @@
     font-weight: 900;
     font-size: 18px;
     max-width: 300px;
-    text-wrap: balance;
+    text-wrap:pretty;
+    /*text-wrap: balance;*/
 
 }
 
