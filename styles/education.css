@@ -1,7 +1,7 @@
 .education__canvas__container {
     position: relative;
     width: 1170px;
-    height:585px;
+    height:650px;
      canvas {
          position: absolute;
          top: 0;
@@ -140,7 +140,7 @@
 .education__organization {
     font-weight: 900;
     font-size: 16px;
-    max-width: 400px;
+    max-width: 500px;
     text-wrap:pretty;
     /*text-wrap: balance;*/
 
@@ -150,9 +150,7 @@
     max-width: 300px;
 }
 
-.education-item:nth-child(2) .education__organization {
-    max-width: 900px;
-}
+
 
 .education__period {
     font-size: 16px;
