@@ -1,16 +1,15 @@
 import {getRoadPath} from "./canvas/getRoadPath.js";
 import {computePathPoints} from "./canvas/computePathPoints.js";
 import {createOffscreenCanvas} from "./canvas/createOffscreenCanvas.js";
+import {drawAnimationFrame} from "./canvas/drawAnimationFrame.js";
 
 export function initEducationSection() {
     const canvas = document.getElementById('roadCanvas');
     const ctx = canvas.getContext('2d');
     const SCALE = 0.8357;
-
     // Create an offscreen canvas for the full road (to reuse)
     const offscreenCanvas = createOffscreenCanvas(canvas);
     const offCtx = offscreenCanvas.getContext('2d');
-
     // Store the bezier curve points
     const roadPath = getRoadPath(SCALE);
 
@@ -69,79 +68,6 @@ export function initEducationSection() {
         offCtx.setLineDash([]);
     }
 
-    // Draw the animation frame
-    function drawAnimationFrame(pointIndex) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        if (pointIndex <= 0 || pointIndex >= pathPoints.length + 50) return;
-
-        // Draw the road up to the current point
-        ctx.lineWidth = 50 * 0.8357;
-        ctx.strokeStyle = '#FF5BA7';
-        ctx.lineCap = 'round';
-        ctx.lineJoin = 'round';
-        ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
-        ctx.shadowBlur = 3 * 0.8357;
-        ctx.shadowOffsetX = 2 * 0.8357;
-        ctx.shadowOffsetY = 2 * 0.8357;
-
-        // Draw the path up to the current point
-        ctx.beginPath();
-        ctx.moveTo(pathPoints[0].x, pathPoints[0].y);
-
-        // Draw a smooth line through all points up to current index
-        // Make sure we don't exceed the pathPoints array bounds
-        const maxIndex = Math.min(pointIndex, pathPoints.length - 1);
-        for (let i = 1; i <= maxIndex; i++) {
-            ctx.lineTo(pathPoints[i].x, pathPoints[i].y);
-        }
-        ctx.stroke();
-
-        // Draw a "drawing head" at the current position for a more natural drawing effect
-        // const currentPoint = pathPoints[pointIndex];
-        // ctx.beginPath();
-        // ctx.arc(currentPoint.x, currentPoint.y, (25 * 0.8357), 0, Math.PI * 2);
-        // ctx.fillStyle = '#FF5BA7';
-        // ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
-        // ctx.shadowBlur = 10 * 0.8357;
-        // ctx.fill();
-
-        // If we're at the end, draw the dashed line
-        if (pointIndex >= pathPoints.length - 1) {
-            // Create a growing effect for the dashed line
-            const dashProgress = Math.min(1, (pointIndex - (pathPoints.length - 1)) / 50);
-
-            if (dashProgress > 0) {
-                ctx.shadowColor = 'transparent';
-                ctx.shadowBlur = 0;
-                ctx.shadowOffsetX = 0;
-                ctx.shadowOffsetY = 0;
-
-                // Draw dashed line with animation
-                ctx.beginPath();
-                ctx.lineWidth = 2 * 0.8357;
-                ctx.strokeStyle = 'white';
-                ctx.setLineDash([10 * 0.8357, 10 * 0.8357]);
-
-                // Gradual reveal of dashed line
-                const dashPoints = Math.floor(pathPoints.length * dashProgress);
-
-                if (dashPoints > 0) {
-                    ctx.beginPath();
-                    ctx.moveTo(pathPoints[0].x, pathPoints[0].y);
-
-                    // Make sure we don't exceed the array bounds
-                    const maxDashIndex = Math.min(dashPoints, pathPoints.length - 1);
-                    for (let i = 1; i <= maxDashIndex; i++) {
-                        ctx.lineTo(pathPoints[i].x, pathPoints[i].y);
-                    }
-                    ctx.stroke();
-                }
-
-                ctx.setLineDash([]);
-            }
-        }
-    }
 
     // Animation variables
     let currentPointIndex = 0;
@@ -152,15 +78,14 @@ export function initEducationSection() {
     // Animation function with time-based control
     function animate(timestamp) {
         if (!lastFrameTime) lastFrameTime = timestamp;
-
         const elapsed = timestamp - lastFrameTime;
 
         if (elapsed > frameDuration) {
             lastFrameTime = timestamp;
 
             // Draw the current frame
-            drawAnimationFrame(currentPointIndex);
 
+            drawAnimationFrame(ctx, pathPoints, currentPointIndex, canvas, SCALE);
             // Advance to next point at varying speeds for natural drawing effect
             // Slow down at curves and speed up on straighter sections
             if (currentPointIndex < pathPoints.length + 50) { // +50 for dashed line animation
@@ -226,6 +151,11 @@ export function initEducationSection() {
             animationId = requestAnimationFrame(animate);
         }
     }
+
+
+
+
+
 
     // Function to draw the final state of the road (complete with dashed line)
     function drawFinalFrame() {
