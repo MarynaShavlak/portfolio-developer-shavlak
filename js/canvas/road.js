@@ -1,3 +1,70 @@
+// const canvas = document.getElementById('roadCanvas');
+// const ctx = canvas.getContext('2d');
+//
+// // Function to draw the Bezier curve path with scaled coordinates
+// function drawRoadPath() {
+//     ctx.beginPath();
+//     ctx.moveTo(50 * 0.8357, 650 * 0.8357);
+//     ctx.bezierCurveTo(
+//         150 * 0.8357, 600 * 0.8357,
+//         200 * 0.8357, 450 * 0.8357,
+//         300 * 0.8357, 450 * 0.8357
+//     );
+//     ctx.bezierCurveTo(
+//         400 * 0.8357, 450 * 0.8357,
+//         450 * 0.8357, 600 * 0.8357,
+//         550 * 0.8357, 400 * 0.8357
+//     );
+//     ctx.bezierCurveTo(
+//         650 * 0.8357, 200 * 0.8357,
+//         700 * 0.8357, 200 * 0.8357,
+//         800 * 0.8357, 300 * 0.8357
+//     );
+//     ctx.bezierCurveTo(
+//         900 * 0.8357, 400 * 0.8357,
+//         950 * 0.8357, 400 * 0.8357,
+//         1050 * 0.8357, 250 * 0.8357
+//     );
+//     ctx.bezierCurveTo(
+//         1150 * 0.8357, 100 * 0.8357,
+//         1200 * 0.8357, 100 * 0.8357,
+//         1350 * 0.8357, 50 * 0.8357
+//     );
+//     return ctx;
+// }
+//
+// // Draw main road with drop shadow
+// ctx.lineWidth = 50 * 0.8357; // Scale stroke width
+// ctx.strokeStyle = '#8288c9';
+// ctx.lineCap = 'round';
+// ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
+// ctx.shadowBlur = 3 * 0.8357; // Scale shadow blur
+// ctx.shadowOffsetX = 2 * 0.8357; // Scale shadow offset
+// ctx.shadowOffsetY = 2 * 0.8357;
+// drawRoadPath();
+// ctx.stroke();
+//
+// // Reset shadow for the dashed line
+// ctx.shadowColor = 'transparent';
+// ctx.shadowBlur = 0;
+// ctx.shadowOffsetX = 0;
+// ctx.shadowOffsetY = 0;
+//
+// // Draw center dashed line
+// ctx.lineWidth = 2 * 0.8357; // Scale stroke width
+// ctx.strokeStyle = 'white';
+// ctx.setLineDash([10 * 0.8357, 10 * 0.8357]); // Scale dash pattern
+// drawRoadPath();
+// ctx.stroke();
+
+
+
+
+
+
+
+
+
 // const canvas = document.getElementById("roadCanvas");
 // const ctx = canvas.getContext("2d");
 
@@ -26,6 +93,7 @@
 // ctx.bezierCurveTo(800, 700, 900, 700, 950, 600);
 // ctx.bezierCurveTo(1000, 500, 1100, 500, 1150, 400);
 // ctx.stroke();
+
 
 
 

@@ -5,6 +5,7 @@ import {initReviewsSlider} from "./js/reviewSlider.js";
 import {initPortfolio} from "./js/portfolio.js";
 import {insertPartial} from "./js/partials-loader.js";
 import {initCVModal} from "./js/cvModal.js";
+import {initEducationSection} from "./js/education.js";
 
 
 
@@ -14,6 +15,7 @@ $(document).ready(async function () {
 
     await insertPartial('#header', '../partials/header.html');
     await insertPartial('#main', '../partials/hero.html');
+    await insertPartial('#main', '../partials/education.html');
     await insertPartial('#main', '../partials/portfolio.html');
     await insertPartial('#main', '../partials/about.html');
     await insertPartial('#main', '../partials/workExperience.html');
@@ -24,6 +26,7 @@ $(document).ready(async function () {
     initReviewsSlider();
     initBlog();
     initHireModal();
+    initEducationSection();
 initCVModal();
 
 
