@@ -7,4 +7,33 @@
          top: 0;
          left: 0;
      }
+
+    .education__tooltips__container {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+
+.education-item {
+    background-color: #FFD5EB;
+    color: #1a1a1a;
+    width:fit-content;
+    padding:10px;
+    border-radius: 20px;
+    display: flex;
+    gap:30px;
+}
+
+.education-icon {
+    img {
+        width:40px;
+        height:40px
+    }
+    i {
+        font-size: 40px;
+    }
+
 }

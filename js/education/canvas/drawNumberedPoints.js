@@ -1,4 +1,4 @@
-import {drawTooltipsLayer} from "./drawTooltipsLayer.js";
+
 
 export function drawNumberedPoints(points, scale) {
     const canvas = document.getElementById('numbersCanvas');
@@ -79,9 +79,6 @@ export function drawNumberedPoints(points, scale) {
         }, delay);
     }
 
-    setTimeout(() => {
-        drawTooltipsLayer(points, spacing, baseRadius, numPoints);
-    }, numPoints * delayBetween + initialDelay);
 }
 
 

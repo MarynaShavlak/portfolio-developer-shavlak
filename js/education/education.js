@@ -5,6 +5,7 @@ import {computeSpeed} from "./canvas/computeSpeed.js";
 import {drawFinalFrame} from "./canvas/drawFinalFrame.js";
 import {createOffscreenCanvas} from "./canvas/createOffscreenCanvas.js";
 import {drawNumberedPoints} from "./canvas/drawNumberedPoints.js";
+import {educationData} from "../../data/educationData.js";
 
 
 
@@ -63,5 +64,33 @@ export function initEducationSection() {
 
     startAnimation();
     drawNumberedPoints(pathPoints, SCALE);
+    const  EDUCATION__ICONS = {
+        bank: '<i class="fa-solid fa-building-columns"></i>',
+        science: '<i class="fa-solid fa-user-graduate"></i>',
+        goIT: '<img src="../../assets/images/education/goIT.webp" >',
+        itBanda: '<img src="../../assets/images/education/itBanda.png" >',
+        stepAcademy : '<img src="../../assets/images/education/stepAcademy.jpg" >',
+    }
+
+    educationData.forEach(data => {
+        // Create the container div
+        const educationItem = $('<li>').addClass('education-item');
+        const iconText = EDUCATION__ICONS[data.icon] || 'icon'
+
+        // Create the left part (icon)
+        const icon = $('<div>').addClass('education-icon').html(`${iconText}`);
+
+        // Create the right part (organization, period, speciality)
+        const rightPart = $('<div>').addClass('education-details')
+            .append(`<p class="organization">${data.organization}</p>`)
+            .append(`<p class="period">${data.period}</p>`)
+            .append(`<p class="speciality">${data.speciality}</p>`);
+
+        // Append icon and right part to the container
+        educationItem.append(icon).append(rightPart);
+
+        // Append the container to the body (or any other container you want)
+        $('.education__tooltips__container').append(educationItem);
+    });
     return startAnimation;
 }
