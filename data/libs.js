@@ -57,11 +57,11 @@ export const libs = [
     'React Toastify',
     'Lodash',  'UUID',
 'React Toastify',
-    'Lodash','Clsx',  'UUID',  'usehooks-ts'
+    'Lodash','Clsx',  'UUID',  'usehooks-ts',
     'React Icons',
     'React Loader Spinner',
     'React Modal',
-    'React Select'
+    'React Select',
     'Body Scroll Lock',
     'Slick Carousel',
     'BasicLightbox',
@@ -70,7 +70,7 @@ export const libs = [
     'Ultimate Pagination',
     'Slugify', 'Nanoid', 'Randomcolor',
     'Downshift', 'react-beautiful-dnd(Drag and Drop)',
-    'Emotion Styled (@emotion/styled)'
+    'Emotion Styled (@emotion/styled)',
     'React Avatar',
     'React Star Ratings',
     'React Circular Progress Bar',
