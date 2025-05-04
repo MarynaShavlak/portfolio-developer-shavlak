@@ -6,6 +6,7 @@ import {drawFinalFrame} from "./canvas/drawFinalFrame.js";
 import {createOffscreenCanvas} from "./canvas/createOffscreenCanvas.js";
 import {drawNumberedPoints} from "./canvas/drawNumberedPoints.js";
 import {educationData} from "../../data/educationData.js";
+import {renderEducationSection} from "./renderEducationSection.js";
 
 
 
@@ -66,17 +67,6 @@ export function initEducationSection() {
     drawNumberedPoints(pathPoints, SCALE);
 
 
-    educationData.forEach(data => {
-        const educationItem = $('<li>').addClass('education-item');
-        const icon = $('<div>').addClass('education-icon').html(`${data.icon}`);
-        const rightPart = $('<div>').addClass('education__details')
-            .append(`<p class="education__organization">${data.organization}</p>`)
-            .append(`<p class="education__period">${data.period}</p>`)
-            .append(`<p class="education__speciality">${data.speciality}</p>`);
-
-
-        educationItem.append(icon).append(rightPart);
-        $('.education__tooltips__container').append(educationItem);
-    });
+    renderEducationSection();
     return startAnimation;
 }
