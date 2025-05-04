@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         id: 'devInterviewHub',
-        categories: ['react', 'saas', 'webpack', 'vite'],
+        categories: ['react','typescript', 'webpack', 'vite', 'saas',],
         type: 'Individual',
         title: 'Dev Interview Hub',
         slogan: 'Master the Interview, Land the Job !',
@@ -2429,7 +2429,7 @@ export const projectsData = [
         industry: 'Education',
         type: 'Individual',
         categories: [ 'html', 'css', 'jquery' ],
-        title: 'JavaScript Type Conversions Quiz',
+        title: 'JavaScript Types Quiz',
         date: 2024,
         poster: 'demo.gif',
         slogan:'',
