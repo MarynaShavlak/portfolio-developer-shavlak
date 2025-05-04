@@ -5,7 +5,7 @@ import {initReviewsSlider} from "./js/reviewSlider.js";
 import {initPortfolio} from "./js/portfolio.js";
 import {insertPartial} from "./js/partials-loader.js";
 import {initCVModal} from "./js/cvModal.js";
-import {initEducationSection} from "./js/education.js";
+import {initEducationSection} from "./js/education/education.js";
 
 
 
