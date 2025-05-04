@@ -1,3 +1,5 @@
+import {drawTooltips} from "./drawTooltips.js";
+
 export function drawNumberedPoints(points, scale) {
     const canvas = document.getElementById('numbersCanvas');
     const ctx = canvas.getContext('2d');
@@ -61,9 +63,11 @@ export function drawNumberedPoints(points, scale) {
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(number.toString(), x, y);
+
+
     };
 
-    // Start animation with delay
+       // Start animation with delay
     for (let i = 1; i <= numPoints; i++) {
         const index = i * spacing;
         const { x, y } = points[index];
@@ -74,4 +78,10 @@ export function drawNumberedPoints(points, scale) {
             pulseCircle(x, y, i, startTime);
         }, delay);
     }
+
+    setTimeout(() => {
+        drawTooltips(points, spacing, baseRadius, numPoints);
+    }, numPoints * delayBetween + initialDelay);
 }
+
+
