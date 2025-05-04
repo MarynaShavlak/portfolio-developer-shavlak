@@ -20,6 +20,7 @@
 
 
 .education-item {
+    opacity: 0;
     background-color: #FFD5EB;
     color: #1a1a1a;
     width:fit-content;
@@ -33,7 +34,7 @@
 
 .education-item:nth-child(1) {
     position: absolute;
-    top: 180px;
+    top: 200px;
     left:15px;
 }
 
@@ -59,8 +60,8 @@
     content: '';
     position: absolute;
     top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 180px;
+    /*transform: translateX(-100px);*/
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid #FFD5EB;
@@ -138,11 +139,19 @@
 
 .education__organization {
     font-weight: 900;
-    font-size: 18px;
-    max-width: 300px;
+    font-size: 16px;
+    max-width: 400px;
     text-wrap:pretty;
     /*text-wrap: balance;*/
 
+}
+
+.education-item:nth-child(1) .education__organization {
+    max-width: 300px;
+}
+
+.education-item:nth-child(2) .education__organization {
+    max-width: 900px;
 }
 
 .education__period {

@@ -67,23 +67,15 @@ export function initEducationSection() {
 
 
     educationData.forEach(data => {
-        // Create the container div
         const educationItem = $('<li>').addClass('education-item');
-
-
-        // Create the left part (icon)
         const icon = $('<div>').addClass('education-icon').html(`${data.icon}`);
-
-        // Create the right part (organization, period, speciality)
         const rightPart = $('<div>').addClass('education__details')
             .append(`<p class="education__organization">${data.organization}</p>`)
             .append(`<p class="education__period">${data.period}</p>`)
             .append(`<p class="education__speciality">${data.speciality}</p>`);
 
-        // Append icon and right part to the container
-        educationItem.append(icon).append(rightPart);
 
-        // Append the container to the body (or any other container you want)
+        educationItem.append(icon).append(rightPart);
         $('.education__tooltips__container').append(educationItem);
     });
     return startAnimation;

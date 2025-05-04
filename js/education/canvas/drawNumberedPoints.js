@@ -1,3 +1,4 @@
+import {showTooltipForPoint} from "./showTooltipForPoint.js";
 
 
 export function drawNumberedPoints(points, scale) {
@@ -31,7 +32,8 @@ export function drawNumberedPoints(points, scale) {
                 drawStaticCircle(x, y, radius, number, opacity);
                 requestAnimationFrame(animate);
             } else {
-                drawStaticCircle(x, y, baseRadius, number, 1); // Fully visible at the end
+                drawStaticCircle(x, y, baseRadius, number, 1);
+                showTooltipForPoint(number - 1);// Fully visible at the end
                 startPulsing(x, y, number); // Start continuous pulsing after initial appearance
             }
         };
