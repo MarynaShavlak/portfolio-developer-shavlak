@@ -26,7 +26,7 @@ export const projectsData = [
             architecture: 'Feature-Sliced Design',
             frontend: ['React', 'Redux Toolkit', 'React Router'],
             backend: ['Firebase (Firestore, Auth, Cloud Functions, Storage)'],
-            tools: ['TypeScript', 'Webpack', 'Vite', 'Babel', 'ESLint', 'Prettier'],
+            tools: ['TypeScript', 'Webpack', 'Vite', 'Babel', 'ESLint', 'Prettier', 'Docker'],
             ciCd: ['Husky', 'Lint-Staged'],
             ui: ['SASS/SCSS', 'Headless UI', 'React Spring', 'Use Gesture', 'TanStack Table'],
             testing: ['Jest', 'React Testing Library', 'Cypress', 'Storybook', 'Loki'],

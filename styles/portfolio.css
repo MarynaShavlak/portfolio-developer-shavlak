@@ -51,7 +51,7 @@
 }
 
 .filter-btn.filter-btn--active {
-    color: #222;
+    color: #ffffff;
     background-color: var(--active-bg);
     z-index: 1;
 }
