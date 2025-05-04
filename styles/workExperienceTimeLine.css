@@ -98,6 +98,7 @@
     white-space: nowrap;
     padding: 0 20px;
     border-radius: 6px 0 0 6px;
+    z-index:2;
 }
 
 .timeline__event__icon {
@@ -105,19 +106,39 @@
     align-items: center;
     justify-content: center;
     color: #3273AB;
-    padding: 20px;
     align-self: center;
     margin: 0 20px;
     background: #CAE6FE;
     border-radius: 100%;
     width: 40px;
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3),
-    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    /*box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),*/
+    /*0 18px 36px -18px rgba(0, 0, 0, 0.3),*/
+    /*0 -12px 36px -8px rgba(0, 0, 0, 0.025);*/
+    /*box-shadow:*/
+    /*        0 30px 60px -12px rgba(255, 91, 167, 0.6),*/
+    /*        0 18px 36px -18px rgba(255, 213, 235, 0.8),*/
+    /*        0 -12px 36px -8px rgba(255, 213, 235, 0.5);*/
     padding: 40px;
     height: 40px;
     position: relative;
+    box-shadow: 0 0 8px #3273AB, inset 0 0 8px #3273AB;
+    -webkit-animation: pulseBlue 2s linear 1s infinite;
+
 }
+
+@-webkit-keyframes pulsePink {
+    0% { box-shadow:0 0 8px #FF5BA7, inset 0 0 8px #FF5BA7; }
+    50% { box-shadow:0 0 16px #FF5BA7, inset 0 0 14px #FF5BA7; }
+    100% { box-shadow:0 0 8px #FF5BA7, inset 0 0 8px #FF5BA7; }
+}
+
+
+@-webkit-keyframes pulseBlue {
+    0% { box-shadow:0 0 8px #3273AB, inset 0 0 8px #3273AB; }
+    50% { box-shadow:0 0 16px #3273AB, inset 0 0 14px #3273AB; }
+    100% { box-shadow:0 0 8px #3273AB, inset 0 0 8px #3273AB; }
+}
+
 
 .timeline__event__icon i {
     font-size: 32px;
@@ -173,6 +194,8 @@
 .timeline__event--type2 .timeline__event__icon {
     background: #CAE6FE;
     color: #3273AB;
+    box-shadow: 0 0 8px #3273AB, inset 0 0 8px #3273AB;
+    -webkit-animation: pulseBlue 2s linear 1s infinite;
 }
 
 .timeline__event--type2 .timeline__event__icon:before,
@@ -214,6 +237,8 @@
 .timeline__event--type3 .timeline__event__icon {
     background: #FFD5EB;
     color: #FF5BA7;
+    box-shadow: 0 0 8px #FF5BA7, inset 0 0 8px #FF5BA7;
+    -webkit-animation: pulsePink 2s linear 1s infinite;
 }
 
 .timeline__event--type3 .timeline__event__icon:before,
@@ -258,6 +283,7 @@
     .timeline__event__date {
         border-radius: 0;
         padding: 20px;
+        z-index:2;
     }
 
     .timeline__event:nth-child(2n + 1) {
@@ -273,6 +299,7 @@
     .timeline__event:nth-child(2n + 1) .timeline__event__icon {
         border-radius: 6px 6px 0 0;
         margin: 0;
+
     }
 }
 
@@ -299,6 +326,7 @@
 @keyframes fillLeftOdd {
     100% {
         left: 100%;
+
     }
 }
 
