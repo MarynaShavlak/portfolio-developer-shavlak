@@ -46,21 +46,11 @@ export const toolsData = [
             { "name": "Prop-types", "link": "https://www.npmjs.com/package/prop-types" }
         ]
     },
+    // 6
     {
         "title": "Routing & Navigation",
         "items": [
             { "name": "React Router", "link": "https://reactrouter.com/" }
-        ]
-    },
-    {
-        "title": "Styling & CSS Solutions",
-        "items": [
-            { "name": "SASS/SCSS", "link": "https://sass-lang.com/" },
-            { "name": "Tailwind CSS", "link": "https://tailwindcss.com/" },
-
-            { "name": "Styled Components", "link": "https://styled-components.com/" },
-            { "name": "Emotion Styled", "link": "https://emotion.sh/" },
-            { "name": "Modern Normalize", "link": "https://www.npmjs.com/package/modern-normalize" }
         ]
     },
     {
@@ -88,6 +78,17 @@ export const toolsData = [
         ]
     },
     {
+        "title": "Styling & CSS Solutions",
+        "items": [
+            { "name": "SASS/SCSS", "link": "https://sass-lang.com/" },
+            { "name": "Tailwind CSS", "link": "https://tailwindcss.com/" },
+
+            { "name": "Styled Components", "link": "https://styled-components.com/" },
+            { "name": "Emotion Styled", "link": "https://emotion.sh/" },
+            { "name": "Modern Normalize", "link": "https://www.npmjs.com/package/modern-normalize" }
+        ]
+    },
+    {
         "title": "Animations & Transitions",
         "items": [
             { "name": "React Spring", "link": "https://react-spring.dev/" },
@@ -98,6 +99,7 @@ export const toolsData = [
             { "name": "Lottie", "link": "https://www.npmjs.com/package/@lottiefiles/lottie-player" }
         ]
     },
+    //11
     {
         "title": "Data Visualization & Tables",
         "items": [
@@ -144,6 +146,7 @@ export const toolsData = [
             { "name": "React Device Detect", "link": "https://www.npmjs.com/package/react-device-detect" }
         ]
     },
+    //16
     {
         "title": "Text & Content Editing",
         "items": [
@@ -179,13 +182,15 @@ export const toolsData = [
             { "name": "Slugify", "link": "https://www.npmjs.com/package/slugify" }
         ]
     },
+    //21
     {
         "title": "UI Tweaks",
         "items": [
             { "name": "React Avatar", "link": "https://www.npmjs.com/package/react-avatar" },
             { "name": "Counter-Up", "link": "https://www.npmjs.com/package/counterup" },
             { "name": "Waypoints", "link": "https://www.npmjs.com/package/waypoints" },
-            { "name": "Darkmode-js", "link": "https://www.npmjs.com/package/darkmode-js" }
+            { "name": "Darkmode-js", "link": "https://www.npmjs.com/package/darkmode-js" },
+            { "name": "imagesLoaded", "link": "https://imagesloaded.desandro.com/" }
         ]
     },
     {

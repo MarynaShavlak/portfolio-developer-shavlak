@@ -6,17 +6,12 @@ export function renderToolsSection() {
         const toolsItem = createToolItem(data);
         $('.tools__container').append(toolsItem);
     });
-
-    // $('.tools__container').isotope({
-    //         itemSelector: '.tools__item',
-    //         layoutMode: 'masonry',
-    //         // // percentPosition: true,
-    //         // masonry: {
-    //         //     // columnWidth: 200,
-    //         //     // gutter: 10
-    //         // }
-    //     });
-
+    $('.tools__container').masonry({
+        // options
+        itemSelector: '.tools__item',
+        columnWidth: 220,
+        gutter:10
+    });
 }
 
 // Create a single education item element
