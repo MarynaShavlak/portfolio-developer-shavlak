@@ -109,7 +109,7 @@
         left: 40%;
         animation-delay: 0s;
     }
-}
+} /*done*/
 
 .tools__item--code {
     width:210px;
@@ -230,7 +230,28 @@
 
 .tools__item--data {/*visualization*/
     width:220px;
-    height:180px
+    height:180px;
+    .icon-1 {
+        background-image: url('../assets/images/tools/apexcharts.webp');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+    .icon-2 {
+        background-image: url('../assets/images/tools/star.svg');
+        background-size: 30px 30px;
+        top: 60%;
+        left: 60%;
+        animation-delay: 3s;
+    }
+    .icon-3 {
+        background-image: url('../assets/images/tools/tanstack.png');
+        background-size: 40px 40px;
+        top: 10%;
+        left: 60%;
+        animation-delay: 0s;
+    }
 }
 
 
@@ -280,7 +301,51 @@
 .tools__item--testing { /*testing*/
     width: 450px;
     height: 120px;
-}
+
+    .icon-1 {
+        background-image: url('../assets/images/tools/jest.png');
+        background-size: 90px ;
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+    .icon-2 {
+        background-image: url('../assets/images/tools/loki.svg');
+        top: 60%;
+        left: 80%;
+        animation-delay: 3s;
+    }
+    .icon-3 {
+        background-image: url('../assets/images/tools/rtl.png');
+        background-size: 50px 50px;
+
+        top: 60%;
+        left: 5%;
+        animation-delay: 3s;
+    }
+    .icon-4 {
+        background-image: url('../assets/images/tools/cypress.svg');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 80%;
+        animation-delay: 0s;
+    }
+    .icon-5 {
+        background-image: url('../assets/images/tools/storybook.svg');
+        background-size: 30px 30px;
+        top: 40%;
+        left: 65%;
+        animation-delay: 0s;
+    }
+
+    .icon-6 {
+        background-image: url('../assets/images/tools/postman.svg');
+        background-size: 30px 30px;
+        top: 40%;
+        left: 20%;
+        animation-delay: 0s;
+    }
+}  /*done*/
 
 .tools__item--backend { /*backend*/
     width: 450px;
