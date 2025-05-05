@@ -115,8 +115,6 @@ export const toolsData = [
         "title": "UI Component Libraries",
         "items": [
             { "name": "Material UI", "link": "https://mui.com/" },
-            { "name": "Material UI Icons", "link": "https://mui.com/components/material-icons/" },
-            { "name": "MUI X Date Pickers", "link": "https://mui.com/x/react-date-pickers/" },
             { "name": "Ant Design", "link": "https://ant.design/" },
             { "name": "Headless UI", "link": "https://headlessui.dev/" },
             { "name": "Font Awesome", "link": "https://fontawesome.com/" },
