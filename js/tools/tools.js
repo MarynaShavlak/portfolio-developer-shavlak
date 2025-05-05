@@ -6,34 +6,45 @@ export function renderToolsSection() {
         const toolsItem = createToolItem(data);
         $('.tools__container').append(toolsItem);
     });
+
+    // $('.tools__container').isotope({
+    //         itemSelector: '.tools__item',
+    //         layoutMode: 'masonry',
+    //         // // percentPosition: true,
+    //         // masonry: {
+    //         //     // columnWidth: 200,
+    //         //     // gutter: 10
+    //         // }
+    //     });
+
 }
 
 // Create a single education item element
 function createToolItem(data) {
-    const toolsItem = $('<div>').addClass('tools__item'); // equivalent to "card"
-    const toolsItemContent = $('<div>').addClass('tools__item__content'); // equivalent to "card__content"
-    const toolsItemInner = $('<div>').addClass('tools__item__content-inner'); // equivalent to "card__content-inner"
+    const toolsItem = $('<div>').addClass('tools__item');
+    const toolsItemContent = $('<div>').addClass('tools__item__content');
 
-    const title = $('<div>').addClass('tools__title').text(data.title); // equivalent to "card__title"
 
-    // Create a list for items
-    const itemList = $('<ul>').addClass('tools__list'); // equivalent to "card__list"
+    const title = $('<div>').addClass('tools__title').text(data.title);
 
-    // Loop through items and create list items with links
+
+    const itemList = $('<ul>').addClass('tools__list');
+
+
     data.items.forEach(item => {
         const itemLink = $('<a>')
             .attr('href', item.link)
             .attr('target', '_blank')
             .addClass('tools__list-link')
-            .text(item.name); // create link for each item
-        const listItem = $('<li>').addClass('tools__list-item').append(itemLink); // create list item
-        itemList.append(listItem); // append list item to list
+            .text(item.name);
+        const listItem = $('<li>').addClass('tools__list-item').append(itemLink);
+        itemList.append(listItem);
     });
 
     const toolsItemOverlay = $('<div>').addClass('tools__item__overlay');
     toolsItemOverlay.append(title);
-    toolsItemInner.append(itemList);
-    toolsItemContent.append(toolsItemInner);
+
+    toolsItemContent.append(itemList);
     toolsItem.append(toolsItemContent, toolsItemOverlay);
 
     return toolsItem;
