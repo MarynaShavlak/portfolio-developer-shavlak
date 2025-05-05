@@ -21,7 +21,7 @@
 
 .education-item {
     opacity: 0;
-    background-color: #FFD5EB;
+    background-color: #FFC2D9;
     color: #1a1a1a;
     width:fit-content;
     padding:10px;
@@ -46,7 +46,7 @@
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 20px solid #FFD5EB;
+    border-top: 20px solid #FFC2D9;
 }
 
 
@@ -64,7 +64,7 @@
     /*transform: translateX(-100px);*/
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 20px solid #FFD5EB;
+    border-bottom: 20px solid #FFC2D9;
 }
 
 .education-item:nth-child(3) {
@@ -81,7 +81,7 @@
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 20px solid #FFD5EB;
+    border-top: 20px solid #FFC2D9;
 }
 
 
@@ -99,7 +99,7 @@
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 20px solid #FFD5EB;
+    border-bottom: 20px solid #FFC2D9;
 }
 
 .education-item:last-child {
@@ -116,7 +116,7 @@
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 20px solid #FFD5EB;
+    border-bottom: 20px solid #FFC2D9;
 }
 
 

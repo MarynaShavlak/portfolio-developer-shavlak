@@ -21,7 +21,11 @@ function createToolItem(data) {
 
     // Loop through items and create list items with links
     data.items.forEach(item => {
-        const itemLink = $('<a>').attr('href', item.link).text(item.name); // create link for each item
+        const itemLink = $('<a>')
+            .attr('href', item.link)
+            .attr('target', '_blank')
+            .addClass('tools__list-link')
+            .text(item.name); // create link for each item
         const listItem = $('<li>').addClass('tools__list-item').append(itemLink); // create list item
         itemList.append(listItem); // append list item to list
     });
