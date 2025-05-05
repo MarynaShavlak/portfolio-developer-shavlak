@@ -48,93 +48,117 @@
 }
 
 
-.tools__item:nth-child(1) {
+.tools__item--frontend {
     width:220px;
     height:120px
 }
 
-.tools__item:nth-child(2) {
+.tools__item--state {
     width:220px;
     height:180px
 }
 
-.tools__item:nth-child(3) {
+.tools__item--build{
     width:220px;
     height:180px
 }
-.tools__item:nth-child(4) {
+.tools__item--code {
     width:210px;
     height:120px
 }
-.tools__item:nth-child(5) {
+.tools__item--utility {
     width:220px;
-    height:160px
+    height:180px
 }
 
-.tools__item:nth-child(6) {
+.tools__item--routing {
     width:220px;
     height:120px
 }
 
-.tools__item:nth-child(7) {
+.tools__item--ui {
     width:300px;
     height:180px
 }
-.tools__item:nth-child(8) {
+.tools__item--form {
     width:220px;
     height:180px
 }
 
-.tools__item:nth-child(9) {
-    width:250px;
-    height:180px
+.tools__item--styling {
+    width: 450px;
+    height: 140px;
 }
 
-.tools__item:nth-child(12) {
+
+.tools__item--animations {/*animation*/
     width:220px;
     height:180px
 }
 
-.tools__item:nth-child(10) {/*animation*/
+.tools__item--data {/*visualization*/
     width:220px;
     height:180px
 }
 
 
-.tools__item:nth-child(15) { /*carousel*/
+.tools__item--carousels { /*carousel*/
+    width:220px;
+    height:180px
+}
+
+
+.tools__item--modals { /*modal*/
+    width:220px;
+    height:180px
+}
+
+.tools__item--date { /*date*/
+    width:260px;
+    height:140px
+}
+
+.tools__item--accessibility { /*Accessibility*/
+    width:220px;
+    height:180px
+}
+.tools__item--text{ /*text*/
+    width:200px;
+    height:180px
+}
+.tools__item--drag { /*drag*/
     width:220px;
     height:140px
 }
 
-.tools__item:nth-child(17) { /*drag*/
-    width:200px;
-    height:120px
-}
-
-
-.tools__item:nth-child(19) { /*loading*/
+.tools__item--pagination { /*pagination*/
     width: 200px;
-    height: 120px;
+    height: 180px;
 }
 
-.tools__item:nth-child(20) { /*search*/
-    width: 200px;
-    height: 120px;
+.tools__item--loading { /*loading*/
+    width: 220px;
+    height: 140px;
 }
 
-.tools__item:nth-child(21) { /*tweaks*/
+.tools__item--search { /*search*/
+    width: 220px;
+    height: 140px;
+}
+
+.tools__item--tweaks { /*tweaks*/
     width: 220px;
     height: 180px;
 }
 
-.tools__item:nth-child(22) { /*testing*/
-    width: 220px;
-    height: 180px;
+.tools__item--testing { /*testing*/
+    width: 450px;
+    height: 120px;
 }
 
-.tools__item:nth-child(23) { /*backend*/
-    width: 280px;
-    height: 180px;
+.tools__item--backend { /*backend*/
+    width: 450px;
+    height: 140px;
 }
 
 .tools__item__content {

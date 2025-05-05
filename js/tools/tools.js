@@ -16,7 +16,9 @@ export function renderToolsSection() {
 
 // Create a single education item element
 function createToolItem(data) {
-    const toolsItem = $('<div>').addClass('tools__item');
+    const modifierClass = data.title.split(' ')[0].toLowerCase();
+    // console.log('modifierClass', modifierClass);
+    const toolsItem = $('<div>').addClass(`tools__item tools__item--${modifierClass}`);
     const toolsItemContent = $('<div>').addClass('tools__item__content');
 
 
