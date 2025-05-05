@@ -1,25 +1,49 @@
-const toolsData = [
+export const toolsData = [
     {
-        "title": "Frontend Frameworks and Libraries",
+        "title": "Frontend UI Frameworks",
         "items": [
             { "name": "React", "link": "https://reactjs.org/" },
-            { "name": "React Redux", "link": "https://react-redux.js.org/" },
-            { "name": "Redux Toolkit", "link": "https://redux-toolkit.js.org/" },
-            { "name": "Redux Persist", "link": "https://github.com/rt2zz/redux-persist" },
-            { "name": "Redux Async Thunk", "link": "https://redux-toolkit.js.org/api/createAsyncThunk" },
             { "name": "jQuery", "link": "https://jquery.com/" }
         ]
     },
     {
-        "title": "State Management and Data Handling",
+        "title": "State Management",
+        "items": [
+            { "name": "React Redux", "link": "https://react-redux.js.org/" },
+            { "name": "Redux Toolkit", "link": "https://redux-toolkit.js.org/" },
+            { "name": "Redux Persist", "link": "https://github.com/rt2zz/redux-persist" },
+            { "name": "Redux Async Thunk", "link": "https://redux-toolkit.js.org/api/createAsyncThunk" }
+        ]
+    },
+    {
+        "title": "Build Tools and Development Environment",
+        "items": [
+            { "name": "Webpack", "link": "https://webpack.js.org/" },
+            { "name": "Vite", "link": "https://vitejs.dev/" },
+            { "name": "Babel", "link": "https://babeljs.io/" },
+            { "name": "Gulp", "link": "https://gulpjs.com/" },
+            { "name": "Docker", "link": "https://www.docker.com/" },
+            { "name": "PostCSS", "link": "https://postcss.org/" },
+            { "name": "Autoprefixer", "link": "https://www.npmjs.com/package/autoprefixer" },
+        ]
+    },
+    {
+        "title": "Code Quality and Linting",
+        "items": [
+            { "name": "TypeScript", "link": "https://www.typescriptlang.org/" },
+            { "name": "ESLint", "link": "https://eslint.org/" },
+            { "name": "Prettier", "link": "https://prettier.io/" }
+        ]
+    },
+    {
+        "title": "Utility Libraries",
         "items": [
             { "name": "Lodash", "link": "https://lodash.com/" },
             { "name": "Clsx", "link": "https://www.npmjs.com/package/clsx" },
             { "name": "UUID", "link": "https://www.npmjs.com/package/uuid" },
             { "name": "Nanoid", "link": "https://www.npmjs.com/package/nanoid" },
             { "name": "Randomcolor", "link": "https://www.npmjs.com/package/randomcolor" },
-            { "name": "Prop-types", "link": "https://www.npmjs.com/package/prop-types" },
-
+            { "name": "Prop-types", "link": "https://www.npmjs.com/package/prop-types" }
         ]
     },
     {
@@ -29,12 +53,11 @@ const toolsData = [
         ]
     },
     {
-        "title": "Styling and CSS Frameworks",
+        "title": "Styling and CSS Solutions",
         "items": [
             { "name": "SASS/SCSS", "link": "https://sass-lang.com/" },
             { "name": "Tailwind CSS", "link": "https://tailwindcss.com/" },
-            { "name": "PostCSS", "link": "https://postcss.org/" },
-            { "name": "Autoprefixer", "link": "https://www.npmjs.com/package/autoprefixer" },
+
             { "name": "Styled Components", "link": "https://styled-components.com/" },
             { "name": "Emotion Styled", "link": "https://emotion.sh/" },
             { "name": "Modern Normalize", "link": "https://www.npmjs.com/package/modern-normalize" }
@@ -165,24 +188,7 @@ const toolsData = [
             { "name": "Darkmode-js", "link": "https://www.npmjs.com/package/darkmode-js" }
         ]
     },
-    {
-        "title": "Build Tools and Development Environment",
-        "items": [
-            { "name": "Webpack", "link": "https://webpack.js.org/" },
-            { "name": "Vite", "link": "https://vitejs.dev/" },
-            { "name": "Babel", "link": "https://babeljs.io/" },
-            { "name": "Gulp", "link": "https://gulpjs.com/" },
-            { "name": "Docker", "link": "https://www.docker.com/" }
-        ]
-    },
-    {
-        "title": "Code Quality and Linting",
-        "items": [
-            { "name": "TypeScript", "link": "https://www.typescriptlang.org/" },
-            { "name": "ESLint", "link": "https://eslint.org/" },
-            { "name": "Prettier", "link": "https://prettier.io/" }
-        ]
-    },
+
     {
         "title": "Testing and Quality Assurance",
         "items": [
@@ -190,7 +196,8 @@ const toolsData = [
             { "name": "React Testing Library", "link": "https://testing-library.com/docs/react-testing-library/intro/" },
             { "name": "Cypress", "link": "https://www.cypress.io/" },
             { "name": "Storybook", "link": "https://storybook.js.org/" },
-            { "name": "Loki", "link": "https://loki.js.org/" }
+            { "name": "Loki", "link": "https://loki.js.org/" },
+            { "name": "Postman", "link": "https://www.postman.com/" }
         ]
     },
     {
@@ -198,13 +205,10 @@ const toolsData = [
         "items": [
             { "name": "Firebase", "link": "https://firebase.google.com/" },
             { "name": "Axios", "link": "https://axios-http.com/" },
-            { "name": "REST Countries API", "link": "https://restcountries.com/" }
+            { "name": "REST Countries API", "link": "https://restcountries.com/" },
+            { "name": "Swagger/OpenAPI", "link": "https://swagger.io/" },
+            { "name": "json-server", "link": "https://github.com/typicode/json-server" }
         ]
     },
-    {
-        "title": "Custom Hooks and Utilities",
-        "items": [
-            { "name": "usehooks-ts", "link": "https://usehooks-ts.com/" }
-        ]
-    }
+
 ]
