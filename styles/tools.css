@@ -13,11 +13,26 @@
 
 .section__tools__title {
     margin-bottom: 0.3rem;
-    font-size: 3rem;
-    color: #1A4A7A;
+    font-size: 5rem;
+    /*color: #1A4A7A;*/
+    background-image: url('../assets/images/sky.jpg');
+    background-size: 200%;
+    background-position: 0 50%;
+    background-clip: text;
+    color: transparent;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
+    animation: moveLeftRight 5s infinite alternate;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .section__tools__text {
