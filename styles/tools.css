@@ -317,8 +317,29 @@
 
 .tools__item--carousels { /*carousel*/
     width:220px;
-    height:190px
-}
+    height:190px;
+    .icon-1 {
+        background-image: url('../assets/images/tools/owl.png');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+    .icon-2 {
+        background-image: url('../assets/images/tools/slick.svg');
+
+        top: 60%;
+        left: 40%;
+        animation-delay: 3s;
+    }
+    .icon-3 {
+        background-image: url('../assets/images/tools/swiper.svg');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 60%;
+        animation-delay: 0s;
+    }
+}  /*done*/
 
 .tools__item--accessibility { /*Accessibility*/
     width:220px;
