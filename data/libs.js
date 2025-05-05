@@ -75,7 +75,6 @@ export const toolsData = [
 ]
 },
 
-    //3
 {
     "title": "Testing & Quality Assurance",
     "items": [
@@ -112,11 +111,6 @@ export const toolsData = [
             { "name": "json-server", "link": "https://github.com/typicode/json-server" }
         ]
     },
-
-
-
-    //4
-
     {
         "title": "UI Component Libraries",
         "items": [
@@ -129,7 +123,6 @@ export const toolsData = [
             { "name": "React Icons", "link": "https://www.npmjs.com/package/react-icons" }
         ]
     },
-
     {
         "title": "Styling & CSS Solutions",
         "items": [
@@ -141,7 +134,50 @@ export const toolsData = [
             { "name": "Modern Normalize", "link": "https://www.npmjs.com/package/modern-normalize" }
         ]
     },
-
+    {
+        "title": "Data Visualization & Tables",
+        "items": [
+            { "name": "ApexCharts", "link": "https://apexcharts.com/" },
+            { "name": "TanStack Table", "link": "https://tanstack.com/table/" },
+            { "name": "React Circular Progress Bar", "link": "https://www.npmjs.com/package/react-circular-progressbar" },
+            { "name": "React Star Ratings", "link": "https://www.npmjs.com/package/react-star-ratings" }
+        ]
+    },
+    {
+        "title": "Carousels & Layouts",
+        "items": [
+            { "name": "Swiper JS", "link": "https://swiperjs.com/" },
+            { "name": "Slick Carousel", "link": "https://www.npmjs.com/package/slick-carousel" },
+            { "name": "Isotope", "link": "https://www.npmjs.com/package/isotope" },
+            { "name": "Owl Carousel 2", "link": "https://www.npmjs.com/package/owl.carousel" },
+            { "name": "Masonry Layout", "link": "https://masonry.desandro.com/" }
+        ]
+    },
+    {
+        "title": "Loading Indicators",
+        "items": [
+            { "name": "React Loader Spinner", "link": "https://www.npmjs.com/package/react-loader-spinner" }
+        ]
+    },
+    {
+        "title": "Pagination & Load More",
+        "items": [
+            { "name": "React Paginate", "link": "https://www.npmjs.com/package/react-paginate" },
+            { "name": "Ultimate Pagination", "link": "https://www.npmjs.com/package/ultimate-pagination" },
+            { "name": "React Show More Text", "link": "https://www.npmjs.com/package/react-show-more-text" }
+        ]
+    },
+    {
+        "title": "Animations & Transitions",
+        "items": [
+            { "name": "React Spring", "link": "https://react-spring.dev/" },
+            { "name": "Use Gesture", "link": "https://www.npmjs.com/package/@use-gesture/react" },
+            { "name": "React Transition Group", "link": "https://reactcommunity.org/react-transition-group/" },
+            { "name": "GSAP", "link": "https://greensock.com/gsap/" },
+            { "name": "Vanilla Tilt", "link": "https://www.npmjs.com/package/vanilla-tilt" },
+            { "name": "Lottie", "link": "https://www.npmjs.com/package/@lottiefiles/lottie-player" }
+        ]
+    },
 
     {
         "title": "Modals & Notifications",
@@ -153,79 +189,34 @@ export const toolsData = [
             { "name": "BasicLightbox", "link": "https://basiclightbox.electerious.com/" }
         ]
     },
-{
-    "title": "Animations & Transitions",
-    "items": [
-    { "name": "React Spring", "link": "https://react-spring.dev/" },
-    { "name": "Use Gesture", "link": "https://www.npmjs.com/package/@use-gesture/react" },
-    { "name": "React Transition Group", "link": "https://reactcommunity.org/react-transition-group/" },
-    { "name": "GSAP", "link": "https://greensock.com/gsap/" },
-    { "name": "Vanilla Tilt", "link": "https://www.npmjs.com/package/vanilla-tilt" },
-    { "name": "Lottie", "link": "https://www.npmjs.com/package/@lottiefiles/lottie-player" }
-]
-},
-{
-    "title": "Data Visualization & Tables",
-    "items": [
-    { "name": "ApexCharts", "link": "https://apexcharts.com/" },
-    { "name": "TanStack Table", "link": "https://tanstack.com/table/" },
-    { "name": "React Circular Progress Bar", "link": "https://www.npmjs.com/package/react-circular-progressbar" },
-    { "name": "React Star Ratings", "link": "https://www.npmjs.com/package/react-star-ratings" }
-]
-},
-{
-    "title": "Carousels & Layouts",
-    "items": [
-    { "name": "Swiper JS", "link": "https://swiperjs.com/" },
-    { "name": "Slick Carousel", "link": "https://www.npmjs.com/package/slick-carousel" },
-    { "name": "Isotope", "link": "https://www.npmjs.com/package/isotope" },
-    { "name": "Owl Carousel 2", "link": "https://www.npmjs.com/package/owl.carousel" },
-    { "name": "Masonry Layout", "link": "https://masonry.desandro.com/" }
-]
-},
-
-{
-    "title": "Date & Time Handling",
-    "items": [
-    { "name": "Date-fns", "link": "https://date-fns.org/" },
-    { "name": "Dayjs", "link": "https://day.js.org/" },
-    { "name": "React Datepicker", "link": "https://www.npmjs.com/package/react-datepicker" },
-    { "name": "MUI X Date Pickers", "link": "https://mui.com/x/react-date-pickers/" },
-    { "name": "Calendar Dates", "link": "https://www.npmjs.com/package/calendar-dates" }
-]
-},
-{
-    "title": "Text & Content Editing",
-    "items": [
-    { "name": "Monaco Editor", "link": "https://microsoft.github.io/monaco-editor/" },
-    { "name": "React Draft WYSIWYG", "link": "https://www.npmjs.com/package/react-draft-wysiwyg" },
-    { "name": "React Highlight Words", "link": "https://www.npmjs.com/package/react-highlight-words" }
-]
-},
-{
-    "title": "Pagination & Load More",
-    "items": [
-    { "name": "React Paginate", "link": "https://www.npmjs.com/package/react-paginate" },
-    { "name": "Ultimate Pagination", "link": "https://www.npmjs.com/package/ultimate-pagination" },
-    { "name": "React Show More Text", "link": "https://www.npmjs.com/package/react-show-more-text" }
-]
-},
-{
-    "title": "Tweaks UI",
-    "items": [
-    { "name": "React Avatar", "link": "https://www.npmjs.com/package/react-avatar" },
-    { "name": "Counter-Up", "link": "https://www.npmjs.com/package/counterup" },
-    { "name": "Waypoints", "link": "https://www.npmjs.com/package/waypoints" },
-    { "name": "Darkmode-js", "link": "https://www.npmjs.com/package/darkmode-js" },
-    { "name": "imagesLoaded", "link": "https://imagesloaded.desandro.com/" }
-]
-},
-
 
     {
-        "title": "Loading Indicators",
+        "title": "Tweaks UI",
         "items": [
-            { "name": "React Loader Spinner", "link": "https://www.npmjs.com/package/react-loader-spinner" }
+            { "name": "React Avatar", "link": "https://www.npmjs.com/package/react-avatar" },
+            { "name": "Counter-Up", "link": "https://www.npmjs.com/package/counterup" },
+            { "name": "Waypoints", "link": "https://www.npmjs.com/package/waypoints" },
+            { "name": "Darkmode-js", "link": "https://www.npmjs.com/package/darkmode-js" },
+            { "name": "imagesLoaded", "link": "https://imagesloaded.desandro.com/" }
+        ]
+    },
+    {
+        "title": "Date & Time Handling",
+        "items": [
+            { "name": "Date-fns", "link": "https://date-fns.org/" },
+            { "name": "Dayjs", "link": "https://day.js.org/" },
+            { "name": "React Datepicker", "link": "https://www.npmjs.com/package/react-datepicker" },
+            { "name": "MUI X Date Pickers", "link": "https://mui.com/x/react-date-pickers/" },
+            { "name": "Calendar Dates", "link": "https://www.npmjs.com/package/calendar-dates" }
+        ]
+    },
+
+    {
+        "title": "Text & Content Editing",
+        "items": [
+            { "name": "Monaco Editor", "link": "https://microsoft.github.io/monaco-editor/" },
+            { "name": "React Draft WYSIWYG", "link": "https://www.npmjs.com/package/react-draft-wysiwyg" },
+            { "name": "React Highlight Words", "link": "https://www.npmjs.com/package/react-highlight-words" }
         ]
     },
 
