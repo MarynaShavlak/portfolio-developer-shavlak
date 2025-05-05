@@ -146,8 +146,37 @@
 
 .tools__item--utility {
     width:220px;
-    height:180px
-}
+    height:180px;
+
+    .icon-1 {
+        background-image: url('../assets/images/tools/uuid.png');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+    .icon-2 {
+        background-image: url('../assets/images/tools/lodash.svg');
+        background-size: 30px 30px;
+        top: 60%;
+        left: 70%;
+        animation-delay: 3s;
+    }
+    .icon-3 {
+        background-image: url('../assets/images/tools/randomColor.svg');
+        background-size: 30px 30px;
+        top: 60%;
+        left: 5%;
+        animation-delay: 3s;
+    }
+    .icon-4 {
+        background-image: url('../assets/images/tools/nanoid.svg');
+
+        top: 10%;
+        left: 70%;
+        animation-delay: 0s;
+    }
+} /*done*/
 
 .tools__item--routing {
     width:220px;
@@ -223,7 +252,7 @@
         left: 70%;
         animation-delay: 3s;
     }
-}
+} /*done*/
 
 .tools__item--styling {
     width: 450px;
@@ -536,6 +565,27 @@
 .tools__item--backend { /*backend*/
     width: 450px;
     height: 140px;
+    .icon-1 {
+        background-image: url('../assets/images/tools/axios.svg');
+
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+    .icon-2 {
+        background-image: url('../assets/images/tools/firebase.svg');
+
+        top: 60%;
+        left: 70%;
+        animation-delay: 3s;
+    }
+    .icon-3 {
+        background-image: url('../assets/images/tools/swagger.svg');
+
+        top: 60%;
+        left: 5%;
+        animation-delay: 3s;
+    }
 }
 
 .tools__item__content {
