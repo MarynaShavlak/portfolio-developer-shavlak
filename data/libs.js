@@ -1,12 +1,11 @@
 export const toolsData = [
-
 {
     "title": "Frontend UI Frameworks",
     "items": [
     { "name": "React", "link": "https://reactjs.org/" },
     { "name": "jQuery", "link": "https://jquery.com/" }
 ]
-},
+}, // 1
 {
     "title": "State Management",
     "items": [
@@ -17,7 +16,7 @@ export const toolsData = [
     { "name": "Redux Async Thunk", "link": "https://redux-toolkit.js.org/api/createAsyncThunk" },
 
 ]
-},
+}, //5
 {
     "title": "Build Tools & Development Environment",
     "items": [
@@ -29,7 +28,7 @@ export const toolsData = [
     { "name": "PostCSS", "link": "https://postcss.org/" },
     { "name": "Autoprefixer", "link": "https://www.npmjs.com/package/autoprefixer" },
 ]
-},
+}, //20
 {
     "title": "Code Quality & Linting",
     "items": [
@@ -37,15 +36,13 @@ export const toolsData = [
     { "name": "ESLint", "link": "https://eslint.org/" },
     { "name": "Prettier", "link": "https://prettier.io/" }
 ]
-},
+}, //6
 {
     "title": "Routing & Navigation",
     "items": [
     { "name": "React Router", "link": "https://reactrouter.com/" }
 ]
-},
-
-    //2
+},  // 3
 {
     "title": "Form Handling & Validation",
     "items": [
@@ -57,7 +54,7 @@ export const toolsData = [
     { "name": "Zod", "link": "https://www.npmjs.com/package/zod" },
     { "name": "Yup", "link": "https://www.npmjs.com/package/yup" }
 ]
-},
+}, //9
 {
     "title": "Utility Libraries",
     "items": [
@@ -68,15 +65,14 @@ export const toolsData = [
     { "name": "Randomcolor", "link": "https://www.npmjs.com/package/randomcolor" },
     { "name": "Prop-types", "link": "https://www.npmjs.com/package/prop-types" }
 ]
-},
+}, //11
 {
     "title": "Accessibility & Device Detection",
     "items": [
     { "name": "Body Scroll Lock", "link": "https://www.npmjs.com/package/body-scroll-lock" },
     { "name": "React Device Detect", "link": "https://www.npmjs.com/package/react-device-detect" }
 ]
-},
-
+}, //13
 {
     "title": "Testing & Quality Assurance",
     "items": [
@@ -87,20 +83,20 @@ export const toolsData = [
     { "name": "Loki", "link": "https://loki.js.org/" },
     { "name": "Postman", "link": "https://www.postman.com/" }
 ]
-},
+}, //23
     {
         "title": "Search & Filtering",
         "items": [
             { "name": "Algolia", "link": "https://www.algolia.com/" },
             { "name": "Slugify", "link": "https://www.npmjs.com/package/slugify" }
         ]
-    },
+    }, //15
     {
         "title": "Drag & Drop",
         "items": [
             { "name": "react-beautiful-dnd", "link": "https://www.npmjs.com/package/react-beautiful-dnd" }
         ]
-    },
+    }, //17
     {
         "title": "Backend & API Integration",
         "items": [
@@ -112,7 +108,7 @@ export const toolsData = [
             { "name": "Swagger/OpenAPI", "link": "https://swagger.io/" },
             { "name": "json-server", "link": "https://github.com/typicode/json-server" }
         ]
-    },
+    }, //19
     {
         "title": "UI Component Libraries",
         "items": [
@@ -122,7 +118,7 @@ export const toolsData = [
             { "name": "Font Awesome", "link": "https://fontawesome.com/" },
             { "name": "React Icons", "link": "https://www.npmjs.com/package/react-icons" }
         ]
-    },
+    }, //14
     {
         "title": "Styling & CSS Solutions",
         "items": [
@@ -133,7 +129,7 @@ export const toolsData = [
             { "name": "Emotion Styled", "link": "https://emotion.sh/" },
             { "name": "Modern Normalize", "link": "https://www.npmjs.com/package/modern-normalize" }
         ]
-    },
+    }, //22
     {
         "title": "Data Visualization & Tables",
         "items": [
@@ -142,7 +138,7 @@ export const toolsData = [
             { "name": "React Circular Progress Bar", "link": "https://www.npmjs.com/package/react-circular-progressbar" },
             { "name": "React Star Ratings", "link": "https://www.npmjs.com/package/react-star-ratings" }
         ]
-    },
+    }, //16
     {
         "title": "Carousels & Layouts",
         "items": [
@@ -152,13 +148,13 @@ export const toolsData = [
             { "name": "Owl Carousel 2", "link": "https://www.npmjs.com/package/owl.carousel" },
             { "name": "Masonry Layout", "link": "https://masonry.desandro.com/" }
         ]
-    },
+    }, // 18
     {
         "title": "Loading Indicators",
         "items": [
             { "name": "React Loader Spinner", "link": "https://www.npmjs.com/package/react-loader-spinner" }
         ]
-    },
+    }, //12
     {
         "title": "Pagination & Load More",
         "items": [
@@ -166,7 +162,7 @@ export const toolsData = [
             { "name": "Ultimate Pagination", "link": "https://www.npmjs.com/package/ultimate-pagination" },
             { "name": "React Show More Text", "link": "https://www.npmjs.com/package/react-show-more-text" }
         ]
-    },
+    }, //21
     {
         "title": "Animations & Transitions",
         "items": [
@@ -177,8 +173,7 @@ export const toolsData = [
             { "name": "Vanilla Tilt", "link": "https://www.npmjs.com/package/vanilla-tilt" },
             { "name": "Lottie", "link": "https://www.npmjs.com/package/@lottiefiles/lottie-player" }
         ]
-    },
-
+    },  //10
     {
         "title": "Modals & Notifications",
         "items": [
@@ -188,8 +183,7 @@ export const toolsData = [
             { "name": "Notiflix", "link": "https://www.npmjs.com/package/notiflix" },
             { "name": "BasicLightbox", "link": "https://basiclightbox.electerious.com/" }
         ]
-    },
-
+    }, // 2
     {
         "title": "Tweaks UI",
         "items": [
@@ -199,7 +193,7 @@ export const toolsData = [
             { "name": "Darkmode-js", "link": "https://www.npmjs.com/package/darkmode-js" },
             { "name": "imagesLoaded", "link": "https://imagesloaded.desandro.com/" }
         ]
-    },
+    },  //4
     {
         "title": "Date & Time Handling",
         "items": [
@@ -209,8 +203,7 @@ export const toolsData = [
             { "name": "MUI X Date Pickers", "link": "https://mui.com/x/react-date-pickers/" },
             { "name": "Calendar Dates", "link": "https://www.npmjs.com/package/calendar-dates" }
         ]
-    },
-
+    }, //7
     {
         "title": "Text & Content Editing",
         "items": [
@@ -218,7 +211,7 @@ export const toolsData = [
             { "name": "React Draft WYSIWYG", "link": "https://www.npmjs.com/package/react-draft-wysiwyg" },
             { "name": "React Highlight Words", "link": "https://www.npmjs.com/package/react-highlight-words" }
         ]
-    },
+    },  //8
 
 ]
 

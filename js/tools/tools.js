@@ -1,32 +1,36 @@
 import {toolsData} from "../../data/libs.js";
 
-
 export function renderToolsSection() {
     toolsData.forEach(data => {
         const toolsItem = createToolItem(data);
         $('.tools__container').append(toolsItem);
     });
+
+    // Define the order of appearance (1-based indices for items)
+    const appearanceOrder = [1, 5, 20, 6, 3 ,9, 11, 13, 23, 15, 17, 19, 14, 22, 16, 18, 12, 21, 10, 2, 4, 7, 8];
+
+    // Apply staggered delays based on appearance order
+    $('.tools__item').each(function(index) {
+        const orderIndex = appearanceOrder[index] - 1; // Convert to 0-based index
+        const delay = orderIndex * 0.1; // 0.2s delay between each item
+        $(this).css('--delay', `${delay}s`); // Set CSS custom property
+    });
+
     $('.tools__container').masonry({
-        // options
         itemSelector: '.tools__item',
         columnWidth: 220,
-        gutter:10
+        gutter: 10
     });
 }
 
-// Create a single education item element
+
 function createToolItem(data) {
     const modifierClass = data.title.split(' ')[0].toLowerCase();
-    // console.log('modifierClass', modifierClass);
     const toolsItem = $('<div>').addClass(`tools__item tools__item--${modifierClass}`);
     const toolsItemContent = $('<div>').addClass('tools__item__content');
 
-
     const title = $('<div>').addClass('tools__title').text(data.title);
-
-
     const itemList = $('<ul>').addClass('tools__list');
-
 
     data.items.forEach(item => {
         const itemLink = $('<a>')
@@ -45,7 +49,6 @@ function createToolItem(data) {
     }
 
     toolsItemOverlay.prepend(title);
-
     toolsItemContent.append(itemList);
     toolsItem.append(toolsItemContent, toolsItemOverlay);
 

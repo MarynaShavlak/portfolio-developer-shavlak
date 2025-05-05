@@ -45,12 +45,26 @@
     /*width:220px;*/
     /*height:180px;*/
     margin-bottom: 10px;
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 0.5s ease-in forwards; /* Apply fade-in animation */
+    --delay: 0s; /* Define default value for --delay */
+    animation-delay: var(--delay); /* Use custom property for delay */
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
 .tools__item--frontend {
     width:220px;
     height:120px;
+
 
     .icon-1 {
     background-image: url('../assets/images/tools/react.svg');
