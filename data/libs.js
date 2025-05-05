@@ -16,7 +16,7 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Build Tools and Development Environment",
+        "title": "Build Tools & Development Environment",
         "items": [
             { "name": "Webpack", "link": "https://webpack.js.org/" },
             { "name": "Vite", "link": "https://vitejs.dev/" },
@@ -28,7 +28,7 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Code Quality and Linting",
+        "title": "Code Quality & Linting",
         "items": [
             { "name": "TypeScript", "link": "https://www.typescriptlang.org/" },
             { "name": "ESLint", "link": "https://eslint.org/" },
@@ -47,13 +47,13 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Routing and Navigation",
+        "title": "Routing & Navigation",
         "items": [
             { "name": "React Router", "link": "https://reactrouter.com/" }
         ]
     },
     {
-        "title": "Styling and CSS Solutions",
+        "title": "Styling & CSS Solutions",
         "items": [
             { "name": "SASS/SCSS", "link": "https://sass-lang.com/" },
             { "name": "Tailwind CSS", "link": "https://tailwindcss.com/" },
@@ -76,7 +76,7 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Form Handling and Validation",
+        "title": "Form Handling & Validation",
         "items": [
             { "name": "Formik", "link": "https://formik.org/" },
             { "name": "JustValidate", "link": "https://www.npmjs.com/package/just-validate" },
@@ -88,7 +88,7 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Animations and Transitions",
+        "title": "Animations & Transitions",
         "items": [
             { "name": "React Spring", "link": "https://react-spring.dev/" },
             { "name": "Use Gesture", "link": "https://www.npmjs.com/package/@use-gesture/react" },
@@ -99,7 +99,7 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Data Visualization and Tables",
+        "title": "Data Visualization & Tables",
         "items": [
             { "name": "ApexCharts", "link": "https://apexcharts.com/" },
             { "name": "TanStack Table", "link": "https://tanstack.com/table/" },
@@ -108,7 +108,7 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Carousels and Layouts",
+        "title": "Carousels & Layouts",
         "items": [
             { "name": "Swiper JS", "link": "https://swiperjs.com/" },
             { "name": "Slick Carousel", "link": "https://www.npmjs.com/package/slick-carousel" },
@@ -118,7 +118,7 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Modals and Notifications",
+        "title": "Modals & Notifications",
         "items": [
             { "name": "React Modal", "link": "https://www.npmjs.com/package/react-modal" },
             { "name": "React Toastify", "link": "https://www.npmjs.com/package/react-toastify" },
@@ -128,7 +128,7 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Date and Time Handling",
+        "title": "Date & Time Handling",
         "items": [
             { "name": "Date-fns", "link": "https://date-fns.org/" },
             { "name": "Dayjs", "link": "https://day.js.org/" },
@@ -138,14 +138,14 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Accessibility and Device Detection",
+        "title": "Accessibility & Device Detection",
         "items": [
             { "name": "Body Scroll Lock", "link": "https://www.npmjs.com/package/body-scroll-lock" },
             { "name": "React Device Detect", "link": "https://www.npmjs.com/package/react-device-detect" }
         ]
     },
     {
-        "title": "Text and Content Editing",
+        "title": "Text & Content Editing",
         "items": [
             { "name": "Monaco Editor", "link": "https://microsoft.github.io/monaco-editor/" },
             { "name": "React Draft WYSIWYG", "link": "https://www.npmjs.com/package/react-draft-wysiwyg" },
@@ -153,13 +153,13 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Drag and Drop",
+        "title": "Drag & Drop",
         "items": [
             { "name": "react-beautiful-dnd", "link": "https://www.npmjs.com/package/react-beautiful-dnd" }
         ]
     },
     {
-        "title": "Pagination and Load More",
+        "title": "Pagination & Load More",
         "items": [
             { "name": "React Paginate", "link": "https://www.npmjs.com/package/react-paginate" },
             { "name": "Ultimate Pagination", "link": "https://www.npmjs.com/package/ultimate-pagination" },
@@ -173,14 +173,14 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Search and Filtering",
+        "title": "Search & Filtering",
         "items": [
             { "name": "Algolia", "link": "https://www.algolia.com/" },
             { "name": "Slugify", "link": "https://www.npmjs.com/package/slugify" }
         ]
     },
     {
-        "title": "Miscellaneous UI Enhancements",
+        "title": "UI Tweaks",
         "items": [
             { "name": "React Avatar", "link": "https://www.npmjs.com/package/react-avatar" },
             { "name": "Counter-Up", "link": "https://www.npmjs.com/package/counterup" },
@@ -188,9 +188,8 @@ export const toolsData = [
             { "name": "Darkmode-js", "link": "https://www.npmjs.com/package/darkmode-js" }
         ]
     },
-
     {
-        "title": "Testing and Quality Assurance",
+        "title": "Testing & Quality Assurance",
         "items": [
             { "name": "Jest", "link": "https://jestjs.io/" },
             { "name": "React Testing Library", "link": "https://testing-library.com/docs/react-testing-library/intro/" },
@@ -201,11 +200,13 @@ export const toolsData = [
         ]
     },
     {
-        "title": "Backend and API Integration",
+        "title": "Backend & API Integration",
         "items": [
             { "name": "Firebase", "link": "https://firebase.google.com/" },
             { "name": "Axios", "link": "https://axios-http.com/" },
             { "name": "REST Countries API", "link": "https://restcountries.com/" },
+            { "name": "Pixabay API", "link": "https://pixabay.com/" },
+            { "name": "TMDb API", "link": "https://developer.themoviedb.org/reference/intro/getting-started" },
             { "name": "Swagger/OpenAPI", "link": "https://swagger.io/" },
             { "name": "json-server", "link": "https://github.com/typicode/json-server" }
         ]
