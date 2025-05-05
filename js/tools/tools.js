@@ -39,9 +39,12 @@ function createToolItem(data) {
     });
 
     const toolsItemOverlay = $('<div>').addClass('tools__item__overlay');
-    const icon1 = $('<div>').addClass('floating-icon icon-1');
-    const icon2 = $('<div>').addClass('floating-icon icon-2');
-    toolsItemOverlay.append(title, icon1, icon2);
+    for (let i = 1; i <= data.items.length; i++) {
+        const icon = $('<div>').addClass(`floating-icon icon-${i}`);
+        toolsItemOverlay.append(icon);
+    }
+
+    toolsItemOverlay.prepend(title);
 
     toolsItemContent.append(itemList);
     toolsItem.append(toolsItemContent, toolsItemOverlay);

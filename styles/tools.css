@@ -65,7 +65,7 @@
         left: 60%;
         animation-delay: 3s;
     }
-}
+}  /*done*/
 
 .tools__item--state {
     width:220px;
@@ -76,10 +76,34 @@
     width:220px;
     height:180px
 }
+
 .tools__item--code {
     width:210px;
-    height:120px
-}
+    height:120px;
+
+    .icon-1 {
+        background-image: url('../assets/images/tools/typescript.svg');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+    .icon-2 {
+        background-image: url('../assets/images/tools/prettier.svg');
+        background-size: 30px 30px;
+        top: 60%;
+        left: 60%;
+        animation-delay: 3s;
+    }
+    .icon-3 {
+        background-image: url('../assets/images/tools/eslint.png');
+        background-size: 40px 40px;
+        top: 10%;
+        left: 70%;
+        animation-delay: 3s;
+    }
+}   /*done*/
+
 .tools__item--utility {
     width:220px;
     height:180px
@@ -102,6 +126,40 @@
 .tools__item--styling {
     width: 450px;
     height: 140px;
+
+    .icon-1 {
+        background-image: url('../assets/images/tools/sass.svg');
+        background-size: 40px 40px;
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+    .icon-2 {
+        background-image: url('../assets/images/tools/styledComponents.svg');
+        top: 50%;
+        left: 80%;
+        animation-delay: 3s;
+    }
+    .icon-3 {
+        background-image: url('../assets/images/tools/tailwind.svg');
+         top: 50%;
+        left: 5%;
+        animation-delay: 3s;
+    }
+    .icon-4 {
+        background-image: url('../assets/images/tools/emotion.png');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 40%;
+        animation-delay: 0s;
+    }
+    .icon-5 {
+        background-image: url('../assets/images/tools/modern.svg');
+
+        top: 60%;
+        left: 40%;
+        animation-delay: 3s;
+    }
 }
 
 
@@ -174,7 +232,14 @@
 .tools__item--search { /*search*/
     width: 220px;
     height: 140px;
-}
+    .icon-1 {
+        background-image: url('../assets/images/tools/algolia.png');
+
+        top: 10%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+}   /*done*/
 
 
 
@@ -306,7 +371,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.4;
+    opacity: 0.6;
     animation: float 6s ease-in-out infinite;
     transition: opacity 0.4s ease;
     pointer-events: none; /* Icons don't interfere with interaction */
