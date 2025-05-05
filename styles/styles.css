@@ -228,58 +228,7 @@ p {
 /*  width: 100%;*/
 /*}*/
 
-.work {
-  overflow: hidden;
 
-  border-radius: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-
-  transition: box-shadow 0.2s linear;
-}
-
-.work:hover {
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-}
-
-.work__image {
-  background-color: #6a696b;
-  width: 370px;
-  height: 300px;
-}
-
-.work__info {
-  padding: 1rem 0.8rem;
-}
-
-.work__category,.work__type {
-  margin-top: 0.5rem;
-  font-size: 0.8rem;
-
-  color: #2b2a2c;
-  text-transform: uppercase;
-}
-.work__subtext {
-  font-weight: 600;
-}
-
-
-.work__title {
-  display: flex;
-  justify-content: space-between;
-
-  font-size: 1.06rem;
-  color: #2b2a2c;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.portfolio-list {
-  max-width: 1170px;
-}
-.portfolio__item {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
 
 .about {
   padding: 8.4rem 0;
