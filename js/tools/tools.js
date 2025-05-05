@@ -39,7 +39,9 @@ function createToolItem(data) {
     });
 
     const toolsItemOverlay = $('<div>').addClass('tools__item__overlay');
-    toolsItemOverlay.append(title);
+    const icon1 = $('<div>').addClass('floating-icon react-icon');
+    const icon2 = $('<div>').addClass('floating-icon jquery-icon');
+    toolsItemOverlay.append(title, icon1, icon2);
 
     toolsItemContent.append(itemList);
     toolsItem.append(toolsItemContent, toolsItemOverlay);

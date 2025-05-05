@@ -277,3 +277,42 @@
     transition:  color 0.4s ease-in-out;
 }
 
+
+
+
+/* Common floating icon styles */
+.floating-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    animation: float 6s ease-in-out infinite;
+    pointer-events: none; /* Icons don't interfere with interaction */
+}
+
+/* React icon */
+.react-icon {
+    background-image: url('../assets/images/tools/react.svg');
+    background-size: 30px 30px;
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+/* jQuery icon */
+.jquery-icon {
+    background-image: url('../assets/images/tools/jquery.svg');
+    top: 60%;
+    left: 70%;
+    animation-delay: 3s;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
