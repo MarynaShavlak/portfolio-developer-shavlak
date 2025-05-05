@@ -69,7 +69,13 @@
 
 .tools__item--state {
     width:220px;
-    height:180px
+    height:180px;
+    .icon-1 {
+        background-image: url('../assets/images/tools/redux.png');
+        top: 70%;
+        left: 60%;
+        animation-delay: 0s;
+    }
 }
 
 .tools__item--build{
@@ -152,7 +158,7 @@
         left: 60%;
         animation-delay: 0s;
     }
-}
+} /*done*/
 
 .tools__item--ui {
     width:450px;

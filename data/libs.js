@@ -13,7 +13,9 @@ export const toolsData = [
     { "name": "React Redux", "link": "https://react-redux.js.org/" },
     { "name": "Redux Toolkit", "link": "https://redux-toolkit.js.org/" },
     { "name": "Redux Persist", "link": "https://github.com/rt2zz/redux-persist" },
-    { "name": "Redux Async Thunk", "link": "https://redux-toolkit.js.org/api/createAsyncThunk" }
+        { "name": "RTK Query", "link": "https://redux-toolkit.js.org/rtk-query/overview" },
+    { "name": "Redux Async Thunk", "link": "https://redux-toolkit.js.org/api/createAsyncThunk" },
+
 ]
 },
 {
