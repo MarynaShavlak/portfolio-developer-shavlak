@@ -74,7 +74,41 @@
 
 .tools__item--build{
     width:220px;
-    height:180px
+    height:180px;
+
+    .icon-1 {
+        background-image: url('../assets/images/tools/webpack.png');
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+    .icon-2 {
+        background-image: url('../assets/images/tools/babel.svg');
+        top: 60%;
+        left: 70%;
+        animation-delay: 3s;
+    }
+    .icon-3 {
+        background-image: url('../assets/images/tools/vite.svg');
+        background-size: 30px 30px;
+        top: 60%;
+        left: 5%;
+        animation-delay: 3s;
+    }
+    .icon-4 {
+        background-image: url('../assets/images/tools/gulp.svg');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 70%;
+        animation-delay: 0s;
+    }
+    .icon-5 {
+        background-image: url('../assets/images/tools/docker.png');
+        background-size: 30px 30px;
+        top: 70%;
+        left: 40%;
+        animation-delay: 0s;
+    }
 }
 
 .tools__item--code {
@@ -160,7 +194,7 @@
         left: 40%;
         animation-delay: 3s;
     }
-}
+} /*done*/
 
 
 
