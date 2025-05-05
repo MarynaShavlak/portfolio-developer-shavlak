@@ -252,7 +252,7 @@
         left: 60%;
         animation-delay: 0s;
     }
-}
+} /*done*/
 
 
 .tools__item--carousels { /*carousel*/
@@ -277,12 +277,26 @@
 .tools__item--pagination { /*pagination*/
     width: 300px;
     height: 140px;
+    .icon-1 {
+        background-image: url('../assets/images/tools/ultimate.png');
+        background-size: 40px 40px;
+        top: 60%;
+        left: 70%;
+        animation-delay: 3s;
+    }
 }
 
 .tools__item--loading { /*loading*/
     width: 220px;
     height: 140px;
-}
+    .icon-1 {
+        background-image: url('../assets/images/tools/loader.svg');
+        background-size: 40px 40px;
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+} /*done*/
 
 .tools__item--search { /*search*/
     width: 220px;
