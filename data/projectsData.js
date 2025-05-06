@@ -18,7 +18,7 @@ export const projectsData = [
             link: 'https://github.com/MarynaShavlak/dev-interview-hub'
         },
         descr: [
-            '<b>Dev Interview Hub</b> is a web app that helps developers manage answers to common frontend interview questions, offering features for reading, searching, filtering, and organizing responses.',
+            'Dev Interview Hub is a web app that helps developers manage answers to common frontend interview questions, offering features for reading, searching, filtering, and organizing responses.',
 
 
         ],

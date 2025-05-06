@@ -192,6 +192,11 @@
     max-width: 346px;
     height: 30px;
 }
+
+.work__short-overview {
+    max-width: 346px;
+    text-wrap: pretty;
+}
 .work__subtext {
     font-weight: 600;
 }
