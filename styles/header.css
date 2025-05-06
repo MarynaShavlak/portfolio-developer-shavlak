@@ -1,8 +1,9 @@
 #header {
     position: fixed;
-   background-color: #ffffff;
-    z-index:2;
+    background-color: #ffffff;
+    z-index:4;
     width: 100%;
+    mask: linear-gradient(to bottom, #000 calc(100% - 20px), transparent);
 }
 
 .header {
@@ -33,27 +34,21 @@
     height: 57px;
 }
 
-.profile__icon {
-    font-size: 30px;
-    color: #fff;
-}
-
 .profile__info {
     padding-left: 9px;
 }
 
 .profile__name {
     margin-bottom: 3px;
-
     font-size: 1.06rem;
     line-height: 1.2;
-    color: #1A1A1A;
+    color: #1A4A7A;
     font-weight: 700;
 }
 
 .profile__job {
     font-size: 0.8rem;
-    color: rgba(43, 42, 44, 0.7);
+    color: #1A4A7A;
 }
 
 .nav {
@@ -66,39 +61,59 @@
     margin-left: 2rem;
     position: relative;
     font-size: 0.93rem;
-    color: #1A1A1A;
+    color: #1A4A7A;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
+    padding:  5px 10px;
+    transition: color .5s ease-in-out;
 }
 
+/*.nav__link:hover {*/
+/*    color: #ffffff;*/
+/*}*/
+
 .nav__link::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background-color: #1A1A1A;
+    content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
-    z-index: 1;
-    transition: width 0.2s linear;
+    transition: width .5s ease-in-out;
+    background-color: #FFC2D9;
+    border-radius: 10px;
+    height: 100%;
+    z-index: -1;
+    width:0%;
 }
 
 .nav__link:hover::after {
-    width: 100%;
+    width:100%;
 }
+
+
+/*.nav__link::after {*/
+/*    content: '';*/
+/*    width: 0;*/
+/*    height: 2px;*/
+/*    background-color: #1A1A1A;*/
+/*    position: absolute;*/
+/*    bottom: -5px;*/
+/*    left: 0;*/
+/*    z-index: 1;*/
+/*    transition: width 0.2s linear;*/
+/*}*/
+
+/*.nav__link:hover::after {*/
+/*    width: 100%;*/
+/*}*/
 
 .nav__btn {
     margin-left: 2rem;
     position: relative;
     font-size: 0.93rem;
-    color: #1A1A1A;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
-    background-color: #fff;
     padding: 0.66rem 2rem;
-    border: 2px solid #1A1A1A;
-    border-radius: 20px;
     transition: background-color 0.2s linear, color 0.2s linear;
 }

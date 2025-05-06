@@ -16,11 +16,12 @@ $(document).ready(async function () {
 
     await insertPartial('#header', '../partials/header.html');
     await insertPartial('#main', '../partials/hero.html');
+    await insertPartial('#main', '../partials/about.html');
     await insertPartial('#main', '../partials/tools.html');
     await insertPartial('#main', '../partials/education.html');
     await insertPartial('#main', '../partials/workExperience.html');
     await insertPartial('#main', '../partials/portfolio.html');
-    await insertPartial('#main', '../partials/about.html');
+
 
     await insertPartial('#main', '../partials/reviews.html');
     await insertPartial('#main', '../partials/blog.html');
@@ -34,9 +35,9 @@ $(document).ready(async function () {
     initCVModal();
     $('#cloudCanvas').Klouds({
       bgColor: '#FFFFFF',
-      cloudColor1: '#FFC2D9',
-      cloudColor2: '#ffffff',
-      layerCount: 7,
+      cloudColor2: '#FFC2D9',
+      cloudColor1: '#ffffff',
+      layerCount: 8,
     })
 
   } catch (err) {
