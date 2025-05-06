@@ -243,7 +243,8 @@
 
 .section__portfolio {
     background-color: #FFC2D9;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
+    mask: linear-gradient(to bottom, #000 calc(100% - 80px), transparent);
 
 }
 .portfolio__filter__container {
@@ -262,4 +263,22 @@
 
 }
 
+.load-more-btn, .show-less-btn {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.05em 1.7em;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+
+.load-more-btn,
+.show-less-btn {
+    min-width: 175px;
+}
+
+.show-less-btn {
+    display: none;
+}
 

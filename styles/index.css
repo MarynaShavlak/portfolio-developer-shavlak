@@ -1,4 +1,6 @@
 @import 'modal.css';
+@import 'starsButton.css';
+@import 'header.css';
 @import 'hero.css';
 @import 'socials.css';
 @import 'hire-modal.css';
@@ -7,5 +9,4 @@
 @import 'workExperienceTimeLine.css';
 @import 'education.css';
 @import 'portfolio.css';
-@import 'starsButton.css';
 @import 'tools.css';

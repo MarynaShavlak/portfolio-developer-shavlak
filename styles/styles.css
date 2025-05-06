@@ -59,14 +59,13 @@ p {
 
 
 .nav__btn:hover,
-.load-more-btn:hover,
 .read-more-btn:hover,
 .show-less-btn:hover {
   background-color: #1A1A1A;
   color: #fff;
 }
 
-.load-more-btn,
+
 .read-more-btn,
 .show-less-btn {
   display: block;
@@ -90,14 +89,6 @@ p {
   justify-content: center;
 }
 
-.load-more-btn,
-.show-less-btn {
-  min-width: 175px;
-}
-
-.show-less-btn {
-  display: none;
-}
 
 .read-more-btn {
   margin-left: 0;
