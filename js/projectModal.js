@@ -90,6 +90,7 @@ function createProjectMediaSection(title,id, mediaFiles) {
 function createProjectMetaSection( project ) {
      const {  date, website, repository, title, slogan, industry, presentation,  timeline, apiDocumentation, categories} = project
     const $meta = $('<div class="project-meta"></div>');
+    const $innerMeta = $('<div class="project-meta__inner"></div>');
     const $title = `<h3 class="project-title">${title}</h3>`
     const $slogan = `<p class="project-slogan">${slogan}</p>`
     const $firstLine = $(`<div class="project-meta__first-line">
@@ -133,8 +134,8 @@ function createProjectMetaSection( project ) {
             <a class="meta-value presentation-value" href="${presentation.link}" target="_blank">${presentation.name}</a>
         </li>`);
     }
-
-    return $meta.append($title, $slogan, $firstLine, $infoList);
+    $innerMeta.append($slogan, $firstLine, $infoList)
+    return $meta.append($title, $innerMeta);
 }
 
 function createParagraphSection(paragraphs, className) {

@@ -26,7 +26,7 @@
     justify-content: center;
     overflow: hidden;
     border-radius: 50%;
-    background-color: #2b2a2c;
+    background-color: #1A1A1A;
 }
 .profile__img {
     width: 57px;
@@ -47,7 +47,7 @@
 
     font-size: 1.06rem;
     line-height: 1.2;
-    color: #2b2a2c;
+    color: #1A1A1A;
     font-weight: 700;
 }
 
@@ -66,7 +66,7 @@
     margin-left: 2rem;
     position: relative;
     font-size: 0.93rem;
-    color: #2b2a2c;
+    color: #1A1A1A;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
@@ -76,7 +76,7 @@
     content: '';
     width: 0;
     height: 2px;
-    background-color: #2b2a2c;
+    background-color: #1A1A1A;
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -92,13 +92,13 @@
     margin-left: 2rem;
     position: relative;
     font-size: 0.93rem;
-    color: #2b2a2c;
+    color: #1A1A1A;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
     background-color: #fff;
     padding: 0.66rem 2rem;
-    border: 2px solid #2b2a2c;
+    border: 2px solid #1A1A1A;
     border-radius: 20px;
     transition: background-color 0.2s linear, color 0.2s linear;
 }

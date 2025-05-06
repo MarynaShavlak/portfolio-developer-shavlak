@@ -109,7 +109,7 @@
   gap: 15px;
   text-align: center;
   font-size: 14px;
-  color: #2b2a2c;
+  color: #1A1A1A;
   font-weight: 400;
 }
 .canvas-star,
@@ -163,13 +163,13 @@
   background-color: #1869ff;
   padding: 15px 20px;
   font-size: 18px;
-  border: 2px solid #2b2a2c;
+  border: 2px solid #1A1A1A;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.2s linear, color 0.2s linear;
 }
 
 .download-cv-btn:hover {
-  color: #2b2a2c;
+  color: #1A1A1A;
   background-color: #fff;
 }
