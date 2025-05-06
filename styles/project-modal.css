@@ -139,29 +139,42 @@ radial-gradient(25px, #000 98%, #0000) 50%/46.25px 50px repeat space;
 }
 
 .meta-title {
-width: 80px;
+   width: 80px;
   flex-grow: 1;
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
+  color: #1A4A7A;
+  font-weight: 800;
 }
+
 .meta-value {
   width:180px;
   font-size: 14px;
-  color: #1A4A7A;
-  font-weight: 700;
+  color: #1a1a1a;
+  font-weight: 500;
   text-align: start;
   flex-grow: 1;
+  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.website-value:hover, .repository-value:hover {
+  color: #FF5BA7
+}
+
+
+
+
 
 .project-meta__first-line {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #6a696b;
+  border-bottom: 1px solid #1A4A7A;
 }
 
 .project-infoContainer {
@@ -185,7 +198,9 @@ width: 80px;
   display: flex;
   flex-direction: column;
   gap:10px;
-
+  .info-title {
+    color: #FF5BA7;
+  };
 
 }
 
@@ -211,7 +226,7 @@ width: 80px;
 .tech-stack-category {
   font-weight: 600;
   /*color: #555;*/
-  color: #1A4A7A;
+  color: #FF5BA7;
 }
 
 .tech-stack-list {
@@ -220,7 +235,8 @@ width: 80px;
   gap: 0.5rem;
 
   .tech-stack-item {
-    background: #f0f0f0;
+    background-color: #FFC2D9;
+    color: #1a1a1a;
     padding: 4px 10px;
     border-radius: 4px;
     font-size: 0.9rem;
@@ -260,7 +276,8 @@ width: 80px;
   gap:10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: #f0f0f0;
+  /*background-color: #f0f0f0;*/
+  border: 1px solid #CAE6FE;
   height: 100px;
   padding: 20px 20px 20px 120px;
   overflow: hidden;
@@ -272,6 +289,8 @@ width: 80px;
 .feature-category, .additional-info-category {
   font-weight: 700;
   width: 200px;
+  color: #1A4A7A;
+
 
 }
 
@@ -303,5 +322,7 @@ width: 80px;
   flex-direction: column;
   gap:10px;
 }
+
+
 
 
