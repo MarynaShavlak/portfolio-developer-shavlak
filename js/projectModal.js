@@ -65,7 +65,7 @@ function createProjectMediaSection(title,id, mediaFiles) {
 
         const $media = isVideo
             ? $(
-                `<video class="project-video project-slide${index + 1} " controls autoplay>
+                `<video class="project-video project-slide${index + 1} " controls autoplay muted>
                     <source src="${filePath}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>`
@@ -79,8 +79,8 @@ function createProjectMediaSection(title,id, mediaFiles) {
 
     const $buttons = $(`
         <ul class="project-slider-buttons">
-            <li><button type="button" class="project-slider-btn project-prev-btn"><i class="fa-solid fa-angle-left"></i>PREVIOUS</button></li>
-            <li><button type="button" class="project-slider-btn project-next-btn">NEXT<i class="fa-solid fa-angle-right"></i></button></li>
+            <li><button type="button" class="project-slider-btn project-prev-btn"><i class="fa-solid fa-angle-left"></i></button></li>
+            <li><button type="button" class="project-slider-btn project-next-btn"><i class="fa-solid fa-angle-right"></i></button></li>
         </ul>
     `);
 
