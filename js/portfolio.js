@@ -83,7 +83,7 @@ export function initPortfolio() {
 function generatePortfolioMarkUp(data) {
     return data.map((project, index) => {
         const categories = project.categories.join(' ');
-        const overview =  project.descr.join(' ').slice(0, 127) + '...'
+        const overview =  project.descr.join(' ').slice(0, 103) + '...'
         return `
         <li class="portfolio__item ${categories}" data-category="${categories}" data-id="${project.id}">
             <div class="work" data-modal="#modal_project_${index + 1}">
@@ -95,6 +95,7 @@ function generatePortfolioMarkUp(data) {
                     <p class="work__category"><span class="work__subtext">category: </span> ${project.categories.join(', ')}</p>
                     <p class="work__type"><span class="work__subtext">type: </span>${project.type}</p>
                     <p class="work__short-overview">${overview}</p>
+                    <button type="button" class="read-more-btn">READ MORE</button>
                 </div>
             </div>
         </li>`;

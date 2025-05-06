@@ -97,6 +97,8 @@
     transition: box-shadow 0.2s linear;
     position: relative;
     z-index:1;
+    height: 410px;
+
 }
 
 
@@ -133,6 +135,16 @@
         mask-composite: intersect;
 
     }
+
+    .work__short-overview {
+        display:block;
+        /*height:auto;*/
+        /*transform: translateY(0);*/
+        /*opacity:1;*/
+        /*pointer-events: auto;*/
+
+    }
+
 }
 
 .work:hover::before {
@@ -189,14 +201,21 @@
 }
 
 .work__category {
+
     max-width: 346px;
     height: 30px;
 }
 
 .work__short-overview {
+    display:none;
     max-width: 346px;
-    text-wrap: pretty;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+
+
+
 }
+
 .work__subtext {
     font-weight: 600;
 }
