@@ -40,6 +40,17 @@ $(document).ready(async function () {
       layerCount: 8,
     })
 
+    $('#cloudCanvas2').Klouds({
+      bgColor: 'transparent',
+      cloudColor2: '#FFffff',
+      cloudColor1: '#FFC2D9',
+      layerCount: 8,
+      speed:2,
+    })
+
+
+
+
   } catch (err) {
     console.error('Error loading one or more partials:', err);
   }
