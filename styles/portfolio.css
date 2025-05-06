@@ -137,12 +137,11 @@
     }
 
     .work__short-overview {
-        display:block;
-        /*height:auto;*/
-        /*transform: translateY(0);*/
-        /*opacity:1;*/
-        /*pointer-events: auto;*/
+        display:flex;
+    }
 
+    .explore-project-btn {
+        display:block
     }
 
 }
@@ -211,9 +210,13 @@
     max-width: 346px;
     transition: all 0.3s ease-in-out;
     margin-top: 10px;
+}
 
-
-
+.explore-project-btn {
+    margin-top: 10px;
+    display:none;
+    transition: all 0.3s ease-in-out;
+    align-self: flex-end;
 }
 
 .work__subtext {
