@@ -32,7 +32,12 @@ $(document).ready(async function () {
     initHireModal();
     initEducationSection();
     initCVModal();
-
+    $('#cloudCanvas').Klouds({
+      bgColor: '#FFFFFF',
+      cloudColor1: '#FFC2D9',
+      cloudColor2: '#ffffff',
+      layerCount: 7,
+    })
 
   } catch (err) {
     console.error('Error loading one or more partials:', err);

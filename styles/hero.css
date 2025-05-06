@@ -1,3 +1,9 @@
+#cloudCanvas {
+    width:100%;
+    height:240px;
+}
+
+
 .hero__container {
     display: flex;
     padding-top: 100px;

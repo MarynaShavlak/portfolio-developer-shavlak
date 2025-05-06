@@ -1,6 +1,7 @@
 
 html {
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -8,8 +9,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #1A1A1A;
-  scroll-behavior: smooth;
-
 }
 
 body.no-scroll {
