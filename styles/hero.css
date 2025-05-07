@@ -81,6 +81,7 @@
     color: #1A4A7A;
     font-weight: 700;
     margin-bottom: 20px;
+    align-self: flex-start;
 }
 
 
@@ -88,6 +89,7 @@
     display: flex;
     gap: 10px;
     margin-bottom: 42px;
+    align-self: flex-start;
 }
 
 .socials__item {
@@ -122,7 +124,18 @@
     font-size: 25px;
     transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.hero__action-btn-list {
+    align-self: flex-start;
+    gap: 20px;
+}
 
+.action-btn {
+   padding:  1.05em 1.7em;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: #FFffff;
+    box-shadow: 0 0 8px #FF5BA7;
+}
 /*.socials__item:hover {*/
 /*    transform: translateY(-5px);*/
 /*}*/

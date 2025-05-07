@@ -276,6 +276,7 @@
 .load-more-btn,
 .show-less-btn {
     min-width: 175px;
+    border-radius: 30px;
 }
 
 .show-less-btn {
