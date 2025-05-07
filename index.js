@@ -35,7 +35,7 @@ $(document).ready(async function () {
     initCVModal();
     $('#cloudCanvas').Klouds({
       bgColor: '#FFFFFF',
-      cloudColor2: '#FFC2D9',
+      cloudColor2: 'rgba(255, 194, 217, 0.8)',
       cloudColor1: '#ffffff',
       layerCount: 8,
     })
@@ -43,7 +43,7 @@ $(document).ready(async function () {
     $('#cloudCanvas2').Klouds({
       bgColor: 'transparent',
       cloudColor2: '#FFffff',
-      cloudColor1: '#FFC2D9',
+      cloudColor1: 'rgba(255, 194, 217, 0.8)',
       layerCount: 8,
       speed:2,
     })
