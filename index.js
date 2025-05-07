@@ -7,6 +7,7 @@ import {insertPartial} from "./js/partials-loader.js";
 import {initCVModal} from "./js/cvModal.js";
 import {initEducationSection} from "./js/education/education.js";
 import {initToolsSection} from "./js/tools/initToolsSection.js";
+import {initHeroSection} from "./js/hero/initHeroSection.js";
 
 
 
@@ -26,6 +27,7 @@ $(document).ready(async function () {
     await insertPartial('#main', '../partials/reviews.html');
     await insertPartial('#main', '../partials/blog.html');
     await insertPartial('#footer', '../partials/footer.html');
+    initHeroSection();
     initPortfolio();
     initToolsSection();
     initReviewsSlider();
@@ -33,20 +35,7 @@ $(document).ready(async function () {
     initHireModal();
     initEducationSection();
     initCVModal();
-    $('#cloudCanvas').Klouds({
-      bgColor: '#FFFFFF',
-      cloudColor2: 'rgba(255, 194, 217, 0.8)',
-      cloudColor1: '#ffffff',
-      layerCount: 8,
-    })
 
-    $('#cloudCanvas2').Klouds({
-      bgColor: 'transparent',
-      cloudColor2: '#FFffff',
-      cloudColor1: 'rgba(255, 194, 217, 0.8)',
-      layerCount: 8,
-      speed:2,
-    })
 
 
 

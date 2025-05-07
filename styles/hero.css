@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    border: 1px solid red;
+
     height: 700px;
     overflow: hidden;
     display: flex;
@@ -24,7 +24,7 @@
     transform: translateY(40%);
     canvas {
         z-index:2;
-        border: 1px solid red;
+
     }
 
 }
@@ -89,6 +89,37 @@
     align-self: flex-start;
 }
 
+.hero__email {
+    position: relative;
+    color: #1A4A7A;
+    cursor:copy;
+    transition: color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.hero__email:hover{
+    color:#FF5BA7;
+}
+
+
+.hero__email__tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 80%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #1A4A7A;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.hero__email.show-tooltip .hero__email__tooltip {
+    opacity: 1;
+}
 
 .socials {
     display: flex;
