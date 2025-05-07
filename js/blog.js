@@ -1,8 +1,8 @@
-import {articlesData} from "../data/articlesData.js";
+import {devInterviewPosts} from "../data/articlesData.js";
 import {formatDate, getDatetimeValue} from "./date.js";
 
 export function initBlog() {
-    generateBlogMarkup(articlesData);
+    generateBlogMarkup(devInterviewPosts);
     const visibleArticles = 3;
     const $articles = $('.articles__item');
     const total = $articles.length;
