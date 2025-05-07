@@ -58,9 +58,11 @@
     font-weight: 900;
     text-transform: uppercase;
     transform: translateX(-370px) translateY(-20px);
+    font-family: "Lustria", serif;
 }
 
 .about__title--big {
+    font-family: "Lustria", serif;
     margin-bottom: 1.4rem;
     position: relative;
     left: -10px;

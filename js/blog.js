@@ -10,32 +10,38 @@ export function initBlog() {
     $('.blog__btn').on('click', function () {
         showMoreArticles($articles, total, visibleArticles);
     });
-    $('.read-more-btn').on('click', function () {
-        const $articleText = $(this).parent().find('.article__text');
-        const isShowContent = $(this).parent().hasClass('showContent');
-
-        $articleText.animate(
-            {
-                'max-height': isShowContent ? '96px' : '1000px',
-            },
-            300,
-        );
-
-        $(this).parent().toggleClass('showContent');
-        const text = !isShowContent ? 'Read Less' : 'Read more';
-        $(this).text(text);
-    });
+    // $('.read-more-btn').on('click', function () {
+    //     const $articleText = $(this).parent().find('.article__text');
+    //     const isShowContent = $(this).parent().hasClass('showContent');
+    //
+    //     $articleText.animate(
+    //         {
+    //             'max-height': isShowContent ? '96px' : '1000px',
+    //         },
+    //         300,
+    //     );
+    //
+    //     $(this).parent().toggleClass('showContent');
+    //     const text = !isShowContent ? 'Read Less' : 'Read more';
+    //     $(this).text(text);
+    // });
 }
 
 function generateBlogMarkup(data) {
     const articlesHTML = data.map(
-        ({ title, category, text, date }) => `
+        ({ title, category, text, date, link }) => `
       <li class="articles__item">
+      
         <div class="article__img-wrap">
-          <time class="article__date" datetime="${getDatetimeValue(
+        <a href="${link}" target="_blank">
+         <time class="article__date" datetime="${getDatetimeValue(
             date,
         )}">${formatDate(date)}</time>
           <div class="articles__photo"></div>
+          </a>
+
+         
+         
         </div>
         <div class="article__meta">
           <a class="article__title" href="#">${title}</a>

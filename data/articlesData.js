@@ -1,7 +1,9 @@
 export const devInterviewPosts = [
+
   {
     category: "Logical Operators",
     title: "alert(alert(1) || 2 || alert(3))",
+    link: 'https://www.instagram.com/p/DJWzTGtskjW/?igsh=MXJjYjhiczg5dnl6dw==',
     date: "07/05/2025",
     text: "This challenge tests how OR (`||`) short-circuits and how alert calls behave when nested. The inner alert executes first and returns `undefined`, which is falsy, prompting evaluation of the next operand. The `||` operator stops once it finds a truthy value. It's a practical test of understanding operator behavior mixed with function side effects."
   },
@@ -53,10 +55,5 @@ export const devInterviewPosts = [
     date: "07/05/2025",
     text: "This comparison looks strange at first glance but reveals JavaScript’s coercion mechanisms. The array is converted to a string via `.toString()`, which results in `'x'`. Then `'x' == 'x'` is a straightforward comparison. It’s a neat example of how objects are coerced when compared to primitives."
   },
-  {
-    category: "Logical Operators / Coercion",
-    title: "Decode the Alert Sequence!",
-    date: "07/05/2025",
-    text: "A collection of quirky alert-based expressions showcasing logical evaluation, operator precedence, and type coercion. These are the kinds of puzzles often seen in interviews or code assessments. Each alert hides a subtle behavior of JavaScript’s engine. Understanding these will sharpen your JS logic skills significantly."
-  }
+
 ];
