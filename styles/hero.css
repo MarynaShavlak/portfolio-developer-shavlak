@@ -29,19 +29,17 @@
 
 }
 
-
-
-.hero__container {
+.container--hero {
+    z-index:1;
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 120px;
-    position: relative;
-    /*background: url('../assets/images/symbols.png') right bottom no-repeat;*/
-    /*border-bottom: 1px solid rgba(106, 105, 107, 0.3);*/
+    flex-direction: column;
+  align-items: flex-end;
+    margin-top: 30px;
 }
 
+
 .hero__info {
-    transform: translateY(-30px);
+    transform: translateY(30px);
     display: flex;
     flex-direction: column;
 
@@ -69,8 +67,8 @@
     font-size: 30px;
     max-width: 600px;
     color: #1A4A7A;
-    align-self: end;
-    z-index:1;
+
+
     /*text-wrap: pretty;*/
  span {
      font-weight:900;
@@ -79,11 +77,11 @@
 }
 
 .hero__subtext {
-    font-size: 1rem;
-    color: rgba(43, 42, 44, 0.7);
+    font-size: 24px;
+    color: #1A4A7A;
+    font-weight: 700;
     margin-bottom: 20px;
 }
-
 
 
 .socials {
@@ -95,18 +93,20 @@
 .socials__item {
     width: 40px;
     height: 40px;
-    transition: transform 0.2s linear;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius:100%;
+    background-color: #FF5BA7;
+
 }
 
-.socials__item--telegram {
-    background-color: #0088cc;
+.socials__item:hover {
+    box-shadow: 0 0 8px #FF5BA7, inset 0 0 8px #FF5BA7;
+    background-color: #ffffff;
+      i {
+          color: #FF5BA7;
+      }
 }
-.socials__item--linkedin {
-    background-color: #0077b5;
-}
-.socials__item--github {
-    background-color: #181717;
-}
+
 
 .socials__link {
     display: flex;
@@ -119,9 +119,20 @@
 }
 
 .socials__link i {
-    font-size: 20px;
+    font-size: 25px;
+    transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials__item:hover {
-    transform: translateY(-5px);
-}
+/*.socials__item:hover {*/
+/*    transform: translateY(-5px);*/
+/*}*/
+
+/*.socials__item--telegram {*/
+/*    background-color: #0088cc;*/
+/*}*/
+/*.socials__item--linkedin {*/
+/*    background-color: #0077b5;*/
+/*}*/
+/*.socials__item--github {*/
+/*    background-color: #181717;*/
+/*}*/
