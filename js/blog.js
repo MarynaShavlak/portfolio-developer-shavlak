@@ -66,6 +66,10 @@ function generateBlogMarkup(data) {
                     </div>
         READ MORE
         </button>
+        <div class="ocean">
+  <div class="wave"></div>
+<!--  <div class="wave"></div>-->
+</div>
       </li>
     `,
     );
