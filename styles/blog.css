@@ -74,6 +74,8 @@ cursor: pointer;
     padding-bottom: 40px;
     transform: scale(1);
     transition: all 0.3s ease;
+    overflow: hidden;
+    mask: linear-gradient(to bottom, #000 calc(100% - 30px), transparent);
 }
 
 
@@ -212,6 +214,7 @@ cursor: pointer;
     position: absolute;
     bottom:0;
     left: 0;
+    z-index:2;
 }
 
 .wave {
@@ -224,14 +227,10 @@ cursor: pointer;
     width: 370px;
     height: 200px;
     animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    z-index: 1;
+    z-index:2;
 }
 
-.wave:nth-of-type(2) {
-    opacity: 0.7;
-    animation: swell 5s ease -1.25s infinite, wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite;
-    z-index: 0;
-}
+
 
 @keyframes wave {
     0% {
