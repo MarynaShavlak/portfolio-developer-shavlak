@@ -1,6 +1,6 @@
 .section__blog {
     background-color: #CAE6FE;
-    padding-top: 150px;
+    margin-top: 150px;
     padding-bottom: 100px;
     mask: linear-gradient(to bottom, #000 calc(100% - 50px), transparent);
     /*padding-top: 14rem;*/

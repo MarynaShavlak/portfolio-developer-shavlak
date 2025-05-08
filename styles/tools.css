@@ -1,7 +1,7 @@
 .section__tools {
     padding-top:150px;
     padding-bottom: 130px;
-    background-color: #FFC2D9;
+    background-color: #CAE6FE;
     /*aspect-ratio: 1;*/
       --mask:
             linear-gradient(0deg,#0000 200px,#000 0) 0 100px,
@@ -642,7 +642,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #CAE6FE;
+    background-color: #FFffff;
     width: 100%;
     height: 100%;
     transform: translateY(0%);

@@ -1,0 +1,46 @@
+.section__contact {
+    /*background-color: #FFC2D9;*/
+    padding-bottom: 100px;
+    /*mask: linear-gradient(to bottom, #000 calc(100% - 50px), transparent);*/
+    background: #FFC2D9;
+    background: linear-gradient(180deg,rgba(255, 194, 217, 1) 13%, rgba(255, 255, 255, 1) 77%);
+    padding-top: 100px;
+    /*padding-bottom: 8rem;*/
+    webkit-mask-image:  linear-gradient(to bottom, transparent 0, #000 80px, #000 calc(100% - 80px), transparent 100%);
+    -webkit-mask-composite: intersect;
+    mask-image:  linear-gradient(to bottom, transparent 0, #000 80px, #000 calc(100% - 80px), transparent 100%);
+    mask-composite: intersect;
+}
+.contact__container {
+    display: flex;
+    flex-direction: column;
+}
+.contact__wrap {
+    margin-bottom: 3.6rem;
+    text-align: center;
+}
+
+.contact__title {
+    font-family: "Lustria", serif;
+    margin-bottom: 0.3rem;
+    font-size: 75px;
+    color: #FF5BA7;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.contact__text {
+    font-size: 1.5rem;
+    color: #FF5BA7;
+    font-weight: 400;
+}
+
+.contact__btn {
+    min-width: 175px;
+    border-radius: 30px;
+    margin-top: 45px;
+    padding: 1.05em 1.7em;
+    background-color: #ffffff;
+    font-size: 16px;
+    align-self: center;
+}
