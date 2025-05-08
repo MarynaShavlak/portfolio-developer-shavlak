@@ -471,18 +471,23 @@ textarea {
 } */
 .contacts__item {
   position: relative;
+  align-items: baseline;
 }
 .contacts__link {
   position: relative;
   display: flex;
   text-align: start;
-  font-family: JetBrains Mono;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 700;
-  color: #000;
+  font-weight: 500;
+  color: #1A4A7A;
   z-index: 2;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .contacts__item:hover:after {
@@ -493,7 +498,7 @@ textarea {
   width: 460px;
   height: 55px;
   filter: blur(10px);
-  background: radial-gradient(circle, #000, rgba(0, 0, 0, 0));
+  background: radial-gradient(circle,#FF5BA7, rgba(0, 0, 0, 0));
   /* opacity: 0.6; */
 }
 
@@ -507,12 +512,12 @@ textarea {
 }
 .contacts__icon {
   position: relative;
-  fill: #000;
+  fill: #1A4A7A;
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__icon {
-  margin-right: 60px;
+  margin-right: 20px;
 }
 
 .wrap--second {
