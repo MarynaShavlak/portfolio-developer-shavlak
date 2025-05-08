@@ -81,34 +81,41 @@
 .article__img-wrap {
     position: relative;
     margin-bottom: 1.35rem;
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     overflow: hidden;
-    width: 100%
+    /*width: 100%*/
 }
 
 .article__date {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 77px;
-    height: 77px;
-    background-color: #1A1A1A;
-    color: #fff;
-    font-size: 1.06rem;
+    width: 100px;
+    height: 40px;
+    background-color: #CAE6FE;
+    color: #1A4A7A;
+    font-size: 16px;
     line-height: 1.4;
     text-align: center;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 1;
     font-weight: 900;
+    border-left: 5px solid #ffffff;
+    border-top: 5px solid #ffffff;
+    border-top-left-radius: 20px;
+
 }
 
 .articles__photo {
-    width: 100%;
+    display:block;
+    width: 334px;
     height: 260px;
-    background-color: #6a696b;
     border-radius: 15px;
+    object-fit: contain;
 }
 
 
@@ -116,7 +123,7 @@
 .article__title {
     display: block;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #1A1A1A;
     text-transform: uppercase;
     font-weight: 700;

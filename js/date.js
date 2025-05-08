@@ -14,7 +14,7 @@ export function formatDate(dateString) {
         'Nov',
         'Dec',
     ];
-    return `${day}<br />${shortMonths[parseInt(month, 10) - 1]}`;
+    return `${day} ${shortMonths[parseInt(month, 10) - 1]}`;
 }
 
 export function getDatetimeValue(dateString) {
