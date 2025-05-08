@@ -45,7 +45,27 @@ function generateBlogMarkup(data) {
   <a class="article__title" href="#">${title}</a>
   <p class="article__text">${text}</p>
 </div>
-        <button type="button" class="read-more-btn">READ MORE</button>
+        <button type="button" class="read-more-btn star-btn star-btn-blue">
+        <div class="star-1">
+                        <img src="../assets/images/icons/star-blue.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-2">
+                        <img src="../assets/images/icons/star-blue.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-3">
+                        <img src="../assets/images/icons/star-blue.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-4">
+                        <img src="../assets/images/icons/star-blue.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-5">
+                        <img src="../assets/images/icons/star-blue.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-6">
+                        <img src="../assets/images/icons/star-blue.svg" alt="Star Icon"/>
+                    </div>
+        READ MORE
+        </button>
       </li>
     `,
     );

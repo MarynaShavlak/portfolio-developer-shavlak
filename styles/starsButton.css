@@ -86,6 +86,15 @@
     color: #FFFFFF;
    }
 
+
+
+
+.star-btn-blue:hover {
+    background-color: #1A4A7A;
+    box-shadow: 0 0 8px #1A4A7A, inset 0 0 8px #1A4A7A;
+    color: #CAE6FE;
+}
+
 .star-btn:hover .star-1 {
     position: absolute;
     top: -70%;
