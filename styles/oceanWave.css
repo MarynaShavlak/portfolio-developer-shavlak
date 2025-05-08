@@ -1,0 +1,49 @@
+.ocean {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    z-index:2;
+}
+
+.wave {
+   background-repeat: repeat-x;
+    background-size: 80px auto;
+    background-position: bottom;
+    position: absolute;
+    bottom: 0%;
+
+    animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    z-index:2;
+}
+
+.ocean--blog .wave {
+    background-image: url('../assets/images/icons/wave-blue.svg');
+    width: 370px;
+    height: 200px;
+}
+
+.ocean--contact .wave {
+    background-image: url('../assets/images/icons/wave-white.svg');
+    width: 500px;
+    height: 200px;
+    bottom: -10px;
+}
+
+
+@keyframes wave {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: -500px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        background-position: right bottom 10px;
+    }
+    50% {
+        background-position: right bottom 0;
+    }
+}

@@ -142,17 +142,21 @@
 
 .contact-form {
     width:500px;
-    height: 600px;
-    border-radius:15px;
+    height: 450px;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    overflow: hidden;
+    position: relative;
     background-color: #FF5BA7;
     padding: 15px;
-
-
 
     .control {
         width: 75%;
     }
 }
+
+
+
 .contact-form input, .contact-form textarea {
     border-radius: 20px;
     padding-left: 30px;
