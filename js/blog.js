@@ -29,7 +29,7 @@ export function initBlog() {
 
 function generateBlogMarkup(data) {
     const articlesHTML = data.map(
-        ({ title, category, text, date, link }) => `
+        ({ title, category, text, date, link , img}, ) => `
       <li class="articles__item">
       
         <div class="article__img-wrap">
@@ -37,7 +37,7 @@ function generateBlogMarkup(data) {
          <time class="article__date" datetime="${getDatetimeValue(
             date,
         )}">${formatDate(date)}</time>
-          <img class="articles__photo" alt="Photo of blog post" src="../assets/images/blog/blog-9.png"/>
+          <img class="articles__photo" alt="Photo of blog post" src="../assets/images/blog/${img}"/>
           </a>
                 
         </div>
