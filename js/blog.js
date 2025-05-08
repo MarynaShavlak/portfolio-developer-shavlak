@@ -41,7 +41,10 @@ function generateBlogMarkup(data) {
           </a>
                 
         </div>
-     
+     <div class="article__meta">
+  <a class="article__title" href="#">${title}</a>
+  <p class="article__text">${text}</p>
+</div>
         <button type="button" class="read-more-btn">READ MORE</button>
       </li>
     `,
@@ -63,8 +66,4 @@ function showMoreArticles($articles, total, visibleArticles) {
     }
 }
 
-// <div class="article__meta">
-//   <a class="article__title" href="#">${title}</a>
-//   <p class="article__category">${category}</p>
-//   <p class="article__text">${text}</p>
-// </div>
+
