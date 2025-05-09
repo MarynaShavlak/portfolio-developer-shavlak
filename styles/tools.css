@@ -640,7 +640,6 @@
 
     .icon-3 {
         background-image: url('../assets/images/tools/javascript.svg');
-        background-size: 50px 50px;
         background-size: 40px 40px;
         top: 60%;
         left: 5%;
@@ -654,15 +653,44 @@
     height: 140px;
 }
 
-.tools__item--eslint {
-    width: 220px;
+.tools__item--collaboration {
+    width: 300px;
     height: 140px;
+
+    .icon-1 {
+        background-image: url('../assets/images/tools/miro.svg');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .icon-2 {
+        background-image: url('../assets/images/tools/slack.png');
+
+        top: 60%;
+        left: 60%;
+        animation-delay: 3s;
+    }
+
+    .icon-3 {
+        background-image: url('../assets/images/tools/trello.svg');
+        background-size: 30px 30px;
+        top: 60%;
+        left: 5%;
+        animation-delay: 3s;
+    }
+}
+
+.tools__item--eslint {
+    width: 200px;
+    height: 120px;
 }
 
 
 .tools__item--file {
     width: 220px;
-    height: 140px;
+    height: 120px;
 }
 
 .tools__item--progressive {

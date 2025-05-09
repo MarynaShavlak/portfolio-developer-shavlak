@@ -376,4 +376,13 @@ export const toolsData = [
       },
     ],
   }, //28
+  {
+    title: "Collaboration and Project Management",
+    items: [
+      { name: "Slack", link: "https://slack.com/" },
+      { name: "Miro", link: "https://miro.com/" },
+      { name: "Trello", link: "https://trello.com/" },
+    ],
+  },
+  //29
 ];
