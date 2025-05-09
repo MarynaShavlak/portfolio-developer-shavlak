@@ -12,6 +12,7 @@
     background: var(--main-bg-color);
     z-index: 5;
     padding: 30px;
+    padding-top: 20px;
     transform: translate3d(-100%, 0, 0);
     transition: 0.3s ease;
     border-radius: 5px;
@@ -276,7 +277,7 @@ textarea:focus + label {
 }
 
 textarea {
-    height: 100px;
+    height: 70px;
 }
 
 .form__submit-btn {
@@ -333,4 +334,8 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.modal__error-message {
+    text-align: start;
 }

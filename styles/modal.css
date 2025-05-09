@@ -24,7 +24,7 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    /*text-align: center;*/
     gap: 20px;
     background-color: var(--main-bg-color);
     padding: 30px 15px;

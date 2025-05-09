@@ -1,4 +1,4 @@
-<div class="modal cards">
+<div class="modal cards hire-modal">
     <button class="close-modal-btn" type="button" data-close>
         <i class="fa-solid fa-xmark close-icon"></i>
     </button>
@@ -11,26 +11,26 @@
         <div class="form__wrapper">
             <form class="contact-form contact-form--modal">
                 <div class="control control--modal">
-                    <input type="text" id="contact-name"/><label for="contact-name">Name:</label>
-                    <span class="error-message" id="name-error"></span>
+                    <input type="text" id="modal__contact-name"/><label for="modal__contact-name">Name:</label>
+                    <span class="modal__error-message error-message" id="modal__contact-name-error"></span>
                 </div>
                 <div class="control control--modal">
-                    <input type="text" id="contact-email"/><label for="contact-email"
+                    <input type="text" id="modal__contact-email"/><label for="modal__contact-email"
                 >Email Address:</label
                 >
-                    <span class="error-message" id="email-error"></span>
+                    <span class="modal__error-message error-message" id="modal__contact-email-error"></span>
                 </div>
                 <div class="control control--modal">
-                    <input type="text" id="contact-phone"/><label for="contact-phone">Phone:</label>
-                    <span class="error-message" id="phone-error"></span>
+                    <input type="text" id="modal__contact-phone"/><label for="modal__contact-phone">Phone:</label>
+                    <span class="modal__error-message error-message" id="modal__contact-phone-error"></span>
                 </div>
                 <div class="control control--modal">
-              <textarea name="" id="contact-message"></textarea
-              ><label for="contact-message">Your Message: </label>
-                    <span class="error-message" id="contact-message-error"></span>
+              <textarea name="" id="modal__contact-message"></textarea
+              ><label for="modal__contact-message">Your Message: </label>
+                    <span class="modal__error-message error-message" id="modal__contact-message-error"></span>
                 </div>
 
-                <button type="button" class="contact__btn star-btn">
+                <button type="button" id="modal__contact-btn" class="contact__btn star-btn">
                     <div class="star-1">
                         <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
                     </div>
