@@ -159,7 +159,7 @@ radial-gradient(25px, #000 98%, #0000) 50%/46.25px 50px repeat space;
 }
 
 .website-value:hover, .repository-value:hover {
-  color: #FF5BA7
+  color: #FF5BA7;
 }
 
 

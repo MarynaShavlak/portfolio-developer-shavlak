@@ -660,15 +660,15 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     text-align: center;
-    transition: top 0.4s ease, transform 0.4s ease;
+    transition: transform 0.4s ease;
     font-weight: 800;
 }
 .tools__item:hover .tools__title {
     top: 10px;
-    transform: translate(-50%, 0);
-    font-size: 12px;
+    transform: translate(-50%, 0) scale(0.7);
+
 
 }
 

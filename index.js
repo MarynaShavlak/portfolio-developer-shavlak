@@ -23,12 +23,10 @@ $(document).ready(async function () {
     await insertPartial('#main', '../partials/education.html');
     await insertPartial('#main', '../partials/workExperience.html');
     await insertPartial('#main', '../partials/portfolio.html');
-
-
     await insertPartial('#main', '../partials/reviews.html');
-
     await insertPartial('#main', '../partials/blog.html');
     await insertPartial('#footer', '../partials/footer.html');
+    await insertPartial('#hire-modal', '../partials/hireModal.html');
     initHeroSection();
     initPortfolio();
     initToolsSection();
