@@ -654,6 +654,12 @@
     height: 140px;
 }
 
+.tools__item--eslint {
+    width: 220px;
+    height: 140px;
+}
+
+
 .tools__item--file {
     width: 220px;
     height: 140px;
@@ -885,15 +891,3 @@
 }
 
 
-/* Floating animation */
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}

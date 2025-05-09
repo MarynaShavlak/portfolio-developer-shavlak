@@ -52,7 +52,7 @@
 
 .filter-btn.filter-btn--active {
     color: var(--main-bg-color);
-    background-color: var(--active-bg);
+    background-color: var(--active-bg-color);
     z-index: 1;
 }
 
@@ -63,7 +63,7 @@
     width: 24px;
     height: 24px;
     left: 100%;
-    background-color: var(--active-bg);
+    background-color: var(--active-bg-color);
     mask-image: linear-gradient(to top, red, red), radial-gradient(circle 15px at center, green 80%, transparent 81%);
     mask-size: 12px 12px, 100%;
     mask-composite: subtract;
@@ -78,7 +78,7 @@
     width: 24px;
     height: 24px;
     right: 100%;
-    background-color: var(--active-bg);
+    background-color: var(--active-bg-color);
     mask-image: linear-gradient(to top, red, red), radial-gradient(circle 15px at center, green 80%, transparent 81%);
     mask-size: 12px 12px, 100%;
     mask-composite: subtract;

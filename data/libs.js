@@ -367,4 +367,13 @@ export const toolsData = [
       { name: "TS-Morph", link: "https://ts-morph.com/" },
     ],
   }, //27
+  {
+    title: "ESLint Plugin and Rule Generation",
+    items: [
+      {
+        name: "Generator-ESLint",
+        link: "https://www.npmjs.com/package/generator-eslint",
+      },
+    ],
+  }, //28
 ];
