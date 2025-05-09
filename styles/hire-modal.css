@@ -320,12 +320,15 @@
   transform: translate(-50%, -50%);
   filter: blur(10px);
   z-index:-1;
+  animation: pulseBlur 1.5s infinite;
 }
 
 
 .contacts__image {
   border-radius:100%;
-  transform: translateY(30px)
+  transform: translateY(30px);
+  -webkit-mask-image: radial-gradient(circle, black 30%, transparent 80%);
+  mask-image: radial-gradient(circle, black 30%, transparent 80%);
 }
 
 .control {
