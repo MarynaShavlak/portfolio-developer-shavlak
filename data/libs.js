@@ -330,4 +330,41 @@ export const toolsData = [
       { name: "Slugify", link: "https://www.npmjs.com/package/slugify" },
     ],
   }, //15
+  {
+    title: "Deployment and Hosting",
+    items: [
+      { name: "GitHub Pages", link: "https://pages.github.com/" },
+      { name: "Netlify", link: "https://www.netlify.com/" },
+      {
+        name: "Firebase Hosting",
+        link: "https://firebase.google.com/products/hosting",
+      },
+    ],
+  }, //25
+  {
+    title: "Progressive Web Apps",
+    items: [
+      {
+        name: "Service Worker",
+        link: "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+      },
+      {
+        name: "Workbox",
+        link: "https://developers.google.com/web/tools/workbox",
+      },
+      {
+        name: "Web App Manifest",
+        link: "https://developer.mozilla.org/en-US/docs/Web/Manifest",
+      },
+    ],
+  }, //26
+
+  {
+    title: "File Manipulation and Code Generation",
+    items: [
+      { name: "Path", link: "https://nodejs.org/api/path.html" },
+      { name: "Util", link: "https://nodejs.org/api/util.html" },
+      { name: "TS-Morph", link: "https://ts-morph.com/" },
+    ],
+  }, //27
 ];

@@ -15,15 +15,9 @@
     font-family: "Lustria", serif;
     font-size: 5rem;
     color: var(--main-text-color);
-    /*background-image: url('../assets/images/sky.jpg');*/
-    /*background-size: 200%;*/
-    /*background-position: 0 50%;*/
-    /*background-clip: text;*/
-    /*color: transparent;*/
-    /*text-transform: uppercase;*/
     font-weight: 700;
     text-align: center;
-    /*animation: moveLeftRight 5s infinite alternate;*/
+
 }
 
 @keyframes moveLeftRight {
@@ -655,6 +649,29 @@
 }
 
 
+.tools__item--deployment {
+    width: 220px;
+    height: 140px;
+}
+
+.tools__item--file {
+    width: 220px;
+    height: 140px;
+}
+
+.tools__item--progressive {
+    width: 220px;
+    height: 140px;
+
+    .icon-1 {
+        background-image: url('../assets/images/tools/workbox.png');
+
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+}
+
 .tools__item--testing { /*testing*/
     width: 450px;
     height: 120px;
@@ -788,7 +805,10 @@
 }
 
 .tools__item:hover .tools__title {
-    top: 10px;
+    text-align: center;
+    width: 160px;
+    top: 0;
+    left: 50%;
     transform: translate(-50%, 0) scale(0.7);
 
 
