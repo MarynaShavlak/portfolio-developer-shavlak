@@ -3,6 +3,7 @@ export const workData = [
     title: "Export Execution Specialist",
     company: "OLEOS SWISS S.A.",
     date: "2018-2021",
+    icon: ' <i class="fa-solid fa-business-time"></i>',
     responsibilities: [
       "Automate AR/AP report generation for faster financial insights",
       "Coordinate data exchange with suppliers and customs brokers",
@@ -16,6 +17,7 @@ export const workData = [
     title: "Agricultural Procurement Data Manager",
     company: "KROKUS-AGRO GROUP",
     date: "2022 - 2023",
+    icon: '<i class="fa-solid fa-file-contract"></i>',
     responsibilities: [
       "Collect, consolidate and analyze agricultural procurement data.",
       "Review accounts and payments for accuracy and validity",
@@ -27,6 +29,7 @@ export const workData = [
     title: "Data Analytics Coordinator",
     company: "REVATT LLC",
     date: "2023 - Present",
+    icon: '<i class="fa-solid fa-chart-line"></i>',
     responsibilities: [
       "Created dashboards to visualize procurement and financial data",
       "Collaborated with teams to define data and reporting needs",
