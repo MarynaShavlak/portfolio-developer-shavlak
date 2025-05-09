@@ -1,0 +1,98 @@
+
+.card--linkedin .card-content,
+.card--github .card-content,
+.card--instagram .card-content {
+    color: #1A4A7A;
+}
+
+
+.card--linkedin .block__text,
+.card--github .block__text,
+.card--instagram .block__text {
+    color: #1A4A7A;
+}
+
+.block__text:not(:nth-child(2)),
+.block__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.block__text {
+    color: #1A4A7A;
+}
+
+.card-content__link {
+    color: #1A4A7A;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: justify;
+    line-height: 1;
+
+    text-decoration: none;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-content__link .card-content__icon {
+
+    margin-right: 20px;
+    font-size: 30px;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: tiltShakeInfinite 0.5s infinite;
+}
+
+
+.card--linkedin .card-content {
+    background-color: #FFC2D9;
+    -webkit-clip-path: circle(0% at 220px 88%);
+    clip-path: circle(0% at 220px 88%);
+}
+.card--linkedin.active .card-content {
+    -webkit-clip-path: circle(270% at 220px 88%);
+    clip-path: circle(270% at 220px 88%);
+}
+
+.card--github .card-content {
+    background-color: #ffffff;
+    -webkit-clip-path: circle(0% at 292px 88%);
+    clip-path: circle(0% at 292px 88%);
+}
+.card--github.active .card-content {
+    -webkit-clip-path: circle(270% at 292px 88%);
+    clip-path: circle(270% at 292px 88%);
+}
+
+
+.card--instagram .card-content {
+    background-color: #CAE6FE;
+    -webkit-clip-path: circle(0% at 292px 88%);
+    clip-path: circle(0% at 292px 88%);
+}
+.card--instagram.active .card-content {
+    -webkit-clip-path: circle(270% at 292px 88%);
+    clip-path: circle(270% at 292px 88%);
+}
+
+.card--overview.active .card-toggle {
+    opacity: 0;
+}
+.card--overview.active .card-content {
+    -webkit-clip-path: circle(270% at 91.5% 75px);
+    clip-path: circle(270% at 91.5% 75px);
+}
+
+.card--overview .card-toggle {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    opacity: 1;
+    fill: #1A4A7A;
+    background-color: #ffffff;
+}
+
+.card--overview .card-content {
+    background-color: #ffffff;
+    -webkit-clip-path: circle(0% at 91.5% 75px);
+    clip-path: circle(0% at 91.5% 75px);
+}

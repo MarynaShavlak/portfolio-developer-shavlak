@@ -49,137 +49,9 @@
 
 }
 
-.card--behance .card-content,
-.card--facebook .card-content,
-.card--linkedin .card-content,
-.card--github .card-content,
-.card--instagram .card-content,
-.card--dribbble .card-content {
-  color: #fff;
-}
 
-.card--behance .block__text,
-.card--facebook .block__text,
-.card--linkedin .block__text,
-.card--github .block__text,
-.card--instagram .block__text,
-.card--dribbble .block__text {
-  color: #fff;
-}
-
-.block__text:not(:nth-child(2)),
-.block__text:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.block__text {
-  color: #1A4A7A;
-}
-
-.card-content__link {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 40px;
-  text-align: justify;
-  line-height: 1;
-  color: #fff;
-  text-decoration: none;
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-content__link .card-content__icon {
-  color: #fff;
-  margin-right: 20px;
-  font-size: 30px;
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  animation: tiltShakeInfinite 0.5s infinite;
-}
-
-.card--behance .card-content {
-  background-color: #1869ff;
-  -webkit-clip-path: circle(0% at 76px 88%);
-  clip-path: circle(0% at 50px 88%);
-}
-.card--behance.active .card-content {
-  -webkit-clip-path: circle(270% at 76px 88%);
-  clip-path: circle(270% at 50px 88%);
-}
-
-.card--facebook .card-content {
-  background-color: #2f98d1;
-  -webkit-clip-path: circle(0% at 150px 88%);
-  clip-path: circle(0% at 150px 88%);
-}
-.card--facebook.active .card-content {
-  -webkit-clip-path: circle(270% at 150px 88%);
-  clip-path: circle(270% at 150px 88%);
-}
-
-.card--linkedin .card-content {
-  background-color: #007bb6;
-  -webkit-clip-path: circle(0% at 220px 88%);
-  clip-path: circle(0% at 220px 88%);
-}
-.card--linkedin.active .card-content {
-  -webkit-clip-path: circle(270% at 220px 88%);
-  clip-path: circle(270% at 220px 88%);
-}
-
-.card--github .card-content {
-  background-color: #57acef;
-  -webkit-clip-path: circle(0% at 292px 88%);
-  clip-path: circle(0% at 292px 88%);
-}
-.card--github.active .card-content {
-  -webkit-clip-path: circle(270% at 292px 88%);
-  clip-path: circle(270% at 292px 88%);
-}
-
-.card--dribbble .card-content {
-  background-color: #e51a69;
-  -webkit-clip-path: circle(0% at 292px 88%);
-  clip-path: circle(0% at 292px 88%);
-}
-.card--dribbble.active .card-content {
-  -webkit-clip-path: circle(270% at 292px 88%);
-  clip-path: circle(270% at 292px 88%);
-}
-.card--instagram .card-content {
-  background-color: #135689;
-  -webkit-clip-path: circle(0% at 292px 88%);
-  clip-path: circle(0% at 292px 88%);
-}
-.card--instagram.active .card-content {
-  -webkit-clip-path: circle(270% at 292px 88%);
-  clip-path: circle(270% at 292px 88%);
-}
-
-.card--overview.active .card-toggle {
-  opacity: 0;
-}
-.card--overview.active .card-content {
-  -webkit-clip-path: circle(270% at 91.5% 75px);
-  clip-path: circle(270% at 91.5% 75px);
-}
-
-.card--overview .card-toggle {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  opacity: 1;
-  color: #fff;
-}
-
-.card--overview .card-content {
-  background-color: #ffffff;
-  -webkit-clip-path: circle(0% at 91.5% 75px);
-  clip-path: circle(0% at 91.5% 75px);
-}
 
 .card--overview .block--right {
-  /* background-color: red; */
-  /* background: url(images/photo.png) no-repeat bottom right; */
   background-size: contain;
 }
 
@@ -436,21 +308,6 @@ textarea {
   height: 370px;
   width: auto;
 }
-
-
-
-/* .contacts__block::before {
-  position: absolute;
-  top: -20px;
-  left: -25px;
-  content: '';
-  height: calc(100% + 50px);
-  width: 80px;
-  background-color: #888888;
-  border-radius: 30px;
-  z-index: 1;
-} */
-
 
 .wrap--second {
   /*position: relative;*/
