@@ -8,6 +8,7 @@ import { initToolsSection } from "./js/tools/initToolsSection.js";
 import { initHeroSection } from "./js/hero/initHeroSection.js";
 import { initHireModal } from "./js/hireModal/hireModal.js";
 import { initContactsSection } from "./js/contacts/contacts.js";
+import { initWorkSection } from "./js/work/initWorkSection.js";
 
 $(document).ready(async function () {
   try {
@@ -30,6 +31,7 @@ $(document).ready(async function () {
     initBlog();
     initHireModal();
     initEducationSection();
+    initWorkSection();
     initContactsSection();
     initCVModal();
   } catch (err) {

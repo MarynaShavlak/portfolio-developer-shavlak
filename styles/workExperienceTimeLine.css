@@ -1,7 +1,5 @@
 .section__work {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--light-bg-color);
@@ -9,6 +7,12 @@
     radial-gradient(25px, #000 98%, #0000) 50%/46.25px 50px repeat space;
     -webkit-mask: var(--mask);
     mask: var(--mask);
+}
+
+.work__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 
