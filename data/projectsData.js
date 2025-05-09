@@ -1034,6 +1034,16 @@ export const projectsData = [
         ],
       },
     ],
+    additionalInfo: [
+      {
+        title: "Role",
+        items: ["Developer"],
+      },
+      {
+        title: "Tasks",
+        items: ["Modal", "Task Form", "Calendar Toolbar"],
+      },
+    ],
     techStack: {
       architecture:
         "Modular React application using Redux Toolkit and feature-based structure",
@@ -1176,6 +1186,22 @@ export const projectsData = [
           "Smooth scroll for seamless browsing",
           "CSS transitions for hover animations",
           "Canvas-based header with device-specific variations",
+        ],
+      },
+    ],
+    additionalInfo: [
+      {
+        title: "Role",
+        items: ["Team Lead", "Developer"],
+      },
+      {
+        title: "Tasks",
+        items: [
+          "Led frontend tasks and team coordination",
+          "Implemented pagination",
+          "Developed dark theme",
+          "Built animations",
+          "Monitored performance and build stability",
         ],
       },
     ],
@@ -1367,6 +1393,16 @@ export const projectsData = [
           "Hover animation effects for enhanced interactivity",
           "Embedded external content via iframe",
         ],
+      },
+    ],
+    additionalInfo: [
+      {
+        title: "Role",
+        items: ["Developer"],
+      },
+      {
+        title: "Tasks",
+        items: ["Block address"],
       },
     ],
 
