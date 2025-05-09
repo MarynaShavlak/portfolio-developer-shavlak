@@ -624,6 +624,36 @@
 
 /*done*/
 
+.tools__item--core { /*search*/
+    width: 220px;
+    height: 140px;
+
+    .icon-1 {
+        background-image: url('../assets/images/tools/html.png');
+        background-size: 40px 40px;
+        top: 10%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .icon-2 {
+        background-image: url('../assets/images/tools/css.svg');
+        background-size: 40px 40px;
+        top: 60%;
+        left: 60%;
+        animation-delay: 3s;
+    }
+
+    .icon-3 {
+        background-image: url('../assets/images/tools/javascript.svg');
+        background-size: 50px 50px;
+        background-size: 40px 40px;
+        top: 60%;
+        left: 5%;
+        animation-delay: 3s;
+    }
+}
+
 
 .tools__item--testing { /*testing*/
     width: 450px;
