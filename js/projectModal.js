@@ -60,7 +60,7 @@ function createProjectMediaSection(title,id, mediaFiles) {
     const $slider = $('<div class="project-slider"></div>');
 
     mediaFiles.forEach((file, index) => {
-        const filePath = `assets/images/${id}/${file}`;
+        const filePath = `assets/images/projects/${id}/${file}`;
         const isVideo = file.toLowerCase().endsWith('.mp4');
 
         const $media = isVideo

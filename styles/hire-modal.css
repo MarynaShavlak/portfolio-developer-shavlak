@@ -111,6 +111,11 @@ border:none;
   text-align: center;
   line-height: 1;
   color: #1A4A7A;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-content__title:hover a {
+  color: #FF5BA7;
 }
 
 .content__wrapper {
@@ -130,8 +135,17 @@ border:none;
 }
 
 .block .block__text {
-  text-align: justify;
+  text-align:justify;
+  text-wrap: pretty;
   font-size: 18px;
+  a {
+    color: #1A4A7A;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 900;
+  }
+  a:hover {
+    color: #FF5BA7;
+  }
 }
 .block .block__text:first-child {
   margin-bottom: 20px;
@@ -145,6 +159,7 @@ border:none;
 .block.block--left {
   transform: translate3d(0, 0, 0);
   opacity: 0;
+  z-index: 1;
   /*padding-left: 50px;*/
 }
 .block.block--right {
