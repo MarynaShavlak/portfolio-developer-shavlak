@@ -2,16 +2,16 @@
 .portfolio__filter {
     display: flex;
     flex-wrap: wrap;
-    row-gap:15px;
+    row-gap: 15px;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
     margin-top: 3rem;
     margin-bottom: 20px;
 }
 
 .filter-btn {
-    --default-bg: #FFC2D9;
-    --active-bg: #FF5BA7;
+    /*--default-bg: var(--default-bg-color);*/
+    /*--active-bg: var(--active-bg-color);*/
     position: relative;
     padding: 1rem 2rem;
     background-color: var(--default-bg);
@@ -51,7 +51,7 @@
 }
 
 .filter-btn.filter-btn--active {
-    color: #ffffff;
+    color: var(--main-bg-color);
     background-color: var(--active-bg);
     z-index: 1;
 }
@@ -96,9 +96,8 @@
     /*box-shadow: 0 3px 10px -5px rgba(255, 255, 255, 0.25);*/
     transition: box-shadow 0.2s linear;
     position: relative;
-    z-index:1;
+    z-index: 1;
     height: 410px;
-
 }
 
 
@@ -107,28 +106,28 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color: #CAE6FE;
-    z-index:-1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--light-bg-color);
+    z-index: -1;
     transition: all 0.2s;
     border-radius: 15px;
 
 }
-.work:hover {
-    z-index:3;
 
-    img  {
+.work:hover {
+    z-index: 3;
+
+    img {
         transform: scale(0.9) translateY(-10%);
-        mask-image:
-                linear-gradient(to right,
-                rgba(0, 0, 0, 0) 0%,
-                rgba(0, 0, 0, 1) 10%,
-                rgba(0, 0, 0, 1) 90%,
-                rgba(0, 0, 0, 0) 100%),
-                linear-gradient(to bottom,
+        mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 10%,
+        rgba(0, 0, 0, 1) 90%,
+        rgba(0, 0, 0, 0) 100%),
+        linear-gradient(to bottom,
                 rgba(0, 0, 0, 1) 0%,
                 rgba(0, 0, 0, 1) 90%,
                 rgba(0, 0, 0, 0) 100%);
@@ -137,11 +136,11 @@
     }
 
     .work__short-overview {
-        display:flex;
+        display: flex;
     }
 
     .explore-project-btn {
-        display:block
+        display: block
     }
 
 }
@@ -162,7 +161,7 @@
 
 
 .work__image {
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
     width: 370px;
     height: 300px;
     border-top-left-radius: 15px;
@@ -180,11 +179,11 @@
 
 .work__info {
     position: relative;
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 1rem 0.8rem;
-    background-color: #ffffff;
-    flex-grow:1;
+    background-color: var(--main-bg-color);
+    flex-grow: 1;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
@@ -192,10 +191,10 @@
 }
 
 
-.work__category,.work__type {
+.work__category, .work__type {
     margin-top: 0.5rem;
     font-size: 0.8rem;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     text-transform: uppercase;
 }
 
@@ -206,16 +205,16 @@
 }
 
 .work__short-overview {
-    display:none;
+    display: none;
     max-width: 346px;
     transition: all 0.3s ease-in-out;
     margin-top: 10px;
-    color:#1A4A7A;
+    color: var(--main-text-color);
 }
 
 .explore-project-btn {
     margin-top: 10px;
-    display:none;
+    display: none;
     transition: all 0.3s ease-in-out;
     align-self: flex-end;
 }
@@ -229,7 +228,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.06rem;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -237,28 +236,31 @@
 .portfolio-list {
     max-width: 1170px;
 }
+
 .portfolio__item {
     cursor: pointer;
     margin-bottom: 20px;
 }
 
 .section__portfolio {
-    background-color: #FFC2D9;
+    background-color: var(--default-bg-color);
     padding-bottom: 90px;
     mask: linear-gradient(to bottom, #000 calc(100% - 80px), transparent);
 
 }
+
 .portfolio__filter__container {
-    padding-top:50px;
+    padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
     mask: linear-gradient(to bottom, #000 80%, transparent);
 }
+
 .section__portfolio__title {
     margin-bottom: 0.3rem;
     font-family: "Lustria", serif;
     font-size: 5rem;
-    color: #FF5BA7;
+    color: var(--active-bg-color);
     font-weight: 700;
     text-align: center;
 
@@ -269,7 +271,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 1.05em 1.7em;
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
     font-size: 16px;
 }
 

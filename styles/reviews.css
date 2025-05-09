@@ -6,23 +6,23 @@
 
 
 #cloudCanvasReviews {
-    position:absolute;
+    position: absolute;
     top: 30px;
-    left:0;
+    left: 0;
 }
 
 
 .reviews__cloud-wrapper {
-    width:100%;
-    position:absolute;
-    top:0;
-    bottom:0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
     canvas {
         opacity: 0.7
     }
 
 }
-
 
 
 .reviews__container {
@@ -37,7 +37,7 @@
     font-family: "Lustria", serif;
     margin-bottom: 0.3rem;
     font-size: 75px;
-    color: #FF5BA7;
+    color: var(--active-bg-color);
     text-transform: uppercase;
     font-weight: 900;
     text-align: center;
@@ -67,12 +67,13 @@
 .slider-btn i {
     font-size: 50px;
     font-weight: 700;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     transition: color 300ms ease-in-out;
 }
+
 .slider-btn:hover {
     i {
-        color: #FF5BA7;
+        color: var(--active-bg-color);
     }
 }
 
@@ -97,7 +98,7 @@
     backdrop-filter: blur(7.7px);
     -webkit-backdrop-filter: blur(7.7px);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    display:none;
+    display: none;
 }
 
 .reviews__item--active {
@@ -115,7 +116,7 @@
     gap: 1rem;
     font-size: 0.94rem;
     line-height: 2.2;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     text-align: center;
 }
 
@@ -139,7 +140,7 @@
     height: 100px;
     border-radius: 50%;
 
-    box-shadow: 0 0 8px #FF5BA7, inset 0 0 8px #FF5BA7;
+    box-shadow: 0 0 8px var(--active-bg-color), inset 0 0 8px var(--active-bg-color);
 }
 
 
@@ -147,14 +148,14 @@
     margin-bottom: 0.3rem;
 
     font-size: 1.06rem;
-    color: #1A1A1A;
+    color: var(--main-black-color);
     font-weight: 700;
 }
 
 .reviews__text {
     margin-bottom: 0.4rem;
     font-size: 0.94rem;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     font-style: italic;
     font-weight: 300;
 }
@@ -165,6 +166,7 @@
     justify-content: center;
     gap: 5px;
 }
+
 .reviews__star {
     width: 15px;
     height: 15px;

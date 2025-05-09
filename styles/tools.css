@@ -1,11 +1,10 @@
 .section__tools {
-    padding-top:150px;
+    padding-top: 150px;
     padding-bottom: 130px;
-    background-color: #CAE6FE;
+    background-color: var(--light-bg-color);
     /*aspect-ratio: 1;*/
-      --mask:
-            linear-gradient(0deg,#0000 200px,#000 0) 0 100px,
-            radial-gradient(100px,#000 98%,#0000) 50%/185px 200px repeat space;
+    --mask: linear-gradient(0deg, #0000 200px, #000 0) 0 100px,
+    radial-gradient(100px, #000 98%, #0000) 50%/185px 200px repeat space;
 
     -webkit-mask: var(--mask);
     mask: var(--mask);
@@ -15,7 +14,7 @@
     margin-bottom: 0.3rem;
     font-family: "Lustria", serif;
     font-size: 5rem;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     /*background-image: url('../assets/images/sky.jpg');*/
     /*background-size: 200%;*/
     /*background-position: 0 50%;*/
@@ -37,7 +36,7 @@
 }
 
 .section__tools__text {
-    color: #1A4A7A;
+    color: var(--main-text-color);
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-weight: 400;
@@ -57,7 +56,7 @@
     /*background: red;*/
     border-radius: 15px;
     overflow: hidden;
-    cursor:pointer;
+    cursor: pointer;
     /*width:220px;*/
     /*height:180px;*/
     margin-bottom: 10px;
@@ -66,6 +65,7 @@
     --delay: 0s; /* Define default value for --delay */
     animation-delay: var(--delay); /* Use custom property for delay */
 }
+
 /* Fade-in animation */
 @keyframes fadeIn {
     from {
@@ -78,39 +78,45 @@
 
 
 .tools__item--frontend {
-    width:220px;
-    height:120px;
+    width: 220px;
+    height: 120px;
 
 
     .icon-1 {
-    background-image: url('../assets/images/tools/react.svg');
-    background-size: 30px 30px;
-    top: 10%;
-    left: 5%;
-    animation-delay: 0s;
-}
+        background-image: url('../assets/images/tools/react.svg');
+        background-size: 30px 30px;
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+    }
+
     .icon-2 {
         background-image: url('../assets/images/tools/jquery.svg');
         top: 60%;
         left: 60%;
         animation-delay: 3s;
     }
-}  /*done*/
+}
+
+/*done*/
 
 .tools__item--state {
-    width:220px;
-    height:180px;
+    width: 220px;
+    height: 180px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/redux.png');
         top: 70%;
         left: 60%;
         animation-delay: 0s;
     }
-}  /*done*/
+}
 
-.tools__item--build{
-    width:220px;
-    height:180px;
+/*done*/
+
+.tools__item--build {
+    width: 220px;
+    height: 180px;
 
     .icon-1 {
         background-image: url('../assets/images/tools/webpack.png');
@@ -118,12 +124,14 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/babel.svg');
         top: 60%;
         left: 70%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/vite.svg');
         background-size: 30px 30px;
@@ -131,6 +139,7 @@
         left: 5%;
         animation-delay: 3s;
     }
+
     .icon-4 {
         background-image: url('../assets/images/tools/gulp.svg');
         background-size: 30px 30px;
@@ -138,6 +147,7 @@
         left: 70%;
         animation-delay: 0s;
     }
+
     .icon-5 {
         background-image: url('../assets/images/tools/docker.png');
         background-size: 30px 30px;
@@ -145,11 +155,13 @@
         left: 40%;
         animation-delay: 0s;
     }
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--code {
-    width:210px;
-    height:120px;
+    width: 210px;
+    height: 120px;
 
     .icon-1 {
         background-image: url('../assets/images/tools/typescript.svg');
@@ -158,6 +170,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/prettier.svg');
         background-size: 30px 30px;
@@ -165,6 +178,7 @@
         left: 60%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/eslint.png');
         background-size: 40px 40px;
@@ -172,11 +186,13 @@
         left: 70%;
         animation-delay: 3s;
     }
-}   /*done*/
+}
+
+/*done*/
 
 .tools__item--utility {
-    width:220px;
-    height:180px;
+    width: 220px;
+    height: 180px;
 
     .icon-1 {
         background-image: url('../assets/images/tools/uuid.png');
@@ -185,6 +201,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/lodash.svg');
         background-size: 30px 30px;
@@ -192,6 +209,7 @@
         left: 70%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/randomColor.svg');
         background-size: 30px 30px;
@@ -199,6 +217,7 @@
         left: 5%;
         animation-delay: 3s;
     }
+
     .icon-4 {
         background-image: url('../assets/images/tools/nanoid.svg');
 
@@ -206,28 +225,35 @@
         left: 70%;
         animation-delay: 0s;
     }
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--routing {
-    width:220px;
-    height:120px;
+    width: 220px;
+    height: 120px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/reactRouter.png');
-       top: 70%;
+        top: 70%;
         left: 60%;
         animation-delay: 0s;
     }
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--ui {
-    width:450px;
-    height:140px;
+    width: 450px;
+    height: 140px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/font-awesome.png');
         top: 10%;
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/react-icons.svg');
         background-size: 30px 30px;
@@ -235,6 +261,7 @@
         left: 70%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/material.svg');
         background-size: 30px 30px;
@@ -242,6 +269,7 @@
         left: 5%;
         animation-delay: 3s;
     }
+
     .icon-4 {
         background-image: url('../assets/images/tools/headless.png');
 
@@ -249,6 +277,7 @@
         left: 70%;
         animation-delay: 0s;
     }
+
     .icon-5 {
         background-image: url('../assets/images/tools/ant.svg');
         background-size: 30px 30px;
@@ -256,11 +285,14 @@
         left: 40%;
         animation-delay: 0s;
     }
-}  /*done*/
+}
+
+/*done*/
 
 .tools__item--form {
-    width:220px;
-    height:180px;
+    width: 220px;
+    height: 180px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/formik.png');
 
@@ -268,6 +300,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/inputmask.svg');
 
@@ -275,6 +308,7 @@
         left: 60%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/justValidate.svg');
 
@@ -282,7 +316,9 @@
         left: 70%;
         animation-delay: 3s;
     }
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--styling {
     width: 450px;
@@ -295,18 +331,21 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/styledComponents.svg');
         top: 50%;
         left: 80%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/tailwind.svg');
-         top: 50%;
+        top: 50%;
         left: 5%;
         animation-delay: 3s;
     }
+
     .icon-4 {
         background-image: url('../assets/images/tools/emotion.png');
         background-size: 30px 30px;
@@ -314,6 +353,7 @@
         left: 40%;
         animation-delay: 0s;
     }
+
     .icon-5 {
         background-image: url('../assets/images/tools/modern.svg');
 
@@ -321,12 +361,15 @@
         left: 40%;
         animation-delay: 3s;
     }
-} /*done*/
+}
 
-.tools__item--animations {/*animation*/
+/*done*/
+
+.tools__item--animations { /*animation*/
     width: 370px;
     height: 140px;
     margin-left: -150px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/gesture.png');
 
@@ -334,6 +377,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/gsap.webp');
         background-size: 30px 30px;
@@ -341,13 +385,15 @@
         left: 70%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/lottie.svg');
-        background-size:40px 40px;
+        background-size: 40px 40px;
         top: 60%;
         left: 5%;
         animation-delay: 3s;
     }
+
     .icon-4 {
         background-image: url('../assets/images/tools/spring.png');
         background-size: 40px 40px;
@@ -355,11 +401,14 @@
         left: 70%;
         animation-delay: 0s;
     }
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--modals { /*modal*/
-    width:220px;
-    height:200px;
+    width: 220px;
+    height: 200px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/reactModal.svg');
         background-size: 30px 30px;
@@ -367,6 +416,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/hottoast.png');
         background-size: 30px 30px;
@@ -374,13 +424,15 @@
         left: 70%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/basic.png');
-        background-size:40px 40px;
+        background-size: 40px 40px;
         top: 60%;
         left: 5%;
         animation-delay: 3s;
     }
+
     .icon-4 {
         background-image: url('../assets/images/tools/notiflix.png');
         background-size: 40px 40px;
@@ -388,12 +440,15 @@
         left: 70%;
         animation-delay: 0s;
     }
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--date { /*date*/
     width: 300px;
-    height:140px;
+    height: 140px;
     margin-left: -145px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/datefns.svg');
         background-size: 30px 30px;
@@ -401,6 +456,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/dayjs.png');
         background-size: 30px 30px;
@@ -408,12 +464,15 @@
         left: 60%;
         animation-delay: 3s;
     }
-} /*done*/
+}
 
-.tools__item--text{ /*text*/
-    width:280px;
-    height:140px;
+/*done*/
+
+.tools__item--text { /*text*/
+    width: 280px;
+    height: 140px;
     margin-left: -60px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/highlight.png');
         background-size: 30px 30px;
@@ -421,6 +480,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/monaco.png');
         background-size: 30px 30px;
@@ -429,17 +489,20 @@
         animation-delay: 3s;
     }
 
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--tweaks { /*tweaks*/
 
-    width:300px;
-    height:140px
+    width: 300px;
+    height: 140px
 }
 
-.tools__item--data {/*visualization*/
-    width:220px;
-    height:180px;
+.tools__item--data { /*visualization*/
+    width: 220px;
+    height: 180px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/apexcharts.webp');
         background-size: 30px 30px;
@@ -447,6 +510,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/star.svg');
         background-size: 30px 30px;
@@ -454,6 +518,7 @@
         left: 60%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/tanstack.png');
         background-size: 40px 40px;
@@ -461,11 +526,14 @@
         left: 60%;
         animation-delay: 0s;
     }
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--carousels { /*carousel*/
-    width:220px;
-    height:190px;
+    width: 220px;
+    height: 190px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/owl.png');
         background-size: 30px 30px;
@@ -473,6 +541,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/slick.svg');
 
@@ -480,6 +549,7 @@
         left: 40%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/swiper.svg');
         background-size: 30px 30px;
@@ -487,11 +557,14 @@
         left: 60%;
         animation-delay: 0s;
     }
-}  /*done*/
+}
+
+/*done*/
 
 .tools__item--accessibility { /*Accessibility*/
-    width:220px;
-    height:180px;
+    width: 220px;
+    height: 180px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/bodyscroll.png');
         background-size: 40px 40px;
@@ -499,16 +572,19 @@
         left: 5%;
         animation-delay: 0s;
     }
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--drag { /*drag*/
-    width:220px;
-    height:140px
+    width: 220px;
+    height: 140px
 }
 
 .tools__item--pagination { /*pagination*/
     width: 300px;
     height: 140px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/ultimate.png');
         background-size: 40px 40px;
@@ -521,6 +597,7 @@
 .tools__item--loading { /*loading*/
     width: 220px;
     height: 140px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/loader.svg');
         background-size: 40px 40px;
@@ -528,11 +605,14 @@
         left: 5%;
         animation-delay: 0s;
     }
-} /*done*/
+}
+
+/*done*/
 
 .tools__item--search { /*search*/
     width: 220px;
     height: 140px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/algolia.png');
 
@@ -540,7 +620,9 @@
         left: 10%;
         animation-delay: 0s;
     }
-}   /*done*/
+}
+
+/*done*/
 
 
 .tools__item--testing { /*testing*/
@@ -549,17 +631,19 @@
 
     .icon-1 {
         background-image: url('../assets/images/tools/jest.png');
-        background-size: 90px ;
+        background-size: 90px;
         top: 10%;
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/loki.svg');
         top: 60%;
         left: 80%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/rtl.png');
         background-size: 50px 50px;
@@ -568,6 +652,7 @@
         left: 5%;
         animation-delay: 3s;
     }
+
     .icon-4 {
         background-image: url('../assets/images/tools/cypress.svg');
         background-size: 30px 30px;
@@ -575,6 +660,7 @@
         left: 80%;
         animation-delay: 0s;
     }
+
     .icon-5 {
         background-image: url('../assets/images/tools/storybook.svg');
         background-size: 30px 30px;
@@ -590,11 +676,14 @@
         left: 20%;
         animation-delay: 0s;
     }
-}  /*done*/
+}
+
+/*done*/
 
 .tools__item--backend { /*backend*/
     width: 450px;
     height: 140px;
+
     .icon-1 {
         background-image: url('../assets/images/tools/axios.svg');
 
@@ -602,6 +691,7 @@
         left: 5%;
         animation-delay: 0s;
     }
+
     .icon-2 {
         background-image: url('../assets/images/tools/firebase.svg');
 
@@ -609,6 +699,7 @@
         left: 70%;
         animation-delay: 3s;
     }
+
     .icon-3 {
         background-image: url('../assets/images/tools/swagger.svg');
 
@@ -629,7 +720,7 @@
     right: 10px;
     width: 20px;
     height: 20px;
-    border-color: #fff;
+    border-color: var(--main-bg-color);
     border-bottom-right-radius: 5px;
     border-style: solid;
     border-width: 0 2px 2px 0;
@@ -642,7 +733,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #FFffff;
+    background-color: var(--main-bg-color);
     width: 100%;
     height: 100%;
     transform: translateY(0%);
@@ -651,7 +742,7 @@
     align-items: center; /* Center title vertically by default */
     justify-content: center;
     flex-direction: column;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     padding: 10px;
     font-size: 16px;
 }
@@ -665,6 +756,7 @@
     transition: transform 0.4s ease;
     font-weight: 800;
 }
+
 .tools__item:hover .tools__title {
     top: 10px;
     transform: translate(-50%, 0) scale(0.7);
@@ -673,7 +765,7 @@
 }
 
 .tools__item:hover .floating-icon {
-    opacity:0;
+    opacity: 0;
 }
 
 
@@ -686,7 +778,7 @@
 .tools__list {
     display: flex;
     flex-wrap: wrap;
-    gap:5px;
+    gap: 5px;
 
 }
 
@@ -697,7 +789,7 @@
     left: 10px;
     width: 20px;
     height: 20px;
-    border-color: #fff;
+    border-color: var(--main-bg-color);
     border-top-left-radius: 5px;
     border-style: solid;
     border-width: 2px 0 0 2px;
@@ -705,27 +797,27 @@
 }
 
 .tools__list-item {
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
     border-radius: 5px;
-    padding:5px;
+    padding: 5px;
     transition: background-color 0.4s ease-in-out;
 }
+
 .tools__list-item:hover {
-    background-color: #1A4A7A;
+    background-color: var(--main-text-color);
+
     .tools__list-link {
-        color: #ffffff;
+        color: var(--main-bg-color);
     }
 }
 
 
 .tools__list-link {
     font-size: 12px;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     font-weight: 500;
-    transition:  color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
 }
-
-
 
 
 /* Common floating icon styles */
@@ -743,10 +835,15 @@
 }
 
 
-
 /* Floating animation */
 @keyframes float {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-15px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

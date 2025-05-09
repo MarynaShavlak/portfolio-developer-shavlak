@@ -1,175 +1,183 @@
 .cv-modal {
-  position: relative;
-  width: 1100px;
-  height: 1000px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    width: 1100px;
+    height: 1000px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.canvas-area{
-  width: 1100px;
-  height: 1000px;
+.canvas-area {
+    width: 1100px;
+    height: 1000px;
 }
+
 .canvas-block {
-  position: absolute;
-  padding-top: 5px;
+    position: absolute;
+    padding-top: 5px;
 }
 
 .block--about .block-modal-title,
 .block--languages .block-modal-title {
-  text-align: center;
+    text-align: center;
 }
 
 .block--experience .block-modal-title,
 .block--software .block-modal-title {
-  text-align: end;
+    text-align: end;
 }
 
 .block--experience .canvas-item {
-  align-items: end;
+    align-items: end;
 }
 
 .block--education,
 .block--expertise {
-  padding-left: 10px;
+    padding-left: 10px;
 }
+
 .block--experience,
 .block--software {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
 .block-modal-title {
-  display: block;
-  font-size: 30px;
-  color: #fff;
-  margin-bottom: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: start;
+    display: block;
+    font-size: 30px;
+    color: var(--main-bg-color);
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: start;
 }
 
 .block-modal-text {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .canvas-list {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  font-size: 13px;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 13px;
+    gap: 10px;
 }
 
 .canvas-list--wrapped {
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 0;
-  row-gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 0;
+    row-gap: 20px;
 }
+
 .canvas-item {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .canvas-list--wrapped .canvas-item {
-  flex-basis: 50%;
-  align-items: center;
+    flex-basis: 50%;
+    align-items: center;
 }
 
 .canvas-list--wrapped .canvas-title {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .canvas-value {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 .canvas-title {
-  font-size: 15px;
-  font-weight: 600;
+    font-size: 15px;
+    font-weight: 600;
 }
+
 .canvas-italic {
-  font-weight: 700;
-  font-style: italic;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .block--expertise .canvas-list--wrapped {
-  justify-content: center;
-  gap: 20px;
+    justify-content: center;
+    gap: 20px;
 }
+
 .block--software .canvas-list {
-  gap: 25px;
+    gap: 25px;
 }
+
 .canvas-item--bg {
-  flex-direction: row;
-  align-items: center;
-  gap: 15px;
-  text-align: center;
-  font-size: 14px;
-  color: #1A1A1A;
-  font-weight: 400;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--main-black-color);
+    font-weight: 400;
 }
+
 .canvas-star,
 .canvas-soft-icon {
-  opacity: 0.5;
-  width: 30px;
-  height: 30px;
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
 }
 
 .canvas-img-wrap {
-  position: absolute;
-  border-radius: 50%;
-  background-color: rgba(155, 155, 156, 0.4);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-  width: 265px;
-  height: 265px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(155, 155, 156, 0.4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 265px;
+    height: 265px;
 }
+
 .canvas-user-photo {
-  width: 265px;
-  height: 265px;
+    width: 265px;
+    height: 265px;
 }
 
 .canvas-img-wrap::before {
-  content: 'Lewis Nathaniel';
-  font-size: 25px;
-  font-weight: 900;
-  padding-top: 15px;
-  position: absolute;
-  left: 0;
-  bottom: 20px;
-  width: 280px;
-  height: 80px;
-  background-color: #fff;
-  transform: rotate(-10deg);
-  opacity: 0.6;
+    content: 'Lewis Nathaniel';
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 280px;
+    height: 80px;
+    background-color: var(--main-bg-color);
+    transform: rotate(-10deg);
+    opacity: 0.6;
 }
 
 .download-cv-btn {
-  position: absolute;
-  top: 450px;
-  right: 70px;
-  display: flex;
-  gap: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-decoration: none;
-  background-color: #1869ff;
-  padding: 15px 20px;
-  font-size: 18px;
-  border: 2px solid #1A1A1A;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.2s linear, color 0.2s linear;
+    position: absolute;
+    top: 450px;
+    right: 70px;
+    display: flex;
+    gap: 10px;
+    color: var(--main-bg-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #1869ff;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 2px solid var(--main-black-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s linear, color 0.2s linear;
 }
 
 .download-cv-btn:hover {
-  color: #1A1A1A;
-  background-color: #fff;
+    color: var(--main-black-color);
+    background-color: var(--main-bg-color);
 }

@@ -1,6 +1,6 @@
 .footer {
     padding: 1rem 0;
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
 }
 
 .footer__container {
@@ -17,8 +17,8 @@
     padding-right: 0.8rem;
     margin-right: 1rem;
     font-size: 12px;
-    color: #1A4A7A;
-    border-right: 1px solid #1A4A7A;
+    color: var(--main-text-color);
+    border-right: 1px solid var(--main-text-color);
 }
 
 .footer__socials {
@@ -26,7 +26,7 @@
     align-items: center;
     gap: 10px;
     margin: 0;
-    color: #1A4A7A;
+    color: var(--main-text-color);
 }
 
 
@@ -34,21 +34,24 @@
     width: 40px;
     height: 40px;
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius:100%;
-    background-color:  #ffffff;
+    border-radius: 100%;
+    background-color: var(--main-bg-color);
+
     i {
-        color: #1A4A7A;
+        color: var(--main-text-color);
         transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     opacity: 0.8;
 
 }
 
 .footer__social-item:hover {
-    box-shadow: 0 0 8px #1A4A7A, inset 0 0 8px #1A4A7A;
-    background-color: #1A4A7A;
+    box-shadow: 0 0 8px var(--main-text-color), inset 0 0 8px var(--main-text-color);
+    background-color: var(--main-text-color);
+
     i {
-        color: #ffffff;
+        color: var(--main-bg-color);
     }
 }
 
@@ -65,7 +68,7 @@
 
 /*.footer__social-item:hover {*/
 /*    i {*/
-/*        color: #1A4A7A;*/
+/*        color: var(--main-text-color);*/
 /*    }*/
 /*}*/
 
@@ -76,16 +79,16 @@
 .footer__nav {
     display: flex;
     align-items: center;
-    gap:15px;
+    gap: 15px;
     font-size: 0.94rem;
 }
 
 .footer__nav-link {
-    color: #1A4A7A;
+    color: var(--main-text-color);
     text-decoration: none;
     position: relative;
     padding: 5px 10px;
-   }
+}
 
 .footer__nav-link::after {
     content: "";
@@ -93,18 +96,19 @@
     bottom: 0;
     left: 0;
     transition: width .5s ease-in-out;
-    background-color: #CAE6FE;
+    background-color: var(--light-bg-color);
     border-radius: 10px;
     height: 100%;
     z-index: -1;
-    width:0%;
+    width: 0%;
 }
+
 .footer__nav-link:hover {
-    z-index:2;
+    z-index: 2;
 }
 
 .footer__nav-link:hover::after {
-    width:100%;
+    width: 100%;
 }
 
 .footer__btn {

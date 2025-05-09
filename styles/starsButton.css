@@ -6,12 +6,12 @@
     font-weight: 800;
     border-radius: 20px;
     transition: all .3s ease-in-out;
-    width:fit-content;
-    border:none;
-    cursor:pointer;
-    background-color: #CAE6FE;;
-    color:#1A4A7A;
-    box-shadow: 0 0 8px #CAE6FE;, inset 0 0 8px #CAE6FE;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    background-color: var(--light-bg-color);;
+    color: var(--main-text-color);
+    box-shadow: 0 0 8px var(--light-bg-color);, inset 0 0 8 px var(--light-bg-color);
 }
 
 .star-1 {
@@ -81,18 +81,16 @@
 }
 
 .star-btn:hover {
-    background-color: #FF5BA7;
-    box-shadow: 0 0 8px #FF5BA7, inset 0 0 8px #FF5BA7;
-    color: #FFFFFF;
-   }
-
-
+    background-color: var(--active-bg-color);
+    box-shadow: 0 0 8px var(--active-bg-color), inset 0 0 8px var(--active-bg-color);
+    color: var(--main-bg-color);
+}
 
 
 .star-btn-blue:hover {
-    background-color: #1A4A7A;
-    box-shadow: 0 0 8px #1A4A7A, inset 0 0 8px #1A4A7A;
-    color: #CAE6FE;
+    background-color: var(--main-text-color);
+    box-shadow: 0 0 8px var(--main-text-color), inset 0 0 8px var(--main-text-color);
+    color: var(--light-bg-color);
 }
 
 .star-btn:hover .star-1 {

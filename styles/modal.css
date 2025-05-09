@@ -26,7 +26,7 @@ body.modal-open {
     align-items: center;
     text-align: center;
     gap: 20px;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
     padding: 30px 15px;
     width: 830px;
 }
@@ -53,7 +53,7 @@ body.modal-open {
 }
 
 .close-modal-btn:hover, .close-form-btn:hover {
-    color:#FF5BA7;
-    fill: #FF5BA7;
+    color: var(--active-bg-color);
+    fill: var(--active-bg-color);
 }
 

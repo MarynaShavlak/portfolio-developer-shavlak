@@ -6,18 +6,17 @@
 
 .socials__item {
     width: 50px;
-    height:50px;
+    height: 50px;
     transition: transform 0.2s linear;
 
 }
-
 
 
 .socials__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--main-bg-color);
     width: 100%;
     height: 100%;
     text-decoration: none;

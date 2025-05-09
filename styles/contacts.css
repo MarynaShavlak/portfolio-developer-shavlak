@@ -1,8 +1,8 @@
 .section__contact {
-    /*background-color: #FFC2D9;*/
+    /*background-color: var(--default-bg-color);*/
     padding-bottom: 100px;
     /*mask: linear-gradient(to bottom, #000 calc(100% - 50px), transparent);*/
-    background: #FFC2D9;
+    background: var(--default-bg-color);
     background: linear-gradient(180deg, rgba(255, 194, 217, 1) 13%, rgba(255, 255, 255, 1) 77%);
     padding-top: 100px;
     /*padding-bottom: 8rem;*/
@@ -26,24 +26,24 @@
     font-family: "Lustria", serif;
     margin-bottom: 0.3rem;
     font-size: 75px;
-    color: #FF5BA7;
+    color: var(--active-bg-color);
     text-transform: uppercase;
     font-weight: 900;
 }
 
 .contact__text {
     font-size: 1.5rem;
-    color: #FF5BA7;
+    color: var(--active-bg-color);
     font-weight: 400;
 }
 
 .contact__btn {
     min-width: 175px;
     border-radius: 30px;
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
     font-size: 16px;
 
-    box-shadow: 0 0 8px #FF5BA7;
+    box-shadow: 0 0 8px var(--active-bg-color);
 
 
 }
@@ -62,18 +62,18 @@
     font-weight: 700;
     font-family: "Lustria", serif;
     font-size: 45px;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     text-align: end;
 
     span {
-        color: #FF5BA7;
+        color: var(--active-bg-color);
         font-weight: 900;
     }
 }
 
 .contact__invitation-text--secondary {
     font-size: 32px;
-    color: #FF5BA7;
+    color: var(--active-bg-color);
     font-weight: 900;
     text-align: end;
     margin-top: 60px;
@@ -176,7 +176,7 @@
     /*box-shadow: 11px -13px 29px 1px rgba(255,91,167,0.55);*/
     /*-webkit-box-shadow: 11px -13px 29px 1px rgba(255,91,167,0.55);*/
     /*-moz-box-shadow: 11px -13px 29px 1px rgba(255,91,167,0.55);*/
-    background-color: #FFC2D9;
+    background-color: var(--default-bg-color);
     padding: 15px;
 
     .control {
@@ -197,12 +197,12 @@
 .contact-form input, .contact-form textarea {
     border-radius: 20px;
     padding-left: 30px;
-    color: #1A4A7A;
+    color: var(--main-text-color);
 }
 
 .contact-form label {
     left: 10px;
-    color: #1A4A7A;
+    color: var(--main-text-color);
     text-transform: none;
 }
 
@@ -215,14 +215,14 @@
     height: 400px;
     top: 140px;
     right: -80px;
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
 
     /*border-radius: 15px;*/
 
     p {
         font-size: 18px;
         font-weight: 700;
-        color: #FF5BA7;
+        color: var(--active-bg-color);
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 20px;
@@ -248,7 +248,7 @@
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    background-color: #FF5BA7;
+    background-color: var(--active-bg-color);
     opacity: 0.8;
     filter: blur(5px);
     animation: pulse 2s infinite;

@@ -2,14 +2,14 @@
 .card--linkedin .card-content,
 .card--github .card-content,
 .card--instagram .card-content {
-    color: #1A4A7A;
+    color: var(--main-text-color);
 }
 
 
 .card--linkedin .block__text,
 .card--github .block__text,
 .card--instagram .block__text {
-    color: #1A4A7A;
+    color: var(--main-text-color);
 }
 
 .block__text:not(:nth-child(2)),
@@ -18,11 +18,11 @@
 }
 
 .block__text {
-    color: #1A4A7A;
+    color: var(--main-text-color);
 }
 
 .card-content__link {
-    color: #1A4A7A;
+    color: var(--main-text-color);
     display: flex;
     align-items: center;
     font-weight: 900;
@@ -44,20 +44,22 @@
 
 
 .card--linkedin .card-content {
-    background-color: #FFC2D9;
+    background-color: var(--default-bg-color);
     -webkit-clip-path: circle(0% at 220px 88%);
     clip-path: circle(0% at 220px 88%);
 }
+
 .card--linkedin.active .card-content {
     -webkit-clip-path: circle(270% at 220px 88%);
     clip-path: circle(270% at 220px 88%);
 }
 
 .card--github .card-content {
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
     -webkit-clip-path: circle(0% at 292px 88%);
     clip-path: circle(0% at 292px 88%);
 }
+
 .card--github.active .card-content {
     -webkit-clip-path: circle(270% at 292px 88%);
     clip-path: circle(270% at 292px 88%);
@@ -65,10 +67,11 @@
 
 
 .card--instagram .card-content {
-    background-color: #CAE6FE;
+    background-color: var(--light-bg-color);
     -webkit-clip-path: circle(0% at 292px 88%);
     clip-path: circle(0% at 292px 88%);
 }
+
 .card--instagram.active .card-content {
     -webkit-clip-path: circle(270% at 292px 88%);
     clip-path: circle(270% at 292px 88%);
@@ -77,6 +80,7 @@
 .card--overview.active .card-toggle {
     opacity: 0;
 }
+
 .card--overview.active .card-content {
     -webkit-clip-path: circle(270% at 91.5% 75px);
     clip-path: circle(270% at 91.5% 75px);
@@ -87,20 +91,21 @@
     top: 30px;
     right: 30px;
     opacity: 1;
-    fill: #1A4A7A;
-    background-color: #ffffff;
+    fill: var(--main-text-color);
+    background-color: var(--main-bg-color);
 }
 
 .card--overview .card-content {
-    background-color: #ffffff;
+    background-color: var(--main-bg-color);
     -webkit-clip-path: circle(0% at 91.5% 75px);
     clip-path: circle(0% at 91.5% 75px);
 }
 
 
 .card--github .block__img--1 {
-    transform: translateY(-20px)  translateX(-40px);
+    transform: translateY(-20px) translateX(-40px);
 }
+
 .card--github .block__img--2 {
     transform: translateY(-30px);
     /*z-index: 1;*/
@@ -111,5 +116,5 @@
 }
 
 .card--linkedin .block__img--1 {
-    transform: translateY(10%)  ;
+    transform: translateY(10%);
 }

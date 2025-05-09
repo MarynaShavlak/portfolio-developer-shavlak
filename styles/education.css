@@ -1,12 +1,13 @@
 .education__canvas__container {
     position: relative;
     width: 1170px;
-    height:650px;
-     canvas {
-         position: absolute;
-         top: 0;
-         left: 0;
-     }
+    height: 650px;
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
     .education__tooltips__container {
         position: absolute;
@@ -21,13 +22,13 @@
 
 .education-item {
     opacity: 0;
-    background-color: #FFC2D9;
-    color: #1a1a1a;
-    width:fit-content;
-    padding:10px;
+    background-color: var(--default-bg-color);
+    color: var(--main-black-color);
+    width: fit-content;
+    padding: 10px;
     border-radius: 20px;
     display: flex;
-    gap:30px;
+    gap: 30px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -35,7 +36,7 @@
 .education-item:nth-child(1) {
     position: absolute;
     top: 200px;
-    left:15px;
+    left: 15px;
 }
 
 .education-item:nth-child(1)::before {
@@ -46,14 +47,14 @@
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 20px solid #FFC2D9;
+    border-top: 20px solid var(--default-bg-color);
 }
 
 
 .education-item:nth-child(2) {
     position: absolute;
     top: 480px;
-    left:195px;
+    left: 195px;
 }
 
 .education-item:nth-child(2)::before {
@@ -64,13 +65,13 @@
     /*transform: translateX(-100px);*/
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 20px solid #FFC2D9;
+    border-bottom: 20px solid var(--default-bg-color);
 }
 
 .education-item:nth-child(3) {
     position: absolute;
     top: 30px;
-    left:430px;
+    left: 430px;
 }
 
 .education-item:nth-child(3)::before {
@@ -81,14 +82,14 @@
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 20px solid #FFC2D9;
+    border-top: 20px solid var(--default-bg-color);
 }
 
 
 .education-item:nth-child(4) {
     position: absolute;
     top: 370px;
-    left:610px;
+    left: 610px;
 }
 
 .education-item:nth-child(4)::before {
@@ -99,13 +100,13 @@
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 20px solid #FFC2D9;
+    border-bottom: 20px solid var(--default-bg-color);
 }
 
 .education-item:last-child {
     position: absolute;
     top: 220px;
-    right:0;
+    right: 0;
 }
 
 .education-item:last-child::before {
@@ -116,24 +117,26 @@
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 20px solid #FFC2D9;
+    border-bottom: 20px solid var(--default-bg-color);
 }
 
 
 .education-icon {
     img {
-        width:40px;
-        height:40px
+        width: 40px;
+        height: 40px
     }
+
     i {
         font-size: 40px;
     }
 
 }
+
 .education__details {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
 
 }
 
@@ -141,13 +144,12 @@
     font-weight: 900;
     font-size: 16px;
     max-width: 500px;
-    text-wrap:pretty;
+    text-wrap: pretty;
 }
 
 .education-item:nth-child(1) .education__organization {
     max-width: 300px;
 }
-
 
 
 .education__period {
