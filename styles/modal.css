@@ -31,7 +31,7 @@ body.modal-open {
     width: 830px;
 }
 
-.close-modal-btn {
+.close-modal-btn, .close-form-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +52,8 @@ body.modal-open {
     font-size: 30px;
 }
 
-.close-modal-btn:hover {
-    color:#FF5BA7
+.close-modal-btn:hover, .close-form-btn:hover {
+    color:#FF5BA7;
+    fill: #FF5BA7;
 }
 

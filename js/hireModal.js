@@ -24,7 +24,7 @@ function setHireModalInfo() {
         $('.contact-wrap').toggleClass('active');
     });
 
-    $('.contact-wrap .close').on('click', function () {
+    $('.contact-wrap .close-form-btn').on('click', function () {
         $('.contact-wrap').toggleClass('active');
         resetSendFormData();
     });

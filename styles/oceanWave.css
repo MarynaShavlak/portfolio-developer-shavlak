@@ -1,12 +1,12 @@
 .ocean {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
 
 }
 
 .wave {
-   background-repeat: repeat-x;
+    background-repeat: repeat-x;
     background-size: 80px auto;
     background-position: bottom;
     position: absolute;
@@ -17,7 +17,7 @@
 }
 
 .ocean--blog {
-    z-index:-1;
+    z-index: -1;
 }
 
 
@@ -25,7 +25,7 @@
     background-image: url('../assets/images/icons/wave-blue.svg');
     width: 370px;
     height: 200px;
-    z-index:2;
+    z-index: 2;
 }
 
 .ocean--contact .wave {
@@ -33,7 +33,16 @@
     width: 540px;
     height: 50px;
     bottom: -10px;
-    left:-20px;
+    left: -20px;
+
+}
+
+.ocean--contact-modal .wave {
+    background-image: url('../assets/images/icons/wave-white.svg');
+    width: 780px;
+    height: 50px;
+    bottom: -10px;
+    left: -20px;
 
 }
 

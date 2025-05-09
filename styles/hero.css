@@ -10,31 +10,32 @@
 }
 
 #cloudCanvas {
-    position:absolute;
-    top:0;
-    left:0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
 .second-cloud-wrapper {
-    width:100%;
-    position:absolute;
-    top:0;
-    bottom:0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     transform: translateY(40%);
+
     canvas {
-        z-index:2;
+        z-index: 2;
 
     }
 
 }
 
 .container--hero {
-    z-index:1;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     /*flex-direction: column;*/
-  /*align-items: flex-end;*/
+    /*align-items: flex-end;*/
     margin-top: 30px;
 }
 
@@ -49,12 +50,12 @@
 .hero__greet {
     font-size: 52px;
     color: #1A4A7A;
-    font-weight:700;
+    font-weight: 700;
 }
 
 .hero__title {
     /*font-family: "Lustria", serif;*/
-    font-family:Garamond, serif;
+    font-family: Garamond, serif;
     font-size: 170px;
     font-weight: 900;
     /*text-shadow: 0 0 15px rgba(0,0,0,.5), 0 0 10px rgba(0,0,0,.5);*/
@@ -71,10 +72,11 @@
 
 
     /*text-wrap: pretty;*/
- span {
-     font-weight:900;
-     font-size: 60px;
- }
+
+    span {
+        font-weight: 900;
+        font-size: 60px;
+    }
 }
 
 .hero__socials {
@@ -92,11 +94,12 @@
 .hero__email {
     position: relative;
     color: #1A4A7A;
-    cursor:copy;
+    cursor: copy;
     transition: color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.hero__email:hover{
-    color:#FF5BA7;
+
+.hero__email:hover {
+    color: #FF5BA7;
 }
 
 
@@ -132,7 +135,7 @@
     width: 40px;
     height: 40px;
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius:100%;
+    border-radius: 100%;
     background-color: #FF5BA7;
 
 }
@@ -140,9 +143,10 @@
 .socials__item:hover {
     box-shadow: 0 0 8px #FF5BA7, inset 0 0 8px #FF5BA7;
     background-color: #ffffff;
-      i {
-          color: #FF5BA7;
-      }
+
+    i {
+        color: #FF5BA7;
+    }
 }
 
 
@@ -160,13 +164,14 @@
     font-size: 25px;
     transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hero__action-btn-list {
     align-self: flex-start;
     gap: 20px;
 }
 
 .action-btn {
-   padding:  1.05em 1.7em;
+    padding: 1.05em 1.7em;
     font-size: 16px;
     border-radius: 30px;
     background-color: #FFffff;

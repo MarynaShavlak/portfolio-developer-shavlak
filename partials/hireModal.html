@@ -1,303 +1,330 @@
 <div class="modal cards">
-        <button class="close-modal-btn" type="button" data-close>
+    <button class="close-modal-btn" type="button" data-close>
+        <i class="fa-solid fa-xmark close-icon"></i>
+    </button>
+
+
+    <div class="contact-wrap">
+        <button type="button" class="close-form-btn">
             <i class="fa-solid fa-xmark close-icon"></i>
         </button>
-
-
-        <div class="contact-wrap">
-            <button type="button" class="close">
-                <svg class="card-toggle__icon" width="30" height="30">
-                    <use href="assets/images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-            <form class="hire-form">
-                <div class="control">
-                    <input type="text" id="name" /><label for="name">Your Name</label>
+        <div class="form__wrapper">
+            <form class="contact-form contact-form--modal">
+                <div class="control control--modal">
+                    <input type="text" id="contact-name"/><label for="contact-name">Name:</label>
                     <span class="error-message" id="name-error"></span>
                 </div>
-                <div class="control">
-                    <input type="text" id="email" /><label for="email"
-                >Email Address</label
+                <div class="control control--modal">
+                    <input type="text" id="contact-email"/><label for="contact-email"
+                >Email Address:</label
                 >
                     <span class="error-message" id="email-error"></span>
                 </div>
-                <div class="control">
-                    <input type="text" id="phone" /><label for="phone">Phone</label>
+                <div class="control control--modal">
+                    <input type="text" id="contact-phone"/><label for="contact-phone">Phone:</label>
                     <span class="error-message" id="phone-error"></span>
                 </div>
-                <div class="control">
-              <textarea name="" id="message"></textarea
-              ><label for="message">Message</label>
-                    <span class="error-message" id="message-error"></span>
+                <div class="control control--modal">
+              <textarea name="" id="contact-message"></textarea
+              ><label for="contact-message">Your Message: </label>
+                    <span class="error-message" id="contact-message-error"></span>
                 </div>
-                <div class="control submit">
-                    <button type="submit" class="form__submit-btn">
-                        Send message
-                    </button>
+
+                <button type="button" class="contact__btn star-btn">
+                    <div class="star-1">
+                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-2">
+                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-3">
+                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-4">
+                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-5">
+                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                    </div>
+                    <div class="star-6">
+                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                    </div>
+                    Send message
+
+                </button>
+
+
+                <div class="ocean ocean--contact-modal">
+                    <div class="wave"></div>
                 </div>
             </form>
+
         </div>
-        <div class="card card--overview active" id="overview">
-            <button type="button" class="card-toggle socials__item">
-                <svg class="card-toggle__icon" width="30" height="30">
-                    <use href="assets/images/icons.svg#icon-arrow"></use>
-                </svg>
-            </button>
-            <div class="card-content">
-                <h2 class="card-content__title">Let's Connect and Collaborate!</h2>
-                <div class="content__wrapper">
-                    <div class="img__wrap">
-                        <img class="contacts__image" src="assets/images/Marynka_white.jpg" />
-                    </div>
-                    <div class="block--left block">
-                        <p class="block__text">
-                            Join me on my digital journey to discover new ways to connect and explore exciting opportunities.
-                        </p>
-                        <p class="block__text">
-                            Stay updated on my latest projects and connect with me across social platforms to forge valuable professional relationships.
-                        </p>
-                    </div>
-                    <div class="block block--right block--start section__wrap">
-
-                        <div class="wrap--second">
-                            <ul class="contacts__block">
-                                <li class="contacts__item">
-                                    <a
-                                            href="tel:+380961111111"
-                                            class="contacts__link"
-                                            target="_blank"
-                                    >
-                                        <svg class="contacts__icon" width="20" height="20">
-                                            <use href="assets/images/icons.svg#icon-call"></use>
-                                        </svg>
-                                        <span>+380996499126</span>
-
-                                    </a>
-                                </li>
-                                <li class="contacts__item">
-                                    <a
-                                            href="mailto:shavlakmaryna@gmail.com"
-                                            class="contacts__link"
-                                            target="_blank"
-                                    >
-                                        <svg class="contacts__icon" width="20" height="20">
-                                            <use href="assets/images/icons.svg#icon-email-black"></use>
-                                        </svg>
-                                        <span>shavlakmaryna@gmail.com</span>
-
-                                    </a>
-                                </li>
-                                <li class="contacts__item">
-                                    <a
-                                            href="https://t.me/Marynka_28"
-                                            class="contacts__link"
-                                            target="_blank"
-                                    >
-                                        <svg class="contacts__icon" width="20" height="20">
-                                            <use href="assets/images/icons.svg#icon-telegram"></use>
-                                        </svg>
-                                        <span>@Marynka_28</span>
-
-                                    </a>
-                                </li>
-                                <li class="contacts__item">
-                                    <a
-                                            href="https:/viber.com/chat?number=+380996499126"
-                                            class="contacts__link"
-                                            target="_blank"
-                                    >
-                                        <svg class="contacts__icon" width="20" height="20">
-                                            <use href="assets/images/icons.svg#icon-viber"></use>
-                                        </svg>
-                                        <span>Join me on Viber for a chat!</span>
-
-                                    </a>
-                                </li>
-                                <li class="contacts__item">
-                                    <a
-                                            href="https://api.whatsapp.com/send?phone==+380996499126"
-                                            class="contacts__link"
-                                            target="_blank"
-                                    >
-                                        <svg class="contacts__icon" width="20" height="20">
-                                            <use href="assets/images/icons.svg#icon-whatsapp"></use>
-                                        </svg>
-                                        <span>Let's chat on WhatsApp!</span>
-
-                                    </a>
-                                </li>
-                                <li class="contacts__item">
-                                    <a
-                                            href="https://maps.app.goo.gl/PD7ULB96zUPKXC649" class="contacts__link"
-                                            target="_blank"
-                                    >
-                                        <svg class="contacts__icon" width="20" height="20">
-                                            <use href="assets/images/icons.svg#icon-location"></use>
-                                        </svg>
-                                        <span>Ivano-Frankivsk, Ukraine</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <button class="button star-btn action-btn hire-btn">
-                                <div class="star-1">
-                                    <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
-                                </div>
-                                <div class="star-2">
-                                    <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
-                                </div>
-                                <div class="star-3">
-                                    <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
-                                </div>
-                                <div class="star-4">
-                                    <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
-                                </div>
-                                <div class="star-5">
-                                    <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
-                                </div>
-                                <div class="star-6">
-                                    <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
-                                </div>
-                                Hire me
-                            </button>
-                        </div>
-                    </div>
-
+    </div>
+    <div class="card card--overview active" id="overview">
+        <button type="button" class="card-toggle socials__item">
+            <svg class="card-toggle__icon" width="30" height="30">
+                <use href="assets/images/icons.svg#icon-arrow"></use>
+            </svg>
+        </button>
+        <div class="card-content">
+            <h2 class="card-content__title">Let's Connect and Collaborate!</h2>
+            <div class="content__wrapper">
+                <div class="img__wrap">
+                    <img class="contacts__image" src="assets/images/Marynka_white.jpg"/>
                 </div>
-            </div>
-        </div>
-        <div class="card card--instagram">
-            <button type="button" class="card-toggle socials__item">
-                <i class="fa-brands fa-instagram"></i>
-            </button>
-            <div class="card-content">
-                <div class="content__wrapper">
-                    <div class="block--left block">
-                        <h2 class="card-content__title">
-                            <a
-                                    href="https://www.instagram.com/dev_interview_hub?igsh=NWJmenlndHVrZGt4"
-                                    class="card-content__link"
-                                    target="_blank"
-                            >
-                                <i class="fa-brands fa-instagram card-content__icon"></i>
+                <div class="block--left block">
+                    <p class="block__text">
+                        Join me on my digital journey to discover new ways to connect and explore exciting
+                        opportunities.
+                    </p>
+                    <p class="block__text">
+                        Stay updated on my latest projects and connect with me across social platforms to forge valuable
+                        professional relationships.
+                    </p>
+                </div>
+                <div class="block block--right block--start section__wrap">
 
-                                My Instagram
-                            </a>
-                        </h2>
-                        <p class="block__text">
-                            Discover the magic of JavaScript with me on Instagram at
-                            <a href="https://www.instagram.com/dev_interview_hub?igsh=NWJmenlndHVrZGt4" target="_blank" rel="noopener noreferrer">
-                                dev_interview_hub!
-                            </a>
+                    <div class="wrap--second">
+                        <ul class="contacts__block">
+                            <li class="contacts__item">
+                                <a
+                                        href="tel:+380961111111"
+                                        class="contacts__link"
+                                        target="_blank"
+                                >
+                                    <svg class="contacts__icon" width="20" height="20">
+                                        <use href="assets/images/icons.svg#icon-call"></use>
+                                    </svg>
+                                    <span>+380996499126</span>
 
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a
+                                        href="mailto:shavlakmaryna@gmail.com"
+                                        class="contacts__link"
+                                        target="_blank"
+                                >
+                                    <svg class="contacts__icon" width="20" height="20">
+                                        <use href="assets/images/icons.svg#icon-email-black"></use>
+                                    </svg>
+                                    <span>shavlakmaryna@gmail.com</span>
 
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a
+                                        href="https://t.me/Marynka_28"
+                                        class="contacts__link"
+                                        target="_blank"
+                                >
+                                    <svg class="contacts__icon" width="20" height="20">
+                                        <use href="assets/images/icons.svg#icon-telegram"></use>
+                                    </svg>
+                                    <span>@Marynka_28</span>
 
-                        </p>
-                        <p class="block__text">
-                            Decode tricky logic, boost your JS skills, and join a community of developers mastering tech interview puzzles.
-                        </p>
-                        <p class="block__text">
-                            Let's connect and share our aha moments!
-                        </p>
-                        <p class="block__text">
-                            Follow for inspiring JS tips and discussions.
-                        </p>
-                    </div>
-                    <div class="block--right block">
-                        <img
-                                src="../assets/images/socialCards/instagram.jpg"
-                                alt="project preview"
-                        />
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a
+                                        href="https:/viber.com/chat?number=+380996499126"
+                                        class="contacts__link"
+                                        target="_blank"
+                                >
+                                    <svg class="contacts__icon" width="20" height="20">
+                                        <use href="assets/images/icons.svg#icon-viber"></use>
+                                    </svg>
+                                    <span>Join me on Viber for a chat!</span>
+
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a
+                                        href="https://api.whatsapp.com/send?phone==+380996499126"
+                                        class="contacts__link"
+                                        target="_blank"
+                                >
+                                    <svg class="contacts__icon" width="20" height="20">
+                                        <use href="assets/images/icons.svg#icon-whatsapp"></use>
+                                    </svg>
+                                    <span>Let's chat on WhatsApp!</span>
+
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a
+                                        href="https://maps.app.goo.gl/PD7ULB96zUPKXC649" class="contacts__link"
+                                        target="_blank"
+                                >
+                                    <svg class="contacts__icon" width="20" height="20">
+                                        <use href="assets/images/icons.svg#icon-location"></use>
+                                    </svg>
+                                    <span>Ivano-Frankivsk, Ukraine</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="button star-btn action-btn hire-btn">
+                            <div class="star-1">
+                                <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                            </div>
+                            <div class="star-2">
+                                <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                            </div>
+                            <div class="star-3">
+                                <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                            </div>
+                            <div class="star-4">
+                                <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                            </div>
+                            <div class="star-5">
+                                <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                            </div>
+                            <div class="star-6">
+                                <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                            </div>
+                            Hire me
+                        </button>
                     </div>
                 </div>
+
             </div>
         </div>
-        <div class="card card--linkedin">
-            <button type="button" class="card-toggle socials__item">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </button>
-            <div class="card-content">
-                <div class="content__wrapper">
-                    <div class="block--left block">
-                        <h2 class="card-content__title">
-                            <a
-                                    href="https://www.linkedin.com/in/maryna-shavlak/"
-                                    class="card-content__link"
-                                    target="_blank"
-                            >
-                                <i class="fa-brands fa-linkedin-in card-content__icon"></i>
-                                My Linkedin
-                            </a>
-                        </h2>
-                        <p class="block__text">
-                            Unlock the gateway to my professional network on LinkedIn.
-                        </p>
-                        <p class="block__text">
-                            Dive into my career journey, accomplishments, and industry
-                            insights.
-                        </p>
-                        <p class="block__text">
-                            Let's connect and explore opportunities together in the world
-                            of front-end development!
-                        </p>
-                    </div>
-                    <div class="block--right block">
-                        <img
-                                class="block__img--1"
-                                src="../assets/images/socialCards/linkedin.jpg"
-                                alt="project preview"
-                        />
-                    </div>
+    </div>
+    <div class="card card--instagram">
+        <button type="button" class="card-toggle socials__item">
+            <i class="fa-brands fa-instagram"></i>
+        </button>
+        <div class="card-content">
+            <div class="content__wrapper">
+                <div class="block--left block">
+                    <h2 class="card-content__title">
+                        <a
+                                href="https://www.instagram.com/dev_interview_hub?igsh=NWJmenlndHVrZGt4"
+                                class="card-content__link"
+                                target="_blank"
+                        >
+                            <i class="fa-brands fa-instagram card-content__icon"></i>
+
+                            My Instagram
+                        </a>
+                    </h2>
+                    <p class="block__text">
+                        Discover the magic of JavaScript with me on Instagram at
+                        <a href="https://www.instagram.com/dev_interview_hub?igsh=NWJmenlndHVrZGt4" target="_blank"
+                           rel="noopener noreferrer">
+                            dev_interview_hub!
+                        </a>
+
+
+                    </p>
+                    <p class="block__text">
+                        Decode tricky logic, boost your JS skills, and join a community of developers mastering tech
+                        interview puzzles.
+                    </p>
+                    <p class="block__text">
+                        Let's connect and share our aha moments!
+                    </p>
+                    <p class="block__text">
+                        Follow for inspiring JS tips and discussions.
+                    </p>
                 </div>
-            </div>
-        </div>
-        <div class="card card--github">
-            <button type="button" class="card-toggle socials__item">
-                <i class="fa-brands fa-github"></i>
-            </button>
-            <div class="card-content">
-                <div class="content__wrapper">
-                    <div class="block--left block">
-                        <h2 class="card-content__title">
-                            <a
-                                    href="https://github.com/MarynaShavlak"
-                                    class="card-content__link"
-                                    target="_blank"
-                            >
-                                <i class="fa-brands fa-github card-content__icon"></i>
-
-                                My GitHub
-                            </a>
-                        </h2>
-                        <p class="block__text">
-                            Explore my GitHub to see my latest frontend projects!
-
-
-                        </p>
-                        <p class="block__text">
-                            I’m constantly coding, learning, and pushing my skills forward.
-                        </p>
-                        <p class="block__text">
-                            Let’s connect and share ideas!
-                        </p>
-                    </div>
-                    <div class="block--right block">
-                        <img
-                                class="block__img--1"
-                                src="../assets/images/socialCards/github-1.jpg"
-                                alt="git hub activity chart 2025"
-                        />
-                        <img
-                                class="block__img--2"
-                                src="../assets/images/socialCards/github-2.jpg"
-                                alt="git hub activity chart 2024"
-                        />
-                        <img
-                                class="block__img--3"
-                                src="../assets/images/socialCards/github-3.jpg"
-                                alt="git hub activity chart 2023"
-                        />
-                    </div>
+                <div class="block--right block">
+                    <img
+                            src="../assets/images/socialCards/instagram.jpg"
+                            alt="project preview"
+                    />
                 </div>
             </div>
         </div>
     </div>
+    <div class="card card--linkedin">
+        <button type="button" class="card-toggle socials__item">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </button>
+        <div class="card-content">
+            <div class="content__wrapper">
+                <div class="block--left block">
+                    <h2 class="card-content__title">
+                        <a
+                                href="https://www.linkedin.com/in/maryna-shavlak/"
+                                class="card-content__link"
+                                target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin-in card-content__icon"></i>
+                            My Linkedin
+                        </a>
+                    </h2>
+                    <p class="block__text">
+                        Unlock the gateway to my professional network on LinkedIn.
+                    </p>
+                    <p class="block__text">
+                        Dive into my career journey, accomplishments, and industry
+                        insights.
+                    </p>
+                    <p class="block__text">
+                        Let's connect and explore opportunities together in the world
+                        of front-end development!
+                    </p>
+                </div>
+                <div class="block--right block">
+                    <img
+                            class="block__img--1"
+                            src="../assets/images/socialCards/linkedin.jpg"
+                            alt="project preview"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card--github">
+        <button type="button" class="card-toggle socials__item">
+            <i class="fa-brands fa-github"></i>
+        </button>
+        <div class="card-content">
+            <div class="content__wrapper">
+                <div class="block--left block">
+                    <h2 class="card-content__title">
+                        <a
+                                href="https://github.com/MarynaShavlak"
+                                class="card-content__link"
+                                target="_blank"
+                        >
+                            <i class="fa-brands fa-github card-content__icon"></i>
+
+                            My GitHub
+                        </a>
+                    </h2>
+                    <p class="block__text">
+                        Explore my GitHub to see my latest frontend projects!
+
+
+                    </p>
+                    <p class="block__text">
+                        I’m constantly coding, learning, and pushing my skills forward.
+                    </p>
+                    <p class="block__text">
+                        Let’s connect and share ideas!
+                    </p>
+                </div>
+                <div class="block--right block">
+                    <img
+                            class="block__img--1"
+                            src="../assets/images/socialCards/github-1.jpg"
+                            alt="git hub activity chart 2025"
+                    />
+                    <img
+                            class="block__img--2"
+                            src="../assets/images/socialCards/github-2.jpg"
+                            alt="git hub activity chart 2024"
+                    />
+                    <img
+                            class="block__img--3"
+                            src="../assets/images/socialCards/github-3.jpg"
+                            alt="git hub activity chart 2023"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
