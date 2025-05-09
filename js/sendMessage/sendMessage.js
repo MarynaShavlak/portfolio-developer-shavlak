@@ -96,25 +96,22 @@
 //   $(".contact-form--modal .control").removeClass("filled");
 // }
 
-import { hideHireModal } from "../hireModal.js";
+import { hideHireModal } from "../hireModal/hireModal.js";
 
 export function sendMessage(config) {
   console.log("sendMessage config:", config);
 
   if (!config || typeof config !== "object") {
     console.warn("Invalid config provided, falling back to defaultConfig");
-    config = defaultConfig;
   }
 
   if (!config.fields || !Array.isArray(config.fields)) {
     console.warn(
       "config.fields is missing or not an array, using defaultConfig.fields",
     );
-    config = { ...defaultConfig, ...config };
   }
 
   const isValid = isFormValid(config);
-  console.log("isValid", isValid);
 
   if (isValid) {
     const formData = {
@@ -132,9 +129,6 @@ export function sendMessage(config) {
 }
 
 function isFormValid(config) {
-  console.log("isFormValid config:", config);
-  console.log("config.fields:", config.fields);
-
   if (!config.fields || !Array.isArray(config.fields)) {
     console.error("config.fields is not an array:", config.fields);
     return false;
@@ -163,7 +157,7 @@ function isFormValid(config) {
     validationFunction = null,
     minLength = null,
   ) {
-    console.log("Validating selector:", selector);
+    console.log("selector", selector);
     const fieldValue = $(selector).val().trim();
 
     if (fieldValue === "") {

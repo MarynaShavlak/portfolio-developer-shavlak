@@ -1,5 +1,5 @@
-import { sendMessage } from "./sendMessage/sendMessage.js";
-import { modalFormConfig } from "./sendMessage/selectorsConfig.js";
+import { resetSendFormData, sendMessage } from "../sendMessage/sendMessage.js";
+import { modalFormConfig } from "./modalFormConfig.js";
 
 export function initHireModal() {
   setHireModalInfo();
@@ -39,7 +39,7 @@ function setHireModalInfo() {
 
   $(".contact-wrap .close-form-btn").on("click", function () {
     $(".contact-wrap").toggleClass("active");
-    resetSendFormData();
+    resetSendFormData(modalFormConfig);
   });
 
   const allCardToggleLinks = $(".card-toggle");

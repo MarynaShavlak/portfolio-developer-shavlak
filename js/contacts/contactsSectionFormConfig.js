@@ -1,38 +1,38 @@
-import { isValidEmail, isValidPhone } from "./helpers.js";
+import { isValidEmail, isValidPhone } from "../sendMessage/helpers.js";
 
-export const modalFormConfig = {
+export const contactsSectionFormConfig = {
   selectors: {
-    name: "#modal__contact-name",
-    email: "#modal__contact-email",
-    phone: "#modal__contact-phone",
-    message: "#modal__contact-message",
+    name: "#contact-name",
+    email: "#contact-email",
+    phone: "#contact-phone",
+    message: "#contact-message",
   },
   fields: [
     {
-      selector: "#modal__contact-name",
+      selector: "#contact-name",
       requiredError: "Name is required",
       formatError: "Name should have at least 2 characters",
       minLength: 2,
     },
     {
-      selector: "#modal__contact-email",
+      selector: "#contact-email",
       requiredError: "Email is required",
       formatError: "Invalid email address",
       validationFunction: isValidEmail,
     },
     {
-      selector: "#modal__contact-phone",
+      selector: "#contact-phone",
       requiredError: "Phone number is required",
       formatError: "Phone number should have 10 digits",
       validationFunction: isValidPhone,
     },
     {
-      selector: "#modal__contact-message",
+      selector: "#contact-message",
       requiredError: "Message is required",
       formatError: null,
     },
   ],
-  errorMessageSelector: ".modal__error-message",
+  errorMessageSelector: ".contacts__error-message",
   toggleClassSelector: ".contact-wrap",
-  formControlSelector: ".contact-form--modal .control",
+  formControlSelector: ".contact-form .control",
 };
