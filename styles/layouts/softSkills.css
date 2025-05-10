@@ -1,0 +1,108 @@
+.building {
+    max-width: 600px;
+    width: 100%;
+    border: 3px solid #b59b7c;
+    background: #fff8f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.section:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.section:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.section:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.section:nth-child(4) {
+    animation-delay: 1.4s;
+}
+
+.section:nth-child(5) {
+    animation-delay: 1.8s;
+}
+
+.section:nth-child(6) {
+    animation-delay: 2.2s;
+}
+
+.section:nth-child(7) {
+    animation-delay: 2.6s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.roof, .floor, .foundation {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.roof {
+    background: #d7c3a3;
+    border-bottom: 4px solid #a78f6d;
+}
+
+.roof-icons {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.floor {
+    border-top: 2px solid #c6b293;
+    background: #fff3e5;
+}
+
+.floor .icons {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.floor h3 {
+    margin: 0.2rem 0;
+    font-size: 1.1rem;
+    color: #2f2215;
+}
+
+.floor p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.foundation {
+    background: #bfa78d;
+    color: #1e120b;
+    border-top: 4px solid #8c745b;
+}
+
+.foundation .roots {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}

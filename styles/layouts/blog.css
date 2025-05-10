@@ -2,7 +2,9 @@
     background-color: var(--light-bg-color);
     margin-top: 150px;
     padding-bottom: 100px;
-    mask: linear-gradient(to bottom, #000 calc(100% - 50px), transparent);
+    /*mask: linear-gradient(to bottom, #000 calc(100% - 50px), transparent);*/
+    mask: linear-gradient(to bottom, transparent 0, #000 50px, #000 calc(100% - 50px), transparent 100%);
+    padding-top: 50px;
     /*padding-top: 14rem;*/
     /*padding-bottom: 8rem;*/
 }
