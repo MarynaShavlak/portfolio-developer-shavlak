@@ -3,12 +3,12 @@ import { ctx } from "../../config/canvasConfig.js";
 export function drawSectionBlocks(coordArr) {
   setElementParams(
     $(".block--education"),
-    80,
+    60,
     coordArr[2].x - 15,
     1050 - (coordArr[2].x + 50),
   );
   setElementParams($(".block--experience"), 480, 25, coordArr[5].x - 50 - 50);
-  setElementParams($(".block--software"), 80, 25, coordArr[5].x - 50 - 50);
+  setElementParams($(".block--software"), 60, 25, coordArr[5].x - 50 - 50);
   setElementParams(
     $(".block--expertise"),
     480, //670
@@ -17,7 +17,7 @@ export function drawSectionBlocks(coordArr) {
   );
   setElementParams(
     $(".block--about"),
-    30,
+    15,
     coordArr[5].x - 20,
     coordArr[2].x - 30 - (coordArr[5].x + 30),
   );
