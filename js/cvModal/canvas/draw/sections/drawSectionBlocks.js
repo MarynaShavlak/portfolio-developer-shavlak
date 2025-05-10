@@ -38,29 +38,30 @@ function setElementParams(el, top, left, width) {
 }
 
 export function drawSectionLabels(coordArr) {
-  ctx.beginPath();
+  ctx.beginPath(); //software
   ctx.strokeStyle = "#FF5BA7";
   ctx.lineWidth = "3";
-  ctx.moveTo(50, 80);
-  ctx.lineTo(coordArr[5].x - 50, 80);
-  ctx.lineTo(coordArr[5].x - 50, 130);
-  ctx.lineTo(50, 130);
-  ctx.lineTo(70, 105);
+  ctx.moveTo(50, 210);
+  ctx.lineTo(coordArr[5].x - 50, 210);
+  ctx.lineTo(coordArr[5].x - 50, 260);
+  ctx.lineTo(50, 260);
+  ctx.lineTo(70, 235);
   ctx.closePath();
   ctx.fillStyle = "#FF5BA7";
   ctx.fill();
   ctx.stroke();
 
-  ctx.beginPath();
-  ctx.moveTo(1050, 80);
-  ctx.lineTo(coordArr[2].x + 50, 80);
-  ctx.lineTo(coordArr[2].x + 50, 130);
-  ctx.lineTo(1050, 130);
-  ctx.lineTo(1030, 105);
+  ctx.beginPath(); //education
+  ctx.moveTo(1050, 210);
+  ctx.lineTo(coordArr[2].x + 50, 210);
+  ctx.lineTo(coordArr[2].x + 50, 260);
+  ctx.lineTo(1050, 260);
+  ctx.lineTo(1030, 235);
   ctx.closePath();
   ctx.fill();
   ctx.stroke();
-  ctx.beginPath();
+
+  ctx.beginPath(); //experience
   ctx.moveTo(50, 670);
   ctx.lineTo(coordArr[5].x - 50, 670);
   ctx.lineTo(coordArr[5].x - 50, 720);
@@ -70,7 +71,7 @@ export function drawSectionLabels(coordArr) {
   ctx.fill();
   ctx.stroke();
 
-  ctx.beginPath();
+  ctx.beginPath(); //expertise
   ctx.moveTo(1050, 670);
   ctx.lineTo(coordArr[2].x + 50, 670);
   ctx.lineTo(coordArr[2].x + 50, 720);
@@ -80,21 +81,21 @@ export function drawSectionLabels(coordArr) {
   ctx.fill();
   ctx.stroke();
 
-  ctx.beginPath();
+  ctx.beginPath(); //about me
   ctx.strokeStyle = "#FF5BA7";
   ctx.lineWidth = "3";
-  ctx.moveTo(coordArr[5].x + 30, 30);
-  ctx.lineTo(coordArr[2].x - 30, 30);
-  ctx.lineTo(coordArr[2].x - 50, 55);
-  ctx.lineTo(coordArr[2].x - 30, 80);
-  ctx.lineTo(coordArr[5].x + 30, 80);
-  ctx.lineTo(coordArr[5].x + 50, 55);
+  ctx.moveTo(coordArr[5].x + 30, 160); // 30
+  ctx.lineTo(coordArr[2].x - 30, 160); // 30
+  ctx.lineTo(coordArr[2].x - 50, 185); //55
+  ctx.lineTo(coordArr[2].x - 30, 210); //80
+  ctx.lineTo(coordArr[5].x + 30, 210); //80
+  ctx.lineTo(coordArr[5].x + 50, 185); //55
   ctx.closePath();
   ctx.fillStyle = "#FF5BA7";
   ctx.fill();
   ctx.stroke();
 
-  ctx.beginPath();
+  ctx.beginPath(); // languages
   ctx.strokeStyle = "#FF5BA7";
   ctx.lineWidth = "3";
   ctx.moveTo(coordArr[5].x + 30, 770);
