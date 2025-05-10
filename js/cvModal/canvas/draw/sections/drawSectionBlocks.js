@@ -23,7 +23,7 @@ export function drawSectionBlocks(coordArr) {
   );
   setElementParams(
     $(".block--languages"),
-    565, //770
+    510, //770
     coordArr[5].x - 20, // +30
     coordArr[2].x - 30 - (coordArr[5].x + 30),
   );
@@ -98,12 +98,12 @@ export function drawSectionLabels(coordArr) {
   ctx.beginPath(); // languages
   ctx.strokeStyle = "#FF5BA7";
   ctx.lineWidth = "3";
-  ctx.moveTo(coordArr[5].x + 30, 770);
-  ctx.lineTo(coordArr[2].x - 30, 770);
-  ctx.lineTo(coordArr[2].x - 50, 795);
-  ctx.lineTo(coordArr[2].x - 30, 820);
-  ctx.lineTo(coordArr[5].x + 30, 820);
-  ctx.lineTo(coordArr[5].x + 50, 795);
+  ctx.moveTo(coordArr[5].x + 30, 710);
+  ctx.lineTo(coordArr[2].x - 30, 710);
+  ctx.lineTo(coordArr[2].x - 50, 735);
+  ctx.lineTo(coordArr[2].x - 30, 760);
+  ctx.lineTo(coordArr[5].x + 30, 760);
+  ctx.lineTo(coordArr[5].x + 50, 735);
   ctx.closePath();
   ctx.fillStyle = "#FF5BA7";
   ctx.fill();

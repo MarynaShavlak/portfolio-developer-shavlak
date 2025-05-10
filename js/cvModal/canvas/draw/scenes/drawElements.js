@@ -42,7 +42,7 @@ export function drawElements() {
     x1: coordArr[3].x,
     y1: coordArr[3].y,
     x2: coordArr[3].x,
-    y2: coordArr[3].y + 60,
+    y2: coordArr[3].y + 30,
   };
   const coords6 = {
     x1: coordArr[1].x,
@@ -108,7 +108,7 @@ export function drawElements() {
   drawEmptyCircleDot(coords10.x2 + 35, coords10.y2 - 20, 4);
   drawEmptyCircleDot(coords10.x2, coords10.y2, 4);
   drawLineWithDash(coords4, [3, 2], "#FF5BA7", 2);
-  drawLineWithDash(coords5, [2, 2], "#FF5BA7", 5);
+  drawLineWithDash(coords5, [2, 2], "#FFC2D9", 5);
   drawSolidLine(coords11, "#FF5BA7", 3);
   drawSolidLine(coords12, "#FF5BA7", 3);
   drawSolidLine(coords13, "#FF5BA7", 3);
