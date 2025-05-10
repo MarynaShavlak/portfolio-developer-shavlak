@@ -1,5 +1,6 @@
 import { educationData } from "../../data/educationData.js";
 import { downloadCloudButton } from "../../markup/downloadCloudButton.js";
+import { getImageName } from "../utils/getImageName.js";
 
 export function renderEducationSection() {
   educationData.forEach((data) => {
@@ -10,7 +11,11 @@ export function renderEducationSection() {
 
 // Create a single education item element
 function createEducationItem(data) {
-  const educationItem = $("<li>").addClass("education-item");
+  const orgName = getImageName(data.icon)?.toLowerCase();
+  console.log(orgName);
+  const educationItem = $("<li>").addClass(
+    `education-item ${orgName ? `education-item--${orgName}` : ""}`,
+  );
   const certificateBtn = data.certificate ? downloadCloudButton : null;
 
   const icon = $("<div>").addClass("education-icon").html(`${data.icon}`);

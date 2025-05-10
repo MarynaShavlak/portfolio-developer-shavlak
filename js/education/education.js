@@ -3,10 +3,9 @@ import { computePathPoints } from "./canvas/computePathPoints.js";
 import { drawAnimationFrame } from "./canvas/drawAnimationFrame.js";
 import { computeSpeed } from "./canvas/computeSpeed.js";
 import { drawFinalFrame } from "./canvas/drawFinalFrame.js";
-import { createOffscreenCanvas } from "./canvas/createOffscreenCanvas.js";
 import { drawNumberedPoints } from "./canvas/drawNumberedPoints.js";
-import { educationData } from "../../data/educationData.js";
 import { renderEducationSection } from "./renderEducationSection.js";
+import { handleDownloadCertificate } from "./handleDownloadCertificate.js";
 
 export function initEducationSection() {
   const canvas = document.getElementById("roadCanvas");
@@ -63,26 +62,10 @@ export function initEducationSection() {
 
   renderEducationSection();
 
-  document
-    .querySelector(".downloadCloudBtnIcon ")
-    .addEventListener("click", function () {
-      let waitClass = "waiting",
-        runClass = "running",
-        cl = this.classList;
-
-      if (!cl.contains(waitClass) && !cl.contains(runClass)) {
-        cl.add(waitClass);
-        setTimeout(function () {
-          cl.remove(waitClass);
-          setTimeout(function () {
-            cl.add(runClass);
-            setTimeout(function () {
-              cl.remove(runClass);
-            }, 4000);
-          }, 200);
-        }, 1800);
-      }
-      console.log("loading-cv");
+  document.querySelectorAll(".downloadCloudBtnIcon").forEach((button) => {
+    button.addEventListener("click", function () {
+      handleDownloadCertificate(this);
     });
+  });
   return startAnimation;
 }
