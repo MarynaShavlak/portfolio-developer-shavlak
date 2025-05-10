@@ -46,23 +46,30 @@
     display: block;
     font-size: 30px;
     color: var(--main-bg-color);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: start;
 }
 
 .block-modal-text {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .canvas-list {
     display: flex;
     flex-direction: column;
     text-align: start;
-    font-size: 13px;
+    font-size: 12px;
     gap: 10px;
 }
+
+.canvas-list--education {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 
 .canvas-list--wrapped {
     flex-direction: row;
@@ -91,8 +98,9 @@
 }
 
 .canvas-title {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--main-text-color);
 }
 
 .canvas-italic {
@@ -175,6 +183,7 @@
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.2s linear, color 0.2s linear;
+    display: none;
 }
 
 .download-cv-btn:hover {

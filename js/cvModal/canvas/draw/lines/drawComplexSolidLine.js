@@ -4,15 +4,15 @@ import { drawSolidLine } from "./drawSolidLine.js";
 export function drawComplexSolidLine() {
   const complexLine1Coords = {
     x1: centerX + radius + 30,
-    y1: centerY + 30,
+    y1: centerY + 100,
     x2: centerX + radius + 100,
-    y2: centerY + 30,
+    y2: centerY + 100,
   };
   const complexLine1CoordsFinal = {
     x1: complexLine1Coords.x2,
     y1: complexLine1Coords.y2,
     x2: complexLine1Coords.x2 + 30,
-    y2: complexLine1Coords.y2 + 20,
+    y2: complexLine1Coords.y2 - 20,
   };
   const complexLine1CoordsFinal2 = {
     x1: complexLine1CoordsFinal.x2,

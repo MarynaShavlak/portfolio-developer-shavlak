@@ -3,9 +3,9 @@ import { ctx } from "../../config/canvasConfig.js";
 export function drawSectionBlocks(coordArr) {
   setElementParams(
     $(".block--education"),
-    60,
-    coordArr[2].x - 15,
-    1050 - (coordArr[2].x + 50),
+    40,
+    coordArr[2].x - 35,
+    1050 - coordArr[2].x - 15,
   );
   setElementParams($(".block--experience"), 480, 25, coordArr[5].x - 50 - 50);
   setElementParams($(".block--software"), 60, 25, coordArr[5].x - 50 - 50);
@@ -52,11 +52,11 @@ export function drawSectionLabels(coordArr) {
   ctx.stroke();
 
   ctx.beginPath(); //education
-  ctx.moveTo(1050, 210);
-  ctx.lineTo(coordArr[2].x + 50, 210);
-  ctx.lineTo(coordArr[2].x + 50, 260);
-  ctx.lineTo(1050, 260);
-  ctx.lineTo(1030, 235);
+  ctx.moveTo(1050, 190);
+  ctx.lineTo(coordArr[2].x + 35, 190);
+  ctx.lineTo(coordArr[2].x + 35, 240);
+  ctx.lineTo(1050, 240);
+  ctx.lineTo(1030, 215);
   ctx.closePath();
   ctx.fill();
   ctx.stroke();
@@ -73,8 +73,8 @@ export function drawSectionLabels(coordArr) {
 
   ctx.beginPath(); //expertise
   ctx.moveTo(1050, 670);
-  ctx.lineTo(coordArr[2].x + 50, 670);
-  ctx.lineTo(coordArr[2].x + 50, 720);
+  ctx.lineTo(coordArr[2].x + 35, 670);
+  ctx.lineTo(coordArr[2].x + 35, 720);
   ctx.lineTo(1050, 720);
   ctx.lineTo(1030, 685);
   ctx.closePath();

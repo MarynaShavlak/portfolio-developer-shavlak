@@ -47,8 +47,8 @@ export function drawElements() {
   const coords6 = {
     x1: coordArr[1].x,
     y1: coordArr[1].y,
-    x2: coordArr[1].x + 70,
-    y2: coordArr[1].y - 40,
+    x2: coordArr[1].x + 30,
+    y2: coordArr[1].y - 20,
   };
   const coords7 = {
     x1: coordArr[2].x,
@@ -113,12 +113,12 @@ export function drawElements() {
   drawSolidLine(coords12, "#FF5BA7", 3);
   drawSolidLine(coords13, "#FF5BA7", 3);
   drawSolidLine(coords14, "#FF5BA7", 3);
-  drawLineWithDash(coords6, [1, 3], "#FF5BA7", 3);
+  drawLineWithDash(coords6, [1, 3], "#FFC2D9", 3);
   drawEmptyCircleDot(coords6.x2, coords6.y2, 4);
   drawLineWithDash(coords7, [1, 3], "#FF5BA7", 4);
   drawEmptyCircleDot(670, 650, 5, "#FF5BA7");
   drawEmptyCircleDot(630, 670, 5, "#FF5BA7");
-  drawEmptyCircleDot(centerX + radius + 20, centerY + 30, 5, "#FF5BA7");
+  drawEmptyCircleDot(centerX + radius + 20, centerY + 100, 5, "#FF5BA7");
   drawComplexSolidLine();
   drawDottedComplexLine();
   drawDottedComplexLine(5);
