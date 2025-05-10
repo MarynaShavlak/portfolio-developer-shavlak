@@ -1,14 +1,14 @@
-import { initBlog } from "./js/blog.js";
-import { initReviewsSlider } from "./js/reviewSlider.js";
-import { initPortfolio } from "./js/portfolio.js";
-import { insertPartial } from "./js/partials-loader.js";
-import { initCVModal } from "./js/cvModal.js";
 import { initEducationSection } from "./js/education/education.js";
 import { initToolsSection } from "./js/tools/initToolsSection.js";
 import { initHeroSection } from "./js/hero/initHeroSection.js";
 import { initHireModal } from "./js/hireModal/hireModal.js";
 import { initContactsSection } from "./js/contacts/contacts.js";
 import { initWorkSection } from "./js/work/initWorkSection.js";
+import { insertPartial } from "./js/utils/partials-loader.js";
+import { initPortfolio } from "./js/portfolio/portfolio.js";
+import { initReviewsSlider } from "./js/testimonials/reviewSlider.js";
+import { initBlog } from "./js/blog/blog.js";
+import { initCVModal } from "./js/cvModal/cvModal.js";
 
 $(document).ready(async function () {
   try {

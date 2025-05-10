@@ -1,5 +1,5 @@
-import { drawFigure } from "./canvas/canvas.js";
-import { downloadPDF } from "./utils/downLoadPDF.js";
+import { drawFigure } from "../canvas/canvas.js";
+import { downloadPDF } from "../utils/downLoadPDF.js";
 
 export function initCVModal() {
   $('[data-modal="cv-modal"]').on("click", showCVModal);

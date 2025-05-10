@@ -1,42 +1,27 @@
-import {devInterviewPosts} from "../data/articlesData.js";
-import {formatDate, getDatetimeValue} from "./date.js";
+import { devInterviewPosts } from "../../data/articlesData.js";
+import { formatDate, getDatetimeValue } from "../utils/date.js";
 
 export function initBlog() {
-    generateBlogMarkup(devInterviewPosts);
-    const visibleArticles = 3;
-    const $articles = $('.articles__item');
-    const total = $articles.length;
-    hideExtraArticles($articles, visibleArticles);
-    $('.blog__btn').on('click', function () {
-        showMoreArticles($articles, total, visibleArticles);
-    });
-    // $('.read-more-btn').on('click', function () {
-    //     const $articleText = $(this).parent().find('.article__text');
-    //     const isShowContent = $(this).parent().hasClass('showContent');
-    //
-    //     $articleText.animate(
-    //         {
-    //             'max-height': isShowContent ? '96px' : '1000px',
-    //         },
-    //         300,
-    //     );
-    //
-    //     $(this).parent().toggleClass('showContent');
-    //     const text = !isShowContent ? 'Read Less' : 'Read more';
-    //     $(this).text(text);
-    // });
+  generateBlogMarkup(devInterviewPosts);
+  const visibleArticles = 3;
+  const $articles = $(".articles__item");
+  const total = $articles.length;
+  hideExtraArticles($articles, visibleArticles);
+  $(".blog__btn").on("click", function () {
+    showMoreArticles($articles, total, visibleArticles);
+  });
 }
 
 function generateBlogMarkup(data) {
-    const articlesHTML = data.map(
-        ({ title, category, text, date, link , img}, ) => `
+  const articlesHTML = data.map(
+    ({ title, category, text, date, link, img }) => `
       <li class="articles__item">
       
         <div class="article__img-wrap">
         <a href="${link}" target="_blank">
          <time class="article__date" datetime="${getDatetimeValue(
-            date,
-        )}">${formatDate(date)}</time>
+           date,
+         )}">${formatDate(date)}</time>
           <img class="articles__photo" alt="Photo of blog post" src="../assets/images/blog/${img}"/>
           </a>
                 
@@ -71,22 +56,20 @@ function generateBlogMarkup(data) {
 </div>
       </li>
     `,
-    );
+  );
 
-    $('.articles-list').html(articlesHTML.join(''));
+  $(".articles-list").html(articlesHTML.join(""));
 }
 
 function hideExtraArticles($articles, visibleArticles) {
-    $articles.slice(visibleArticles).hide();
+  $articles.slice(visibleArticles).hide();
 }
 
 function showMoreArticles($articles, total, visibleArticles) {
-    $articles.filter(':hidden').slice(0, visibleArticles).slideDown('slow');
-    const shownItemsQuantity = $articles.filter(':not(:hidden)').length;
-    const remainingItems = total - shownItemsQuantity;
-    if (remainingItems === 0) {
-        $('.blog__btn').hide();
-    }
+  $articles.filter(":hidden").slice(0, visibleArticles).slideDown("slow");
+  const shownItemsQuantity = $articles.filter(":not(:hidden)").length;
+  const remainingItems = total - shownItemsQuantity;
+  if (remainingItems === 0) {
+    $(".blog__btn").hide();
+  }
 }
-
-
