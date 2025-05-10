@@ -22,14 +22,14 @@
 
 
 .ocean--blog .wave {
-    background-image: url('../assets/images/icons/wave-blue.svg');
+    background-image: url('../../assets/images/icons/wave-blue.svg');
     width: 370px;
     height: 200px;
     z-index: 2;
 }
 
 .ocean--contact .wave {
-    background-image: url('../assets/images/icons/wave-white.svg');
+    background-image: url('../../assets/images/icons/wave-white.svg');
     width: 540px;
     height: 50px;
     bottom: -10px;
@@ -38,7 +38,7 @@
 }
 
 .ocean--contact-modal .wave {
-    background-image: url('../assets/images/icons/wave-white.svg');
+    background-image: url('../../assets/images/icons/wave-white.svg');
     width: 780px;
     height: 50px;
     bottom: -10px;

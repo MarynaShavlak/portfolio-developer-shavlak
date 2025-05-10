@@ -166,6 +166,7 @@
 }
 
 .hero__action-btn-list {
+    display: flex;
     align-self: flex-start;
     gap: 20px;
 }

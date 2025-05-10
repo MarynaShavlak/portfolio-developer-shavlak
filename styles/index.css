@@ -1,23 +1,29 @@
+@import 'reset.css';
 @import 'variables.css';
-@import 'modal.css';
-@import 'starsButton.css';
-@import 'header.css';
-@import 'hero.css';
-@import 'about.css';
-/*@import 'socials.css';*/
-@import 'hire-modal.css';
-@import 'project-modal.css';
-@import 'cv-modal.css';
-@import 'workExperienceTimeLine.css';
-@import 'education.css';
-@import 'portfolio.css';
-@import 'reviews.css';
-@import 'tools.css';
-@import 'contacts.css';
-@import 'contactLinks.css';
-@import 'blog.css';
-@import 'oceanWave.css';
-@import 'footer.css';
-@import 'socialCards.css';
-@import 'animations.css';
-@import 'downloadCloudBtn.css';
+@import 'container.css';
+@import './components/modal.css';
+@import './components/starsButton.css';
+
+@import './layouts/header.css';
+@import './layouts/hero.css';
+@import './layouts/about.css';
+@import './layouts/education.css';
+@import './layouts/workExperienceTimeLine.css';
+@import './layouts/tools.css';
+@import './layouts/contacts.css';
+@import './layouts/blog.css';
+@import './layouts/portfolio.css';
+@import './layouts/reviews.css';
+@import './layouts/footer.css';
+
+@import './components/hire-modal.css';
+@import './components/project-modal.css';
+@import './components/cv-modal.css';
+
+@import './components/contactLinks.css';
+
+@import './visual-effects/oceanWave.css';
+
+@import './components/socialCards.css';
+@import './visual-effects/animations.css';
+@import './components/downloadCloudBtn.css';

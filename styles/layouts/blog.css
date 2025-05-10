@@ -200,6 +200,7 @@
 }
 
 .btn__list--load {
+    display: flex;
     justify-content: center;
 }
 

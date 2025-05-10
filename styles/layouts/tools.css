@@ -59,7 +59,7 @@
 
 
     .icon-1 {
-        background-image: url('../assets/images/tools/react.svg');
+        background-image: url('../../assets/images/tools/react.svg');
         background-size: 30px 30px;
         top: 10%;
         left: 5%;
@@ -67,7 +67,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/jquery.svg');
+        background-image: url('../../assets/images/tools/jquery.svg');
         top: 60%;
         left: 60%;
         animation-delay: 3s;
@@ -81,7 +81,7 @@
     height: 180px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/redux.png');
+        background-image: url('../../assets/images/tools/redux.png');
         top: 70%;
         left: 60%;
         animation-delay: 0s;
@@ -95,21 +95,21 @@
     height: 180px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/webpack.png');
+        background-image: url('../../assets/images/tools/webpack.png');
         top: 10%;
         left: 5%;
         animation-delay: 0s;
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/babel.svg');
+        background-image: url('../../assets/images/tools/babel.svg');
         top: 60%;
         left: 70%;
         animation-delay: 3s;
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/vite.svg');
+        background-image: url('../../assets/images/tools/vite.svg');
         background-size: 30px 30px;
         top: 60%;
         left: 5%;
@@ -117,7 +117,7 @@
     }
 
     .icon-4 {
-        background-image: url('../assets/images/tools/gulp.svg');
+        background-image: url('../../assets/images/tools/gulp.svg');
         background-size: 30px 30px;
         top: 10%;
         left: 70%;
@@ -125,7 +125,7 @@
     }
 
     .icon-5 {
-        background-image: url('../assets/images/tools/docker.png');
+        background-image: url('../../assets/images/tools/docker.png');
         background-size: 30px 30px;
         top: 70%;
         left: 40%;
@@ -140,7 +140,7 @@
     height: 120px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/typescript.svg');
+        background-image: url('../../assets/images/tools/typescript.svg');
         background-size: 30px 30px;
         top: 10%;
         left: 5%;
@@ -148,7 +148,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/prettier.svg');
+        background-image: url('../../assets/images/tools/prettier.svg');
         background-size: 30px 30px;
         top: 60%;
         left: 60%;
@@ -156,7 +156,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/eslint.png');
+        background-image: url('../../assets/images/tools/eslint.png');
         background-size: 40px 40px;
         top: 10%;
         left: 70%;
@@ -171,7 +171,7 @@
     height: 180px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/uuid.png');
+        background-image: url('../../assets/images/tools/uuid.png');
         background-size: 30px 30px;
         top: 10%;
         left: 5%;
@@ -179,7 +179,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/lodash.svg');
+        background-image: url('../../assets/images/tools/lodash.svg');
         background-size: 30px 30px;
         top: 60%;
         left: 70%;
@@ -187,7 +187,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/randomColor.svg');
+        background-image: url('../../assets/images/tools/randomColor.svg');
         background-size: 30px 30px;
         top: 60%;
         left: 5%;
@@ -195,7 +195,7 @@
     }
 
     .icon-4 {
-        background-image: url('../assets/images/tools/nanoid.svg');
+        background-image: url('../../assets/images/tools/nanoid.svg');
 
         top: 10%;
         left: 70%;
@@ -210,7 +210,7 @@
     height: 120px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/reactRouter.png');
+        background-image: url('../../assets/images/tools/reactRouter.png');
         top: 70%;
         left: 60%;
         animation-delay: 0s;
@@ -224,14 +224,14 @@
     height: 140px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/font-awesome.png');
+        background-image: url('../../assets/images/tools/font-awesome.png');
         top: 10%;
         left: 5%;
         animation-delay: 0s;
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/react-icons.svg');
+        background-image: url('../../assets/images/tools/react-icons.svg');
         background-size: 30px 30px;
         top: 60%;
         left: 70%;
@@ -239,7 +239,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/material.svg');
+        background-image: url('../../assets/images/tools/material.svg');
         background-size: 30px 30px;
         top: 60%;
         left: 5%;
@@ -247,7 +247,7 @@
     }
 
     .icon-4 {
-        background-image: url('../assets/images/tools/headless.png');
+        background-image: url('../../assets/images/tools/headless.png');
 
         top: 10%;
         left: 70%;
@@ -255,7 +255,7 @@
     }
 
     .icon-5 {
-        background-image: url('../assets/images/tools/ant.svg');
+        background-image: url('../../assets/images/tools/ant.svg');
         background-size: 30px 30px;
         top: 70%;
         left: 40%;
@@ -270,7 +270,7 @@
     height: 180px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/formik.png');
+        background-image: url('../../assets/images/tools/formik.png');
 
         top: 10%;
         left: 5%;
@@ -278,7 +278,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/inputmask.svg');
+        background-image: url('../../assets/images/tools/inputmask.svg');
 
         top: 60%;
         left: 60%;
@@ -286,7 +286,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/justValidate.svg');
+        background-image: url('../../assets/images/tools/justValidate.svg');
 
         top: 10%;
         left: 70%;
@@ -301,7 +301,7 @@
     height: 140px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/sass.svg');
+        background-image: url('../../assets/images/tools/sass.svg');
         background-size: 40px 40px;
         top: 10%;
         left: 5%;
@@ -309,21 +309,21 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/styledComponents.svg');
+        background-image: url('../../assets/images/tools/styledComponents.svg');
         top: 50%;
         left: 80%;
         animation-delay: 3s;
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/tailwind.svg');
+        background-image: url('../../assets/images/tools/tailwind.svg');
         top: 50%;
         left: 5%;
         animation-delay: 3s;
     }
 
     .icon-4 {
-        background-image: url('../assets/images/tools/emotion.png');
+        background-image: url('../../assets/images/tools/emotion.png');
         background-size: 30px 30px;
         top: 10%;
         left: 40%;
@@ -331,7 +331,7 @@
     }
 
     .icon-5 {
-        background-image: url('../assets/images/tools/modern.svg');
+        background-image: url('../../assets/images/tools/modern.svg');
 
         top: 60%;
         left: 40%;
@@ -347,7 +347,7 @@
     margin-left: -150px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/gesture.png');
+        background-image: url('../../assets/images/tools/gesture.png');
 
         top: 10%;
         left: 5%;
@@ -355,7 +355,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/gsap.webp');
+        background-image: url('../../assets/images/tools/gsap.webp');
         background-size: 30px 30px;
         top: 60%;
         left: 70%;
@@ -363,7 +363,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/lottie.svg');
+        background-image: url('../../assets/images/tools/lottie.svg');
         background-size: 40px 40px;
         top: 60%;
         left: 5%;
@@ -371,7 +371,7 @@
     }
 
     .icon-4 {
-        background-image: url('../assets/images/tools/spring.png');
+        background-image: url('../../assets/images/tools/spring.png');
         background-size: 40px 40px;
         top: 10%;
         left: 70%;
@@ -386,7 +386,7 @@
     height: 200px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/reactModal.svg');
+        background-image: url('../../assets/images/tools/reactModal.svg');
         background-size: 30px 30px;
         top: 10%;
         left: 5%;
@@ -394,7 +394,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/hottoast.png');
+        background-image: url('../../assets/images/tools/hottoast.png');
         background-size: 30px 30px;
         top: 60%;
         left: 70%;
@@ -402,7 +402,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/basic.png');
+        background-image: url('../../assets/images/tools/basic.png');
         background-size: 40px 40px;
         top: 60%;
         left: 5%;
@@ -410,7 +410,7 @@
     }
 
     .icon-4 {
-        background-image: url('../assets/images/tools/notiflix.png');
+        background-image: url('../../assets/images/tools/notiflix.png');
         background-size: 40px 40px;
         top: 10%;
         left: 70%;
@@ -426,7 +426,7 @@
     margin-left: -145px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/datefns.svg');
+        background-image: url('../../assets/images/tools/datefns.svg');
         background-size: 30px 30px;
         top: 10%;
         left: 5%;
@@ -434,7 +434,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/dayjs.png');
+        background-image: url('../../assets/images/tools/dayjs.png');
         background-size: 30px 30px;
         top: 60%;
         left: 60%;
@@ -450,7 +450,7 @@
     margin-left: -60px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/highlight.png');
+        background-image: url('../../assets/images/tools/highlight.png');
         background-size: 30px 30px;
         top: 10%;
         left: 5%;
@@ -458,7 +458,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/monaco.png');
+        background-image: url('../../assets/images/tools/monaco.png');
         background-size: 30px 30px;
         top: 60%;
         left: 60%;
@@ -480,7 +480,7 @@
     height: 180px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/apexcharts.webp');
+        background-image: url('../../assets/images/tools/apexcharts.webp');
         background-size: 30px 30px;
         top: 10%;
         left: 5%;
@@ -488,7 +488,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/star.svg');
+        background-image: url('../../assets/images/tools/star.svg');
         background-size: 30px 30px;
         top: 60%;
         left: 60%;
@@ -496,7 +496,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/tanstack.png');
+        background-image: url('../../assets/images/tools/tanstack.png');
         background-size: 40px 40px;
         top: 10%;
         left: 60%;
@@ -511,7 +511,7 @@
     height: 190px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/owl.png');
+        background-image: url('../../assets/images/tools/owl.png');
         background-size: 30px 30px;
         top: 10%;
         left: 5%;
@@ -519,7 +519,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/slick.svg');
+        background-image: url('../../assets/images/tools/slick.svg');
 
         top: 60%;
         left: 40%;
@@ -527,7 +527,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/swiper.svg');
+        background-image: url('../../assets/images/tools/swiper.svg');
         background-size: 30px 30px;
         top: 10%;
         left: 60%;
@@ -542,7 +542,7 @@
     height: 180px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/bodyscroll.png');
+        background-image: url('../../assets/images/tools/bodyscroll.png');
         background-size: 40px 40px;
         top: 70%;
         left: 5%;
@@ -562,7 +562,7 @@
     height: 140px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/ultimate.png');
+        background-image: url('../../assets/images/tools/ultimate.png');
         background-size: 40px 40px;
         top: 60%;
         left: 70%;
@@ -575,7 +575,7 @@
     height: 140px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/loader.svg');
+        background-image: url('../../assets/images/tools/loader.svg');
         background-size: 40px 40px;
         top: 10%;
         left: 5%;
@@ -590,7 +590,7 @@
     height: 140px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/algolia.png');
+        background-image: url('../../assets/images/tools/algolia.png');
 
         top: 10%;
         left: 10%;
@@ -605,7 +605,7 @@
     height: 140px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/html.png');
+        background-image: url('../../assets/images/tools/html.png');
         background-size: 40px 40px;
         top: 10%;
         left: 10%;
@@ -613,7 +613,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/css.svg');
+        background-image: url('../../assets/images/tools/css.svg');
         background-size: 40px 40px;
         top: 60%;
         left: 60%;
@@ -621,7 +621,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/javascript.svg');
+        background-image: url('../../assets/images/tools/javascript.svg');
         background-size: 40px 40px;
         top: 60%;
         left: 5%;
@@ -640,7 +640,7 @@
     height: 140px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/miro.svg');
+        background-image: url('../../assets/images/tools/miro.svg');
         background-size: 30px 30px;
         top: 10%;
         left: 10%;
@@ -648,7 +648,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/slack.png');
+        background-image: url('../../assets/images/tools/slack.png');
 
         top: 60%;
         left: 60%;
@@ -656,7 +656,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/trello.svg');
+        background-image: url('../../assets/images/tools/trello.svg');
         background-size: 30px 30px;
         top: 60%;
         left: 5%;
@@ -680,7 +680,7 @@
     height: 140px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/workbox.png');
+        background-image: url('../../assets/images/tools/workbox.png');
 
         top: 10%;
         left: 5%;
@@ -693,7 +693,7 @@
     height: 120px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/jest.png');
+        background-image: url('../../assets/images/tools/jest.png');
         background-size: 90px;
         top: 10%;
         left: 5%;
@@ -701,14 +701,14 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/loki.svg');
+        background-image: url('../../assets/images/tools/loki.svg');
         top: 60%;
         left: 80%;
         animation-delay: 3s;
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/rtl.png');
+        background-image: url('../../assets/images/tools/rtl.png');
         background-size: 50px 50px;
 
         top: 60%;
@@ -717,7 +717,7 @@
     }
 
     .icon-4 {
-        background-image: url('../assets/images/tools/cypress.svg');
+        background-image: url('../../assets/images/tools/cypress.svg');
         background-size: 30px 30px;
         top: 10%;
         left: 80%;
@@ -725,7 +725,7 @@
     }
 
     .icon-5 {
-        background-image: url('../assets/images/tools/storybook.svg');
+        background-image: url('../../assets/images/tools/storybook.svg');
         background-size: 30px 30px;
         top: 40%;
         left: 65%;
@@ -733,7 +733,7 @@
     }
 
     .icon-6 {
-        background-image: url('../assets/images/tools/postman.svg');
+        background-image: url('../../assets/images/tools/postman.svg');
         background-size: 30px 30px;
         top: 40%;
         left: 20%;
@@ -748,7 +748,7 @@
     height: 140px;
 
     .icon-1 {
-        background-image: url('../assets/images/tools/axios.svg');
+        background-image: url('../../assets/images/tools/axios.svg');
 
         top: 10%;
         left: 5%;
@@ -756,7 +756,7 @@
     }
 
     .icon-2 {
-        background-image: url('../assets/images/tools/firebase.svg');
+        background-image: url('../../assets/images/tools/firebase.svg');
 
         top: 60%;
         left: 70%;
@@ -764,7 +764,7 @@
     }
 
     .icon-3 {
-        background-image: url('../assets/images/tools/swagger.svg');
+        background-image: url('../../assets/images/tools/swagger.svg');
 
         top: 60%;
         left: 5%;
