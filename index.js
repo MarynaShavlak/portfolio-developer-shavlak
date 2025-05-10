@@ -24,6 +24,7 @@ $(document).ready(async function () {
     await insertPartial("#main", "../partials/blog.html");
     await insertPartial("#footer", "../partials/footer.html");
     await insertPartial("#hire-modal", "../partials/hireModal.html");
+    await insertPartial(".cv-modal", "../partials/cvModal.html");
     initHeroSection();
     initPortfolio();
     initToolsSection();
