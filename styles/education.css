@@ -172,3 +172,30 @@
     text-wrap: balance;
 }
 
+.education__certificateWrapper {
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    top: 0;
+    left: 0;
+
+    span {
+        position: absolute;
+        top: 95px;
+        left: 65px;
+        transition: color 0.3s ease-in-out;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 5px;
+        background-color: var(--main-bg-color);
+        border-radius: 5px;
+        width: 120px;
+    }
+
+}
+
+.education__certificateWrapper:hover {
+    span {
+        color: var(--active-bg-color)
+    }
+}

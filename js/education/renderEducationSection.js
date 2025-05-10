@@ -15,7 +15,6 @@ function createEducationItem(data) {
   const educationItem = $("<li>").addClass(
     `education-item ${orgName ? `education-item--${orgName}` : ""}`,
   );
-  const certificateBtn = data.certificate ? downloadCloudButton : null;
 
   const icon = $("<div>").addClass("education-icon").html(`${data.icon}`);
   const rightPart = $("<div>")
@@ -24,6 +23,15 @@ function createEducationItem(data) {
     .append(`<p class="education__period">${data.period}</p>`)
     .append(`<p class="education__speciality">${data.speciality}</p>`);
 
-  educationItem.append(icon, certificateBtn).append(rightPart);
+  if (data.certificate) {
+    const certificateWrapper = $("<div>").addClass(
+      "education__certificateWrapper",
+    );
+    const certificateBtn = downloadCloudButton + "<span>See Certificate</span>";
+    certificateWrapper.append(certificateBtn);
+    educationItem.append(icon, certificateWrapper, rightPart);
+  } else {
+    educationItem.append(icon, rightPart);
+  }
   return educationItem;
 }
