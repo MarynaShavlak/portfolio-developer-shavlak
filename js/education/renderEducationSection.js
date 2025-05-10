@@ -12,7 +12,6 @@ export function renderEducationSection() {
 // Create a single education item element
 function createEducationItem(data) {
   const orgName = getImageName(data.icon)?.toLowerCase();
-  console.log(orgName);
   const educationItem = $("<li>").addClass(
     `education-item ${orgName ? `education-item--${orgName}` : ""}`,
   );
