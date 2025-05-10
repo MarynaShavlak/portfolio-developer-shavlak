@@ -20,14 +20,6 @@
 
 }
 
-@keyframes moveLeftRight {
-    0% {
-        background-position: 0 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
 
 .section__tools__text {
     color: var(--main-text-color);
@@ -58,16 +50,6 @@
     animation: fadeIn 0.5s ease-in forwards; /* Apply fade-in animation */
     --delay: 0s; /* Define default value for --delay */
     animation-delay: var(--delay); /* Use custom property for delay */
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 

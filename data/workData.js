@@ -2,6 +2,7 @@ export const workData = [
   {
     title: "Export Execution Specialist",
     company: "OLEOS SWISS S.A.",
+    description: "",
     date: "2018-2021",
     icon: ' <i class="fa-solid fa-business-time"></i>',
     responsibilities: [
@@ -16,6 +17,7 @@ export const workData = [
   {
     title: "Agricultural Procurement Data Manager",
     company: "KROKUS-AGRO GROUP",
+    description: "",
     date: "2022 - 2023",
     icon: '<i class="fa-solid fa-file-contract"></i>',
     responsibilities: [
@@ -27,6 +29,7 @@ export const workData = [
   },
   {
     title: "Data Analytics Coordinator",
+    description: "",
     company: "REVATT LLC",
     date: "2023 - Present",
     icon: '<i class="fa-solid fa-chart-line"></i>',
@@ -37,5 +40,19 @@ export const workData = [
     ],
     achievement:
       "Built a VBA script to generate dynamic reports with conditional logic, reducing manual work by 70%.",
+  },
+  {
+    title: "Frontend Developer",
+    company: "Prevently (Start-up project)",
+    description:
+      "Personalized web application designed to help women manage their health through smart, evidence-based check-ups, lab bookings, and result tracking.",
+    date: "2025 - Present",
+    icon: '<i class="fa-solid fa-heart-pulse"></i>',
+    responsibilities: [
+      "Developed responsive UI components for a women's health web application",
+      "Collaborated closely with another frontend developer, a backend developer, and a designer",
+    ],
+    achievement:
+      "Developed a reusable UI kit to ensure visual consistency and accelerate future feature development.",
   },
 ];

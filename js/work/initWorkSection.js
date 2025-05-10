@@ -9,9 +9,9 @@ export function initWorkSection() {
     );
 
     let additionalClass;
-    if (index === 0 || index === 3) {
+    if (index === 0) {
       additionalClass = "delay-2s timeline__event--type2";
-    } else if (index === 1) {
+    } else if (index === 1 || index === 3) {
       additionalClass = "delay-1s timeline__event--type3";
     } else {
       additionalClass = "timeline__event--type1";
@@ -20,7 +20,7 @@ export function initWorkSection() {
     const markup = `
             <div class="timeline__event animated fadeInUp ${additionalClass}">
                 <div class="timeline__event__icon">
-                    <i class="fa-solid fa-business-time"></i>
+                    ${item.icon}
                 </div>
                 <div class="timeline__event__date">
                     ${item.date}
@@ -30,6 +30,7 @@ export function initWorkSection() {
                         ${item.title}
                     </p>
                     <p class="timeline__event__text">${item.company}</p>
+                    <p class="timeline__event__desc">${item.description}</p>
                     <div class="timeline__event__description">
                      ${responsibilitiesList}  
                             
