@@ -11,6 +11,7 @@
 .canvas-area {
     width: 1000px;
     height: 1000px;
+
 }
 
 .canvas-block {
@@ -36,10 +37,12 @@
 .block--about .block-modal-text {
     transform: translateX(-40px);
     width: calc(100% + 60px);
+    font-size: 11px;
 }
 
 .block--about .block-modal-title {
     margin-bottom: 5px;
+
 }
 
 
@@ -110,6 +113,8 @@
 
 .canvas-value {
     font-size: 36px;
+    color: var(--active-bg-color);
+    font-weight: 900;
 }
 
 .canvas-title {
@@ -205,6 +210,7 @@
     bottom: 23px;
     width: 280px;
     height: 45px;
+    color: var(--main-text-color);
     background-color: var(--main-bg-color);
     transform: rotate(-10deg);
     opacity: 0.6;

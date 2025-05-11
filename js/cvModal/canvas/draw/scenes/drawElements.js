@@ -99,7 +99,6 @@ export function drawElements() {
     y2: centerY,
   };
   drawLineWithDash(coords1, [2, 2], "#FF5BA7", 2);
-  drawLineWithDash(coords2, [2, 2], "#FF5BA7", 3);
   drawSolidLine(coords8, "#FF5BA7", 5);
   drawLineWithDash(coords3, [3, 2], "#FF5BA7", 3);
   drawCircleDot(coords3.x2, coords3.y2, 4, "#FF5BA7");
