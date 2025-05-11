@@ -33,7 +33,7 @@
 }
 
 .block--education,
-.block--expertise {
+.block--softSkills {
     padding-left: 10px;
 }
 
@@ -108,9 +108,17 @@
     font-style: italic;
 }
 
-.block--expertise .canvas-list--wrapped {
-    justify-content: center;
-    gap: 20px;
+.canvas-list--softSkills {
+    gap: 10px;
+    transform: translateX(-10px);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.canvas-list--softSkills .canvas-item {
+    flex-direction: row;
+    width: 150px;
 }
 
 .block--software .canvas-list {
@@ -123,16 +131,17 @@
     gap: 15px;
     text-align: center;
     font-size: 14px;
-    color: var(--active-bg-color);
+    color: var(--main-text-color);
     font-weight: 400;
 }
 
 .canvas-star,
 .canvas-soft-icon {
     opacity: 0.5;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
+
 
 .canvas-img-wrap {
     position: absolute;

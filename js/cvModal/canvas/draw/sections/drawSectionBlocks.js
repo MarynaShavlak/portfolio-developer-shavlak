@@ -7,13 +7,13 @@ export function drawSectionBlocks(coordArr) {
     coordArr[2].x - 35,
     1050 - coordArr[2].x - 15,
   );
-  setElementParams($(".block--experience"), 480, 25, coordArr[5].x - 50 - 50);
-  setElementParams($(".block--software"), 60, 25, coordArr[5].x - 50 - 50);
+  setElementParams($(".block--software"), 480, 25, coordArr[5].x - 50 - 50);
+  setElementParams($(".block--experience"), 40, 25, coordArr[5].x - 50 - 50);
   setElementParams(
-    $(".block--expertise"),
-    480, //670
-    coordArr[2].x + -15, //+ 50
-    1050 - (coordArr[2].x + 50),
+    $(".block--softSkills"),
+    460, //670
+    coordArr[2].x - 35, //+ 50
+    1050 - coordArr[2].x - 15,
   );
   setElementParams(
     $(".block--about"),
@@ -38,14 +38,14 @@ function setElementParams(el, top, left, width) {
 }
 
 export function drawSectionLabels(coordArr) {
-  ctx.beginPath(); //software
+  ctx.beginPath(); //experience
   ctx.strokeStyle = "#FF5BA7";
   ctx.lineWidth = "3";
-  ctx.moveTo(50, 210);
-  ctx.lineTo(coordArr[5].x - 50, 210);
-  ctx.lineTo(coordArr[5].x - 50, 260);
-  ctx.lineTo(50, 260);
-  ctx.lineTo(70, 235);
+  ctx.moveTo(50, 190);
+  ctx.lineTo(coordArr[5].x - 50, 190);
+  ctx.lineTo(coordArr[5].x - 50, 240);
+  ctx.lineTo(50, 240);
+  ctx.lineTo(70, 215);
   ctx.closePath();
   ctx.fillStyle = "#FF5BA7";
   ctx.fill();
@@ -61,7 +61,7 @@ export function drawSectionLabels(coordArr) {
   ctx.fill();
   ctx.stroke();
 
-  ctx.beginPath(); //experience
+  ctx.beginPath(); //software
   ctx.moveTo(50, 670);
   ctx.lineTo(coordArr[5].x - 50, 670);
   ctx.lineTo(coordArr[5].x - 50, 720);
@@ -71,12 +71,12 @@ export function drawSectionLabels(coordArr) {
   ctx.fill();
   ctx.stroke();
 
-  ctx.beginPath(); //expertise
-  ctx.moveTo(1050, 670);
-  ctx.lineTo(coordArr[2].x + 35, 670);
-  ctx.lineTo(coordArr[2].x + 35, 720);
-  ctx.lineTo(1050, 720);
-  ctx.lineTo(1030, 685);
+  ctx.beginPath(); //softSkills
+  ctx.moveTo(1050, 650);
+  ctx.lineTo(coordArr[2].x + 35, 650);
+  ctx.lineTo(coordArr[2].x + 35, 700);
+  ctx.lineTo(1050, 700);
+  ctx.lineTo(1030, 665);
   ctx.closePath();
   ctx.fill();
   ctx.stroke();
