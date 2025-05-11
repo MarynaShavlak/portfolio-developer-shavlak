@@ -24,7 +24,7 @@
 }
 
 .block--experience .block-modal-title,
-.block--software .block-modal-title {
+.block--techSkills .block-modal-title {
     text-align: end;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .block--experience,
-.block--software {
+.block--techSkills {
     padding-right: 10px;
 }
 
@@ -121,8 +121,18 @@
     width: 150px;
 }
 
-.block--software .canvas-list {
-    gap: 25px;
+.block--techSkills .canvas-list {
+    gap: 7px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translateX(-15px);
+    width: calc(100% + 30px);
+
+    .canvas-item {
+        font-size: 10.5px;
+    }
+
+
 }
 
 .canvas-list--experience {

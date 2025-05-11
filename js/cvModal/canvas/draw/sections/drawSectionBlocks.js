@@ -7,7 +7,7 @@ export function drawSectionBlocks(coordArr) {
     coordArr[2].x - 35,
     1050 - coordArr[2].x - 15,
   );
-  setElementParams($(".block--software"), 480, 25, coordArr[5].x - 50 - 50);
+  setElementParams($(".block--techSkills"), 470, 25, coordArr[5].x - 50 - 50);
   setElementParams($(".block--experience"), 40, 25, coordArr[5].x - 50 - 50);
   setElementParams(
     $(".block--softSkills"),
@@ -61,12 +61,12 @@ export function drawSectionLabels(coordArr) {
   ctx.fill();
   ctx.stroke();
 
-  ctx.beginPath(); //software
-  ctx.moveTo(50, 670);
-  ctx.lineTo(coordArr[5].x - 50, 670);
-  ctx.lineTo(coordArr[5].x - 50, 720);
-  ctx.lineTo(50, 720);
-  ctx.lineTo(70, 685);
+  ctx.beginPath(); //techSkills
+  ctx.moveTo(50, 660);
+  ctx.lineTo(coordArr[5].x - 50, 660);
+  ctx.lineTo(coordArr[5].x - 50, 710);
+  ctx.lineTo(50, 710);
+  ctx.lineTo(70, 675);
   ctx.closePath();
   ctx.fill();
   ctx.stroke();
