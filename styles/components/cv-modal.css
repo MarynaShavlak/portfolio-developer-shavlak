@@ -28,6 +28,21 @@
     text-align: end;
 }
 
+.block--about .block-modal-text {
+    text-wrap: pretty;
+    text-align: justify;
+}
+
+.block--about .block-modal-text {
+    transform: translateX(-40px);
+    width: calc(100% + 60px);
+}
+
+.block--about .block-modal-title {
+    margin-bottom: 5px;
+}
+
+
 .block--experience .canvas-item {
     align-items: end;
 }

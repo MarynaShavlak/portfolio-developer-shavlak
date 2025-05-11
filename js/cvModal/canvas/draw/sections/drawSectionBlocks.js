@@ -17,7 +17,7 @@ export function drawSectionBlocks(coordArr) {
   );
   setElementParams(
     $(".block--about"),
-    15,
+    5,
     coordArr[5].x - 20,
     coordArr[2].x - 30 - (coordArr[5].x + 30),
   );
@@ -84,12 +84,12 @@ export function drawSectionLabels(coordArr) {
   ctx.beginPath(); //about me
   ctx.strokeStyle = "#FF5BA7";
   ctx.lineWidth = "3";
-  ctx.moveTo(coordArr[5].x + 30, 160); // 30
-  ctx.lineTo(coordArr[2].x - 30, 160); // 30
-  ctx.lineTo(coordArr[2].x - 50, 185); //55
-  ctx.lineTo(coordArr[2].x - 30, 210); //80
-  ctx.lineTo(coordArr[5].x + 30, 210); //80
-  ctx.lineTo(coordArr[5].x + 50, 185); //55
+  ctx.moveTo(coordArr[5].x + 30, 150); // 30
+  ctx.lineTo(coordArr[2].x - 30, 150); // 30
+  ctx.lineTo(coordArr[2].x - 50, 175); //55
+  ctx.lineTo(coordArr[2].x - 30, 200); //80
+  ctx.lineTo(coordArr[5].x + 30, 200); //80
+  ctx.lineTo(coordArr[5].x + 50, 175); //55
   ctx.closePath();
   ctx.fillStyle = "#FF5BA7";
   ctx.fill();
