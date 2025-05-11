@@ -3,6 +3,8 @@ export const workData = [
     title: "Export Execution Specialist",
     company: "OLEOS SWISS S.A.",
     description: "",
+    shortInfo:
+      "Automated reporting and digitalized contracts, cutting tracking errors by 30% and improving data coordination.",
     date: "2018-2021",
     icon: ' <i class="fa-solid fa-business-time"></i>',
     responsibilities: [
@@ -17,6 +19,8 @@ export const workData = [
   {
     title: "Agricultural Procurement Data Manager",
     company: "KROKUS-AGRO GROUP",
+    shortInfo:
+      "Analyzed procurement data and automated workflows, saving 50K UAH by reducing manual entry and invoice errors..",
     description: "",
     date: "2022 - 2023",
     icon: '<i class="fa-solid fa-file-contract"></i>',
@@ -38,6 +42,8 @@ export const workData = [
       "Collaborated with teams to define data and reporting needs",
       "Translated data into actionable insights for stakeholders",
     ],
+    shortInfo:
+      "Built dashboards and automated reporting with VBA, reducing manual work by 70% and delivering actionable insights.",
     achievement:
       "Built a VBA script to generate dynamic reports with conditional logic, reducing manual work by 70%.",
   },
@@ -47,6 +53,8 @@ export const workData = [
     description:
       "Personalized web application designed to help women manage their health through smart, evidence-based check-ups, lab bookings, and result tracking.",
     date: "2025 - Present",
+    shortInfo:
+      "Built responsive UI components for a women's health app and co-developed a reusable UI kit for faster, consistent feature rollout. .",
     icon: '<i class="fa-solid fa-heart-pulse"></i>',
     responsibilities: [
       "Developed responsive UI components for a women's health web application",

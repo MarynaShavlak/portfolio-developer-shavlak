@@ -125,6 +125,11 @@
     gap: 25px;
 }
 
+.canvas-list--experience {
+    gap: 5px;
+}
+
+
 .canvas-item--bg {
     flex-direction: row;
     align-items: center;
@@ -142,6 +147,10 @@
     height: 20px;
 }
 
+.canvas-text {
+    text-wrap: pretty;
+    text-align: justify;
+}
 
 .canvas-img-wrap {
     position: absolute;
