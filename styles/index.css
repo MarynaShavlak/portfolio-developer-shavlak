@@ -15,6 +15,7 @@
 @import './layouts/portfolio.css';
 @import './layouts/reviews.css';
 @import './layouts/footer.css';
+@import './layouts/softSkills.css';
 
 @import './components/hire-modal.css';
 @import './components/project-modal.css';
