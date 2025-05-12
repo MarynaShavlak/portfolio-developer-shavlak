@@ -40,7 +40,9 @@ export function sendMessage(config) {
       From: "shavlakmaryna@gmail.com",
       Subject: "Interest in Collaborating – Frontend Development Opportunity",
       Body: body,
-    }).then((message) => alert(message));
+    }).then((message) => {
+      Notiflix.Notify.success("Your message was sent successfully!");
+    });
 
     hideHireModal();
     resetSendFormData(config);
