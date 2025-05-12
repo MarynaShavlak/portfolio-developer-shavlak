@@ -1,101 +1,3 @@
-// import { hideHireModal } from "../hireModal.js";
-//
-// export function sendMessage() {
-//   const isValid = isFormValid();
-//   console.log("isValid", isValid);
-//
-//   if (isValid) {
-//     const formData = {
-//       name: $("#modal__contact-name").val(),
-//       email: $("#modal__contact-email").val(),
-//       phone: $("#modal__contact-phone").val(),
-//       message: $("#modal__contact-message").val(),
-//     };
-//     console.log("It should be formData sending here with obj : ", formData);
-//
-//     hideHireModal();
-//     resetSendFormData();
-//     $(".contact-wrap").toggleClass("active");
-//   }
-// }
-//
-// function isFormValid() {
-//   $(".modal__error-message").text("");
-//   let hasError = false;
-//   hasError =
-//     validateField(
-//       "#modal__contact-name",
-//       "Name is required",
-//       "Name should have at least 2 characters",
-//     ) || hasError;
-//   hasError =
-//     validateField(
-//       "#modal__contact-email",
-//       "Email is required",
-//       "Invalid email address",
-//       isValidEmail,
-//     ) || hasError;
-//   hasError =
-//     validateField(
-//       "#modal__contact-phone",
-//       "Phone number is required",
-//       "Phone number should have 10 digits",
-//       isValidPhone,
-//     ) || hasError;
-//   hasError =
-//     validateField("#modal__contact-message", "Message is required") || hasError;
-//   return !hasError;
-//
-//   function validateField(
-//     selector,
-//     requiredError,
-//     formatError,
-//     validationFunction = null,
-//   ) {
-//     console.log(selector);
-//     let fieldValue = $(selector).val().trim();
-//
-//     if (fieldValue === "") {
-//       $(`${selector}-error`).text(requiredError);
-//       return true;
-//     }
-//     if (selector === "#modal__contact-name" && fieldValue.length < 2) {
-//       $(`${selector}-error`).text(formatError);
-//       return true;
-//     }
-//
-//     if (validationFunction && !validationFunction(fieldValue)) {
-//       $(`${selector}-error`).text(formatError);
-//       return true;
-//     }
-//
-//     return false;
-//   }
-//
-//   function isValidEmail(email) {
-//     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     return emailRegex.test(email);
-//   }
-//
-//   function isValidPhone(phone) {
-//     let phoneRegex = /^\d{10,}$/;
-//     return phoneRegex.test(phone);
-//   }
-// }
-//
-// export function resetSendFormData() {
-//   $("#modal__contact-name").text("");
-//   $("#modal__contact-name").val("");
-//   $("#modal__contact-email").text("");
-//   $("#modal__contact-email").val("");
-//   $("#modal__contact-phone").text("");
-//   $("#modal__contact-phone").val("");
-//   $("#modal__contact-message").text("");
-//   $("#modal__contact-message").val("");
-//   $(".modal__error-message").text("");
-//   $(".contact-form--modal .control").removeClass("filled");
-// }
-
 import { hideHireModal } from "../hireModal/hireModal.js";
 
 export function sendMessage(config) {
@@ -121,6 +23,24 @@ export function sendMessage(config) {
       message: $(config.selectors.message).val(),
     };
     console.log("Form data being sent:", formData);
+
+    const body = `
+  <p>You've received a new message from your portfolio contact form:</p>
+  <p><strong>Name:</strong> ${formData.name}<br>
+  <strong>Email:</strong> ${formData.email}<br>
+  <strong>Phone:</strong> ${formData.phone}</p>
+  <p><strong>Message:</strong><br>${formData.message.replace(/\n/g, "<br>")}</p>
+`;
+
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "shavlakmaryna@gmail.com",
+      Password: "9CC2BAC86D6FCE84EDA924D359C83D1BD186",
+      To: "shavlakmaryna@gmail.com",
+      From: "shavlakmaryna@gmail.com",
+      Subject: "Interest in Collaborating – Frontend Development Opportunity",
+      Body: body,
+    }).then((message) => alert(message));
 
     hideHireModal();
     resetSendFormData(config);
