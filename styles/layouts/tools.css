@@ -669,6 +669,10 @@
     height: 120px;
 }
 
+.tools__item--email {
+    width: 200px;
+    height: 120px;
+}
 
 .tools__item--file {
     width: 220px;

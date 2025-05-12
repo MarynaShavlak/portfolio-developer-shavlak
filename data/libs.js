@@ -377,6 +377,10 @@ export const toolsData = [
     ],
   }, //28
   {
+    title: "Email Sending",
+    items: [{ name: "SMTP.js", link: "https://smtpjs.com/" }],
+  }, //30
+  {
     title: "Collaboration and Project Management",
     items: [
       { name: "Slack", link: "https://slack.com/" },
