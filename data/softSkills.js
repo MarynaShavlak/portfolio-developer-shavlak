@@ -42,7 +42,7 @@ const softSkills = [
     description: "Embraces learning, feedback, and continuous improvement.",
   },
   {
-    title: "Focus and Concentration",
+    title: "Focus & Concentration",
     description:
       "Maintains attention and productivity during detailed or long development tasks.",
   },

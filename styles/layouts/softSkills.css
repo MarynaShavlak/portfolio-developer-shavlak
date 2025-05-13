@@ -61,3 +61,87 @@
     top: 30px;
     left: 90px;
 }
+
+.softSkills__item--versatile {
+    background-color: red;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 420px;
+}
+
+.softSkills__item--accelerated {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+
+.softSkills__item--detail {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 172px;
+    left: 402px;
+}
+
+.softSkills__item--proactive {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 160px;
+    right: 0;
+}
+
+.softSkills__item--empathy {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 180px;
+    right: 3px;
+}
+
+.softSkills__item--growth {
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 150px;
+    right: 120px;
+}
+
+.softSkills__item--time {
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 270px;
+    font-size: 13px;
+}
+
+.softSkills__item--patience {
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 210px;
+    left: 165px;
+    font-size: 13px;
+}
+
+.softSkills__item--focus {
+    background-color: red;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 385px;
+    left: 225px;
+    font-size: 12px;
+}
