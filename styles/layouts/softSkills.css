@@ -1,5 +1,5 @@
 .section--softSkills {
-    background-color: var(--light-bg-color);
+    background-color: var(--main-bg-color);
 }
 
 .softSkills__img {
@@ -8,7 +8,7 @@
 
 .softSkills__img-wrapper {
     position: relative;
-    border: 2px solid red;
+    border: 2px solid var(--default-bg-color);
     width: fit-content;
 }
 
@@ -36,7 +36,7 @@
 
 
 .softSkills__item--agile {
-    background-color: red;
+    background-color: var(--active-bg-color);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -45,7 +45,7 @@
 }
 
 .softSkills__item--effective {
-    background-color: red;
+    background-color: var(--active-bg-color);
     width: 120px;
     height: 120px;
     position: absolute;
@@ -54,7 +54,7 @@
 }
 
 .softSkills__item--structured {
-    background-color: red;
+    background-color: var(--default-bg-color);
     width: 120px;
     height: 120px;
     position: absolute;
@@ -63,7 +63,7 @@
 }
 
 .softSkills__item--versatile {
-    background-color: red;
+    background-color: var(--default-bg-color);
     width: 110px;
     height: 110px;
     position: absolute;
@@ -72,7 +72,7 @@
 }
 
 .softSkills__item--accelerated {
-    background-color: red;
+    background-color: var(--active-bg-color);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -81,7 +81,7 @@
 }
 
 .softSkills__item--detail {
-    background-color: red;
+    background-color: var(--active-bg-color);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -90,7 +90,7 @@
 }
 
 .softSkills__item--proactive {
-    background-color: red;
+    background-color: var(--active-bg-color);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -99,7 +99,7 @@
 }
 
 .softSkills__item--empathy {
-    background-color: red;
+    background-color: var(--default-bg-color);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -108,7 +108,7 @@
 }
 
 .softSkills__item--growth {
-    background-color: red;
+    background-color: var(--default-bg-color);
     width: 90px;
     height: 90px;
     position: absolute;
@@ -117,7 +117,7 @@
 }
 
 .softSkills__item--time {
-    background-color: red;
+    background-color: var(--active-bg-color);
     width: 90px;
     height: 90px;
     position: absolute;
@@ -127,7 +127,7 @@
 }
 
 .softSkills__item--patience {
-    background-color: red;
+    background-color: var(--default-bg-color);
     width: 90px;
     height: 90px;
     position: absolute;
@@ -137,7 +137,7 @@
 }
 
 .softSkills__item--focus {
-    background-color: red;
+    background-color: var(--default-bg-color);
     width: 85px;
     height: 85px;
     position: absolute;
