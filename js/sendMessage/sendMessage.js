@@ -22,7 +22,6 @@ export function sendMessage(config) {
       phone: $(config.selectors.phone).val(),
       message: $(config.selectors.message).val(),
     };
-    console.log("Form data being sent:", formData);
 
     const body = `
   <p>You've received a new message from your portfolio contact form:</p>

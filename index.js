@@ -12,29 +12,52 @@ import { initCVModal } from "./js/cvModal/cvModal.js";
 
 $(document).ready(async function () {
   try {
+    // header and hero
     await insertPartial("#header", "../partials/header.html");
     await insertPartial("#main", "../partials/hero.html");
-    await insertPartial("#main", "../partials/about.html");
-    // await insertPartial("#main", "../partials/softSkills.html");
-    await insertPartial("#main", "../partials/contacts.html");
-    await insertPartial("#main", "../partials/tools.html");
-    await insertPartial("#main", "../partials/education.html");
-    await insertPartial("#main", "../partials/workExperience.html");
-    await insertPartial("#main", "../partials/portfolio.html");
-    await insertPartial("#main", "../partials/reviews.html");
-    await insertPartial("#main", "../partials/blog.html");
-    await insertPartial("#footer", "../partials/footer.html");
-    await insertPartial("#hire-modal", "../partials/hireModal.html");
-    await insertPartial(".cv-modal", "../partials/cvModal.html");
     initHeroSection();
-    initPortfolio();
-    initToolsSection();
-    initReviewsSlider();
-    initBlog();
-    initHireModal();
-    initEducationSection();
-    initWorkSection();
+
+    // about
+    await insertPartial("#main", "../partials/about.html");
+    // soft skills
+    await insertPartial("#main", "../partials/softSkills.html");
+    // contacts
+    await insertPartial("#main", "../partials/contacts.html");
     initContactsSection();
+
+    // tools
+    await insertPartial("#main", "../partials/tools.html");
+    initToolsSection();
+
+    //education
+    await insertPartial("#main", "../partials/education.html");
+    initEducationSection();
+
+    //work experience
+    await insertPartial("#main", "../partials/workExperience.html");
+    initWorkSection();
+
+    //portfolio
+    await insertPartial("#main", "../partials/portfolio.html");
+    initPortfolio();
+
+    // testimonials
+    await insertPartial("#main", "../partials/reviews.html");
+    initReviewsSlider();
+
+    // blog
+    await insertPartial("#main", "../partials/blog.html");
+    initBlog();
+
+    // footer
+    await insertPartial("#footer", "../partials/footer.html");
+
+    //hire modal
+    await insertPartial("#hire-modal", "../partials/hireModal.html");
+    initHireModal();
+
+    //cv modal
+    await insertPartial(".cv-modal", "../partials/cvModal.html");
     initCVModal();
   } catch (err) {
     console.error("Error loading one or more partials:", err);

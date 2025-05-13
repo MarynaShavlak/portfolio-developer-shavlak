@@ -1,0 +1,63 @@
+.section--softSkills {
+    background-color: var(--light-bg-color);
+}
+
+.softSkills__img {
+    height: 700px;
+}
+
+.softSkills__img-wrapper {
+    position: relative;
+    border: 2px solid red;
+    width: fit-content;
+}
+
+.softSkills__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*z-index: 1;*/
+
+}
+
+.softSkills__item {
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 100%;
+
+}
+
+
+.softSkills__item--agile {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 172px;
+    left: 66px;
+}
+
+.softSkills__item--effective {
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 238px;
+    left: 0;
+}
+
+.softSkills__item--structured {
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+}
