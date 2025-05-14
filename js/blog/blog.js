@@ -22,7 +22,7 @@ function generateBlogMarkup(data) {
          <time class="article__date" datetime="${getDatetimeValue(
            date,
          )}">${formatDate(date)}</time>
-          <img class="articles__photo" alt="Photo of blog post" src="../assets/images/blog/${img}"/>
+          <img class="articles__photo" alt="Photo of blog post" src="./assets/images/blog/${img}"/>
           </a>
                 
         </div>
