@@ -17,6 +17,7 @@
 
 .softSkills__content {
     display: flex;
+    position: relative;
 }
 
 .softSkills__description {
@@ -25,7 +26,6 @@
 }
 
 .softSkills__showcases {
-    border: 1px solid red;
     padding-left: 25px;
     position: absolute;
     top: 0;
@@ -39,6 +39,7 @@
     opacity: 1;
     pointer-events: auto;
 }
+
 
 .showcase__list {
     display: flex;
@@ -72,6 +73,7 @@
     border-radius: 100%;
     background-color: var(--active-bg-color);
 }
+
 
 .softSkills__showcases__title {
     text-align: center;
@@ -167,7 +169,7 @@
     left: 250px;
 }
 
-.softSkills__item--detail {
+.softSkills__item--detail-oriented {
     background-color: var(--active-bg-color);
     width: 100px;
     height: 100px;
@@ -346,4 +348,64 @@
     background-color: var(--active-bg-color);
     width: 30px;
     height: 30px;
+}
+
+.softSkills__girl-wrapper {
+    position: absolute;
+    bottom: -40px;
+    right: -60px;
+
+    img {
+        height: 490px;
+    }
+}
+
+
+.softSkills__thought {
+    display: flex;
+    background-color: var(--light-bg-color);
+    padding: 20px;
+    border-radius: 30px;
+    min-width: 40px;
+    max-width: 220px;
+    min-height: 40px;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: -180px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.softSkills__thought:before,
+.softSkills__thought:after {
+    content: "";
+    background-color: var(--light-bg-color);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.softSkills__thought:before {
+    width: 44px;
+    height: 44px;
+    top: -18px;
+    left: 28px;
+    box-shadow: -50px 30px 0 -12px var(--light-bg-color);
+}
+
+.softSkills__thought:after {
+    bottom: -10px;
+    right: 26px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 40px -34px 0 0 var(--light-bg-color),
+    -28px -6px 0 -2px var(--light-bg-color),
+    -24px 17px 0 -6px var(--light-bg-color),
+    -5px 25px 0 -10px var(--light-bg-color);
+
 }

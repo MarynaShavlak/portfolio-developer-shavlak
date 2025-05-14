@@ -80,7 +80,7 @@ export const softSkillsShowcases = [
   {
     title: "Time Management",
     items: [
-      "Balanced <span>onboarding three new hires</span> while executing your own deliverables.",
+      "Balanced <span>onboarding three new hires</span> while executing my own deliverables.",
       "Met a <span>strict certification deadline</span>, leading to a 70% sales increase, through structured planning.",
       "Used <span>structured workflows</span> to meet tight development deadlines, especially in solo or leadership roles.",
     ],
