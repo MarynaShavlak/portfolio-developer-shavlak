@@ -41,6 +41,8 @@ const sections = [
     selector: "#main",
     partial: "./partials/tools.html",
     init: initToolsSection,
+    lazy: true,
+    scrollSelector: "#tools",
   },
   {
     selector: "#main",
