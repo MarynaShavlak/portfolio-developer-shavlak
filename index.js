@@ -9,6 +9,7 @@ import { initPortfolio } from "./js/portfolio/portfolio.js";
 import { initReviewsSlider } from "./js/testimonials/reviewSlider.js";
 import { initBlog } from "./js/blog/blog.js";
 import { initCVModal } from "./js/cvModal/cvModal.js";
+import { initSoftSkillsSection } from "./js/softSkills/initSoftSkillsSection.js";
 
 $(document).ready(async function () {
   try {
@@ -21,6 +22,7 @@ $(document).ready(async function () {
     await insertPartial("#main", "../partials/about.html");
     // soft skills
     await insertPartial("#main", "../partials/softSkills.html");
+    initSoftSkillsSection();
     // contacts
     await insertPartial("#main", "../partials/contacts.html");
     initContactsSection();
