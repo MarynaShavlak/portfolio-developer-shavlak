@@ -24,8 +24,28 @@ export function generateSoftSkillsMarkup(data) {
   $(".softSkills__description").append($container);
 }
 
+function initSoftSkillsHover() {
+  $(".softSkills__item").hover(
+    function () {
+      const classes = $(this).attr("class").split(" ");
+      const skillClass = classes.find((cls) =>
+        cls.startsWith("softSkills__item--"),
+      );
+      if (skillClass) {
+        const skillName = skillClass.replace("softSkills__item--", "");
+        $(".softSkills__showcases").removeClass("visible");
+        $(`.softSkills__showcases--${skillName}`).addClass("visible");
+      }
+    },
+    function () {
+      $(".softSkills__showcases").removeClass("visible");
+    },
+  );
+}
+
 export function initSoftSkillsSection() {
   softSkillsShowcases.forEach((item) => {
     generateSoftSkillsMarkup(item);
+    initSoftSkillsHover();
   });
 }

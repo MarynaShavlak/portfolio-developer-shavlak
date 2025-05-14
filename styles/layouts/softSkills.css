@@ -32,8 +32,13 @@
     left: 0;
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
+.softSkills__showcases.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 .showcase__list {
     display: flex;
