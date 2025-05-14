@@ -101,22 +101,22 @@ function generatePortfolioMarkUp(data) {
                     <p class="work__short-overview">${overview}</p>
                     <button type="button" class="explore-project-btn star-btn">
                     <div class="star-1">
-                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                        <img src="./assets/images/icons/star.svg" alt="Star Icon"/>
                     </div>
                     <div class="star-2">
-                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                        <img src="./assets/images/icons/star.svg" alt="Star Icon"/>
                     </div>
                     <div class="star-3">
-                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                        <img src="./assets/images/icons/star.svg" alt="Star Icon"/>
                     </div>
                     <div class="star-4">
-                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                        <img src="./assets/images/icons/star.svg" alt="Star Icon"/>
                     </div>
                     <div class="star-5">
-                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                        <img src="./assets/images/icons/star.svg" alt="Star Icon"/>
                     </div>
                     <div class="star-6">
-                        <img src="../assets/images/icons/star.svg" alt="Star Icon"/>
+                        <img src="./assets/images/icons/star.svg" alt="Star Icon"/>
                     </div>
                     Explore Project
                     
