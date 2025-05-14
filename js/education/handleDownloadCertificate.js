@@ -17,7 +17,7 @@ export function handleDownloadCertificate(button) {
     cl = button.classList;
 
   if (!cl.contains(waitClass) && !cl.contains(runClass)) {
-    const pdfPath = `../../assets/docs/Maryna_Shavlak_certificate_${company}.pdf`;
+    const pdfPath = `./assets/docs/Maryna_Shavlak_certificate_${company}.pdf`;
     downloadPDF(pdfPath, `Maryna_Shavlak_certificate_${company}.pdf`);
     cl.add(waitClass);
     setTimeout(function () {
