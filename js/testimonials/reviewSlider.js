@@ -107,7 +107,7 @@ function generateReviewsMarkup(data) {
       const $ratingItem = $("<li>").addClass("rating__item");
       const $star = $("<img>")
         .addClass("reviews__star")
-        .attr("src", "../assets/images/icons/standardStar.svg")
+        .attr("src", "./assets/images/icons/standardStar.svg")
         .attr("alt", "Avatar of person");
 
       if (i > rating) {
