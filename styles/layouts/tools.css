@@ -492,7 +492,7 @@
 }
 
 .tools__item--data { /*visualization*/
-    width: 220px;
+    width: 300px;
     height: 180px;
 
     .icon-1 {
@@ -652,8 +652,10 @@
 }
 
 .tools__item--collaboration {
-    width: 300px;
-    height: 140px;
+    /*width: 300px;*/
+    /*height: 140px;*/
+    width: 220px;
+    height: 180px;
 
     .icon-1 {
         background-image: url('../../assets/images/tools/miro.svg');

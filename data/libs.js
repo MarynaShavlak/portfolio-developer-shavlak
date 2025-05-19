@@ -169,6 +169,7 @@ export const toolsData = [
       { name: "shadcn/ui", link: "https://ui.shadcn.com/" },
       { name: "Radix UI", link: "https://www.radix-ui.com/" },
       { name: "Lucide Icons", link: "https://lucide.dev/" },
+      { name: "Ionicons", link: "https://ionic.io/ionicons" },
     ],
   }, //14
   {
@@ -186,20 +187,14 @@ export const toolsData = [
     ],
   }, //22
   {
-    title: "Data Visualization & Tables",
+    title: "Collaboration and Project Management",
     items: [
-      { name: "ApexCharts", link: "https://apexcharts.com/" },
-      { name: "TanStack Table", link: "https://tanstack.com/table/" },
-      {
-        name: "React Circular Progress Bar",
-        link: "https://www.npmjs.com/package/react-circular-progressbar",
-      },
-      {
-        name: "React Star Ratings",
-        link: "https://www.npmjs.com/package/react-star-ratings",
-      },
+      { name: "Slack", link: "https://slack.com/" },
+      { name: "Miro", link: "https://miro.com/" },
+      { name: "Trello", link: "https://trello.com/" },
     ],
-  }, //16
+  },
+
   {
     title: "Carousels & Layouts",
     items: [
@@ -300,6 +295,10 @@ export const toolsData = [
         name: "Darkmode-js",
         link: "https://www.npmjs.com/package/darkmode-js",
       },
+      {
+        name: "Screenfull",
+        link: "https://github.com/sindresorhus/screenfull",
+      },
       { name: "imagesLoaded", link: "https://imagesloaded.desandro.com/" },
     ],
   }, //4
@@ -396,14 +395,27 @@ export const toolsData = [
     title: "Email Sending",
     items: [{ name: "SMTP.js", link: "https://smtpjs.com/" }],
   }, //30
+
   {
-    title: "Collaboration and Project Management",
+    title: "Data Visualization & Tables",
     items: [
-      { name: "Slack", link: "https://slack.com/" },
-      { name: "Miro", link: "https://miro.com/" },
-      { name: "Trello", link: "https://trello.com/" },
+      { name: "ApexCharts", link: "https://apexcharts.com/" },
+      { name: "TanStack Table", link: "https://tanstack.com/table/" },
+      {
+        name: "React Circular Progress Bar",
+        link: "https://www.npmjs.com/package/react-circular-progressbar",
+      },
+      {
+        name: "React Star Ratings",
+        link: "https://www.npmjs.com/package/react-star-ratings",
+      },
+      {
+        name: "React Step Progress Bar",
+        link: "https://www.npmjs.com/package/react-step-progress-bar",
+      },
     ],
-  },
+  }, //16
+
   //29
   {
     title: "Media & Audio",
