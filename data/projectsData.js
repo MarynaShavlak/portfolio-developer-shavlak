@@ -1,10 +1,10 @@
 import { devInterviewHubData } from "./projectsData/devInterviewHub.js";
 import { tetrominoData } from "./projectsData/tetromino.js";
-import { eslintPluginToggleFeaturesData } from "./projectsData/eslintPluginToggleFeatures.js";
-import { eslintPluginPathSupervisorData } from "./projectsData/eslintPluginPathSupervisor.js";
-import { happyBirthdayGameData } from "./projectsData/happyBirthdayGame.js";
 import { cleaningComfortGroupData } from "./projectsData/cleaningComfortGroup.js";
 import { sudokuForKidsData } from "./projectsData/sudokuForKids.js";
+import { happyBirthdayGameData } from "./projectsData/happyBirthdayGame.js";
+import { eslintPluginToggleFeaturesData } from "./projectsData/eslintPluginToggleFeatures.js";
+import { eslintPluginPathSupervisorData } from "./projectsData/eslintPluginPathSupervisor.js";
 import { phonebookData } from "./projectsData/phonebook.js";
 import { gooseTrackData } from "./projectsData/gooseTrack.js";
 import { filmotekaData } from "./projectsData/filmoteka.js";
@@ -32,11 +32,11 @@ import { bhagaskaraLandingData } from "./projectsData/bhagaskaraLanding.js";
 export const projectsData = [
   devInterviewHubData,
   tetrominoData,
-  eslintPluginToggleFeaturesData,
-  eslintPluginPathSupervisorData,
   happyBirthdayGameData,
   cleaningComfortGroupData,
   sudokuForKidsData,
+  eslintPluginToggleFeaturesData,
+  eslintPluginPathSupervisorData,
   phonebookData,
   gooseTrackData,
   filmotekaData,

@@ -31,7 +31,7 @@ function setReviewsSlider() {
   }
 
   function startSlider() {
-    intervalId = setInterval(nextSlide, 2000);
+    intervalId = setInterval(nextSlide, 4000);
   }
 
   function stopSlider() {
@@ -70,7 +70,7 @@ function generateReviewsMarkup(data) {
     }
 
     const $reviewsDescr = generateReviewDescription(review.text);
-    const $reviewsAuthor = generateReviewAuthor(review.author, review.company);
+    const $reviewsAuthor = generateReviewAuthor(review);
     const $reviewsRating = $("<ul>").addClass("reviews__rating");
     generateRatingStarList($reviewsRating, review.rating);
 
@@ -85,12 +85,13 @@ function generateReviewsMarkup(data) {
     return $reviewsDescr;
   }
 
-  function generateReviewAuthor(author, company) {
+  function generateReviewAuthor(review) {
+    const { author, company, project, avatar } = review;
     const $reviewsAuthor = $("<div>").addClass("reviews__author");
     const $reviewsPhotoWrap = $("<div>").addClass("reviews__photo-wrap");
     const $reviewsPhoto = $("<img>")
       .addClass("reviews__photo")
-      .attr("src", "assets/images/Shavlak_Maryna_avatar.jpg")
+      .attr("src", `assets/images/testimonials/${avatar}`)
       .attr("width", "15")
       .attr("height", "15")
       .attr("alt", "rating star");
@@ -98,7 +99,8 @@ function generateReviewsMarkup(data) {
     $reviewsAuthor.append($reviewsPhotoWrap);
     const $reviewsName = $("<p>").addClass("reviews__name").text(author);
     const $reviewsText = $("<p>").addClass("reviews__text").text(company);
-    $reviewsAuthor.append($reviewsName, $reviewsText);
+    const $reviewsProject = $("<p>").addClass("reviews__project").text(project);
+    $reviewsAuthor.append($reviewsName, $reviewsText, $reviewsProject);
     return $reviewsAuthor;
   }
 
