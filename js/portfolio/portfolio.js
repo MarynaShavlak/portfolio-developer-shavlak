@@ -3,10 +3,12 @@ import {
   initProjectModal,
 } from "../projectModal/projectModal.js";
 import { projectsData } from "../../data/projectsData.js";
+import { generatePortfolioFilters } from "./generatePortfolioFilters.js";
 
 console.log("projectsData", projectsData);
 
 export function initPortfolio() {
+  generatePortfolioFilters();
   const itemsPerPage = 6;
   let currentIndex = 0;
   let currentCategory = "*";
