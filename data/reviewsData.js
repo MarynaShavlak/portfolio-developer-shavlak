@@ -17,9 +17,19 @@ export const reviewsData = [
     avatar: "yaroslava.jpg",
   },
   {
-    text: "Vestibulum auctor mi sit amet mauris ultrices, vel tincidunt purus vulputate. Duis vitae leo a justo condimentum imperdiet vel in sapien. In hac habitasse platea dictumst. Nulla facilisi. Aliquam erat volutpat.",
-    author: "Alice R. Johnson",
-    company: "Tech Innovations",
-    rating: 3,
+    text: "Sudoku for Kids is a polished educational web game with a clean, child-friendly UI, smart mechanics, and thoughtful customization. Its solid architecture and use of vanilla JavaScript highlight strong front-end skills. I appreciated the focus on accessibility, sound cues, themed visuals, random board generation, and hint systems. There's room for future enhancements, but it's already an impressive project.",
+    author: "Kostiantyn Prykhodko",
+    company: "Mentor in IT Banda",
+    rating: 5,
+    project: "Sudoku for Kids",
+    avatar: "mentor.jpg",
+  },
+  {
+    text: "Filmoteka is a well-executed collaborative project that showcases strong front-end skills and attention to user experience. Features like Firebase integration, dynamic movie lists, responsive design, and canvas animation highlight both technical ability and thoughtful design. Clean structure and teamwork are clearly reflected throughout",
+    author: "Serhii Yakovenko",
+    company: "Front-end Developer at Hubmee",
+    rating: 5,
+    project: "Filmoteka",
+    avatar: "yakovenko.jpg",
   },
 ];
