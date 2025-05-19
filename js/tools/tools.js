@@ -8,7 +8,7 @@ export function renderToolsSection() {
 
   const appearanceOrder = [
     1, 5, 20, 6, 3, 9, 11, 13, 23, 15, 17, 19, 14, 22, 16, 18, 12, 21, 10, 2, 4,
-    7, 8, 24, 25, 30, 26, 27, 28, 29,
+    7, 8, 24, 25, 30, 26, 27, 28, 29, 31,
   ];
 
   $(".tools__item").each(function (index) {

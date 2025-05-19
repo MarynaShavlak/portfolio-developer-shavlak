@@ -4,6 +4,8 @@ import {
 } from "../projectModal/projectModal.js";
 import { projectsData } from "../../data/projectsData.js";
 
+console.log("projectsData", projectsData);
+
 export function initPortfolio() {
   const itemsPerPage = 6;
   let currentIndex = 0;

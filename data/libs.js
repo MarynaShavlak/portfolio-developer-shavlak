@@ -20,6 +20,7 @@ export const toolsData = [
         name: "Redux Async Thunk",
         link: "https://redux-toolkit.js.org/api/createAsyncThunk",
       },
+      { name: "Zustand", link: "https://zustand-demo.pmnd.rs/" },
     ],
   }, //5
   {
@@ -29,6 +30,7 @@ export const toolsData = [
       { name: "Vite", link: "https://vitejs.dev/" },
       { name: "Babel", link: "https://babeljs.io/" },
       { name: "Gulp", link: "https://gulpjs.com/" },
+      { name: "CRACO", link: "https://craco.js.org/" },
       { name: "Docker", link: "https://www.docker.com/" },
       { name: "PostCSS", link: "https://postcss.org/" },
       {
@@ -69,6 +71,10 @@ export const toolsData = [
     items: [
       { name: "Lodash", link: "https://lodash.com/" },
       { name: "Clsx", link: "https://www.npmjs.com/package/clsx" },
+      {
+        name: "cva",
+        link: "https://cva.style/docs",
+      },
       { name: "UUID", link: "https://www.npmjs.com/package/uuid" },
       { name: "Nanoid", link: "https://www.npmjs.com/package/nanoid" },
       {
@@ -76,6 +82,7 @@ export const toolsData = [
         link: "https://www.npmjs.com/package/randomcolor",
       },
       { name: "Prop-types", link: "https://www.npmjs.com/package/prop-types" },
+      { name: "react-use", link: "https://github.com/streamich/react-use" },
     ],
   }, //11
   {
@@ -159,6 +166,9 @@ export const toolsData = [
         name: "React Icons",
         link: "https://www.npmjs.com/package/react-icons",
       },
+      { name: "shadcn/ui", link: "https://ui.shadcn.com/" },
+      { name: "Radix UI", link: "https://www.radix-ui.com/" },
+      { name: "Lucide Icons", link: "https://lucide.dev/" },
     ],
   }, //14
   {
@@ -235,7 +245,8 @@ export const toolsData = [
   {
     title: "Animations & Transitions",
     items: [
-      { name: "React Spring", link: "https://react-spring.dev/" },
+      { name: "Framer Motion", link: "https://www.framer.com/motion/" },
+
       {
         name: "Use Gesture",
         link: "https://www.npmjs.com/package/@use-gesture/react",
@@ -252,6 +263,11 @@ export const toolsData = [
       {
         name: "Lottie",
         link: "https://www.npmjs.com/package/@lottiefiles/lottie-player",
+      },
+      { name: "React Spring", link: "https://react-spring.dev/" },
+      {
+        name: "React Confetti",
+        link: "https://www.npmjs.com/package/react-confetti",
       },
     ],
   }, //10
@@ -389,4 +405,14 @@ export const toolsData = [
     ],
   },
   //29
+  {
+    title: "Media & Audio",
+    items: [
+      { name: "Howler.js", link: "https://howlerjs.com/" },
+      {
+        name: "React Player",
+        link: "https://github.com/cookpete/react-player",
+      },
+    ],
+  }, //31
 ];
