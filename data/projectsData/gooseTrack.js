@@ -7,7 +7,7 @@ export const gooseTrackData = {
   slogan: "Your Ultimate Task Manager and Calendar Companion!",
 
   date: 2023,
-  poster: "poster.jpg",
+  poster: "goose.jpg",
   timeline: "2 weeks",
   apiDocumentation: {
     name: "Goose Tracker API Docs",
