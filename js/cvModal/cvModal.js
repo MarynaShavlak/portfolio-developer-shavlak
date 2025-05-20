@@ -10,8 +10,8 @@ export function initCVModal() {
 
 function downloadCV() {
   $(".download-cv-btn").on("click", function () {
-    const pdfPath = "./Lewis_Nathaniel__CV.pdf";
-    downloadPDF(pdfPath, "Lewis_Nathaniel__CV.pdf");
+    const pdfPath = "./Shavlak_Maryna_Frontend_Developer__CV.pdf";
+    downloadPDF(pdfPath, "Shavlak_Maryna_Frontend_Developer__CV.pdf");
   });
 }
 
