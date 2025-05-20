@@ -1,7 +1,7 @@
 export const filmotekaData = {
   id: "filmoteka",
   industry: "Web Application",
-  categories: ["javascript", "html", "saas", "parcel", "canvas"],
+  categories: ["javascript", "html", "saas", "parcel", "canvas", "firebase"],
   title: "Filmoteka",
   type: "Collaborative",
   slogan: "Discover, Organize, and Enjoy Movies Your Way!",

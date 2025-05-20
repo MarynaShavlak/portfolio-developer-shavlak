@@ -20,16 +20,11 @@
     margin-bottom: 0.3rem;
     font-size: 5rem;
     color: var(--main-text-color);
-    /*background-image: url('../assets/images/sky.jpg');*/
-    /*background-size: 200%;*/
-    /*background-position: 0 50%;*/
-    /*background-clip: text;*/
-    /*color: transparent;*/
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
     font-family: "Lustria", serif;
-    /*animation: moveLeftRight 5s infinite alternate;*/
+
 }
 
 .timeline__event {
@@ -138,13 +133,6 @@
     background: var(--light-bg-color);
     border-radius: 100%;
     width: 40px;
-    /*box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),*/
-    /*0 18px 36px -18px rgba(0, 0, 0, 0.3),*/
-    /*0 -12px 36px -8px rgba(0, 0, 0, 0.025);*/
-    /*box-shadow:*/
-    /*        0 30px 60px -12px rgba(255, 91, 167, 0.6),*/
-    /*        0 18px 36px -18px rgba(255, 213, 235, 0.8),*/
-    /*        0 -12px 36px -8px rgba(255, 213, 235, 0.5);*/
     padding: 40px;
     height: 40px;
     position: relative;

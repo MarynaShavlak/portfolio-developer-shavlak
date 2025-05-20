@@ -13,6 +13,9 @@ export const generatePortfolioFilters = () => {
     { label: "JavaScript", filter: ".javascript" },
     { label: "Typescript", filter: ".typescript" },
     { label: "jQuery", filter: ".jquery" },
+    { label: "Redux Toolkit", filter: ".reduxToolkit" },
+    { label: "Redux Persist", filter: ".reduxPersist" },
+    { label: "Zustand", filter: ".zustand" },
     { label: "HTML", filter: ".html" },
     { label: "CSS", filter: ".css" },
     { label: "SAAS/SCSS", filter: ".saas" },
@@ -24,6 +27,7 @@ export const generatePortfolioFilters = () => {
     { label: "Webpack", filter: ".webpack" },
     { label: "Vite", filter: ".vite" },
     { label: "Parcel", filter: ".parcel" },
+    { label: "Firebase", filter: ".firebase" },
     { label: "Web Games", filter: ".webGames" },
   ];
 

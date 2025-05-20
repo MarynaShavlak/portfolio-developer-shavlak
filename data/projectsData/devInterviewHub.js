@@ -1,6 +1,15 @@
 export const devInterviewHubData = {
   id: "devInterviewHub",
-  categories: ["react", "typescript", "webpack", "vite", "ast", "saas"],
+  categories: [
+    "react",
+    "typescript",
+    "webpack",
+    "vite",
+    "reduxToolkit",
+    "ast",
+    "saas",
+    "firebase",
+  ],
   type: "Individual",
   title: "Dev Interview Hub",
   slogan: "Master the Interview, Land the Job !",

@@ -2,7 +2,7 @@ export const phonebookData = {
   id: "phonebook",
   industry: "Web Application",
   type: "Individual",
-  categories: ["react"],
+  categories: ["react", "reduxToolkit"],
   title: "Phonebook",
   slogan: "Let PHONE GENIE grant your every connection wish!",
   presentation: "",

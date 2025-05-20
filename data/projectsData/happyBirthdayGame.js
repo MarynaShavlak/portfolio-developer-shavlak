@@ -1,6 +1,6 @@
 export const happyBirthdayGameData = {
   id: "happyBirthdayGame",
-  categories: ["react", "typescript", "webGames"],
+  categories: ["react", "typescript", "zustand", "webGames"],
   type: "Individual",
   title: "Happy Birthday Riddle Quest",
   slogan: "",

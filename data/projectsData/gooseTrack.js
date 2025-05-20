@@ -1,7 +1,7 @@
 export const gooseTrackData = {
   id: "gooseTrack",
   industry: "Web Application",
-  categories: ["react"],
+  categories: ["react", "reduxPersist"],
   title: "GooseTrack",
   type: "Collaborative",
   slogan: "Your Ultimate Task Manager and Calendar Companion!",
