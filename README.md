@@ -1,3 +1,57 @@
+## 🚀 Header Section
+
+A sleek, fixed header that blends personal branding with smooth navigation and a bold call-to-action.
+
+### ✨ Features
+
+- **Fixed Top Bar** with gradient mask for a clean fade effect.
+- **Profile Block**: Avatar, name, and job title for instant identity.
+- **Flex Layout** for responsive alignment of profile and nav.
+- **Animated Nav Links** with background slide-on-hover.
+- **"Hire Me" Button**: Eye-catching star-themed call-to-action.
+- **Smooth Scroll** and modern transitions for seamless UX.
+
+## 🎯 Hero Section
+
+A visually striking introduction area that welcomes users with animated clouds, bold identity, and clear calls to
+action.
+
+### ✨ Features
+
+- **Animated Canvas Clouds**: Layered canvas effects on both top and bottom for a dreamy atmosphere.
+- **Greeting & Name Display**: Prominent intro text with large, styled name heading.
+- **Professional Title Highlight**: Emphasized role with styled typography and span effect.
+- **Interactive Social Icons**: Links to Telegram, LinkedIn, GitHub, and Instagram with hover animations.
+- **Copy-to-Clipboard Email**: Clickable email with a tooltip feedback animation.
+- **Call-to-Action Buttons**: "Hire Me" and "See My Resume" buttons enhanced with layered star icons.
+- **JavaScript Enhancements**: Cloud animations, email copy interaction, and dynamic tooltips.
+
+## 🌟 CV Modal
+
+A sleek, interactive modal displaying my professional profile, including education, tech skills, soft skills,
+experience, and languages in a CV-style layout.
+
+### ✨ Features
+
+- **Organized Blocks**: Clearly structured sections for intuitive browsing through different areas of my profile.
+- **Central Profile Image**: Prominent circular photo with a name overlay that anchors the visual experience.
+- **Interactive Download**: Eye-catching button with animated stars that triggers a PDF download of my CV.
+- **Dynamic Canvas**: JavaScript-generated background shapes provide a modern and engaging aesthetic.
+- **Smooth Transitions**: jQuery-based fade effects ensure modal interactions feel fluid and non-disruptive.
+
+## 🌟 Hire Modal
+
+An elegant contact modal for hiring inquiries, combining smooth animations and interactive toggles.
+
+### ✨ Features
+
+- **Validated Inputs**: Name, email, phone, and message fields with real-time validation and error feedback.
+- **Toggleable Contact Form**: Show or hide the contact form with animated fade effects and body scroll lock.
+- **Interactive Card Toggles**: Click and hover on cards to highlight active contact options dynamically.
+- **Smooth Modal Control**: Open and close modal via buttons, backdrop clicks, or close icons with fluid transitions.
+- **Quick Contact Links**: Social and contact cards provide direct links and easy access to communication channels.
+- **Send email**: Form validation and email sending with success notifications and form reset.
+
 ## 👤 About Me Section
 
 A visually striking intro combining a segmented portrait grid with a bold, textual self-description.
@@ -23,7 +77,7 @@ A stylish and inviting contact area encouraging visitors to get in touch with an
 - **Star-Themed Send Button** with layered star icons and shadows.
 - **Contact Info Panel**: Clickable links for phone, email, Telegram, Viber, WhatsApp, and location with icons.
 - **Subtle Animations**: Pulsing glow behind contact links and animated text for engagement.
-- **JavaScript Integration**: Form validation and email sending with success notifications and form reset.
+- **Send email**: Form validation and email sending with success notifications and form reset.
 
 ## 🌟 Soft Skills Section
 
@@ -143,6 +197,17 @@ a modern grid layout and interactive "load more" functionality.
 - **Stylish Mask & Padding**: Gradient fade edges with ample spacing for visual comfort.
 - **Dynamic Rendering**: Content generated from JS data for easy updates.
 - **Animated Reveal**: Hidden posts slide into view for smooth user experience.
+
+## 🧭 Footer Section
+
+A well-structured footer combining navigation, social links, and a final call-to-action.
+
+### ✨ Features
+
+- **Copyright Line** with a smart personal slogan.
+- **Social Icons**: Telegram, LinkedIn, GitHub, Instagram, Email.
+- **Quick Nav Links** for smooth access to main sections.
+- **"Hire Me" Star Button** in cool blue for strong CTA.
 
 ## Skills
 
