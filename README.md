@@ -1,3 +1,15 @@
+## 👤 About Me Section
+
+A visually striking intro combining a segmented portrait grid with a bold, textual self-description.
+
+### ✨ Features
+
+- **Segmented Photo Grid**: 12 photo pieces in a 4x4 CSS grid framed by colored blocks, creating a dynamic mosaic
+  effect.
+- **Personal Bio**: This section reflects the core traits that define my personality and approach to work.
+- **Buttons:** Star-themed “Hire me” and “See my resume” with subtle star icons.
+- **Design:** Soft glows and blur effects on color blocks for a modern, polished style.
+
 ## 📬 Contact Me Section
 
 A stylish and inviting contact area encouraging visitors to get in touch with an elegant form and clear contact info.
