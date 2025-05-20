@@ -105,6 +105,13 @@ Interactive modal showcasing professional profile: education, skills, experience
 - Dynamic JavaScript-generated canvas background shapes.
 - Smooth jQuery fade transitions.
 
+  ## Demo video
+  
+
+
+https://github.com/user-attachments/assets/f593c9b3-6d50-49e7-b048-99801c12514f
+
+
 ---
 
 ## 🌟 Hire Modal
@@ -117,6 +124,14 @@ Elegant contact modal with smooth animations and interactive toggles.
 - Modal open/close with buttons, backdrop, or icons.
 - Quick social/contact links.
 - Email sending with validation, notifications, and reset.
+
+  ## Demo video
+
+  
+
+https://github.com/user-attachments/assets/0ff292c4-acc0-4b64-8490-52e4eab595a3
+
+
 
 ---
 
@@ -290,6 +305,13 @@ Canvas-enhanced slider displaying client and colleague testimonials.
 - Detailed testimonial content with photos, names, companies, projects, star ratings.
 - Autoplay with hover pause.
 
+- ## Demo video
+
+  
+https://github.com/user-attachments/assets/cb2bb0a2-6593-4dde-9ea8-b515657c541f
+
+
+
 ---
 
 ## 📚 Blog (Read Me) Section
@@ -303,6 +325,14 @@ Clean, engaging blog with curated JavaScript puzzles and posts.
 - Gradient fade mask and comfortable padding.
 - Dynamic JS rendering.
 - Smooth slide-in reveal animations.
+- 
+## Demo video
+
+
+
+https://github.com/user-attachments/assets/ead0b738-e4b5-40ba-a8db-d4169da30e01
+
+
 
 ---
 
