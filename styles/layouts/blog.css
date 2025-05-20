@@ -63,17 +63,9 @@
     grid-row: span 3;
     cursor: pointer;
     width: 370px;
-
-    /*--mask:*/
-    /*        radial-gradient(25.2px at 50% calc(100% - 35.25px),#000 99%,#0000 101%) calc(50% - 30px) 0/60px 100%,*/
-    /*        radial-gradient(25.2px at 50% calc(100% + 20.25px),#0000 99%,#000 101%) 50% calc(100% - 15px)/60px 100% repeat-x;*/
-    /*-webkit-mask: var(--mask);*/
-    /*mask: var(--mask);*/
-
     border-radius: 15px;
-    padding: 18px;
     background-color: var(--main-bg-color);
-    padding-bottom: 40px;
+    padding: 18px 18px 40px;
     transform: scale(1);
     transition: all 0.3s ease;
     overflow: hidden;
