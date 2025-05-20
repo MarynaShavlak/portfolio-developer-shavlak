@@ -189,6 +189,12 @@ Categorized collection of development tools and technologies.
 - Responsive Masonry grid layout.
 - Tool info overlays on hover with quick resource links.
 
+## Demo video
+
+
+https://github.com/user-attachments/assets/1991652b-6daa-45bf-9f7a-84122422ac98
+
+
 ---
 
 ## 🎓 Education Section
@@ -199,6 +205,13 @@ Animated canvas-driven timeline illustrating educational journey.
 - Animated floating tooltips at milestones.
 - Certificate download options when available.
 - Modular JS for drawing, animation control, and data rendering.
+
+## Demo video
+
+
+
+https://github.com/user-attachments/assets/5e81db4e-b34a-4bb7-9c6c-f14030ff9523
+
 
 ---
 
@@ -212,6 +225,13 @@ Animated responsive timeline of professional history.
 - Detailed job info with role, dates, responsibilities, achievements.
 - Animated icons and color-coded themes.
 - Modular JS for markup generation and styling.
+
+## Demo video
+
+
+https://github.com/user-attachments/assets/eb64a2fc-a558-4c67-86a6-4edbd7ef8fa1
+
+
 
 ---
 
@@ -229,6 +249,13 @@ Portfolio showcasing curated projects with dynamic filtering and pagination.
 - Smooth animations for images and info.
 - Detailed modal integration.
 
+## Demo video
+
+
+
+https://github.com/user-attachments/assets/7ff12c93-e894-49c0-8fca-1731db8ceb47
+
+
 ---
 
 ## 📂 Project Modal Component
@@ -243,6 +270,13 @@ Modern modal window presenting project details with rich visuals and navigation.
 - Interactive clickable links opening in new tabs.
 - Clean, consistent modern UI design.
 - User-friendly open/close controls.
+
+  ## Demo video
+  
+
+
+https://github.com/user-attachments/assets/96c709fa-d336-435b-b143-858b2e1a63b2
+
 
 ---
 
