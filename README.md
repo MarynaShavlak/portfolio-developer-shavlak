@@ -87,6 +87,12 @@ A visually striking introduction featuring animated clouds, bold identity displa
 - Layered star icon buttons: "Hire Me" and "See My Resume".
 - JavaScript-driven animations and tooltip interactions.
 
+### Demo video
+
+
+https://github.com/user-attachments/assets/aa867ab8-9546-4eae-bbe3-8d1d97f0c440
+
+
 ---
 
 ## 🌟 CV Modal
@@ -123,6 +129,13 @@ An engaging intro combining a segmented portrait grid with a bold personal descr
 - Star-themed “Hire me” and “See my resume” buttons with subtle icons.
 - Modern design with soft glows and blur effects.
 
+### Demo video
+
+
+
+https://github.com/user-attachments/assets/c5e3aa7b-a5c1-4a2f-b13e-1c345e866e56
+
+
 ---
 
 ## 📬 Contact Me Section
@@ -138,6 +151,12 @@ Inviting contact area with elegant form and clear contact info.
 - Subtle animations and pulsing glow effects.
 - Email sending with success notifications and reset.
 
+### Demo video
+
+
+https://github.com/user-attachments/assets/303f2397-7f56-441c-8e2b-90d067102bfe
+
+
 ---
 
 ## 🌟 Soft Skills Section
@@ -152,6 +171,12 @@ Interactive showcase of core soft skills with dynamic hover details.
 - User guidance via thought bubble text.
 - Smooth fade transitions.
 - JavaScript-driven dynamic rendering.
+
+### Demo video
+
+
+https://github.com/user-attachments/assets/e69d389b-8570-4ebf-95e6-2d63ccc81c72
+
 
 ---
 
