@@ -1,3 +1,22 @@
+## 🌟 Soft Skills Section
+
+An engaging, interactive section showcasing my core soft skills with dynamic hover-triggered details  
+that highlight how I apply each skill in real work scenarios.
+
+### ✨ Features
+
+- **Interactive Skill Bubbles**: Circular skill items positioned around a central image, each representing a key soft
+  skill.
+- **Hover-Triggered Details**: Hovering over a skill bubble reveals a detailed showcase of real-world examples and
+  explanations.
+- **Dynamic Visibility**: Only the hovered skill’s details appear, creating a clean, focused user experience.
+- **Visual Design**: Includes a large thematic image with decorative blurred elements and animated pulses for subtle
+  motion.
+- **Clear Skill Categorization**: Each skill bubble uses distinct styling and positioning for easy recognition.
+- **User Guidance**: Thought bubble text invites users to explore the skills interactively.
+- **Smooth Transitions**: Fade-in/out animations enhance engagement without distraction.
+- **JavaScript-Driven Rendering**: Skill showcases are dynamically generated from data for easy updates and maintenance.
+
 ## 🛠️ Tools Section
 
 Showcases a categorized collection of development tools and technologies I've worked with.
@@ -33,6 +52,39 @@ An animated, responsive timeline presenting my professional history with engagin
 - **Detailed Content**: Includes job title, company, dates, role descriptions, responsibilities list, and achievements.
 - **Iconography & Styling**: Animated icons and color-coded themes highlight different roles and milestones.
 - **Reusable Components**: Separation of concerns through modular JS functions for markup generation and event styling.
+
+## 💼 My Projects Section
+
+A visually appealing portfolio section showcasing a curated collection of projects with dynamic filtering and pagination
+for effortless browsing.
+
+### ✨ Features
+
+- **Category Filters**: Interactive filter buttons to quickly sort projects by technology or category.
+- **Masonry Layout**: Responsive grid with smooth arrangement and spacing using **Isotope.js**.
+- **Load More / Show Less**: Star-themed buttons for progressive project loading without page reloads.
+- **Project Cards**: Each project displays an image, title, date, categories, type, and a brief overview.
+- **Hover Effects**: Subtle scaling and layered shadows highlight projects on mouseover.
+- **Explore Project Buttons**: Inviting star-styled buttons to open detailed project modals.
+- **Dynamic Rendering**: Portfolio content generated from JavaScript data for easy maintenance and updates.
+- **Smooth Animations**: Image and info transitions enhance user engagement and polish the UI.
+- **Modal Integration**: Clicking a project triggers a detailed modal with full project info.
+
+## 📂 Project Modal Component
+
+A modern modal window that elegantly presents detailed project info with rich visuals and easy navigation.
+
+### ✨ Features
+
+- **Responsive Flex Layout**: Clean split between media (images/videos) and project details for optimal viewing.
+- **Media Carousel**: Smooth slider with next/prev buttons to showcase multiple project screenshots and videos.
+- **Comprehensive Info**: Includes project title, slogan, date, categories, timeline, and direct links (website, repo,
+  API).
+- **Organized Tech & Skills**: Categorized lists highlighting technologies and skills used in the project.
+- **Feature Highlights**: Clear presentation of key features and additional project insights.
+- **Interactive Links**: Clickable, styled links open in new tabs for easy access.
+- **Clean & Consistent Design**: Modern UI with subtle shadows, rounded corners, and coherent color scheme.
+- **User-Friendly Controls**: Easy open/close functionality with backdrop click and close button support.
 
 ## 💬 Testimonials Section
 
@@ -71,4 +123,13 @@ a modern grid layout and interactive "load more" functionality.
 - **Dynamic DOM manipulation** via jQuery
 - **Conditional logic**
 - **Custom CSS animations** (e.g., `fadeInUp`, `pulseBlue`, `pulsePink`)
-- **Semantic hierarchy** 
+- **Semantic hierarchy**
+
+### Technical Highlights
+
+- CSS uses custom properties (`var(--main-bg-color)`, `var(--active-bg-color)`, etc.) for easy theming.
+- Slider transition uses CSS `transform` with `translateX` for performant animations.
+- Modular JS code handles modal events, data lookup, markup generation, and slider behavior separately.
+- jQuery simplifies DOM manipulation and event handling.
+- Media supports both images and HTML5 videos with autoplay/mute controls.
+- Semantic class naming for maintainability and clarity.
