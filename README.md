@@ -1,3 +1,18 @@
+## 📬 Contact Me Section
+
+A stylish and inviting contact area encouraging visitors to get in touch with an elegant form and clear contact info.
+
+### ✨ Features
+
+- **Gradient Background** with smooth masked edges for a soft look.
+- **Bold Title & Animated Invitation** text with a keyboard press effect.
+- **Two-Column Layout**: Invitation message alongside a user-friendly contact form and quick contact links.
+- **Validated Contact Form**: Inputs for Name, Email, Phone, and Message with live validation and error messages.
+- **Star-Themed Send Button** with layered star icons and shadows.
+- **Contact Info Panel**: Clickable links for phone, email, Telegram, Viber, WhatsApp, and location with icons.
+- **Subtle Animations**: Pulsing glow behind contact links and animated text for engagement.
+- **JavaScript Integration**: Form validation and email sending with success notifications and form reset.
+
 ## 🌟 Soft Skills Section
 
 An engaging, interactive section showcasing my core soft skills with dynamic hover-triggered details  
