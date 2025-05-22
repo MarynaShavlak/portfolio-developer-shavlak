@@ -125,6 +125,32 @@ export const devInterviewHubData = {
   ],
   additionalInfo: [
     {
+      title: "Complete Project Configuration from Scratch",
+      items: [
+        "Webpack configuration with advanced loaders and plugins",
+        "React + TypeScript integration with Babel transpilation",
+        "SCSS and CSS Modules setup with proper compilation",
+        "Vite configuration for fast development and building",
+        "Prettier integration for consistent code formatting",
+        "Comprehensive testing environment (Jest + RTL)",
+        "Storybook setup for component development",
+        "Loki visual regression testing configuration",
+        "Cypress end-to-end testing environment",
+        "Competent config decomposition and modularization",
+      ],
+    },
+    {
+      title: "TypeScript Frontend Development Expertise",
+      items: [
+        "Advanced Type Safety & Pattern Implementation",
+        "Exhaustive Type Checking & Control Flow Analysis",
+        "Generic Programming & Constraint Design",
+        "Runtime Safety & Type Narrowing",
+        "Advanced Type Manipulation",
+        "Data Modeling & Architecture",
+      ],
+    },
+    {
       title: "Optimized Rendering & State Management & Offline Support",
       items: [
         "Async reducers/components",
