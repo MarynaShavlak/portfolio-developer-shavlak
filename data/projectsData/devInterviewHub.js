@@ -217,6 +217,13 @@ export const devInterviewHubData = {
       ],
     },
     {
+      title: "Error Handling",
+      items: [
+        "React ErrorBoundary to catch errors and show fallback UI",
+        "Logs errors and uses Suspense for lazy fallback",
+      ],
+    },
+    {
       title: "Code Quality & Custom Plugins",
       items: [
         "Prettier, Stylelint, and ESLint for consistent style and code quality",
