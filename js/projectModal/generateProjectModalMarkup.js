@@ -236,11 +236,20 @@ function createAdditionalInfoSection(info) {
     const $sectionTitle = $(
       `<p class="additional-info-category">${title}:</p>`,
     );
-    const $itemsList = $('<ul class="additional-items-list"></ul>');
+    let maxLength = 0;
+    items.forEach((itm) => {
+      if (maxLength < itm.length) {
+        maxLength = itm.length;
+      }
+    });
+    console.log("maxLength: ", maxLength);
+    const listClass =
+      maxLength < 40 ? "additional-items-list" : "additional-items-list-col";
+    const $itemsList = $(`<ul class=${listClass}></ul>`);
 
-    items.forEach((itm) =>
-      $itemsList.append(`<li class="additional-item">${itm}</li>`),
-    );
+    items.forEach((itm) => {
+      return $itemsList.append(`<li class="additional-item">${itm}</li>`);
+    });
     $list.append($section.append($sectionTitle, $itemsList));
   });
 
