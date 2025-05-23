@@ -28,9 +28,18 @@ export function generateProjectModalMarkup(projectData) {
       "skills-list",
       "skills-item",
     ),
-    createFeaturesSection(features),
-    createAdditionalInfoSection(additionalInfo),
   );
+  if (id === "devInterviewHub") {
+    $info.append(
+      createAdditionalInfoSection(additionalInfo),
+      createFeaturesSection(features),
+    );
+  } else {
+    $info.append(
+      createFeaturesSection(features),
+      createAdditionalInfoSection(additionalInfo),
+    );
+  }
 
   $modal.append($header, $info);
   $(".project-modal").append($modal);
@@ -242,7 +251,7 @@ function createAdditionalInfoSection(info) {
         maxLength = itm.length;
       }
     });
-    console.log("maxLength: ", maxLength);
+
     const listClass =
       maxLength < 40 ? "additional-items-list" : "additional-items-list-col";
     const $itemsList = $(`<ul class=${listClass}></ul>`);
