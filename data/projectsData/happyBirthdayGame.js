@@ -75,7 +75,7 @@ export const happyBirthdayGameData = {
   ],
   techStack: {
     architecture: "Feature-Sliced Design",
-    frontend: ["React", "Zustand"],
+    frontend: ["React"],
     styling: ["CSS Modules"],
     tools: ["TypeScript", "CRACO"],
     effects: ["Framer Motion", "React Confetti", "react-step-progress-bar"],
