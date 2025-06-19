@@ -20,7 +20,7 @@ export const workData = [
     title: "Agricultural Procurement Data Manager",
     company: "KROKUS-AGRO GROUP",
     shortInfo:
-      "Analyzed procurement data and automated workflows, saving 50K UAH by reducing manual entry and invoice errors..",
+      "Analyzed procurement data and automated workflows, eliminating manual tasks and invoice errors—saving over 20% in operational costs.",
     description: "",
     date: "2022 - 2023",
     icon: '<i class="fa-solid fa-file-contract"></i>',
@@ -29,7 +29,7 @@ export const workData = [
       "Review accounts and payments for accuracy and validity",
     ],
     achievement:
-      "Optimized data workflow with automation scripts, minimizing manual entry and detecting contractor invoice errors— resulting in savings of up to 50K UAH.",
+      "Streamlined data workflow with automation, eliminating manual tasks and invoice mistakes—saving over 20% in operational costs",
   },
   {
     title: "Data Analytics Coordinator",

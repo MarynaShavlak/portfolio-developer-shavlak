@@ -31,7 +31,7 @@ export const shoppingListData = {
     "Type-Safe Programming with TypeScript",
     "Object & Array Destructuring",
     "Linting",
-    "Code Formatting ",
+    "Code Formatting",
     "Modular Architecture & Folder Structure",
     "Controlled & Uncontrolled Components",
   ],
