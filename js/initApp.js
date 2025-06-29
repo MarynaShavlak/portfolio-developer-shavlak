@@ -14,15 +14,15 @@ import { initOnScroll } from "./utils/initOnScroll.js";
 
 // Configuration for partials and their initialization
 const sections = [
-  // {
-  //   selector: "#header",
-  //   partial: "./partials/header.html",
-  // },
-  // {
-  //   selector: "#main",
-  //   partial: "./partials/hero.html",
-  //   init: initHeroSection,
-  // },
+  {
+    selector: "#header",
+    partial: "./partials/header.html",
+  },
+  {
+    selector: "#main",
+    partial: "./partials/hero.html",
+    init: initHeroSection,
+  },
   {
     selector: "#main",
     partial: "./partials/about.html",

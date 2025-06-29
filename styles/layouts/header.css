@@ -28,11 +28,21 @@
     overflow: hidden;
     border-radius: 50%;
     background-color: var(--main-black-color);
+    width: fit-content;
+    height: fit-content;
 }
 
 .profile__img {
-    width: 57px;
-    height: 57px;
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 1200px) {
+    .profile__img {
+        width: 57px;
+        height: 57px;
+    }
+
 }
 
 .profile__info {
@@ -41,15 +51,27 @@
 
 .profile__name {
     margin-bottom: 3px;
-    font-size: 1.06rem;
+    font-size: 12px;
     line-height: 1.2;
     color: var(--main-text-color);
     font-weight: 700;
 }
 
+
 .profile__job {
-    font-size: 0.8rem;
+    font-size: 12px;
     color: var(--main-text-color);
+}
+
+@media (min-width: 1200px) {
+    .profile__name {
+        font-size: 1.06rem;
+    }
+
+    .profile__job {
+        font-size: 0.8rem;
+
+    }
 }
 
 .nav {
@@ -57,6 +79,40 @@
     align-items: center;
     height: 100%;
 }
+
+.nav__mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: var(--main-text-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    i {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .nav {
+        display: none;
+    }
+
+    .nav__mobile-menu-toggle {
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav__mobile-menu-toggle {
+        display: none;
+    }
+}
+
 
 .nav__link {
     margin-left: 2rem;
@@ -93,12 +149,20 @@
 
 
 .nav__btn {
-    margin-left: 2rem;
+    margin-left: 0;
     position: relative;
-    font-size: 0.93rem;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
     padding: 0.66rem 2rem;
     transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+@media (min-width: 1200px) {
+    .nav__btn {
+        margin-left: 2rem;
+        font-size: 0.93rem;
+        padding: 0.66rem 2rem;
+    }
 }
