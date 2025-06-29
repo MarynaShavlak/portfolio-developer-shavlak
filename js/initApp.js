@@ -50,13 +50,27 @@ const sections = [
     lazy: true,
     scrollSelector: "#tools",
   },
-  // {
-  //   selector: "#main",
-  //   partial: "./partials/education.html",
-  //   init: initEducationSection,
-  //   lazy: true,
-  //   scrollSelector: "#education",
-  // },
+  {
+    selector: "#main",
+    partial: "./partials/education.html",
+    init: initEducationSection,
+    lazy: true,
+    scrollSelector: "#education",
+  },
+  {
+    selector: "#main",
+    partial: "./partials/educationMobile.html",
+    init: initEducationSection,
+    lazy: true,
+    scrollSelector: "#educationMobile",
+    config: {
+      canvasId: "roadCanvas--mobile",
+      numberedPointsCanvasId: "numbersCanvas--mobile",
+      scale: 0.25,
+      frameDuration: 16,
+      pointsCount: 100,
+    },
+  },
   {
     selector: "#main",
     partial: "./partials/workExperience.html",
@@ -101,9 +115,11 @@ export async function initApp() {
     for (const section of sections) {
       await insertPartial(section.selector, section.partial);
       if (section.init && !section.lazy) {
-        section.init();
+        section.config ? section.init(section.config) : section.init();
       } else if (section.lazy && section.scrollSelector) {
-        initOnScroll(section.scrollSelector, section.init);
+        initOnScroll(section.scrollSelector, () =>
+          section.config ? section.init(section.config) : section.init(),
+        );
       }
     }
   } catch (err) {

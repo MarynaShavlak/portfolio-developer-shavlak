@@ -9,7 +9,9 @@ import { setupCanvas } from "./canvas/setupCanvas.js";
 export function initEducationSection(config = {}) {
   const {
     canvasId = "roadCanvas",
+    numberedPointsCanvasId = "numbersCanvas",
     scale = 0.8357,
+    // scale = 0.25,
     frameDuration = 16,
     pointsCount = 100,
   } = config;
@@ -27,7 +29,7 @@ export function initEducationSection(config = {}) {
   );
 
   animationController.startAnimation();
-  drawNumberedPoints(pathPoints, scale);
+  drawNumberedPoints(numberedPointsCanvasId, pathPoints, scale);
   renderEducationSection();
   setupEventListeners();
 
