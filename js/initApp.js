@@ -23,10 +23,10 @@ const sections = [
   //   partial: "./partials/hero.html",
   //   init: initHeroSection,
   // },
-  // {
-  //   selector: "#main",
-  //   partial: "./partials/about.html",
-  // },
+  {
+    selector: "#main",
+    partial: "./partials/about.html",
+  },
   // {
   //   selector: "#main",
   //   partial: "./partials/softSkills.html",
