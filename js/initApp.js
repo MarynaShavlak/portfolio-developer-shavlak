@@ -27,11 +27,11 @@ const sections = [
     selector: "#main",
     partial: "./partials/about.html",
   },
-  // {
-  //   selector: "#main",
-  //   partial: "./partials/softSkills.html",
-  //   init: initSoftSkillsSection,
-  // },
+  {
+    selector: "#main",
+    partial: "./partials/softSkills.html",
+    init: initSoftSkillsSection,
+  },
   {
     selector: "#main",
     partial: "./partials/contacts.html",
