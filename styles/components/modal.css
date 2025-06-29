@@ -31,7 +31,7 @@ body.modal-open {
     width: 830px;
 }
 
-.close-modal-btn, .close-form-btn {
+.close-modal-btn, .close-form-btn, .close-mobile-btn {
     display: flex;
     align-items: center;
     justify-content: center;

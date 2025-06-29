@@ -80,6 +80,35 @@
     height: 100%;
 }
 
+.header__mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    padding: 40px 20px;
+    overflow-y: auto;
+
+    .nav__mobile-menu {
+        flex-direction: column;
+        display: flex;
+        gap: 30px;
+    }
+
+    .close-mobile-btn {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.header__mobile-menu--active {
+    display: block;
+}
+
 .nav__mobile-menu-toggle {
     display: flex;
     align-items: center;

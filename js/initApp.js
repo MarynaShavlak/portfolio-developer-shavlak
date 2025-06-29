@@ -11,12 +11,18 @@ import { initBlog } from "./blog/blog.js";
 import { initHireModal } from "./hireModal/hireModal.js";
 import { initCVModal } from "./cvModal/cvModal.js";
 import { initOnScroll } from "./utils/initOnScroll.js";
+import { initMobileMenu } from "./mobileMenu/initMobileMenu.js";
 
 // Configuration for partials and their initialization
 const sections = [
   {
     selector: "#header",
     partial: "./partials/header.html",
+  },
+  {
+    selector: "#main",
+    partial: "./partials/mobileMenu.html",
+    init: initMobileMenu,
   },
   {
     selector: "#main",
