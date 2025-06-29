@@ -263,7 +263,7 @@
 
 .portfolio__filter__container {
     padding-top: 50px;
-    padding-bottom: 8s0px;
+    padding-bottom: 80px;
     background-color: var(--main-bg-color);
     mask: linear-gradient(to bottom, #000 90%, transparent);
 }

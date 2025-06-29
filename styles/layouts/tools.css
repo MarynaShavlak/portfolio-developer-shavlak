@@ -13,11 +13,17 @@
 .section__tools__title {
     margin-bottom: 0.3rem;
     font-family: "Lustria", serif;
-    font-size: 5rem;
+    font-size: 34px;
     color: var(--main-text-color);
     font-weight: 700;
     text-align: center;
 
+}
+
+@media (min-width: 1200px) {
+    .section__tools__title {
+        font-size: 75px;
+    }
 }
 
 
@@ -29,27 +35,17 @@
     text-align: center;
 }
 
-.tools__container {
-    /*border: 1px solid black;*/
-    /*display:grid;*/
-    /*gap:10px;*/
-    /*grid-template-rows: repeat(5, 180px);*/
-    /*grid-template-columns: repeat(5, 1fr);*/
-}
 
 .tools__item {
     position: relative;
-    /*background: red;*/
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
-    /*width:220px;*/
-    /*height:180px;*/
     margin-bottom: 10px;
-    opacity: 0; /* Start invisible */
-    animation: fadeIn 0.5s ease-in forwards; /* Apply fade-in animation */
-    --delay: 0s; /* Define default value for --delay */
-    animation-delay: var(--delay); /* Use custom property for delay */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    --delay: 0s;
+    animation-delay: var(--delay);
 }
 
 
@@ -74,7 +70,6 @@
     }
 }
 
-/*done*/
 
 .tools__item--state {
     width: 220px;
@@ -934,6 +929,14 @@
     animation: float 6s ease-in-out infinite;
     transition: opacity 0.4s ease;
     pointer-events: none; /* Icons don't interfere with interaction */
+}
+
+
+@media (max-width: 1199px) {
+    .tools__item {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 

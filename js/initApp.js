@@ -37,13 +37,13 @@ const sections = [
   //   partial: "./partials/contacts.html",
   //   init: initContactsSection,
   // },
-  // {
-  //   selector: "#main",
-  //   partial: "./partials/tools.html",
-  //   init: initToolsSection,
-  //   lazy: true,
-  //   scrollSelector: "#tools",
-  // },
+  {
+    selector: "#main",
+    partial: "./partials/tools.html",
+    init: initToolsSection,
+    lazy: true,
+    scrollSelector: "#tools",
+  },
   // {
   //   selector: "#main",
   //   partial: "./partials/education.html",
@@ -51,11 +51,11 @@ const sections = [
   //   lazy: true,
   //   scrollSelector: "#education",
   // },
-  // {
-  //   selector: "#main",
-  //   partial: "./partials/workExperience.html",
-  //   init: initWorkSection,
-  // },
+  {
+    selector: "#main",
+    partial: "./partials/workExperience.html",
+    init: initWorkSection,
+  },
   {
     selector: "#main",
     partial: "./partials/portfolio.html",
