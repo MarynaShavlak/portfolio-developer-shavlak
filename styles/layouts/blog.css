@@ -19,10 +19,16 @@
 .blog__title {
     font-family: "Lustria", serif;
     margin-bottom: 0.3rem;
-    font-size: 75px;
+    font-size: 34px;
     color: var(--main-text-color);
     text-transform: uppercase;
     font-weight: 900;
+}
+
+@media (min-width: 1200px) {
+    .blog__title {
+        font-size: 75px;
+    }
 }
 
 .blog__text {

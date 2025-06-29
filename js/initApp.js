@@ -56,11 +56,11 @@ const sections = [
   //   partial: "./partials/workExperience.html",
   //   init: initWorkSection,
   // },
-  // {
-  //   selector: "#main",
-  //   partial: "./partials/portfolio.html",
-  //   init: initPortfolio,
-  // },
+  {
+    selector: "#main",
+    partial: "./partials/portfolio.html",
+    init: initPortfolio,
+  },
   // {
   //   selector: "#main",
   //   partial: "./partials/reviews.html",
