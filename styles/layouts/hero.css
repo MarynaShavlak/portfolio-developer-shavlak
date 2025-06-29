@@ -1,6 +1,5 @@
 .hero {
     position: relative;
-
     height: 700px;
     overflow: hidden;
     display: flex;
@@ -34,11 +33,15 @@
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    /*flex-direction: column;*/
-    /*align-items: flex-end;*/
+    flex-direction: column;
     margin-top: 30px;
 }
 
+@media (min-width: 1200px) {
+    .container--hero {
+        flex-direction: row;
+    }
+}
 
 .hero__info {
     transform: translateY(50px);
@@ -48,47 +51,87 @@
 }
 
 .hero__greet {
-    font-size: 52px;
+    font-size: 40px;
     color: var(--main-text-color);
     font-weight: 700;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .hero__greet {
+        font-size: 52px;
+        text-align: start;
+    }
 }
 
 .hero__title {
-    /*font-family: "Lustria", serif;*/
     font-family: Garamond, serif;
-    font-size: 170px;
+    font-size: 70px;
+    text-align: center;
     font-weight: 900;
-    /*text-shadow: 0 0 15px rgba(0,0,0,.5), 0 0 10px rgba(0,0,0,.5);*/
     z-index: 0;
     color: var(--active-bg-color);
     text-shadow: 0px 0px 0 rgb(231, 67, 144), 1px 1px 0 rgb(216, 52, 129), 2px 2px 0 rgb(202, 38, 115), 3px 3px 0 rgb(187, 23, 100), 4px 4px 0 rgb(173, 9, 86), 5px 5px 0 rgb(158, -6, 71), 6px 6px 0 rgb(144, -20, 57), 7px 7px 6px rgba(0, 0, 0, 0.6), 7px 7px 1px rgba(0, 0, 0, 0.5), 0px 0px 6px rgba(0, 0, 0, .2);
     align-self: center;
 }
 
-.hero__text {
-    font-size: 30px;
-    max-width: 600px;
-    color: var(--main-text-color);
-
-
-    /*text-wrap: pretty;*/
-
-    span {
-        font-weight: 900;
-        font-size: 60px;
+@media (min-width: 1200px) {
+    .hero__title {
+        font-size: 170px;
     }
 }
 
-.hero__socials {
-    transform: translateY(70px);
+.hero__text {
+    font-size: 20px;
+    max-width: 600px;
+    color: var(--main-text-color);
+    order: 0;
+    transform: translateY(30px);
+
+    span {
+        font-weight: 900;
+        font-size: 34px;
+    }
 }
 
+@media (min-width: 1200px) {
+    .hero__text {
+        font-size: 30px;
+        max-width: 600px;
+        order: 1;
+
+        span {
+            font-size: 60px;
+        }
+    }
+}
+
+
+.hero__socials {
+    order: 1;
+    transform: translateY(50px);
+}
+
+@media (min-width: 1200px) {
+    .hero__socials {
+        order: 0;
+        transform: translateY(70px);
+    }
+}
+
+
 .hero__subtext {
-    font-size: 24px;
+    font-size: 16px;
     color: var(--main-text-color);
     font-weight: 700;
     margin-bottom: 20px;
     align-self: flex-start;
+}
+
+@media (min-width: 1200px) {
+    .hero__subtext {
+        font-size: 24px;
+    }
 }
 
 .hero__email {
