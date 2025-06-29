@@ -11,7 +11,6 @@
     background-position: bottom;
     position: absolute;
     bottom: 0%;
-
     animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
 
 }
@@ -20,12 +19,17 @@
     z-index: -1;
 }
 
-
 .ocean--blog .wave {
     background-image: url('../../assets/images/icons/wave-blue.svg');
-    width: 370px;
+    width: 345px;
     height: 200px;
     z-index: 2;
+}
+
+@media (min-width: 1200px) {
+    .ocean--blog .wave {
+        width: 370px;
+    }
 }
 
 .ocean--contact .wave {
@@ -36,6 +40,7 @@
     left: -20px;
 
 }
+
 
 .ocean--contact-modal .wave {
     background-image: url('../../assets/images/icons/wave-white.svg');

@@ -14,60 +14,60 @@ import { initOnScroll } from "./utils/initOnScroll.js";
 
 // Configuration for partials and their initialization
 const sections = [
-  {
-    selector: "#header",
-    partial: "./partials/header.html",
-  },
-  {
-    selector: "#main",
-    partial: "./partials/hero.html",
-    init: initHeroSection,
-  },
-  {
-    selector: "#main",
-    partial: "./partials/about.html",
-  },
-  {
-    selector: "#main",
-    partial: "./partials/softSkills.html",
-    init: initSoftSkillsSection,
-  },
-  {
-    selector: "#main",
-    partial: "./partials/contacts.html",
-    init: initContactsSection,
-  },
-  {
-    selector: "#main",
-    partial: "./partials/tools.html",
-    init: initToolsSection,
-    lazy: true,
-    scrollSelector: "#tools",
-  },
-  {
-    selector: "#main",
-    partial: "./partials/education.html",
-    init: initEducationSection,
-    lazy: true,
-    scrollSelector: "#education",
-  },
-  {
-    selector: "#main",
-    partial: "./partials/workExperience.html",
-    init: initWorkSection,
-  },
-  {
-    selector: "#main",
-    partial: "./partials/portfolio.html",
-    init: initPortfolio,
-  },
-  {
-    selector: "#main",
-    partial: "./partials/reviews.html",
-    init: initReviewsSlider,
-    lazy: true,
-    scrollSelector: ".reviews.section__reviews",
-  },
+  // {
+  //   selector: "#header",
+  //   partial: "./partials/header.html",
+  // },
+  // {
+  //   selector: "#main",
+  //   partial: "./partials/hero.html",
+  //   init: initHeroSection,
+  // },
+  // {
+  //   selector: "#main",
+  //   partial: "./partials/about.html",
+  // },
+  // {
+  //   selector: "#main",
+  //   partial: "./partials/softSkills.html",
+  //   init: initSoftSkillsSection,
+  // },
+  // {
+  //   selector: "#main",
+  //   partial: "./partials/contacts.html",
+  //   init: initContactsSection,
+  // },
+  // {
+  //   selector: "#main",
+  //   partial: "./partials/tools.html",
+  //   init: initToolsSection,
+  //   lazy: true,
+  //   scrollSelector: "#tools",
+  // },
+  // {
+  //   selector: "#main",
+  //   partial: "./partials/education.html",
+  //   init: initEducationSection,
+  //   lazy: true,
+  //   scrollSelector: "#education",
+  // },
+  // {
+  //   selector: "#main",
+  //   partial: "./partials/workExperience.html",
+  //   init: initWorkSection,
+  // },
+  // {
+  //   selector: "#main",
+  //   partial: "./partials/portfolio.html",
+  //   init: initPortfolio,
+  // },
+  // {
+  //   selector: "#main",
+  //   partial: "./partials/reviews.html",
+  //   init: initReviewsSlider,
+  //   lazy: true,
+  //   scrollSelector: ".reviews.section__reviews",
+  // },
   {
     selector: "#main",
     partial: "./partials/blog.html",
