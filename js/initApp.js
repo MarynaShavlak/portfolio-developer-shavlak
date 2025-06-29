@@ -32,11 +32,11 @@ const sections = [
   //   partial: "./partials/softSkills.html",
   //   init: initSoftSkillsSection,
   // },
-  // {
-  //   selector: "#main",
-  //   partial: "./partials/contacts.html",
-  //   init: initContactsSection,
-  // },
+  {
+    selector: "#main",
+    partial: "./partials/contacts.html",
+    init: initContactsSection,
+  },
   {
     selector: "#main",
     partial: "./partials/tools.html",

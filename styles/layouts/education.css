@@ -19,6 +19,25 @@
 
 }
 
+.education__title {
+    font-family: "Lustria", serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 34px;
+    color: var(--active-bg-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .education__title {
+        font-size: 75px;
+        margin-bottom: 0.3rem;
+        margin-top: 50px;
+    }
+}
+
 
 .education-item {
     opacity: 0;

@@ -34,13 +34,19 @@
 
 .ocean--contact .wave {
     background-image: url('../../assets/images/icons/wave-white.svg');
-    width: 540px;
+    width: 345px;
     height: 50px;
     bottom: -10px;
-    left: -20px;
-
+    left: 0;
 }
 
+
+@media (min-width: 1200px) {
+    .ocean--contact .wave {
+        width: 370px;
+        left: -20px;
+    }
+}
 
 .ocean--contact-modal .wave {
     background-image: url('../../assets/images/icons/wave-white.svg');
