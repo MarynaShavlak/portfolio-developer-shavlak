@@ -13,7 +13,6 @@ export const softSkillsShowcases = [
     items: [
       "Rebuilt a <span>deteriorated client relationship</span> through structured communication and consistent quality improvements.",
       "Explained <span>complex frontend concepts</span> using analogies and plain language to non-technical stakeholders.",
-      "Led clear communication during a <span>labor strike and stakeholder risk assessment</span>.",
       "Taught and <span>onboarded team members</span> with tailored plans, building trust and ramping them up efficiently.",
       "Fostered <span>open communication</span> as Filmoteka team lead, facilitating collaboration across time zones and barriers.",
     ],
