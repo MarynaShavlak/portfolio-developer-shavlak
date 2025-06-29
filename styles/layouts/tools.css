@@ -917,7 +917,6 @@
 }
 
 
-/* Common floating icon styles */
 .floating-icon {
     position: absolute;
     width: 60px;
@@ -928,7 +927,7 @@
     opacity: 0.6;
     animation: float 6s ease-in-out infinite;
     transition: opacity 0.4s ease;
-    pointer-events: none; /* Icons don't interfere with interaction */
+    pointer-events: none;
 }
 
 

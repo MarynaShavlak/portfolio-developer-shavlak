@@ -61,13 +61,13 @@ const sections = [
     partial: "./partials/portfolio.html",
     init: initPortfolio,
   },
-  // {
-  //   selector: "#main",
-  //   partial: "./partials/reviews.html",
-  //   init: initReviewsSlider,
-  //   lazy: true,
-  //   scrollSelector: ".reviews.section__reviews",
-  // },
+  {
+    selector: "#main",
+    partial: "./partials/reviews.html",
+    init: initReviewsSlider,
+    lazy: true,
+    scrollSelector: ".reviews.section__reviews",
+  },
   {
     selector: "#main",
     partial: "./partials/blog.html",
