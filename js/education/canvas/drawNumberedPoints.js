@@ -1,6 +1,11 @@
 import { showTooltipForPoint } from "./showTooltipForPoint.js";
 
-export function drawNumberedPoints(numberedPointsCanvasId, points, scale) {
+export function drawNumberedPoints(
+  numberedPointsCanvasId,
+  tooltipsWrapperClass,
+  points,
+  scale,
+) {
   const canvas = document.getElementById(numberedPointsCanvasId);
   const size = numberedPointsCanvasId.includes("mobile") ? 12 : 18;
   const ctx = canvas.getContext("2d");
@@ -33,7 +38,7 @@ export function drawNumberedPoints(numberedPointsCanvasId, points, scale) {
         requestAnimationFrame(animate);
       } else {
         drawStaticCircle(x, y, baseRadius, number, 1);
-        showTooltipForPoint(number - 1); // Fully visible at the end
+        showTooltipForPoint(number - 1, tooltipsWrapperClass); // Fully visible at the end
         startPulsing(x, y, number); // Start continuous pulsing after initial appearance
       }
     };

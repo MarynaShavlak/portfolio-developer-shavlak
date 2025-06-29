@@ -2,10 +2,10 @@ import { educationData } from "../../data/educationData.js";
 import { downloadCloudButton } from "../../markup/downloadCloudButton.js";
 import { getImageName } from "../utils/getImageName.js";
 
-export function renderEducationSection() {
+export function renderEducationSection(tooltipsWrapperClass) {
   educationData.forEach((data) => {
     const educationItem = createEducationItem(data);
-    $(".education__tooltips__container").append(educationItem);
+    $(tooltipsWrapperClass).append(educationItem);
   });
 }
 

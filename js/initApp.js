@@ -66,6 +66,7 @@ const sections = [
     config: {
       canvasId: "roadCanvas--mobile",
       numberedPointsCanvasId: "numbersCanvas--mobile",
+      tooltipsWrapperClass: ".education__tooltips__container--mobile",
       scale: 0.25,
       frameDuration: 16,
       pointsCount: 100,

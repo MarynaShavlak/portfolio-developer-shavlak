@@ -10,6 +10,7 @@ export function initEducationSection(config = {}) {
   const {
     canvasId = "roadCanvas",
     numberedPointsCanvasId = "numbersCanvas",
+    tooltipsWrapperClass = ".education__tooltips__container",
     scale = 0.8357,
     // scale = 0.25,
     frameDuration = 16,
@@ -29,8 +30,13 @@ export function initEducationSection(config = {}) {
   );
 
   animationController.startAnimation();
-  drawNumberedPoints(numberedPointsCanvasId, pathPoints, scale);
-  renderEducationSection();
+  drawNumberedPoints(
+    numberedPointsCanvasId,
+    tooltipsWrapperClass,
+    pathPoints,
+    scale,
+  );
+  renderEducationSection(tooltipsWrapperClass);
   setupEventListeners();
 
   return () => animationController.startAnimation();
