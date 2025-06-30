@@ -222,3 +222,17 @@
     box-shadow: 0 0 8px var(--active-bg-color);
 }
 
+
+@media (max-width: 1199px) {
+    .btn__item--open-modal {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .btn__item--download {
+        display: none;
+    }
+}
+
