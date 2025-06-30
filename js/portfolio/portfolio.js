@@ -36,12 +36,13 @@ export function initPortfolio() {
   });
 
   function initIsotope() {
+    const columnWidth = window.innerWidth < 1199 ? 345 : 370;
     $portfolioList.isotope({
       itemSelector: ".portfolio__item",
       layoutMode: "masonry",
       percentPosition: true,
       masonry: {
-        columnWidth: 370,
+        columnWidth: columnWidth,
         gutter: 30,
       },
     });

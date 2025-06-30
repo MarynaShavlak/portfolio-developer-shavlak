@@ -40,6 +40,13 @@
     left: 0;
 }
 
+@media (min-width: 768px) {
+    .ocean--contact .wave {
+        width: 768px;
+
+    }
+}
+
 
 @media (min-width: 1200px) {
     .ocean--contact .wave {
