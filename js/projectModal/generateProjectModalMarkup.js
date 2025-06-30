@@ -48,6 +48,9 @@ export function generateProjectModalMarkup(projectData) {
 function createProjectMediaSection(title, id, mediaFiles) {
   const $container = $('<div class="project-img-wrap"></div>');
   const $slider = $('<div class="project-slider"></div>');
+  const isMobile = window.innerWidth < 1199;
+  const size = isMobile ? "345px" : "800px";
+  console.log(isMobile);
 
   mediaFiles.forEach((file, index) => {
     const filePath = `assets/images/projects/${id}/${file}`;
@@ -61,7 +64,7 @@ function createProjectMediaSection(title, id, mediaFiles) {
                 </video>`,
         )
       : $(
-          `<img class="project-picture project-slide${index + 1}" src="${filePath}" alt="project media" width="800px" />`,
+          `<img class="project-picture project-slide${index + 1}" src="${filePath}" alt="project media" width=${size} />`,
         );
 
     $slider.append($media);
