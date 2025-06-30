@@ -27,7 +27,9 @@ function createEducationItem(data) {
     const certificateWrapper = $("<div>").addClass(
       "education__certificateWrapper",
     );
-    const certificateBtn = downloadCloudButton + "<span>See Certificate</span>";
+    const certificateBtn =
+      downloadCloudButton +
+      "<span class='certificate__btn'>See Certificate</span>";
     certificateWrapper.append(certificateBtn);
     educationItem.append(icon, certificateWrapper, rightPart);
   } else {

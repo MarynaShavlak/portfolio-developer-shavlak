@@ -5,7 +5,7 @@
 }
 
 .section__education--mobile {
-    height: 700px;
+    height: 600px;
 
     .education--mobile {
         margin-top: 100px;
@@ -148,7 +148,7 @@
 .education-item:nth-child(2) {
     position: absolute;
     top: 180px;
-    left: 50px;
+    left: 0;
 }
 
 @media (min-width: 1200px) {
@@ -162,7 +162,7 @@
     content: '';
     position: absolute;
     top: -20px;
-    left: 50px;
+    left: 100px;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid var(--default-bg-color);
@@ -177,7 +177,7 @@
 
 .education-item:nth-child(3) {
     position: absolute;
-    top: -120px;
+    top: -100px;
     left: 150px;
     height: 130px;
 
@@ -193,6 +193,12 @@
 
 .education-item:nth-child(5) {
     height: 130px;
+}
+
+@media (min-width: 1200px) {
+    .education-item:nth-child(5) {
+        height: 130px;
+    }
 }
 
 .education-item:nth-child(3)::before {
@@ -216,8 +222,15 @@
 
 .education-item:nth-child(4) {
     position: absolute;
-    top: 370px;
-    left: 610px;
+    top: 140px;
+    left: 150px;
+}
+
+@media (min-width: 1200px) {
+    .education-item:nth-child(4) {
+        top: 370px;
+        left: 610px;
+    }
 }
 
 .education-item:nth-child(4)::before {
@@ -233,21 +246,38 @@
 
 .education-item:last-child {
     position: absolute;
-    top: 220px;
+    top: 250px;
     right: 0;
+}
+
+@media (min-width: 1200px) {
+    .education-item:last-child {
+        top: 220px;
+        right: 0;
+    }
 }
 
 .education-item:last-child::before {
     content: '';
     position: absolute;
     top: -17px;
-    left: 25px;
+    right: 25px;
+
     transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid var(--default-bg-color);
 }
 
+
+@media (min-width: 1200px) {
+    .education-item:last-child::before {
+        top: -17px;
+        left: 25px;
+        right: unset;
+        transform: translateX(-50%);
+    }
+}
 
 .education-icon {
     img {
@@ -322,19 +352,29 @@
     top: 0;
     left: 0;
 
-    span {
-        position: absolute;
-        top: 95px;
-        left: 65px;
-        transition: color 0.3s ease-in-out;
-        cursor: pointer;
-        font-weight: 600;
-        padding: 5px;
-        background-color: var(--main-bg-color);
-        border-radius: 5px;
-        width: 120px;
-    }
 
+}
+
+.certificate__btn {
+    position: absolute;
+    top: 95px;
+    left: 65px;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px;
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+    width: 80px;
+    font-size: 10px;
+}
+
+
+@media (min-width: 1200px) {
+    .certificate__btn {
+        width: 120px;
+        font-size: 15px;
+    }
 }
 
 .education__certificateWrapper:hover {
