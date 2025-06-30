@@ -1,7 +1,13 @@
 .contacts__block {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
+}
+
+@media (min-width: 1200px) {
+    .contacts__block {
+        gap: 30px;
+    }
 }
 
 .contacts__item {

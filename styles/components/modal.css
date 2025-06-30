@@ -48,7 +48,13 @@ body.modal-open {
 }
 
 .close-icon {
-    font-size: 30px;
+    font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+    .close-icon {
+        font-size: 30px;
+    }
 }
 
 .close-modal-btn:hover, .close-form-btn:hover {
