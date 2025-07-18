@@ -317,6 +317,10 @@
 }
 
 
+.timeline__event__results {
+    margin-top: 20px;
+}
+
 .timeline__event__text {
     font-weight: 600;
     text-decoration: underline;
@@ -348,5 +352,4 @@
 .resp-item__prize {
     animation: pulse 1.5s infinite;
 }
-
 

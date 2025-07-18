@@ -1,4 +1,5 @@
 import { workData } from "../../data/workData.js";
+import { renderIcon } from "../utils/renderIcon.js";
 
 export function initWorkSection() {
   const workWrapper = $(".work__wrapper");
@@ -7,6 +8,7 @@ export function initWorkSection() {
     const responsibilitiesList = generateResponsibilitiesMarkup(
       item.responsibilities,
     );
+    const achievementsList = generateResponsibilitiesMarkup(item.achievements);
 
     let additionalClass;
     if (index === 0) {
@@ -16,11 +18,12 @@ export function initWorkSection() {
     } else {
       additionalClass = "timeline__event--type1";
     }
+    const iconHtml = renderIcon(item.icon);
 
     const markup = `
             <div class="timeline__event animated fadeInUp ${additionalClass}">
                 <div class="timeline__event__icon">
-                    ${item.icon}
+                    ${iconHtml}
                 </div>
                 <div class="timeline__event__date">
                     ${item.date}
@@ -31,17 +34,20 @@ export function initWorkSection() {
                     </p>
                     <p class="timeline__event__text">${item.company}</p>
                     <p class="timeline__event__desc">${item.description}</p>
-                    <div class="timeline__event__description">
+                    <p class="timeline__event__description">
                      ${responsibilitiesList}  
-                            
-                        
-                        <p class="timeline__event__results"><i class="fa-solid fa-trophy resp-item__prize"></i> <span>Achievement:</span>
-                            ${item.achievement}
-                        </p>
+                      <p class="timeline__event__results"><i class="fa-solid fa-trophy resp-item__prize"></i> <span>Achievement:</span>
+                         
+                        </p >
+                        <div>
+                          ${achievementsList}  
+                         </div>
+
                     </div>
                 </div>
             </div>
         `;
+
     workWrapper.append(markup);
   });
 }
