@@ -229,11 +229,6 @@ Animated responsive timeline of professional history.
 - Animated icons and color-coded themes.
 - Modular JS for markup generation and styling.
 
-## Demo video
-
-
-https://github.com/user-attachments/assets/eb64a2fc-a558-4c67-86a6-4edbd7ef8fa1
-
 
 
 ---
