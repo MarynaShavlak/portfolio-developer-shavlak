@@ -1,10 +1,12 @@
 .section--softSkills {
     background-color: var(--main-bg-color);
+    padding-top: 80px;
 }
 
 @media (max-width: 1199px) {
     .section--softSkills {
         height: 900px;
+
     }
 }
 

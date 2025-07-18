@@ -1,0 +1,310 @@
+.section__keySkills {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--light-bg-color);
+    --mask: linear-gradient(0deg, #0000 50px, #000 0) 0 25px,
+    radial-gradient(25px, #000 98%, #0000) 50%/46.25px 50px repeat space;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+.skill-item {
+    color: var(--main-text-color);
+}
+
+.key-tech-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*.keySkill__container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.keySkill__wrap {*/
+/*    margin-bottom: 20px;*/
+/*    text-align: center;*/
+/*!*}*!*/
+
+.keySkill__title {
+    font-family: "Lustria", serif;
+    margin-bottom: 30px;
+    font-size: 34px;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .keySkill__title {
+        font-size: 75px;
+        margin-bottom: 0.3rem;
+    }
+}
+
+.skill-item__title {
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--light-bg-color);
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 20px, #000 calc(100% - 20px), transparent 100%),
+    linear-gradient(to bottom, transparent 0, #000 20px, #000 calc(100% - 30px), transparent 100%);
+    -webkit-mask-composite: intersect;
+    mask-image: linear-gradient(to right, transparent 0, #000 20px, #000 calc(100% - 20px), transparent 100%),
+    linear-gradient(to bottom, transparent 0, #000 20px, #000 calc(100% - 30px), transparent 100%);
+    mask-composite: intersect;
+
+}
+
+.skill-item__description-list {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.skill-item__description-point {
+    position: relative;
+}
+
+.skill-item__description-point::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--main-text-color);
+}
+
+.skill-item {
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    border-radius: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+
+/*.keySkill__btn {*/
+/*    min-width: 175px;*/
+/*    border-radius: 30px;*/
+/*    background-color: var(--main-bg-color);*/
+/*    font-size: 16px;*/
+/*    box-shadow: 0 0 8px var(--active-bg-color);*/
+/*}*/
+
+/*@media (max-width: 1199px) {*/
+/*    .keySkill__btn {*/
+/*        display: block;*/
+/*        margin: 0 auto;*/
+/*        margin-top: 30px;*/
+/*    }*/
+/*}*/
+
+/*.keySkill__wrapper {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 30px;*/
+
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*    .keySkill__wrapper {*/
+/*        flex-direction: row;*/
+/*    }*/
+/*}*/
+
+/*.keySkill__invitation {*/
+/*    width: 100%;*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*    .keySkill__invitation {*/
+/*        width: 45%;*/
+/*    }*/
+/*}*/
+
+/*.keySkill__invitation-text--primary {*/
+/*    font-weight: 700;*/
+/*    font-family: "Lustria", serif;*/
+/*    font-size: 24px;*/
+/*    color: var(--main-text-color);*/
+/*    text-align: center;*/
+
+/*    span {*/
+/*        color: var(--active-bg-color);*/
+/*        font-weight: 900;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*    .keySkill__invitation-text--primary {*/
+/*        font-size: 45px;*/
+/*        text-align: end;*/
+/*    }*/
+/*}*/
+
+/*.keySkill__invitation-text--secondary {*/
+/*    font-size: 20px;*/
+/*    color: var(--active-bg-color);*/
+/*    font-weight: 900;*/
+/*    text-align: center;*/
+/*    margin-top: 60px;*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*    .keySkill__invitation-text--secondary {*/
+/*        font-size: 32px;*/
+/*        text-align: end;*/
+/*    }*/
+/*}*/
+
+
+/*.key {*/
+/*    display: inline-block;*/
+/*    letter-spacing: -0.5vw;*/
+/*    transition: transform 0.2s;*/
+/*}*/
+
+
+/*.key:nth-child(6n+1) {*/
+/*    animation: pressDown1 2s infinite;*/
+/*}*/
+
+/*.key:nth-child(6n+2) {*/
+/*    animation: pressDown2 2.5s infinite;*/
+/*}*/
+
+/*.key:nth-child(6n+3) {*/
+/*    animation: pressDown3 3s infinite;*/
+/*}*/
+
+/*.key:nth-child(6n+4) {*/
+/*    animation: pressDown4 2.8s infinite;*/
+/*}*/
+
+/*.key:nth-child(6n+5) {*/
+/*    animation: pressDown5 3.2s infinite;*/
+/*}*/
+
+/*.key:nth-child(6n+0) {*/
+/*    animation: pressDown6 3.5s infinite;*/
+/*}*/
+
+/*.keySkill-form {*/
+/*    width: 100%;*/
+/*    height: 450px;*/
+/*    border-top-right-radius: 15px;*/
+/*    border-top-left-radius: 15px;*/
+/*    overflow: hidden;*/
+/*    position: relative;*/
+/*    background-color: var(--default-bg-color);*/
+/*    padding: 15px;*/
+
+/*    .control {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+
+/*@media (min-width: 1200px) {*/
+/*    .keySkill-form {*/
+/*        width: 500px;*/
+/*        height: 450px;*/
+/*    }*/
+
+/*    .control {*/
+/*        width: 60%;*/
+/*    }*/
+/*}*/
+
+
+/*.keySkill-form--modal {*/
+/*    width: 100%;*/
+
+/*    .control--modal {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+
+/*.keySkill-form input, .keySkill-form textarea {*/
+/*    border-radius: 20px;*/
+/*    padding-left: 30px;*/
+/*    color: var(--main-text-color);*/
+/*}*/
+
+/*.keySkill-form label {*/
+/*    left: 10px;*/
+/*    color: var(--main-text-color);*/
+/*    text-transform: none;*/
+/*}*/
+
+/*.form__wrapper {*/
+/*    position: relative;*/
+/*}*/
+
+/*.keySkill__links {*/
+/*    height: 300px;*/
+/*    background-color: var(--main-bg-color);*/
+
+
+/*    p {*/
+/*        font-size: 18px;*/
+/*        font-weight: 700;*/
+/*        color: var(--active-bg-color);*/
+/*        text-transform: uppercase;*/
+/*        text-align: center;*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+
+/*    .keySkill__links-list {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        gap: 20px;*/
+/*    }*/
+
+/*    .keySkill__links__inner {*/
+/*        overflow: hidden;*/
+/*        padding: 20px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*    .keySkill__links {*/
+/*        position: absolute;*/
+/*        height: 400px;*/
+/*        top: 140px;*/
+/*        right: -80px;*/
+/*    }*/
+/*}*/
+
+/*.keySkill__links::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: -25px;*/
+/*    right: -25px;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    border-radius: 100%;*/
+/*    background-color: var(--active-bg-color);*/
+/*    opacity: 0.8;*/
+/*    filter: blur(5px);*/
+/*    animation: pulseCircle 2s infinite;*/
+/*}*/
+
+/*@media (max-width: 1199px) {*/
+/*    .keySkill__links::after {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+

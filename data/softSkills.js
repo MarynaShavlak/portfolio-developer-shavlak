@@ -2,102 +2,93 @@ export const softSkillsShowcases = [
   {
     title: "Agile Adaptability",
     items: [
-      "Led <span>Filmoteka project during a crisis</span>, stepping in as team lead under power outages and team challenges.",
-      "Took over operations during the <span>COVID-19 crisis</span> when the team fell ill, keeping the workflow on track.",
-      "Embraced <span>unfamiliar frontend technologies</span> by crafting structured learning plans and applying them quickly.",
-      "Adapted during a <span>port strike</span>, rerouting logistics to ensure delivery despite external disruptions.",
+      "Shifted between frameworks seamlessly - from <span>Material UI</span> to <span>Headless UI</span> based on changing design requirements.",
+      "Adapted documentation style for different audiences - creating both <span>technical CLI guides</span> and <span>non-technical Mixpanel reports</span> at Hubmee.",
     ],
   },
   {
     title: "Effective Communication & Listening",
     items: [
-      "Rebuilt a <span>deteriorated client relationship</span> through structured communication and consistent quality improvements.",
-      "Explained <span>complex frontend concepts</span> using analogies and plain language to non-technical stakeholders.",
-      "Taught and <span>onboarded team members</span> with tailored plans, building trust and ramping them up efficiently.",
-      "Fostered <span>open communication</span> as Filmoteka team lead, facilitating collaboration across time zones and barriers.",
+      "Facilitated cross-functional alignment at Hubmee - bridging gaps between designers and engineers to implement <span>accessible dashboards</span> that boosted engagement 30%.",
+      "Listened to QA pain points - then implemented <span>visual regression testing</span> with Storybook/Loki to catch 95% of UI bugs pre-release.",
     ],
   },
   {
     title: "Structured Analytical Thinking",
     items: [
-      "Evaluated risks during a <span>labor strike</span> and chose a more reliable logistics route despite higher costs.",
-      "Developed a <span>customs and regulation strategy</span> by analyzing data and consulting experts.",
-      "Applied a <span>problem breakdown methodology</span> to debug frontend issues and optimize UX.",
+      "Logically decomposed complex UI requirements at Prevently - breaking down <span>multi-step onboarding</span> into atomic components for 45% completion boost.",
+      "Structured scalable architecture using FSD principles - organizing <span>30+ components</span> with clear dependency boundaries for Dev Interview Hub.",
     ],
   },
   {
     title: "Versatile Team & Solo Contributor",
     items: [
-      "Took charge of operations <span>solo during COVID-19</span>, maintaining business continuity and mentoring a junior.",
-      "Worked <span>independently</span> to learn and implement date-handling libraries.",
-      "Demonstrated ability to <span>self-learn</span>, then collaborate with others to deliver results in new tech stacks.",
-      "Balanced <span>leadership and coding</span> in Filmoteka, proving ability to work both independently and as a collaborator.",
+      "Proved equally effective as team player and lone problem-solver - collaborated on Agile rituals while single-handedly resolving <span>complex state bugs</span>.",
+      "Juggled team collaboration with deep work – synced with designers on standards while resolving <span>WCAG 2.1 AA</span> issues solo.",
+      "Self-sufficient in driving critical migrations - modernized <span>jQuery→React/TypeScript</span> alone during freelance work, slashing errors by 80%.",
     ],
   },
   {
     title: "Accelerated Learning Ability",
     items: [
-      "Quickly <span>learned and applied new frontend libraries</span> under tight project timelines.",
-      "Tackled <span>unfamiliar technical questions</span> through self-directed learning and research.",
-      "Took on <span>leadership and coding roles</span> during team absences with little preparation, succeeding under pressure.",
+      "Became proficient in RTK Query within days — implementing <span>real-time Firebase sync</span> for Dev Interview Hub despite no prior experience.",
+      "Self-taught PWA architecture in a weekend — delivering <span>offline-capable</span> features with Service Workers for uninterrupted user access.",
+      "Mastered advanced testing (RTL/Cypress) in 10 days — achieving <span>95%+ coverage</span> for Dev Interview Hub.",
     ],
   },
   {
     title: "Detail-Oriented Precision",
     items: [
-      "Streamlined and audited <span>data systems</span>, reducing human error in business operations by 30%.",
-      "Maintained <span>comprehensive documentation</span> while debugging and iterating on frontend code.",
-      "Kept detailed records of <span>user feedback and development changes</span> during the Filmoteka project.",
+      "Standardized codebase hygiene via <span>ESLint rules</span> and <span>pre-commit hooks</span>, catching 200+ formatting issues before review.",
+      "Automated 95% of visual regressions by configuring <span>Loki</span> to compare 120+ Storybook snapshots against baselines.",
+      "Shaved 0.5s off LCP times by obsessively optimizing <span>image compression</span> and <span>font loading</span>, pixel-pushing until scores hit 90+.",
     ],
   },
   {
     title: "Proactive Problem Solving",
     items: [
-      "Resolved <span>critical client dissatisfaction</span> by initiating structured feedback loops and change processes.",
-      "Solved <span>customs-related shipment delays</span> by engaging directly with authorities and analyzing root causes.",
-      "Proactively <span>rerouted supply lines</span> in response to external labor disruptions.",
+      "Proposed and implemented a <span>reusable component library</span> to reduce code duplication, speeding up future feature development.",
+      "Identified and fixed <span>accessibility (a11y) violations</span> proactively, ensuring WCAG compliance before QA audits.",
+      "<span>Automated visual regression testing</span> with Storybook and Loki to catch UI inconsistencies early.",
     ],
   },
   {
     title: "Empathy & User-Centric Mindset",
     items: [
-      "Built frontend features with <span>user feedback loops</span>, ensuring a satisfying UX.",
-      "Handled <span>irate customers</span> with patience and empathy, delivering solutions that addressed emotional and practical needs.",
-      "Onboarded new team members with <span>personalized, empathetic support</span>.",
-      "Centered <span>user satisfaction</span> in Filmoteka, shown by 95% positive user feedback.",
+      "Discovered household managers needed clearer financial data, so built <span>interactive dashboards</span> with Chart.js that improved engagement by 30%.",
+      "Recognized users' frustration with crashes, so integrated <span>Sentry monitoring</span> that helped reduce errors by 15% through proactive fixes.",
+      "Observed users struggling with slow loads, so optimized <span>Webpack bundles by 40%</span> and implemented lazy loading to  improve their experience.",
     ],
   },
   {
     title: "Growth Mindset",
     items: [
-      "Took initiative to <span>train peers and juniors</span> outside of formal responsibilities.",
-      "Approached <span>new frontend tech</span> as opportunities for development and innovation.",
-      "Actively sought and incorporated <span>feedback</span>, demonstrating reflective learning and adaptation.",
-      "Embraced <span>collaboration with diverse team members</span>, regardless of age, background, or title.",
+      "Self-mastered Webpack optimizations — achieving <span>40% smaller bundles</span> and <span>30+ Lighthouse gains</span> through self-study.",
+      "Built CLI tools from scratch — enabling <span>80% faster boilerplate generation</span> despite no prior automation experience.",
+      "Implemented analytics solutions — driving <span>12% higher retention</span> and <span>15% fewer crashes</span> through self-taught tools.",
     ],
   },
   {
     title: "Time Management",
     items: [
-      "Balanced <span>onboarding three new hires</span> while executing my own deliverables.",
-      "Met a <span>strict certification deadline</span>, leading to a 70% sales increase, through structured planning.",
-      "Used <span>structured workflows</span> to meet tight development deadlines, especially in solo or leadership roles.",
+      "<span>Adopted time-blocking techniques</span>  to dedicate focused hours for deep work (e.g., debugging complex state issues)",
+      "Automated repetitive tasks (e.g., code formatting, snapshot testing) with <span>CI/CD</span>, saving 5+ hours/week",
+      "<span>Balanced urgent bug fixes with feature development</span> by prioritizing critical-path issues using a Kanban board (Jira/Trello)",
     ],
   },
   {
     title: "Patience and Persistence",
     items: [
       "Persisted through learning <span>challenging frontend libraries</span> until mastering their implementation.",
-      "Managed <span>long-term, regulatory-complex projects</span> through patient coordination with cross-functional stakeholders.",
-      "Rebuilt strained client relationships with <span>consistent, long-term efforts</span> and high service standards.",
+      "<span>Persisted through browser-specific CSS bugs</span> (e.g., Safari flexbox quirks) until achieving pixel-perfect cross-browser consistency.",
+      "<span>Refactored a legacy jQuery codebase to React incrementally</span>, balancing patience with business priorities.",
     ],
   },
   {
     title: "Focus & Concentration",
     items: [
-      "Maintained <span>high productivity under pressure</span> during pandemic-induced staffing shortages.",
-      "Sustained <span>deep focus on complex technical tasks</span>, breaking them down and solving methodically.",
-      "Prioritized <span>concentration and accuracy</span> during high-stakes debugging and problem-solving.",
+      "<span>Resolved 15+ TypeScript type conflicts</span> in a large codebase merge by systematically tracing type definitions",
+      "<span>Optimized Webpack build configuration</span> through concentrated analysis of dependency trees and chunk splitting.",
     ],
   },
 ];

@@ -4,11 +4,11 @@
 
 }
 
-@media (min-width: 1200px) {
-    .section__portfolio__title {
-        height: 400px;
-    }
-}
+/*@media (min-width: 1200px) {*/
+/*    .section__portfolio__title {*/
+/*        height: 400px;*/
+/*    }*/
+/*}*/
 
 #cloudCanvasReviews {
     position: absolute;

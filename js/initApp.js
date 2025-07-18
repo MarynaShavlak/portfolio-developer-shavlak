@@ -12,6 +12,7 @@ import { initHireModal } from "./hireModal/hireModal.js";
 import { initCVModal } from "./cvModal/cvModal.js";
 import { initOnScroll } from "./utils/initOnScroll.js";
 import { initMobileMenu } from "./mobileMenu/initMobileMenu.js";
+import { initKeySkillsSection } from "./keySkills/keySkills.js";
 
 // Configuration for partials and their initialization
 const sections = [
@@ -32,6 +33,11 @@ const sections = [
   {
     selector: "#main",
     partial: "./partials/about.html",
+  },
+  {
+    selector: "#main",
+    partial: "./partials/keySkills.html",
+    init: initKeySkillsSection,
   },
   {
     selector: "#main",
