@@ -102,11 +102,6 @@ Interactive modal showcasing professional profile: education, skills, experience
 - Dynamic JavaScript-generated canvas background shapes.
 - Smooth jQuery fade transitions.
 
-  ## Demo video
-  
-
-
-https://github.com/user-attachments/assets/f593c9b3-6d50-49e7-b048-99801c12514f
 
 
 ---
@@ -184,10 +179,6 @@ Interactive showcase of core soft skills with dynamic hover details.
 - Smooth fade transitions.
 - JavaScript-driven dynamic rendering.
 
-### Demo video
-
-
-https://github.com/user-attachments/assets/e69d389b-8570-4ebf-95e6-2d63ccc81c72
 
 
 ---
