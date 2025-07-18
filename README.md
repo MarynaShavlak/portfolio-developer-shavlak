@@ -11,10 +11,7 @@ View the live demo or explore the source code on GitHub.
 
 ---
 
-## Demo video
 
-
-https://github.com/user-attachments/assets/b7eac596-7d2f-4952-b7c2-4ea52f0cb152
 
 
 
