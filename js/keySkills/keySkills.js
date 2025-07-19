@@ -29,7 +29,10 @@ function generateSkillsMarkup(skills) {
               ? `<ul class="skill-item__description-list">${descriptionMarkup}</ul>`
               : descriptionMarkup
           }
+         
         </div>
+        
+         
       `;
     })
     .join("");

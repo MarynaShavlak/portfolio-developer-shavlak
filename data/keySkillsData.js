@@ -15,7 +15,7 @@ export const keySkillsData = [
       "Advanced Webpack/Vite configurations with code splitting, tree-shaking, and bundle optimization",
       "Performance tuning using Lighthouse, Chrome DevTools, and React Profiler",
       "Implementing PWA features (Service Workers, Workbox) for offline capabilities",
-      "CI/CD pipeline development with GitHub Actions, Docker, and automated testing",
+      "CI/CD pipeline development with GitHub Actions, and automated testing",
     ],
   },
   {
@@ -32,7 +32,6 @@ export const keySkillsData = [
     title: "Full-Cycle Development Leadership",
     description: [
       "Leading projects from architecture to deployment using Feature-Sliced Design",
-      "Mentoring teams in best practices for React, TypeScript, and testing",
       "Conducting rigorous code reviews with ESLint custom plugins and Prettier",
       "Implementing comprehensive testing strategies (Jest, RTL, Cypress, Storybook)",
       "Optimizing team workflows with advanced Git techniques and Agile methodologies",

@@ -12,6 +12,13 @@
 .about__action-btn-list {
     display: flex;
     gap: 20px;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .about__action-btn-list {
+        justify-content: start;
+    }
 }
 
 
@@ -125,6 +132,7 @@
     position: relative;
     background-color: var(--main-bg-color);
     order: 1;
+    margin: 0 auto;
 }
 
 @media (min-width: 1200px) {
