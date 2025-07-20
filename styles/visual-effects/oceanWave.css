@@ -19,6 +19,12 @@
     z-index: -1;
 }
 
+@media (min-width: 768px) {
+    .ocean--blog {
+        width: 100%;
+    }
+}
+
 .ocean--blog .wave {
     background-image: url('../../assets/images/icons/wave-blue.svg');
     /*width: 345px;*/
