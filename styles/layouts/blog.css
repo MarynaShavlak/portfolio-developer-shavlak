@@ -68,7 +68,8 @@
     grid-template-rows: subgrid;
     grid-row: span 3;
     cursor: pointer;
-    width: 345px;
+    /*width: 345px;*/
+    width: 100%;
     border-radius: 15px;
     background-color: var(--main-bg-color);
     padding: 18px 18px 40px;
@@ -76,6 +77,11 @@
     transition: all 0.3s ease;
     overflow: hidden;
     mask: linear-gradient(to bottom, #000 calc(100% - 30px), transparent);
+
+    a {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 1200px) {

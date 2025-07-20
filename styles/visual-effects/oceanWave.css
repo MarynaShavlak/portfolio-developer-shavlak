@@ -21,7 +21,8 @@
 
 .ocean--blog .wave {
     background-image: url('../../assets/images/icons/wave-blue.svg');
-    width: 345px;
+    /*width: 345px;*/
+    width: 100%;
     height: 200px;
     z-index: 2;
 }
