@@ -115,7 +115,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--light-bg-color);
+    background-color: var(--main-bg-color);
     z-index: -1;
     transition: all 0.2s;
     border-radius: 15px;
@@ -150,6 +150,12 @@
 
 }
 
+.work:hover {
+
+    background: var(--light-bg-color);
+
+}
+
 .work:hover::before {
     transform: rotate(-20deg);
     box-shadow: rgba(213, 213, 219, 0.25) 0px 50px 50px -40px,
@@ -168,17 +174,31 @@
 .work__image {
     background-color: var(--main-bg-color);
     width: 345px;
+    display: flex;
+    align-self: center;
+    /*width: 100%;*/
+
     height: 280px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    /*border-top-left-radius: 15px;*/
+    /*border-top-right-radius: 15px;*/
     overflow: hidden;
 
     img {
         transform: scale(1);
         width: 100%;
+        margin: 0 auto;
+        /*border-top-left-radius: 15px;*/
+        /*border-top-right-radius: 15px;*/
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+
+@media (max-width: 376px) {
+    .work__image {
+
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        transition: transform 0.3s ease-in-out;
     }
 }
 
@@ -186,6 +206,8 @@
     .work__image {
         width: 370px;
         height: 300px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 }
 
@@ -194,7 +216,9 @@
     display: flex;
     flex-direction: column;
     padding: 1rem 0.8rem;
-    width: 345px;
+    /*width: 345px;*/
+    width: 100%;
+
     background-color: var(--main-bg-color);
     flex-grow: 1;
     border-bottom-left-radius: 15px;
@@ -258,6 +282,14 @@
 .portfolio__item {
     cursor: pointer;
     margin-bottom: 20px;
+
+
+}
+
+@media (max-width: 767px) {
+    .portfolio__item {
+        width: 100%;
+    }
 }
 
 .section__portfolio {
