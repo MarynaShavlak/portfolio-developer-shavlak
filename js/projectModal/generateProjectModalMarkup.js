@@ -48,21 +48,32 @@ export function generateProjectModalMarkup(projectData) {
 function createProjectMediaSection(title, id, mediaFiles) {
   const $container = $('<div class="project-img-wrap"></div>');
   const $slider = $('<div class="project-slider"></div>');
-  const isMobile = window.innerWidth < 1199;
-  const size = isMobile ? "345px" : "800px";
+  const isMobile = window.innerWidth < 768;
+  const isTablet = window.innerWidth < 1199 && window.innerWidth > 375;
+  const size = isMobile ? "345px" : isTablet ? "738px" : "800px";
   console.log(isMobile);
 
   mediaFiles.forEach((file, index) => {
     const filePath = `assets/images/projects/${id}/${file}`;
     const isVideo = file.toLowerCase().endsWith(".mp4");
 
-    const $media = isVideo
-      ? $(
-          `<video class="project-video project-slide${index + 1} " controls autoplay muted>
+    const videoElement = isMobile
+      ? `<video class="project-video project-slide${index + 1} " width='345px' controls autoplay muted>
                     <source src="${filePath}" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>`,
-        )
+                </video>`
+      : isTablet
+        ? `<video class="project-video project-slide${index + 1} " width='738px' controls autoplay muted>
+                    <source src="${filePath}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>`
+        : `<video class="project-video project-slide${index + 1} " width='800px' controls autoplay muted>
+                    <source src="${filePath}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>`;
+
+    const $media = isVideo
+      ? $(videoElement)
       : $(
           `<img class="project-picture project-slide${index + 1}" src="${filePath}" alt="project media" width=${size} />`,
         );
