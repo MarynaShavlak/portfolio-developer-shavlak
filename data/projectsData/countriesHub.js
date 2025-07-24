@@ -75,7 +75,7 @@ export const countriesHubData = {
     },
   ],
   techStack: {
-    architecture: "Modular React Single Page Application",
+    architecture: "Simple Modular Architecture",
     frontend: ["React", "React Router DOM"],
     api: ["Axios"],
     backend: ["REST Countries API"],

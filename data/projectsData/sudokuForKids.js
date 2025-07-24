@@ -79,7 +79,7 @@ export const sudokuForKidsData = {
     },
   ],
   techStack: {
-    architecture: "Vanilla JavaScript single-page application",
+    architecture: "Classic architecture",
     frontend: ["HTML5", "CSS3", "JavaScript (ES6+)"],
     build: ["Gulp", "Webpack", "Babel"],
     tools: ["PostCSS", "Autoprefixer"],

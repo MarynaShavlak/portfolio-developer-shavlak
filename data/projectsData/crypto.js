@@ -83,7 +83,7 @@ export const cryptoData = {
     },
   ],
   techStack: {
-    architecture: "Modular React Single Page Application",
+    architecture: "Classic architecture",
     frontend: ["React"],
     api: ["Custom API Mock (funkFetchCrypto, funkFetchAssets)"],
     build: ["Vite"],

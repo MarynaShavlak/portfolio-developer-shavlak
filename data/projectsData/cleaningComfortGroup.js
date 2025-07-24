@@ -74,7 +74,7 @@ export const cleaningComfortGroupData = {
     },
   ],
   techStack: {
-    architecture: "Multi-page application (MPA) using Vanilla JavaScript",
+    architecture: "Simple Modular Architecture",
     frontend: ["HTML/CSS/JS", "SASS/SCSS", "jQuery"],
     build: ["Gulp", "Webpack", "Babel"],
     tools: ["PostCSS", "Autoprefixer"],

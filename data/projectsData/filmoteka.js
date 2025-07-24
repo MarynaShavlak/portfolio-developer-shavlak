@@ -120,8 +120,7 @@ export const filmotekaData = {
     },
   ],
   techStack: {
-    architecture:
-      "Multi-page application (MPA) using Vanilla JavaScript with Parcel",
+    architecture: "Classic architecture",
     frontend: ["Vanilla JavaScript", "HTML5", "SCSS"],
     stateManagement: ["LocalStorage (for persistence)"],
     api: ["Axios", "The Movie Database (TMDb) API"],

@@ -124,7 +124,7 @@ export const bhagaskaraLandingData = {
   ],
 
   techStack: {
-    architecture: "Single-page jQuery application",
+    architecture: "Classic architecture",
     frontend: ["HTML5", "CSS3", "JavaScript (ES6+)", "jQuery"],
     tools: ["Prettier"],
     ui: [

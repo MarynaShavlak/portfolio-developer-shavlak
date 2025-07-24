@@ -83,7 +83,7 @@ export const iceCreamData = {
   ],
 
   techStack: {
-    architecture: "Single-page responsive site with jQuery and Parcel",
+    architecture: "Classic architecture",
     frontend: ["HTML5", "SCSS", "Vanilla JavaScript", "jQuery"],
 
     styling: ["SCSS with BEM methodology", "Modern Normalize CSS reset"],

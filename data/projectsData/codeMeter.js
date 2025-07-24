@@ -56,7 +56,7 @@ export const codeMeterData = {
     },
   ],
   techStack: {
-    architecture: "Vanilla JavaScript single-page application",
+    architecture: "Classic architecture",
     frontend: ["HTML5", "CSS3", "JavaScript (ES6+)"],
     tools: ["Prettier"],
     ui: ["SVG icons", "Google Fonts"],

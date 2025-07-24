@@ -4,7 +4,7 @@ export const eslintPluginPathSupervisorData = {
   type: "Individual",
   title: "ESLint Plugin Path Supervisor",
   slogan: "Enforce Clean and Modular Import Paths!",
-  date: 2025,
+  date: 2024,
   industry: "Development Tools",
   timeline: "4 hours",
   poster: "poster.jpg",

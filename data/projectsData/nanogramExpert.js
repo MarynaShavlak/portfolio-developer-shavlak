@@ -76,7 +76,7 @@ export const nanogramExpertData = {
     },
   ],
   techStack: {
-    architecture: "Vanilla JavaScript multi-page application with Canvas",
+    architecture: "Classic architecture",
     frontend: ["HTML5", "CSS3", "JavaScript (ES6+)"],
     tools: ["Prettier"],
     ui: ["Google Fonts"],

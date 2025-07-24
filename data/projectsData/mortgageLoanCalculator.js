@@ -61,7 +61,7 @@ export const mortgageLoanCalculatorData = {
   ],
 
   techStack: {
-    architecture: "Single-page responsive site with Vanilla JS ",
+    architecture: "Classic architecture",
     frontend: ["HTML5", "SCSS", "Vanilla JavaScript", "Font Awesome"],
     ui: ["Font Awesome icons"],
     styling: ["CSS with BEM methodology"],

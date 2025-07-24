@@ -107,8 +107,7 @@ export const gooseTrackData = {
     },
   ],
   techStack: {
-    architecture:
-      "Modular React application using Redux Toolkit and feature-based structure",
+    architecture: "Simple Modular Architecture",
     frontend: ["React", "React Router DOM"],
     stateManagement: [
       "Redux Toolkit",

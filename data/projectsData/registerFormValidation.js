@@ -68,7 +68,7 @@ export const registerFormValidationData = {
   ],
 
   techStack: {
-    architecture: "Vanilla JavaScript single-page application",
+    architecture: "Classic architecture",
     frontend: ["HTML5", "CSS3", "Vanilla JavaScript (ES6+)"],
     tools: ["Prettier"],
     ui: ["Google Fonts", "Font Awesome"],

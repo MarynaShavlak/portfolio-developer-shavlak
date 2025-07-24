@@ -58,7 +58,7 @@ export const rouletteData = {
     },
   ],
   techStack: {
-    architecture: "Vanilla JavaScript single-page application",
+    architecture: "Classic architecture",
     frontend: ["HTML5", "CSS3", "JavaScript (ES6+)"],
     ui: ["Custom components", "CSS-based animations"],
   },

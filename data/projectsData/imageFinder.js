@@ -64,7 +64,7 @@ export const imageFinderData = {
     },
   ],
   techStack: {
-    architecture: "Modular React  Single Page Application",
+    architecture: "Classic Architecture",
     frontend: ["React"],
     api: ["Axios"],
     backend: ["Third-party RESTful  Pixabay API "],

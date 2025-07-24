@@ -70,7 +70,7 @@ export const webStudioData = {
   ],
 
   techStack: {
-    architecture: "Multi-page application (MPA) using Vanilla JavaScript",
+    architecture: "Classic architecture",
     frontend: [
       "HTML5",
       "SCSS",

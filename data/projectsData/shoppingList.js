@@ -72,7 +72,7 @@ export const shoppingListData = {
     },
   ],
   techStack: {
-    architecture: "Modular React Single Page Application with TypeScript",
+    architecture: "Simple Modular Architecture",
     frontend: ["React"],
 
     styling: ["Styled Components", "CSS", "Modern Normalize"],

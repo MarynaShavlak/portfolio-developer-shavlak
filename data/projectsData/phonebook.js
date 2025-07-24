@@ -124,7 +124,7 @@ export const phonebookData = {
     },
   ],
   techStack: {
-    architecture: "Modular React app with Redux Toolkit state management",
+    architecture: "Simple Modular Architecture",
     frontend: ["React", "React Router DOM"],
     stateManagement: ["Redux Toolkit", "React Redux", "Redux Persist"],
     api: ["Axios"],
